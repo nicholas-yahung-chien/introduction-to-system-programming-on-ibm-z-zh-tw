@@ -1,0 +1,266 @@
+[
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119078",
+    "title": "System Programming",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_y7shsh9a&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_c7biqdp2",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_y7shsh9a"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119026",
+    "title": "JES and JCL Part 1",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_ev0bd4j9&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_9gdcqcsx",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_ev0bd4j9"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119034",
+    "title": "JES and JCL Part 2",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_qq2x3dnn&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_ntn2xxn4",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_qq2x3dnn"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119076",
+    "title": "Submitting and Viewing JCL",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_87joxm59&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_5lz0ym9u",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_87joxm59"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226062",
+    "title": "Lab Familiarization - Getting Connected",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_599iixml&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_wia0a5eg",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_599iixml"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226063",
+    "title": "Lab Familiarization - Terminal and Password Issues",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_jqny88jg&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_kv0tinrt",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_jqny88jg"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119067",
+    "title": "JCL Procedures",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_67vf8cdm&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_72jebvag",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_67vf8cdm"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119033",
+    "title": "JCL Tidbits",
+    "section": "Introduction to JES and JCL",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_hytagu5v&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_6m6q2lhw",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_hytagu5v"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119429",
+    "title": "VSAM",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_9lmq9qq3&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_u3l3iogf",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_9lmq9qq3"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119432",
+    "title": "zOS Components",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_9urmmmlw&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_e7j7xrn6",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_9urmmmlw"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119077",
+    "title": "zOS System Libraries",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_ll8ls0vj&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_hnl5xkde",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_ll8ls0vj"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119435",
+    "title": "Application Infrastructure Part I",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_zvt102vh&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_s35s5h04",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_zvt102vh"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119433",
+    "title": "Application Infrastructure Part II",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_1wa1wszd&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_f3xrehi8",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_1wa1wszd"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119415",
+    "title": "Language Environment",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_6tc3hwx2&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_j6m2nwzd",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_6tc3hwx2"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119426",
+    "title": "Generation data groups",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_mkn6kr2s&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_fdrfme62",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_mkn6kr2s"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119427",
+    "title": "RAIM",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_vmpwi0dd&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_u6e5hnb6",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_vmpwi0dd"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119446",
+    "title": "Networking",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_6z54930n&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_sknel7pv",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_6z54930n"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119431",
+    "title": "Utilities",
+    "section": "System Programming Components",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_3sl59nke&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_t5fdwi6j",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_3sl59nke"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=329951",
+    "title": "z/OSMF",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_2nlec8ir",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_2nlec8ir"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119414",
+    "title": "Lab - Using z/OSMF",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_7ejss2uv&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_s7m2dabi",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_7ejss2uv"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119430",
+    "title": "UNIX System Services",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_tte63slm&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_t1wp7vuq",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_tte63slm"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119424",
+    "title": "USS file systems",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_qhwqq81g&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_a441r8zk",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_qhwqq81g"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119079",
+    "title": "Lab - ISHELL and hierarchical file system",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_fabmoily&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_qgroau8a",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_fabmoily"
+    }
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119438",
+    "title": "USS Processes and Permissions",
+    "section": "z/OSMF and UNIX System Services",
+    "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_n310dnox&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_m3c1f71g",
+    "kaltura": {
+      "partnerId": "1773841",
+      "uiconfId": "39954662",
+      "entryId": "1_n310dnox"
+    }
+  }
+]

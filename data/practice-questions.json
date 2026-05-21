@@ -1,0 +1,788 @@
+[
+  {
+    "id": "short-submit-a-job-q1",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：提交工作",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861",
+    "sourceReference": "short-submit-a-job",
+    "prompt": "進入已完成工作的狀態清單後，要在工作左側輸入哪個字母來查看輸出？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "V"
+      },
+      {
+        "id": "b",
+        "text": "S"
+      },
+      {
+        "id": "c",
+        "text": "E"
+      },
+      {
+        "id": "d",
+        "text": "B"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "在 SDSF 這類工作清單中，通常於工作左側輸入 S 來選取並查看輸出。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_87joxm59",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-submit-a-job-q2",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：提交工作",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861",
+    "sourceReference": "short-submit-a-job",
+    "prompt": "MSGLEVEL=(1,1) 表示什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "只有工作異常結束時列出所有訊息"
+      },
+      {
+        "id": "b",
+        "text": "只有工作異常結束時列出 JCL 內部訊息"
+      },
+      {
+        "id": "c",
+        "text": "工作正常或異常結束時都列出所有訊息"
+      },
+      {
+        "id": "d",
+        "text": "工作正常或異常結束時只列出 JOB 相關訊息"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "MSGLEVEL=(1,1) 會要求列出所有 JCL 與配置訊息，且不論工作正常或異常結束都列印訊息。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_87joxm59",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-lab-jcl-exercises-q1",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：JCL 練習",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863",
+    "sourceReference": "short-lab-jcl-exercises",
+    "prompt": "哪個功能會移除 PDS 成員之間無法使用的空間？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "REDUCE"
+      },
+      {
+        "id": "b",
+        "text": "DELETE"
+      },
+      {
+        "id": "c",
+        "text": "REMOVE"
+      },
+      {
+        "id": "d",
+        "text": "COMPRESS"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "COMPRESS 會整理 PDS 中成員刪除或更新後留下的不可用空間。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_qq2x3dnn",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-lab-jcl-exercises-q2",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：JCL 練習",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863",
+    "sourceReference": "short-lab-jcl-exercises",
+    "prompt": "JCL 中要有條件地執行工作步驟時，應使用哪一組敘述結構？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "IF/THEN/ELSE/ENDIF"
+      },
+      {
+        "id": "b",
+        "text": "IF/THEN/MORE/ENDIF"
+      },
+      {
+        "id": "c",
+        "text": "IN/THEN/MORE/ENDIF"
+      },
+      {
+        "id": "d",
+        "text": "IN/THEN/ELSE/ENDIF"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "JCL 使用 IF/THEN/ELSE/ENDIF 控制工作步驟是否執行。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_qq2x3dnn",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-jcl-procedures-q1",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：JCL 程序",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866",
+    "sourceReference": "short-jcl-procedures",
+    "prompt": "資料集內容直接包含在一組 JCL 敘述中時，稱為什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Include data"
+      },
+      {
+        "id": "b",
+        "text": "In-stream data（串流內資料）"
+      },
+      {
+        "id": "c",
+        "text": "DD statements"
+      },
+      {
+        "id": "d",
+        "text": "Continuous data"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "直接放在 JCL 中、由 DD * 或類似方式提供的資料稱為 in-stream data。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_67vf8cdm",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-jcl-procedures-q2",
+    "section": "JES 與 JCL 入門",
+    "lessonSlug": "jes-and-jcl",
+    "lessonTitle": "檢核點：JCL 程序",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866",
+    "sourceReference": "short-jcl-procedures",
+    "prompt": "Static system symbols 有哪兩種類型？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "System-defined 與 Static-defined"
+      },
+      {
+        "id": "b",
+        "text": "System-defined 與 Dynamic-defined"
+      },
+      {
+        "id": "c",
+        "text": "System-defined 與 Installation-defined"
+      },
+      {
+        "id": "d",
+        "text": "System-defined 與 Symbol-defined"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "Static system symbols 分為系統定義與安裝定義兩種。",
+    "review": {
+      "label": "回到JES 與 JCL 入門",
+      "coursePath": "/course/jes-and-jcl",
+      "videoEntryId": "1_67vf8cdm",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-zos-system-libraries-q1",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：z/OS 系統程式庫",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+    "sourceReference": "short-zos-system-libraries",
+    "prompt": "哪個 z/OS 系統資料集是一組包含系統可執行程式碼，也稱為 modules 的程式庫？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "SYS1.LINKLIB"
+      },
+      {
+        "id": "b",
+        "text": "SYS1.PROCLIB"
+      },
+      {
+        "id": "c",
+        "text": "SYS2.LINKLIB"
+      },
+      {
+        "id": "d",
+        "text": "SYS1.PARMLIB"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "SYS1.LINKLIB 包含許多系統可執行模組。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_ll8ls0vj",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-zos-system-libraries-q2",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：z/OS 系統程式庫",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+    "sourceReference": "short-zos-system-libraries",
+    "prompt": "哪個必要的 z/OS PDS 包含用來執行特定系統功能的 JCL procedures？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "SYS1.LPALIB"
+      },
+      {
+        "id": "b",
+        "text": "SYS1.SVCLIB"
+      },
+      {
+        "id": "c",
+        "text": "SYS1.PROCLIB"
+      },
+      {
+        "id": "d",
+        "text": "SYS1.PARMLIB"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "SYS1.PROCLIB 存放系統與工作可使用的 JCL procedures。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_ll8ls0vj",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-zos-system-libraries-q3",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：z/OS 系統程式庫",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+    "sourceReference": "short-zos-system-libraries",
+    "prompt": "z/OS 完成 IPL 後，哪個命令會顯示 SYSRES、IODF 裝置號碼，以及作業系統 release 與 version？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "D IPLDATA"
+      },
+      {
+        "id": "b",
+        "text": "D IPLINFO"
+      },
+      {
+        "id": "c",
+        "text": "D SYSRES"
+      },
+      {
+        "id": "d",
+        "text": "D INFO"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "D IPLINFO 可顯示 IPL 相關資訊，包括 SYSRES、IODF 與系統版本資訊。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_ll8ls0vj",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-language-environment-q1",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：Language Environment",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+    "sourceReference": "short-language-environment",
+    "prompt": "電腦能直接理解的語言稱為什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Machine language（機器語言）"
+      },
+      {
+        "id": "b",
+        "text": "System language"
+      },
+      {
+        "id": "c",
+        "text": "Programming language"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "電腦硬體直接理解的是 machine language。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_6tc3hwx2",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-language-environment-q2",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：Language Environment",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+    "sourceReference": "short-language-environment",
+    "prompt": "下列哪個元件會處理原始碼並產生可執行程式碼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "assembler"
+      },
+      {
+        "id": "b",
+        "text": "interpreter"
+      },
+      {
+        "id": "c",
+        "text": "compiler（編譯器）"
+      },
+      {
+        "id": "d",
+        "text": "runtime"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "Compiler 會將原始碼編譯成可執行程式碼。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_6tc3hwx2",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-language-environment-q3",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：Language Environment",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+    "sourceReference": "short-language-environment",
+    "prompt": "哪一個由 constructs 與 interfaces 組成的系統，為程式語言產品提供共同執行環境與執行時期服務？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Runtime environment"
+      },
+      {
+        "id": "b",
+        "text": "Language Environment"
+      },
+      {
+        "id": "c",
+        "text": "Construct environment"
+      },
+      {
+        "id": "d",
+        "text": "Execution environment"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "IBM Language Environment 提供共同 runtime environment 與 runtime services。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_6tc3hwx2",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-raim-q1",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：RAIM",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436",
+    "sourceReference": "short-raim",
+    "prompt": "IBM Z 伺服器的一個 memory unit 最多包含多少 DIMM？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "最多 8 個"
+      },
+      {
+        "id": "b",
+        "text": "最多 10 個"
+      },
+      {
+        "id": "c",
+        "text": "最多 20 個"
+      },
+      {
+        "id": "d",
+        "text": "最多 5 個"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "本檢核題的正確答案是最多 5 個 DIMM。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_vmpwi0dd",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-raim-q2",
+    "section": "系統程式設計元件",
+    "lessonSlug": "system-programming-components",
+    "lessonTitle": "檢核點：RAIM",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436",
+    "sourceReference": "short-raim",
+    "prompt": "哪個敘述最能描述 RAIM？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "確保記憶體子系統高可用性"
+      },
+      {
+        "id": "b",
+        "text": "RAIM 技術支援 fault-tolerant N+1 設計"
+      },
+      {
+        "id": "c",
+        "text": "以上皆是"
+      },
+      {
+        "id": "d",
+        "text": "RAIM 設計會自動偵測並從故障復原"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "RAIM 涵蓋記憶體子系統的高可用、N+1 容錯與自動偵測復原。",
+    "review": {
+      "label": "回到系統程式設計元件",
+      "coursePath": "/course/system-programming-components",
+      "videoEntryId": "1_vmpwi0dd",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-using-zosmf-q1",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：使用 z/OSMF",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+    "sourceReference": "short-using-zosmf",
+    "prompt": "z/OSMF 是 z/OS 另行計費的功能。",
+    "choices": [
+      {
+        "id": "a",
+        "text": "False（否）"
+      },
+      {
+        "id": "b",
+        "text": "True（是）"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "z/OSMF 不是 z/OS 另行計費的功能。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_2nlec8ir",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-using-zosmf-q2",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：使用 z/OSMF",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+    "sourceReference": "short-using-zosmf",
+    "prompt": "z/OS Management Facility 需要哪些項目？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "z/OS Communications Server"
+      },
+      {
+        "id": "b",
+        "text": "Security definitions (SAF)"
+      },
+      {
+        "id": "c",
+        "text": "Java"
+      },
+      {
+        "id": "d",
+        "text": "以上皆是"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "z/OSMF 需要通訊、安全定義與 Java 等多項條件。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_2nlec8ir",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-using-zosmf-q3",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：使用 z/OSMF",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+    "sourceReference": "short-using-zosmf",
+    "prompt": "z/OSMF 在哪裡執行？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "只在 workstation 上"
+      },
+      {
+        "id": "b",
+        "text": "只在 host 上"
+      },
+      {
+        "id": "c",
+        "text": "需要在使用者 client system 上安裝部分程式碼"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "z/OSMF 在 host 上執行，使用者透過瀏覽器介面連線。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_2nlec8ir",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-using-zosmf-q4",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：使用 z/OSMF",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+    "sourceReference": "short-using-zosmf",
+    "prompt": "下列哪一項不是有效的 z/OSMF 功能？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "使用瀏覽器介面執行 RACF userid 管理"
+      },
+      {
+        "id": "b",
+        "text": "提供 REST API 服務"
+      },
+      {
+        "id": "c",
+        "text": "提供 workflows 簡化工作"
+      },
+      {
+        "id": "d",
+        "text": "透過圖形或表格檢視 sysplex resources"
+      },
+      {
+        "id": "e",
+        "text": "透過網頁介面監控效能資源"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "本題中，不屬於 z/OSMF 功能的是以瀏覽器介面執行 RACF userid 管理。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_2nlec8ir",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-lab-ishell-and-hfs-q1",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：ISHELL 與 HFS Lab",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+    "sourceReference": "short-lab-ishell-and-hfs",
+    "prompt": "UNIX file name 最多允許多少字元？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "8"
+      },
+      {
+        "id": "b",
+        "text": "1023"
+      },
+      {
+        "id": "c",
+        "text": "255"
+      },
+      {
+        "id": "d",
+        "text": "100"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "本檢核題的正確答案是 1023。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_fabmoily",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-lab-ishell-and-hfs-q2",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：ISHELL 與 HFS Lab",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+    "sourceReference": "short-lab-ishell-and-hfs",
+    "prompt": "假設權限以 octal 表示為 -764，請選出正確的類型與權限：",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Directory；owner 有 read/write，group 有 read/write，others 只有 read"
+      },
+      {
+        "id": "b",
+        "text": "Regular file；owner 有 read/write/execute，group 有 execute/write，others 只有 read"
+      },
+      {
+        "id": "c",
+        "text": "Regular file；owner 有 read/write/execute，group 有 read/write，others 只有 read"
+      },
+      {
+        "id": "d",
+        "text": "Regular file；owner 有 read/write/execute，group 有 read/write，others 只有 write"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "- 表示 regular file；764 表示 owner=rwx、group=rw-、others=r--。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_fabmoily",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  },
+  {
+    "id": "short-lab-ishell-and-hfs-q3",
+    "section": "z/OSMF 與 UNIX System Services",
+    "lessonSlug": "zosmf-and-unix-system-services",
+    "lessonTitle": "檢核點：ISHELL 與 HFS Lab",
+    "sourceType": "hvp",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+    "sourceReference": "short-lab-ishell-and-hfs",
+    "prompt": "UNIX 階層中第一個、也是最上層的目錄稱為什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Base"
+      },
+      {
+        "id": "b",
+        "text": "Top"
+      },
+      {
+        "id": "c",
+        "text": "Tree"
+      },
+      {
+        "id": "d",
+        "text": "Root"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "UNIX 階層式檔案系統最上層目錄稱為 root directory。",
+    "review": {
+      "label": "回到z/OSMF 與 UNIX System Services",
+      "coursePath": "/course/zosmf-and-unix-system-services",
+      "videoEntryId": "1_fabmoily",
+      "hint": "回到相關影片、Lab 或檢核點複習這個概念。"
+    }
+  }
+]

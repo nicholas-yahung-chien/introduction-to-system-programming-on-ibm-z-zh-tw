@@ -1,0 +1,122 @@
+[
+  {
+    "id": "exercise-1-access-your-lab-environment",
+    "title": "Exercise 1: Access your lab environment",
+    "titleZh": "練習 1：存取 Lab 環境",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=174896",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "JES 與 JCL 入門",
+    "summary": "練習 1：存取 Lab 環境 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "確認 Lab 環境可用",
+      "取得課程練習所需的系統與 TSO credential"
+    ],
+    "recommendedBefore": [
+      "系統程式設計",
+      "JES 與 JCL 第 1 部分",
+      "JES 與 JCL 第 2 部分"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  },
+  {
+    "id": "exercise-2-submit-a-job",
+    "title": "Exercise 2: Submit a job",
+    "titleZh": "練習 2：提交工作",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175052",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "JES 與 JCL 入門",
+    "summary": "練習 2：提交工作 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "提交批次工作",
+      "查看工作輸出與訊息"
+    ],
+    "recommendedBefore": [
+      "系統程式設計",
+      "JES 與 JCL 第 1 部分",
+      "JES 與 JCL 第 2 部分"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  },
+  {
+    "id": "exercise-3-jcl-exercises",
+    "title": "Exercise 3: JCL exercises",
+    "titleZh": "練習 3：JCL 練習",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175054",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "JES 與 JCL 入門",
+    "summary": "練習 3：JCL 練習 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "練習 JCL 敘述與條件執行",
+      "理解 procedure、DD statement 與資料集關係"
+    ],
+    "recommendedBefore": [
+      "系統程式設計",
+      "JES 與 JCL 第 1 部分",
+      "JES 與 JCL 第 2 部分"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  },
+  {
+    "id": "exercise-4-procedures",
+    "title": "Exercise 4: Procedures",
+    "titleZh": "練習 4：程序",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175055",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "JES 與 JCL 入門",
+    "summary": "練習 4：程序 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "使用與理解 JCL procedure",
+      "辨識可重複使用的工作步驟"
+    ],
+    "recommendedBefore": [
+      "系統程式設計",
+      "JES 與 JCL 第 1 部分",
+      "JES 與 JCL 第 2 部分"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  },
+  {
+    "id": "exercise-5-using-zosmf",
+    "title": "Exercise 5: Using z/OSMF",
+    "titleZh": "練習 5：使用 z/OSMF",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175056",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "z/OSMF 與 UNIX System Services",
+    "summary": "練習 5：使用 z/OSMF 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "使用 z/OSMF 瀏覽器介面",
+      "理解 z/OSMF 在系統管理中的用途"
+    ],
+    "recommendedBefore": [
+      "z/OSMF",
+      "Lab：使用 z/OSMF",
+      "UNIX System Services"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  },
+  {
+    "id": "exercise-6-ishell-and-hierarchical-file-system",
+    "title": "Exercise 6: ISHELL and hierarchical file system",
+    "titleZh": "練習 6：ISHELL 與階層式檔案系統",
+    "type": "Lab",
+    "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175058",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "section": "z/OSMF 與 UNIX System Services",
+    "summary": "練習 6：ISHELL 與階層式檔案系統 需要在 IBM Learn 原課程的 IBM Remote Lab Platform / Skytap 環境中完成。本站保留學習定位與回原活動連結。",
+    "learningPurpose": [
+      "使用 ISHELL 操作 USS 檔案系統",
+      "理解 UNIX 權限與階層式目錄"
+    ],
+    "recommendedBefore": [
+      "z/OSMF",
+      "Lab：使用 z/OSMF",
+      "UNIX System Services"
+    ],
+    "launchGuidance": "此活動需要原 IBM Learn 環境與授權 session。本站不重建 Lab runtime、不保存 credential 或學習者進度。"
+  }
+]

@@ -1,0 +1,543 @@
+{
+  "course": {
+    "id": 7512,
+    "code": "IBM-Z-SYSTEM-PROGRAMMING",
+    "title": "Introduction to System Programming on IBM Z",
+    "titleZh": "IBM Z 系統程式設計入門",
+    "locale": "zh-Hant-TW",
+    "sourceUrl": "https://learn.ibm.com/course/view.php?id=7512",
+    "capturedAt": "2026-05-21T19:02:21.133Z",
+    "sourceNotes": "Captured from IBM Learn with an authenticated session. Public pages keep formal badge quiz, certificate, survey, lab runtime, and learner progress in IBM Learn."
+  },
+  "sections": [
+    {
+      "slug": "jes-and-jcl",
+      "title": "Introduction to JES and JCL",
+      "titleZh": "JES 與 JCL 入門",
+      "activities": [
+        {
+          "type": "video",
+          "slug": "system-programming",
+          "title": "System Programming",
+          "titleZh": "系統程式設計",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119078",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_y7shsh9a"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "jes-and-jcl-part-1",
+          "title": "JES and JCL Part 1",
+          "titleZh": "JES 與 JCL 第 1 部分",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119026",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_ev0bd4j9"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "jes-and-jcl-part-2",
+          "title": "JES and JCL Part 2",
+          "titleZh": "JES 與 JCL 第 2 部分",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119034",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_qq2x3dnn"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "submitting-and-viewing-jcl",
+          "title": "Submitting and Viewing JCL",
+          "titleZh": "提交與查看 JCL",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119076",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_87joxm59"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "page",
+          "slug": "download-exercise-guide-for-this-course",
+          "title": "Download Exercise Guide for this Course",
+          "titleZh": "下載本課程練習指南",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=122859"
+        },
+        {
+          "type": "video",
+          "slug": "lab-familiarization-getting-connected",
+          "title": "Lab Familiarization - Getting Connected",
+          "titleZh": "Lab 熟悉環境：建立連線",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226062",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_599iixml"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "lab-familiarization-terminal-and-password-issues",
+          "title": "Lab Familiarization - Terminal and Password Issues",
+          "titleZh": "Lab 熟悉環境：終端機與密碼問題",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226063",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_jqny88jg"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "page",
+          "slug": "before-starting-the-labs-checklist",
+          "title": "Before starting the labs - Checklist",
+          "titleZh": "開始 Lab 前的檢查清單",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=122860"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-1-access-your-lab-environment",
+          "title": "Exercise 1: Access your lab environment",
+          "titleZh": "練習 1：存取 Lab 環境",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=174896"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-2-submit-a-job",
+          "title": "Exercise 2: Submit a job",
+          "titleZh": "練習 2：提交工作",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175052"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-submit-a-job",
+          "title": "Short : Submit a Job",
+          "titleZh": "檢核點：提交工作",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-3-jcl-exercises",
+          "title": "Exercise 3: JCL exercises",
+          "titleZh": "練習 3：JCL 練習",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175054"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-lab-jcl-exercises",
+          "title": "Short : Lab JCL Exercises",
+          "titleZh": "檢核點：JCL 練習",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863"
+        },
+        {
+          "type": "video",
+          "slug": "jcl-procedures",
+          "title": "JCL Procedures",
+          "titleZh": "JCL 程序",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119067",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_67vf8cdm"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-4-procedures",
+          "title": "Exercise 4: Procedures",
+          "titleZh": "練習 4：程序",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175055"
+        },
+        {
+          "type": "video",
+          "slug": "jcl-tidbits",
+          "title": "JCL Tidbits",
+          "titleZh": "JCL 補充重點",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119033",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_hytagu5v"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-jcl-procedures",
+          "title": "Short : JCL Procedures",
+          "titleZh": "檢核點：JCL 程序",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866"
+        },
+        {
+          "type": "forum",
+          "slug": "discussion-forum",
+          "title": "Discussion forum",
+          "titleZh": "討論區",
+          "sourceUrl": "https://learn.ibm.com/mod/forum/view.php?id=129577"
+        }
+      ]
+    },
+    {
+      "slug": "system-programming-components",
+      "title": "System Programming Components",
+      "titleZh": "系統程式設計元件",
+      "activities": [
+        {
+          "type": "video",
+          "slug": "vsam",
+          "title": "VSAM",
+          "titleZh": "VSAM",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119429",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_9lmq9qq3"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "zos-components",
+          "title": "zOS Components",
+          "titleZh": "z/OS 元件",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119432",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_9urmmmlw"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "zos-system-libraries",
+          "title": "zOS System Libraries",
+          "titleZh": "z/OS 系統程式庫",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119077",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_ll8ls0vj"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-zos-system-libraries",
+          "title": "Short : zOS System Libraries",
+          "titleZh": "檢核點：z/OS 系統程式庫",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438"
+        },
+        {
+          "type": "video",
+          "slug": "application-infrastructure-part-i",
+          "title": "Application Infrastructure Part I",
+          "titleZh": "應用程式基礎架構第 1 部分",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119435",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_zvt102vh"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "application-infrastructure-part-ii",
+          "title": "Application Infrastructure Part II",
+          "titleZh": "應用程式基礎架構第 2 部分",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119433",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_1wa1wszd"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "language-environment",
+          "title": "Language Environment",
+          "titleZh": "Language Environment",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119415",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_6tc3hwx2"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-language-environment",
+          "title": "Short : Language Environment",
+          "titleZh": "檢核點：Language Environment",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434"
+        },
+        {
+          "type": "video",
+          "slug": "generation-data-groups",
+          "title": "Generation data groups",
+          "titleZh": "Generation Data Group",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119426",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_mkn6kr2s"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "raim",
+          "title": "RAIM",
+          "titleZh": "RAIM",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119427",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_vmpwi0dd"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-raim",
+          "title": "Short : RAIM",
+          "titleZh": "檢核點：RAIM",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436"
+        },
+        {
+          "type": "resource",
+          "slug": "ibm-db2-12-for-zos-technical-overview",
+          "title": "IBM DB2 12 for z/OS Technical Overview",
+          "titleZh": "IBM DB2 12 for z/OS Technical Overview",
+          "sourceUrl": "https://learn.ibm.com/mod/resource/view.php?id=122869"
+        },
+        {
+          "type": "video",
+          "slug": "networking",
+          "title": "Networking",
+          "titleZh": "網路",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119446",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_6z54930n"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "utilities",
+          "title": "Utilities",
+          "titleZh": "公用程式",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119431",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_3sl59nke"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "forum",
+          "slug": "discussion-forum",
+          "title": "Discussion forum",
+          "titleZh": "討論區",
+          "sourceUrl": "https://learn.ibm.com/mod/forum/view.php?id=129578"
+        }
+      ]
+    },
+    {
+      "slug": "zosmf-and-unix-system-services",
+      "title": "z/OSMF and UNIX System Services",
+      "titleZh": "z/OSMF 與 UNIX System Services",
+      "activities": [
+        {
+          "type": "video",
+          "slug": "zosmf",
+          "title": "z/OSMF",
+          "titleZh": "z/OSMF",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=329951",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_2nlec8ir"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "lab-using-zosmf",
+          "title": "Lab - Using z/OSMF",
+          "titleZh": "Lab：使用 z/OSMF",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119414",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_7ejss2uv"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-5-using-zosmf",
+          "title": "Exercise 5: Using z/OSMF",
+          "titleZh": "練習 5：使用 z/OSMF",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175056"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-using-zosmf",
+          "title": "Short : Using z/OSMF",
+          "titleZh": "檢核點：使用 z/OSMF",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872"
+        },
+        {
+          "type": "resource",
+          "slug": "ibm-zos-management-facility-v2r3",
+          "title": "IBM z/OS Management Facility V2R3",
+          "titleZh": "IBM z/OS Management Facility V2R3",
+          "sourceUrl": "https://learn.ibm.com/mod/resource/view.php?id=123183"
+        },
+        {
+          "type": "video",
+          "slug": "unix-system-services",
+          "title": "UNIX System Services",
+          "titleZh": "UNIX System Services",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119430",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_tte63slm"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "uss-file-systems",
+          "title": "USS file systems",
+          "titleZh": "USS 檔案系統",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119424",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_qhwqq81g"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "video",
+          "slug": "lab-ishell-and-hierarchical-file-system",
+          "title": "Lab - ISHELL and hierarchical file system",
+          "titleZh": "Lab：ISHELL 與階層式檔案系統",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119079",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_fabmoily"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "lab",
+          "slug": "exercise-6-ishell-and-hierarchical-file-system",
+          "title": "Exercise 6: ISHELL and hierarchical file system",
+          "titleZh": "練習 6：ISHELL 與階層式檔案系統",
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=175058"
+        },
+        {
+          "type": "hvp",
+          "slug": "short-lab-ishell-and-hfs",
+          "title": "Short : Lab ISHELL and HFS",
+          "titleZh": "檢核點：ISHELL 與 HFS Lab",
+          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184"
+        },
+        {
+          "type": "video",
+          "slug": "uss-processes-and-permissions",
+          "title": "USS Processes and Permissions",
+          "titleZh": "USS 程序與權限",
+          "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119438",
+          "kaltura": {
+            "partnerId": "1773841",
+            "uiconfId": "39954662",
+            "entryId": "1_n310dnox"
+          },
+          "mediaStatus": "source-only"
+        },
+        {
+          "type": "forum",
+          "slug": "discussion-forum",
+          "title": "Discussion forum",
+          "titleZh": "討論區",
+          "sourceUrl": "https://learn.ibm.com/mod/forum/view.php?id=129579"
+        }
+      ]
+    },
+    {
+      "slug": "badge-quiz",
+      "title": "Badge Quiz",
+      "titleZh": "徽章測驗",
+      "activities": [
+        {
+          "type": "url",
+          "slug": "create-your-acclaim-account",
+          "title": "Create your Acclaim account",
+          "titleZh": "Create your Acclaim account",
+          "sourceUrl": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "type": "quiz",
+          "slug": "badge-quiz",
+          "title": "Badge quiz",
+          "titleZh": "徽章測驗",
+          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813"
+        },
+        {
+          "type": "certificate",
+          "slug": "course-completion-certificate",
+          "title": "Course completion certificate",
+          "titleZh": "課程完成證書",
+          "sourceUrl": "https://learn.ibm.com/mod/certificate/view.php?id=348817"
+        },
+        {
+          "type": "questionnaire",
+          "slug": "course-survey",
+          "title": "Course survey",
+          "titleZh": "課程問卷",
+          "sourceUrl": "https://learn.ibm.com/mod/questionnaire/view.php?id=118793"
+        }
+      ]
+    },
+    {
+      "slug": "claim-your-practitioner-badge",
+      "title": "Claim your Practitioner Badge",
+      "titleZh": "領取 Practitioner 徽章",
+      "activities": [
+        {
+          "type": "url",
+          "slug": "ibm-zos-mainframe-practitioner-certification-badge",
+          "title": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "titleZh": "IBM z/OS Mainframe Practitioner Certification 徽章",
+          "sourceUrl": "https://learn.ibm.com/mod/url/view.php?id=350666"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1371 @@
+{
+  "capturedAt": "2026-05-21T19:02:21.133Z",
+  "courseId": "7512",
+  "courseUrl": "https://learn.ibm.com/course/view.php?id=7512",
+  "title": "Course: Introduction to System Programming on IBM Z",
+  "h1": "Confirm revalidation",
+  "sections": [
+    {
+      "order": 2,
+      "title": "Introduction to JES and JCL",
+      "activities": [
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 1,
+          "type": "video",
+          "id": "119078",
+          "title": "System Programming",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119078"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 2,
+          "type": "video",
+          "id": "119026",
+          "title": "JES and JCL Part 1",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119026"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 3,
+          "type": "video",
+          "id": "119034",
+          "title": "JES and JCL Part 2",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119034"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 4,
+          "type": "video",
+          "id": "119076",
+          "title": "Submitting and Viewing JCL",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119076"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 5,
+          "type": "page",
+          "id": "122859",
+          "title": "Download Exercise Guide for this Course",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=122859"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 6,
+          "type": "video",
+          "id": "226062",
+          "title": "Lab Familiarization - Getting Connected",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=226062"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 7,
+          "type": "video",
+          "id": "226063",
+          "title": "Lab Familiarization - Terminal and Password Issues",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=226063"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 8,
+          "type": "page",
+          "id": "122860",
+          "title": "Before starting the labs - Checklist",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=122860"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 9,
+          "type": "page",
+          "id": "174896",
+          "title": "Exercise 1: Access your lab environment",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=174896"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 10,
+          "type": "page",
+          "id": "175052",
+          "title": "Exercise 2: Submit a job",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=175052"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 11,
+          "type": "hvp",
+          "id": "122861",
+          "title": "Short : Submit a Job",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=122861"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 12,
+          "type": "page",
+          "id": "175054",
+          "title": "Exercise 3: JCL exercises",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=175054"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 13,
+          "type": "hvp",
+          "id": "122863",
+          "title": "Short : Lab JCL Exercises",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=122863"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 14,
+          "type": "video",
+          "id": "119067",
+          "title": "JCL Procedures",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119067"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 15,
+          "type": "page",
+          "id": "175055",
+          "title": "Exercise 4: Procedures",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=175055"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 16,
+          "type": "video",
+          "id": "119033",
+          "title": "JCL Tidbits",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119033"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 17,
+          "type": "hvp",
+          "id": "122866",
+          "title": "Short : JCL Procedures",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=122866"
+        },
+        {
+          "section": "Introduction to JES and JCL",
+          "order": 18,
+          "type": "forum",
+          "id": "129577",
+          "title": "Discussion forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129577"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "System Programming Components",
+      "activities": [
+        {
+          "section": "System Programming Components",
+          "order": 1,
+          "type": "video",
+          "id": "119429",
+          "title": "VSAM",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119429"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 2,
+          "type": "video",
+          "id": "119432",
+          "title": "zOS Components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119432"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 3,
+          "type": "video",
+          "id": "119077",
+          "title": "zOS System Libraries",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119077"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 4,
+          "type": "hvp",
+          "id": "123438",
+          "title": "Short : zOS System Libraries",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=123438"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 5,
+          "type": "video",
+          "id": "119435",
+          "title": "Application Infrastructure Part I",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119435"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 6,
+          "type": "video",
+          "id": "119433",
+          "title": "Application Infrastructure Part II",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119433"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 7,
+          "type": "video",
+          "id": "119415",
+          "title": "Language Environment",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119415"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 8,
+          "type": "hvp",
+          "id": "123434",
+          "title": "Short : Language Environment",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=123434"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 9,
+          "type": "video",
+          "id": "119426",
+          "title": "Generation data groups",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119426"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 10,
+          "type": "video",
+          "id": "119427",
+          "title": "RAIM",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119427"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 11,
+          "type": "hvp",
+          "id": "123436",
+          "title": "Short : RAIM",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=123436"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 12,
+          "type": "resource",
+          "id": "122869",
+          "title": "IBM DB2 12 for z/OS Technical Overview",
+          "href": "https://learn.ibm.com/mod/resource/view.php?id=122869"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 13,
+          "type": "video",
+          "id": "119446",
+          "title": "Networking",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119446"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 14,
+          "type": "video",
+          "id": "119431",
+          "title": "Utilities",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119431"
+        },
+        {
+          "section": "System Programming Components",
+          "order": 15,
+          "type": "forum",
+          "id": "129578",
+          "title": "Discussion forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129578"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "z/OSMF and UNIX System Services",
+      "activities": [
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 1,
+          "type": "video",
+          "id": "329951",
+          "title": "z/OSMF",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=329951"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 2,
+          "type": "video",
+          "id": "119414",
+          "title": "Lab - Using z/OSMF",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119414"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 3,
+          "type": "page",
+          "id": "175056",
+          "title": "Exercise 5: Using z/OSMF",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=175056"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 4,
+          "type": "hvp",
+          "id": "122872",
+          "title": "Short : Using z/OSMF",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=122872"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 5,
+          "type": "resource",
+          "id": "123183",
+          "title": "IBM z/OS Management Facility V2R3",
+          "href": "https://learn.ibm.com/mod/resource/view.php?id=123183"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 6,
+          "type": "video",
+          "id": "119430",
+          "title": "UNIX System Services",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119430"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 7,
+          "type": "video",
+          "id": "119424",
+          "title": "USS file systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119424"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 8,
+          "type": "video",
+          "id": "119079",
+          "title": "Lab - ISHELL and hierarchical file system",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119079"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 9,
+          "type": "page",
+          "id": "175058",
+          "title": "Exercise 6: ISHELL and hierarchical file system",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=175058"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 10,
+          "type": "hvp",
+          "id": "123184",
+          "title": "Short : Lab ISHELL and HFS",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=123184"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 11,
+          "type": "video",
+          "id": "119438",
+          "title": "USS Processes and Permissions",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=119438"
+        },
+        {
+          "section": "z/OSMF and UNIX System Services",
+          "order": 12,
+          "type": "forum",
+          "id": "129579",
+          "title": "Discussion forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129579"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Badge Quiz",
+      "activities": [
+        {
+          "section": "Badge Quiz",
+          "order": 1,
+          "type": "url",
+          "id": "",
+          "title": "Create your Acclaim account",
+          "href": ""
+        },
+        {
+          "section": "Badge Quiz",
+          "order": 2,
+          "type": "label",
+          "id": "",
+          "title": "This quiz consists of 20 questions and requires a passing score of 16 correct answers. You are granted 2 attempts to pass the quiz, and will then need to wait 3 days before trying again. There are no limits on your total number of attempts.",
+          "href": ""
+        },
+        {
+          "section": "Badge Quiz",
+          "order": 3,
+          "type": "quiz",
+          "id": "348813",
+          "title": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348813"
+        },
+        {
+          "section": "Badge Quiz",
+          "order": 4,
+          "type": "label",
+          "id": "",
+          "title": "Congratulations! You have completed the requirements for this badge. You should receive an email from Credly momentarily with instructions for claiming your badge. Or, you may visit Credly.com to login and collect your badge!",
+          "href": ""
+        },
+        {
+          "section": "Badge Quiz",
+          "order": 5,
+          "type": "certificate",
+          "id": "348817",
+          "title": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348817"
+        },
+        {
+          "section": "Badge Quiz",
+          "order": 6,
+          "type": "questionnaire",
+          "id": "118793",
+          "title": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=118793"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Claim your Practitioner Badge",
+      "activities": [
+        {
+          "section": "Claim your Practitioner Badge",
+          "order": 1,
+          "type": "label",
+          "id": "",
+          "title": "Successfully complete all threes courses in this Learning Journey to claim your IBM z/OS Mainframe Practitioner Certification badge:Introduction to IBM z/OS Mainframe (Course 1 of 3)Introduction to z/OS Commands and Panels on IBM Z (Course 2 of 3 )Introduction to System Programming on IBM Z (Course 3 of 3)After completing all 3 courses and corresponding badges, go here to earn the z/OS Mainframe Practitioner Certification badge:IBM z/OS Mainframe Practitioner Certification BadgeThank you for using the IBM TechXchange Training!",
+          "href": ""
+        },
+        {
+          "section": "Claim your Practitioner Badge",
+          "order": 2,
+          "type": "url",
+          "id": "350666",
+          "title": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350666"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119078",
+      "title": "System Programming",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_y7shsh9a&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_c7biqdp2",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_y7shsh9a"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119026",
+      "title": "JES and JCL Part 1",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_ev0bd4j9&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_9gdcqcsx",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_ev0bd4j9"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119034",
+      "title": "JES and JCL Part 2",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_qq2x3dnn&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_ntn2xxn4",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_qq2x3dnn"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119076",
+      "title": "Submitting and Viewing JCL",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_87joxm59&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_5lz0ym9u",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_87joxm59"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226062",
+      "title": "Lab Familiarization - Getting Connected",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_599iixml&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_wia0a5eg",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_599iixml"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=226063",
+      "title": "Lab Familiarization - Terminal and Password Issues",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_jqny88jg&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_kv0tinrt",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_jqny88jg"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119067",
+      "title": "JCL Procedures",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_67vf8cdm&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_72jebvag",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_67vf8cdm"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119033",
+      "title": "JCL Tidbits",
+      "section": "Introduction to JES and JCL",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_hytagu5v&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_6m6q2lhw",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_hytagu5v"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119429",
+      "title": "VSAM",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_9lmq9qq3&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_u3l3iogf",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_9lmq9qq3"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119432",
+      "title": "zOS Components",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_9urmmmlw&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_e7j7xrn6",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_9urmmmlw"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119077",
+      "title": "zOS System Libraries",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_ll8ls0vj&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_hnl5xkde",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_ll8ls0vj"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119435",
+      "title": "Application Infrastructure Part I",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_zvt102vh&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_s35s5h04",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_zvt102vh"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119433",
+      "title": "Application Infrastructure Part II",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_1wa1wszd&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_f3xrehi8",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_1wa1wszd"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119415",
+      "title": "Language Environment",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_6tc3hwx2&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_j6m2nwzd",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_6tc3hwx2"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119426",
+      "title": "Generation data groups",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_mkn6kr2s&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_fdrfme62",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_mkn6kr2s"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119427",
+      "title": "RAIM",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_vmpwi0dd&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_u6e5hnb6",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_vmpwi0dd"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119446",
+      "title": "Networking",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_6z54930n&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_sknel7pv",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_6z54930n"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119431",
+      "title": "Utilities",
+      "section": "System Programming Components",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_3sl59nke&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_t5fdwi6j",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_3sl59nke"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=329951",
+      "title": "z/OSMF",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_2nlec8ir",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_2nlec8ir"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119414",
+      "title": "Lab - Using z/OSMF",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_7ejss2uv&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_s7m2dabi",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_7ejss2uv"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119430",
+      "title": "UNIX System Services",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_tte63slm&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_t1wp7vuq",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_tte63slm"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119424",
+      "title": "USS file systems",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_qhwqq81g&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_a441r8zk",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_qhwqq81g"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119079",
+      "title": "Lab - ISHELL and hierarchical file system",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_fabmoily&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_qgroau8a",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_fabmoily"
+      }
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=119438",
+      "title": "USS Processes and Permissions",
+      "section": "z/OSMF and UNIX System Services",
+      "iframeSrc": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_n310dnox&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_m3c1f71g",
+      "kaltura": {
+        "partnerId": "1773841",
+        "uiconfId": "39954662",
+        "entryId": "1_n310dnox"
+      }
+    }
+  ],
+  "hvp": [
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861",
+      "title": "Short : Submit a Job",
+      "section": "Introduction to JES and JCL",
+      "library": "H5P.QuestionSet 1.20",
+      "questions": [
+        {
+          "prompt": "After accessing the status of completed jobs, what is entered to the left of the job to view its output?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "V",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "S",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "E",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "B",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "What does MSGLEVEL=(1,1) indicate?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "All messages when JOB ended unsuccessfully",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Only JCL internal messages when JOB ended unsuccessfully",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "All messages when JOB ended either normally or abnormally",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "Only JOB related messages when JOB ended either normally or abnormally",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863",
+      "title": "Short : Lab JCL Exercises",
+      "section": "Introduction to JES and JCL",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "What is the function which will remove unusable spaces between members within a PDS?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "REDUCE",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "DELETE",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "REMOVE",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "COMPRESS",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "prompt": "Which JCL statement construct is used to conditionally execute job steps within a job?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "IF/THEN/ELSE/ENDIF",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "IF/THEN/MORE/ENDIF",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "IN/THEN/MORE/ENDIF",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "IN/THEN/ELSE/ENDIF",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866",
+      "title": "Short : JCL Procedures",
+      "section": "Introduction to JES and JCL",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "What is it called when a data set or data sets are contained within a set of JCL statements?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Include data",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "In-stream data",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "DD Statements",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Continous data",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "What are the two types of static system symbols?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "System-defined and Static-defined",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "System-defined and Dynamic-defined",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "System-defined and Installation-defined",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "System-defined and Symbol-defined",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+      "title": "Short : zOS System Libraries",
+      "section": "System Programming Components",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "Which z/OS system data set is a collection of libraries containing system executable code also referred to as modules?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "SYS1.LINKLIB",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "SYS1.PROCLIB",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "SYS2.LINKLIB",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "SYS1.PARMLIB",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "Which required z/OS PDS contains JCL procedures used to perform certain system functions?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "SYS1.LPALIB",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "SYS1.SVCLIB",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "SYS1.PROCLIB",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "SYS1.PARMLIB",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "After the z/OS operating system is IPLed, which command will provide the SYSRES and IODF device number, along with the operating system release and version?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "D IPLDATA",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "D IPLINFO",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "D SYSRES",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "D INFO",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+      "title": "Short : Language Environment",
+      "section": "System Programming Components",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "What is the name of the language that computers understand? &nbsp;",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Machine Language",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "System Language",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Programming Language",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "Which of the following components are run on the source code and produce executable code ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "assembler",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "interpreter",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "compiler",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "runtime",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "What is a system of constructs and interfaces that provides a common runtime environment and runtime services for programming language products?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Runtime environment",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Language environment",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Construct environment",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Execution environment",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436",
+      "title": "Short : RAIM",
+      "section": "System Programming Components",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "How many DIMMs are in one memory unit for IBM Z servers?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Up to 8",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Up to 10",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Up to 20",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Up to 5",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "prompt": "Select the statement(s) which best describe RAIM?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ensures high availability in the memory subsystem2",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "RAIM technology supports fault tolerant N+1 design",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "All",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "RAIM design automatically detects and recovers from failures",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+      "title": "Short : Using z/OSMF",
+      "section": "z/OSMF and UNIX System Services",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "z/OSMF is a separate chargeable feature of z/OS",
+          "choices": [
+            {
+              "id": "a",
+              "text": "False",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "True",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "The z/OS Management Facility requires:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "z/OS Communications Server",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Security definitions (SAF)",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Java",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "All of these options",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "prompt": "z/OSMF runs...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "on the workstation only",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "on the host only",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "requires some code on the users client system",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "Which of the following is not a valid z/OSMF function",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Perform RACF userid management with a browser interface",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Implement (REST) APIs which allows easy-to-use services that are language- and platform-independent, stateless, scalable, and easily parsed",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Implement Workflows to simplify programmer tasks",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Implement Sysplex Management through graphic or table views into sysplex resources",
+              "correct": false
+            },
+            {
+              "id": "e",
+              "text": "Implement performance resource monitoring through a web-based user interface",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+      "title": "Short : Lab ISHELL and HFS",
+      "section": "z/OSMF and UNIX System Services",
+      "library": "H5P.QuestionSet 1.17",
+      "questions": [
+        {
+          "prompt": "What is the maximum characters allowed in as UNIX file name?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "8",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "1023",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "255",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "100",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "Assuming an octal of -764, select the correct type and permissions:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Directory, owner has read and write access, group has read and write access, and others have read only access",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Regular file, owner has read, write, and execute access, group has execute and write access, and others have read only access",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Regular file, owner has read, write, and execute access, group has read and write access, and others have read only access",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "Regular file, owner has read, write, and execute access, group has read and write access, and others have write only access",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "prompt": "What is the name of the directory which is the first or top most directory in a UNIX hierarchy?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Base",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Top",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Tree",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Root",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 5,
+      "type": "page",
+      "id": "122859",
+      "title": "Download Exercise Guide for this Course",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=122859"
+    },
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 8,
+      "type": "page",
+      "id": "122860",
+      "title": "Before starting the labs - Checklist",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=122860"
+    },
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 9,
+      "type": "page",
+      "id": "174896",
+      "title": "Exercise 1: Access your lab environment",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=174896"
+    },
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 10,
+      "type": "page",
+      "id": "175052",
+      "title": "Exercise 2: Submit a job",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=175052"
+    },
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 12,
+      "type": "page",
+      "id": "175054",
+      "title": "Exercise 3: JCL exercises",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=175054"
+    },
+    {
+      "section": "Introduction to JES and JCL",
+      "order": 15,
+      "type": "page",
+      "id": "175055",
+      "title": "Exercise 4: Procedures",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=175055"
+    },
+    {
+      "section": "z/OSMF and UNIX System Services",
+      "order": 3,
+      "type": "page",
+      "id": "175056",
+      "title": "Exercise 5: Using z/OSMF",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=175056"
+    },
+    {
+      "section": "z/OSMF and UNIX System Services",
+      "order": 9,
+      "type": "page",
+      "id": "175058",
+      "title": "Exercise 6: ISHELL and hierarchical file system",
+      "href": "https://learn.ibm.com/mod/page/view.php?id=175058"
+    }
+  ]
+}

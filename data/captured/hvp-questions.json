@@ -1,0 +1,576 @@
+[
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861",
+    "title": "Short : Submit a Job",
+    "section": "Introduction to JES and JCL",
+    "library": "H5P.QuestionSet 1.20",
+    "questions": [
+      {
+        "prompt": "After accessing the status of completed jobs, what is entered to the left of the job to view its output?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "V",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "S",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "E",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "B",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "What does MSGLEVEL=(1,1) indicate?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "All messages when JOB ended unsuccessfully",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Only JCL internal messages when JOB ended unsuccessfully",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "All messages when JOB ended either normally or abnormally",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Only JOB related messages when JOB ended either normally or abnormally",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863",
+    "title": "Short : Lab JCL Exercises",
+    "section": "Introduction to JES and JCL",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "What is the function which will remove unusable spaces between members within a PDS?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "REDUCE",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "DELETE",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "REMOVE",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "COMPRESS",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "prompt": "Which JCL statement construct is used to conditionally execute job steps within a job?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "IF/THEN/ELSE/ENDIF",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "IF/THEN/MORE/ENDIF",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "IN/THEN/MORE/ENDIF",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "IN/THEN/ELSE/ENDIF",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866",
+    "title": "Short : JCL Procedures",
+    "section": "Introduction to JES and JCL",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "What is it called when a data set or data sets are contained within a set of JCL statements?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Include data",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "In-stream data",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "DD Statements",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Continous data",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "What are the two types of static system symbols?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "System-defined and Static-defined",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "System-defined and Dynamic-defined",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "System-defined and Installation-defined",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "System-defined and Symbol-defined",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+    "title": "Short : zOS System Libraries",
+    "section": "System Programming Components",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "Which z/OS system data set is a collection of libraries containing system executable code also referred to as modules?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "SYS1.LINKLIB",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "SYS1.PROCLIB",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "SYS2.LINKLIB",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "SYS1.PARMLIB",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "Which required z/OS PDS contains JCL procedures used to perform certain system functions?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "SYS1.LPALIB",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "SYS1.SVCLIB",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "SYS1.PROCLIB",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "SYS1.PARMLIB",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "After the z/OS operating system is IPLed, which command will provide the SYSRES and IODF device number, along with the operating system release and version?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "D IPLDATA",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "D IPLINFO",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "D SYSRES",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "D INFO",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+    "title": "Short : Language Environment",
+    "section": "System Programming Components",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "What is the name of the language that computers understand? &nbsp;",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Machine Language",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "System Language",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Programming Language",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "Which of the following components are run on the source code and produce executable code ?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "assembler",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "interpreter",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "compiler",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "runtime",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "What is a system of constructs and interfaces that provides a common runtime environment and runtime services for programming language products?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Runtime environment",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Language environment",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Construct environment",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Execution environment",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436",
+    "title": "Short : RAIM",
+    "section": "System Programming Components",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "How many DIMMs are in one memory unit for IBM Z servers?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Up to 8",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Up to 10",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Up to 20",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Up to 5",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "prompt": "Select the statement(s) which best describe RAIM?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Ensures high availability in the memory subsystem2",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "RAIM technology supports fault tolerant N+1 design",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "All",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "RAIM design automatically detects and recovers from failures",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+    "title": "Short : Using z/OSMF",
+    "section": "z/OSMF and UNIX System Services",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "z/OSMF is a separate chargeable feature of z/OS",
+        "choices": [
+          {
+            "id": "a",
+            "text": "False",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "True",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "The z/OS Management Facility requires:",
+        "choices": [
+          {
+            "id": "a",
+            "text": "z/OS Communications Server",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Security definitions (SAF)",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Java",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "All of these options",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "prompt": "z/OSMF runs...",
+        "choices": [
+          {
+            "id": "a",
+            "text": "on the workstation only",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "on the host only",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "requires some code on the users client system",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "Which of the following is not a valid z/OSMF function",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Perform RACF userid management with a browser interface",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Implement (REST) APIs which allows easy-to-use services that are language- and platform-independent, stateless, scalable, and easily parsed",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Implement Workflows to simplify programmer tasks",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Implement Sysplex Management through graphic or table views into sysplex resources",
+            "correct": false
+          },
+          {
+            "id": "e",
+            "text": "Implement performance resource monitoring through a web-based user interface",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+    "title": "Short : Lab ISHELL and HFS",
+    "section": "z/OSMF and UNIX System Services",
+    "library": "H5P.QuestionSet 1.17",
+    "questions": [
+      {
+        "prompt": "What is the maximum characters allowed in as UNIX file name?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "8",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "1023",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "255",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "100",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "Assuming an octal of -764, select the correct type and permissions:",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Directory, owner has read and write access, group has read and write access, and others have read only access",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Regular file, owner has read, write, and execute access, group has execute and write access, and others have read only access",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Regular file, owner has read, write, and execute access, group has read and write access, and others have read only access",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Regular file, owner has read, write, and execute access, group has read and write access, and others have write only access",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "prompt": "What is the name of the directory which is the first or top most directory in a UNIX hierarchy?",
+        "choices": [
+          {
+            "id": "a",
+            "text": "Base",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Top",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Tree",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Root",
+            "correct": true
+          }
+        ]
+      }
+    ]
+  }
+]

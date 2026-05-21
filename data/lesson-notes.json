@@ -1,0 +1,325 @@
+{
+  "system-programming": {
+    "summary": "系統程式設計 這段學習協助學習者理解 System Programming 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "jes-and-jcl-part-1": {
+    "summary": "JES 與 JCL 第 1 部分 這段學習協助學習者理解 JES and JCL Part 1 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "jes-and-jcl-part-2": {
+    "summary": "JES 與 JCL 第 2 部分 這段學習協助學習者理解 JES and JCL Part 2 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "submitting-and-viewing-jcl": {
+    "summary": "提交與查看 JCL 這段學習協助學習者理解 Submitting and Viewing JCL 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "lab-familiarization-getting-connected": {
+    "summary": "Lab 熟悉環境：建立連線 這段學習協助學習者理解 Lab Familiarization - Getting Connected 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "IBM Z",
+      "z/OS"
+    ]
+  },
+  "lab-familiarization-terminal-and-password-issues": {
+    "summary": "Lab 熟悉環境：終端機與密碼問題 這段學習協助學習者理解 Lab Familiarization - Terminal and Password Issues 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "IBM Z",
+      "z/OS"
+    ]
+  },
+  "jcl-procedures": {
+    "summary": "JCL 程序 這段學習協助學習者理解 JCL Procedures 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "jcl-tidbits": {
+    "summary": "JCL 補充重點 這段學習協助學習者理解 JCL Tidbits 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "JES",
+      "JCL",
+      "JOB statement",
+      "Procedure"
+    ]
+  },
+  "vsam": {
+    "summary": "VSAM 這段學習協助學習者理解 VSAM 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "VSAM",
+      "Data set",
+      "Access method"
+    ]
+  },
+  "zos-components": {
+    "summary": "z/OS 元件 這段學習協助學習者理解 zOS Components 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "SYS1.LINKLIB",
+      "SYS1.PROCLIB",
+      "SYS1.PARMLIB",
+      "IPL"
+    ]
+  },
+  "zos-system-libraries": {
+    "summary": "z/OS 系統程式庫 這段學習協助學習者理解 zOS System Libraries 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "SYS1.LINKLIB",
+      "SYS1.PROCLIB",
+      "SYS1.PARMLIB",
+      "IPL"
+    ]
+  },
+  "application-infrastructure-part-i": {
+    "summary": "應用程式基礎架構第 1 部分 這段學習協助學習者理解 Application Infrastructure Part I 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "Application Infrastructure",
+      "Language Environment",
+      "Compiler",
+      "Runtime"
+    ]
+  },
+  "application-infrastructure-part-ii": {
+    "summary": "應用程式基礎架構第 2 部分 這段學習協助學習者理解 Application Infrastructure Part II 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "Application Infrastructure",
+      "Language Environment",
+      "Compiler",
+      "Runtime"
+    ]
+  },
+  "language-environment": {
+    "summary": "Language Environment 這段學習協助學習者理解 Language Environment 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "Application Infrastructure",
+      "Language Environment",
+      "Compiler",
+      "Runtime"
+    ]
+  },
+  "generation-data-groups": {
+    "summary": "Generation Data Group 這段學習協助學習者理解 Generation data groups 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "Generation Data Group",
+      "GDG"
+    ]
+  },
+  "raim": {
+    "summary": "RAIM 這段學習協助學習者理解 RAIM 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "RAIM",
+      "DIMM",
+      "Memory subsystem"
+    ]
+  },
+  "networking": {
+    "summary": "網路 這段學習協助學習者理解 Networking 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "TCP/IP",
+      "Communications Server"
+    ]
+  },
+  "utilities": {
+    "summary": "公用程式 這段學習協助學習者理解 Utilities 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "Utility",
+      "IDCAMS",
+      "SORT"
+    ]
+  },
+  "zosmf": {
+    "summary": "z/OSMF 這段學習協助學習者理解 z/OSMF 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "z/OSMF",
+      "REST API",
+      "Workflow"
+    ]
+  },
+  "lab-using-zosmf": {
+    "summary": "Lab：使用 z/OSMF 這段學習協助學習者理解 Lab - Using z/OSMF 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "z/OSMF",
+      "REST API",
+      "Workflow"
+    ]
+  },
+  "unix-system-services": {
+    "summary": "UNIX System Services 這段學習協助學習者理解 UNIX System Services 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "UNIX System Services",
+      "ISHELL",
+      "HFS",
+      "Permission"
+    ]
+  },
+  "uss-file-systems": {
+    "summary": "USS 檔案系統 這段學習協助學習者理解 USS file systems 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "UNIX System Services",
+      "ISHELL",
+      "HFS",
+      "Permission"
+    ]
+  },
+  "lab-ishell-and-hierarchical-file-system": {
+    "summary": "Lab：ISHELL 與階層式檔案系統 這段學習協助學習者理解 Lab - ISHELL and hierarchical file system 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "UNIX System Services",
+      "ISHELL",
+      "HFS",
+      "Permission"
+    ]
+  },
+  "uss-processes-and-permissions": {
+    "summary": "USS 程序與權限 這段學習協助學習者理解 USS Processes and Permissions 在 z/OS 系統程式設計工作中的角色，並把概念連回原課程的影片與 Lab 順序。",
+    "keyPoints": [
+      "先掌握此主題在系統程式設計工作流中的定位。",
+      "留意影片中出現的 z/OS 專有名詞、資料集名稱與命令語法。",
+      "看完後回到對應 Lab 或檢核點確認操作概念。"
+    ],
+    "terms": [
+      "UNIX System Services",
+      "ISHELL",
+      "HFS",
+      "Permission"
+    ]
+  }
+}

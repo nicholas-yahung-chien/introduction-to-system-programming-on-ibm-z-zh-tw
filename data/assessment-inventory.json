@@ -1,0 +1,91 @@
+{
+  "summary": {
+    "staticPracticeQuestions": 21,
+    "staticPracticeSources": 8,
+    "badgeQuizQuestionsPerAttempt": 20,
+    "badgeQuizCapturedUniqueQuestions": 0,
+    "labPages": 6
+  },
+  "sources": [
+    {
+      "id": "short-submit-a-job",
+      "title": "Short : Submit a Job",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122861",
+      "sectionSlug": "jes-and-jcl",
+      "sectionTitle": "JES 與 JCL 入門",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-lab-jcl-exercises",
+      "title": "Short : Lab JCL Exercises",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122863",
+      "sectionSlug": "jes-and-jcl",
+      "sectionTitle": "JES 與 JCL 入門",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-jcl-procedures",
+      "title": "Short : JCL Procedures",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122866",
+      "sectionSlug": "jes-and-jcl",
+      "sectionTitle": "JES 與 JCL 入門",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-zos-system-libraries",
+      "title": "Short : zOS System Libraries",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123438",
+      "sectionSlug": "system-programming-components",
+      "sectionTitle": "系統程式設計元件",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-language-environment",
+      "title": "Short : Language Environment",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123434",
+      "sectionSlug": "system-programming-components",
+      "sectionTitle": "系統程式設計元件",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-raim",
+      "title": "Short : RAIM",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123436",
+      "sectionSlug": "system-programming-components",
+      "sectionTitle": "系統程式設計元件",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-using-zosmf",
+      "title": "Short : Using z/OSMF",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=122872",
+      "sectionSlug": "zosmf-and-unix-system-services",
+      "sectionTitle": "z/OSMF 與 UNIX System Services",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    },
+    {
+      "id": "short-lab-ishell-and-hfs",
+      "title": "Short : Lab ISHELL and HFS",
+      "type": "hvp",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=123184",
+      "sectionSlug": "zosmf-and-unix-system-services",
+      "sectionTitle": "z/OSMF 與 UNIX System Services",
+      "status": "captured",
+      "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "sections": 5,
+    "activities": 53,
+    "videos": 24,
+    "labs": 6,
+    "hvpActivities": 8,
+    "staticPracticeQuestions": 21
+  },
+  "liveCounts": {
+    "certificate": 1,
+    "forum": 3,
+    "hvp": 8,
+    "label": 3,
+    "page": 8,
+    "questionnaire": 1,
+    "quiz": 1,
+    "resource": 2,
+    "url": 2,
+    "video": 24
+  },
+  "sections": [
+    {
+      "title": "Introduction to JES and JCL",
+      "activityCount": 18
+    },
+    {
+      "title": "System Programming Components",
+      "activityCount": 15
+    },
+    {
+      "title": "z/OSMF and UNIX System Services",
+      "activityCount": 12
+    },
+    {
+      "title": "Badge Quiz",
+      "activityCount": 6
+    },
+    {
+      "title": "Claim your Practitioner Badge",
+      "activityCount": 2
+    }
+  ]
+}
