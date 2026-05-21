@@ -269,6 +269,10 @@ const sourceMeta = [
   ['short-lab-ishell-and-hfs', 'Short : Lab ISHELL and HFS', 'hvp'],
 ]
 
+function practiceLessonTitle(value) {
+  return (titleZhByActivity.get(value) || value).replace(/^檢核點：/, '')
+}
+
 const hvpByTitle = new Map((captured.hvp || []).filter(Boolean).map((item) => [item.title, item]))
 const sourceInventory = {
   sources: sourceMeta.map(([id, title, type]) => {
@@ -301,7 +305,7 @@ for (const [sourceReference, title] of sourceMeta.map(([id, title]) => [id, titl
       id: `${sourceReference}-q${questionIndex + 1}`,
       section: titleZhBySection.get(source.section) || source.section,
       lessonSlug: slugBySection.get(source.section) || '',
-      lessonTitle: titleZhByActivity.get(source.title) || source.title,
+      lessonTitle: practiceLessonTitle(source.title),
       sourceType: 'hvp',
       sourceUrl: source.sourceUrl,
       sourceReference,

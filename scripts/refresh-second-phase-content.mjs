@@ -53,7 +53,7 @@ function badgeQuestion([id, lessonSlug, lessonTitle, coursePath, videoEntryId, p
     id,
     section: sectionByLessonSlug.get(lessonSlug),
     lessonSlug,
-    lessonTitle,
+    lessonTitle: normalizePracticeLabel(lessonTitle),
     sourceType: 'moodle-quiz',
     sourceUrl: quizUrl,
     sourceReference: sourceId,
@@ -68,6 +68,25 @@ function badgeQuestion([id, lessonSlug, lessonTitle, coursePath, videoEntryId, p
       hint: `這是正式 Badge Quiz 範圍的第 ${String(index + 1).padStart(2, '0')} 個改寫練習；建議回到對應單元重新整理概念。`,
     },
   }
+}
+
+function normalizePracticeLabel(value) {
+  const label = value
+    .replace(/^檢核點：/, '')
+    .replace(/\s*綜合回顧$/u, '')
+
+  const labelOverrides = new Map([
+    ['Language Environment', '語言環境 (Language Environment)'],
+    ['RAIM', 'RAIM 記憶體可靠性'],
+    ['z/OSMF', 'z/OSMF 管理介面'],
+    ['USS', 'USS UNIX 系統服務'],
+    ['GDG', 'GDG 世代資料群組'],
+    ['JES', 'JES 工作輸入子系統'],
+    ['JCL Symbol', 'JCL 符號'],
+    ['JCL Procedure', 'JCL 程序'],
+  ])
+
+  return labelOverrides.get(label) || label
 }
 
 async function write(file, text) {
@@ -466,7 +485,12 @@ await write('handoff/course-site-implementation-framework.md', `# IBM Learn 課�
 `)
 
 const practiceQuestions = JSON.parse(await readFile('data/practice-questions.json', 'utf8'))
-const retained = practiceQuestions.filter((question) => ![sourceId, previousBadgeSourceId].includes(question.sourceReference))
+const retained = practiceQuestions
+  .filter((question) => ![sourceId, previousBadgeSourceId].includes(question.sourceReference))
+  .map((question) => ({
+    ...question,
+    lessonTitle: normalizePracticeLabel(question.lessonTitle),
+  }))
 const badgeQuestions = badgeItems.map(badgeQuestion)
 await writeFile('data/practice-questions.json', `${JSON.stringify([...retained, ...badgeQuestions], null, 2)}\n`, 'utf8')
 

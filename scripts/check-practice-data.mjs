@@ -60,6 +60,14 @@ if (Array.isArray(questions)) {
       }
     }
 
+    if (question.lessonTitle?.startsWith('檢核點：')) {
+      findings.push(`${label}: lessonTitle must not include the checkpoint label prefix; keep "檢核點 N" in sourceLabels only.`)
+    }
+
+    if (question.lessonTitle?.includes('綜合回顧')) {
+      findings.push(`${label}: lessonTitle must not include "綜合回顧"; keep that label in sourceLabels only.`)
+    }
+
     if (questionIds.has(question.id)) findings.push(`${label}: duplicate question id.`)
     if (question.id) questionIds.add(question.id)
 
