@@ -1,0 +1,89 @@
+WEBVTT
+
+1
+00:00:03.310 --> 00:00:12.310
+All of the hardware, infrastructure, and everything beyond and in between is there to support the programs that people run on their mainframes.
+
+2
+00:00:12.310 --> 00:00:17.310
+Most companies have applications they have developed to meet their own unique business needs.
+
+3
+00:00:17.310 --> 00:00:25.310
+The mainframe supports a number of languages, including those you may think of as mainframe-specific, like COBOL, Fortran, and PL-1,
+
+4
+00:00:25.310 --> 00:00:35.310
+to more industry-standard languages like Assembler, C, C++, and Java, and right on up to some of the newer, hotter languages like Python, Swift, and Node.js.
+
+5
+00:00:35.310 --> 00:00:45.310
+Each programming language has its own set of strengths, and ideally you don't just choose a programming language because it's the one you know, or it's the one the platform supports.
+
+6
+00:00:45.310 --> 00:00:51.310
+For that reason, it's important that ZOS be able to support whatever someone wants to use for their work.
+
+7
+00:00:52.310 --> 00:00:54.310
+Let's do a quick quiz before moving on.
+
+8
+00:00:54.310 --> 00:00:59.310
+Select all of the programming languages that you think run on the mainframe.
+
+9
+00:00:59.310 --> 00:01:04.310
+The correct answer is all of the languages listed except CrumeML.
+
+10
+00:01:04.310 --> 00:01:13.310
+ZOS does not yet provide support for CrumeML, probably because it's something we just made up like five minutes before recording this video.
+
+11
+00:01:13.310 --> 00:01:18.310
+But pretty much anything else that you'd expect to have support for, it's in there.
+
+12
+00:01:18.310 --> 00:01:24.310
+No matter what language you use, it needs to get turned into machine language so the computer can understand it.
+
+13
+00:01:24.310 --> 00:01:27.310
+This is done either through compiling or interpreting.
+
+14
+00:01:27.310 --> 00:01:39.310
+In a compiled language, which we've talked about a little bit before, a compiler is run on the source code and the output is executable code that can run pretty much by itself on the target platform.
+
+15
+00:01:40.310 --> 00:01:50.310
+An interpreted language uses an interpreter to figure out what needs to be done for the program at runtime and interfaces with the operating system on its behalf.
+
+16
+00:01:50.310 --> 00:02:01.310
+On ZOS, there is this concept of a language environment and the reason we have it is to provide a common environment for all participating high-level languages or HLLs.
+
+17
+00:02:01.310 --> 00:02:11.310
+So before a language environment, which everyone just calls LA, every language had its own area and its own slightly unique way of doing things.
+
+18
+00:02:11.310 --> 00:02:20.310
+Not only was this tricky to keep track of, it also meant that if you were supporting four languages, you were supporting four different environments and that's just not fun.
+
+19
+00:02:21.310 --> 00:02:31.310
+So, LE lets us combine all of that into one area, which has a uniform way of managing storage, reading and writing data, and performing mathematical calculations.
+
+20
+00:02:31.310 --> 00:02:46.310
+As a result, it reduces the need for compilers to generate unique code, it shields the languages from having to have deep knowledge of the operating system and hardware, and it cuts down on the need to recompile and relink code for fixes.
+
+21
+00:02:46.310 --> 00:02:55.310
+Now, not all languages on ZOS use the language environment, and not all languages that use the language environment are said to be LE compliant.
+
+22
+00:02:55.310 --> 00:03:05.310
+It's just kind of the way things have evolved over time, but when you do run something that deals with LE, now you know a little more about the why, the what, and the how.

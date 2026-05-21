@@ -20,7 +20,65 @@
 
 ## 影片
 
+<VideoLesson
+  title="z/OSMF"
+  entry-id="1_2nlec8ir"
+  video-src="/media/zosmf.mp4"
+  subtitle-src="/subtitles/zosmf.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=329951"
+/>
 
+<LessonNotes slug="zosmf" />
+
+<VideoLesson
+  title="Lab：使用 z/OSMF"
+  entry-id="1_7ejss2uv"
+  video-src="/media/lab-using-zosmf.mp4"
+  subtitle-src="/subtitles/lab-using-zosmf.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119414"
+/>
+
+<LessonNotes slug="lab-using-zosmf" />
+
+<VideoLesson
+  title="UNIX System Services"
+  entry-id="1_tte63slm"
+  video-src="/media/unix-system-services.mp4"
+  subtitle-src="/subtitles/unix-system-services.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119430"
+/>
+
+<LessonNotes slug="unix-system-services" />
+
+<VideoLesson
+  title="USS 檔案系統"
+  entry-id="1_qhwqq81g"
+  video-src="/media/uss-file-systems.mp4"
+  subtitle-src="/subtitles/uss-file-systems.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119424"
+/>
+
+<LessonNotes slug="uss-file-systems" />
+
+<VideoLesson
+  title="Lab：ISHELL 與階層式檔案系統"
+  entry-id="1_fabmoily"
+  video-src="/media/lab-ishell-and-hierarchical-file-system.mp4"
+  subtitle-src="/subtitles/lab-ishell-and-hierarchical-file-system.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119079"
+/>
+
+<LessonNotes slug="lab-ishell-and-hierarchical-file-system" />
+
+<VideoLesson
+  title="USS 程序與權限"
+  entry-id="1_n310dnox"
+  video-src="/media/uss-processes-and-permissions.mp4"
+  subtitle-src="/subtitles/uss-processes-and-permissions.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119438"
+/>
+
+<LessonNotes slug="uss-processes-and-permissions" />
 
 ## 閱讀材料
 

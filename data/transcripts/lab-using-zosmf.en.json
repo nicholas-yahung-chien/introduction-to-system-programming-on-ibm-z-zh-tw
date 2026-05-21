@@ -1,0 +1,53 @@
+{
+  "slug": "lab-using-zosmf",
+  "title": "Lab - Using z/OSMF",
+  "language": "en",
+  "duration": 41.5173125,
+  "segments": [
+    {
+      "start": 3.44,
+      "end": 6.76,
+      "text": "It's time to get hands-on with ZOSMF."
+    },
+    {
+      "start": 6.76,
+      "end": 12.08,
+      "text": "Now, the screens I showed you were from the desktop version of ZOSMF, and this lab uses"
+    },
+    {
+      "start": 12.08,
+      "end": 14.76,
+      "text": "the traditional menu-driven approach."
+    },
+    {
+      "start": 14.76,
+      "end": 18.8,
+      "text": "Under the covers, it's all the same, but this way you get to see both versions, because"
+    },
+    {
+      "start": 18.8,
+      "end": 22.32,
+      "text": "not all mainframe shops are going to use the same one."
+    },
+    {
+      "start": 22.32,
+      "end": 27.88,
+      "text": "You'll log into ZOSMF using the Firefox browser located on your virtual machine's desktop."
+    },
+    {
+      "start": 27.88,
+      "end": 31.56,
+      "text": "Then you'll explore around a little bit, see how to connect to the consoles, enter some"
+    },
+    {
+      "start": 31.56,
+      "end": 34.88,
+      "text": "commands, and check out the system configuration."
+    },
+    {
+      "start": 34.88,
+      "end": 37.24,
+      "text": "There's a lot to do in here, so let's get started."
+    }
+  ]
+}

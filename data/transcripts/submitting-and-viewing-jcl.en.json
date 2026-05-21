@@ -1,0 +1,318 @@
+{
+  "slug": "submitting-and-viewing-jcl",
+  "title": "Submitting and Viewing JCL",
+  "language": "en",
+  "duration": 171.293625,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 5.48,
+      "text": "Once you've got your JCL written,"
+    },
+    {
+      "start": 5.48,
+      "end": 9.7,
+      "text": "chances are you actually want to submit it and make it run."
+    },
+    {
+      "start": 9.7,
+      "end": 11.62,
+      "text": "As you've probably picked up on by now,"
+    },
+    {
+      "start": 11.62,
+      "end": 13.46,
+      "text": "when there's something you want to do,"
+    },
+    {
+      "start": 13.46,
+      "end": 15.92,
+      "text": "there is usually like eight ways to do it."
+    },
+    {
+      "start": 15.92,
+      "end": 17.92,
+      "text": "So I'm gonna show you two ways"
+    },
+    {
+      "start": 17.92,
+      "end": 21.06,
+      "text": "of submitting your JCL to JES."
+    },
+    {
+      "start": 21.06,
+      "end": 26.06,
+      "text": "To begin, we're gonna open up option two of ISPF for edit."
+    },
+    {
+      "start": 26.22,
+      "end": 27.8,
+      "text": "That will bring us to this screen"
+    },
+    {
+      "start": 27.8,
+      "end": 29.66,
+      "text": "and you just specify the dataset,"
+    },
+    {
+      "start": 29.66,
+      "end": 33.1,
+      "text": "either using the ISPF library fields up there"
+    },
+    {
+      "start": 33.1,
+      "end": 35.66,
+      "text": "or the one below it labeled other partitions,"
+    },
+    {
+      "start": 35.66,
+      "end": 40.38,
+      "text": "sequential or VSAM dataset or zos-unix file."
+    },
+    {
+      "start": 40.38,
+      "end": 43.62,
+      "text": "That will bring up this listing of dataset members."
+    },
+    {
+      "start": 43.62,
+      "end": 48.54,
+      "text": "Place an S next to the one you want to select and hit enter."
+    },
+    {
+      "start": 48.54,
+      "end": 51.38,
+      "text": "TSO will come back and pop up a little message saying,"
+    },
+    {
+      "start": 51.38,
+      "end": 53.38,
+      "text": "got it, I have submitted your job."
+    },
+    {
+      "start": 53.38,
+      "end": 55.78,
+      "text": "Here's the job number I gave it."
+    },
+    {
+      "start": 55.78,
+      "end": 58.78,
+      "text": "Now I said there's more than one way to do things."
+    },
+    {
+      "start": 58.78,
+      "end": 62.86,
+      "text": "So I'm gonna show you another way of submitting JCL to JES."
+    },
+    {
+      "start": 62.86,
+      "end": 64.66,
+      "text": "If you're at a TSO prompt,"
+    },
+    {
+      "start": 64.66,
+      "end": 66.78,
+      "text": "you can submit a job from here too."
+    },
+    {
+      "start": 66.78,
+      "end": 71.26,
+      "text": "Just type TSO submit followed by the dataset member"
+    },
+    {
+      "start": 71.26,
+      "end": 73.82,
+      "text": "spelled out as the dataset name"
+    },
+    {
+      "start": 73.82,
+      "end": 76.58,
+      "text": "and then the specified member in parentheses."
+    },
+    {
+      "start": 76.58,
+      "end": 78.52,
+      "text": "The dataset and dataset member"
+    },
+    {
+      "start": 78.52,
+      "end": 80.94,
+      "text": "should be within single quotes."
+    },
+    {
+      "start": 80.94,
+      "end": 83.86,
+      "text": "It sounds a lot more complicated when I say it."
+    },
+    {
+      "start": 83.86,
+      "end": 86.1,
+      "text": "Just look at how it's spelled out here."
+    },
+    {
+      "start": 86.1,
+      "end": 89.42,
+      "text": "But when you put the TSO at the beginning of a statement,"
+    },
+    {
+      "start": 89.42,
+      "end": 91.84,
+      "text": "you're issuing a TSO command."
+    },
+    {
+      "start": 91.84,
+      "end": 93.64,
+      "text": "So if you have some JCL"
+    },
+    {
+      "start": 93.64,
+      "end": 94.96,
+      "text": "and you don't even have to look at it,"
+    },
+    {
+      "start": 94.96,
+      "end": 98.34,
+      "text": "you just know you wanna run it, that's how you do that."
+    },
+    {
+      "start": 98.34,
+      "end": 100.24,
+      "text": "To look at the output of that job,"
+    },
+    {
+      "start": 100.24,
+      "end": 104.48,
+      "text": "head into SDSF from the primary ISPF menu,"
+    },
+    {
+      "start": 104.48,
+      "end": 109.08,
+      "text": "then go into option H because we want to look at held jobs."
+    },
+    {
+      "start": 109.08,
+      "end": 112.2,
+      "text": "As you can see, there's a lot you can do in here."
+    },
+    {
+      "start": 112.2,
+      "end": 114.7,
+      "text": "All in due time, all in due time."
+    },
+    {
+      "start": 114.7,
+      "end": 116.66,
+      "text": "When we hit enter for the held jobs,"
+    },
+    {
+      "start": 116.66,
+      "end": 118.36,
+      "text": "we get a listing of output"
+    },
+    {
+      "start": 118.36,
+      "end": 120.56,
+      "text": "and we can do a number of things with it."
+    },
+    {
+      "start": 120.56,
+      "end": 122.64,
+      "text": "Right now, we want to display that output."
+    },
+    {
+      "start": 122.64,
+      "end": 126.68,
+      "text": "So we'll place an S next to it and hit enter."
+    },
+    {
+      "start": 126.68,
+      "end": 129.92,
+      "text": "That will bring up all of the output from that job."
+    },
+    {
+      "start": 129.92,
+      "end": 132.08,
+      "text": "As I said, there's a lot you can do in here"
+    },
+    {
+      "start": 132.08,
+      "end": 133.04,
+      "text": "with other commands,"
+    },
+    {
+      "start": 133.04,
+      "end": 136.68,
+      "text": "but the most common commands are probably S for display,"
+    },
+    {
+      "start": 136.68,
+      "end": 141.48,
+      "text": "C for cancel, P for purge, and X for print."
+    },
+    {
+      "start": 141.48,
+      "end": 142.84,
+      "text": "When you do view the output,"
+    },
+    {
+      "start": 142.84,
+      "end": 145.64,
+      "text": "first thing you'll notice is it is tremendously verbose"
+    },
+    {
+      "start": 145.64,
+      "end": 147.76,
+      "text": "and we're not gonna get into that here."
+    },
+    {
+      "start": 147.76,
+      "end": 150.26,
+      "text": "I mean, pretty much every piece of information"
+    },
+    {
+      "start": 150.28,
+      "end": 153.18,
+      "text": "regarding the execution of that job is in here"
+    },
+    {
+      "start": 153.18,
+      "end": 155.22,
+      "text": "and it would take a whole lot of time"
+    },
+    {
+      "start": 155.22,
+      "end": 156.78,
+      "text": "to fully explore that output."
+    },
+    {
+      "start": 156.78,
+      "end": 158.98,
+      "text": "So we'll just stop right here and be happy"
+    },
+    {
+      "start": 158.98,
+      "end": 160.8,
+      "text": "that we know how to build JCL,"
+    },
+    {
+      "start": 160.8,
+      "end": 163.22,
+      "text": "submit it, and manage the output."
+    },
+    {
+      "start": 163.22,
+      "end": 164.16,
+      "text": "Stay tuned though."
+    },
+    {
+      "start": 164.16,
+      "end": 166.16,
+      "text": "Later on, I'm gonna show you another way"
+    },
+    {
+      "start": 166.16,
+      "end": 167.52,
+      "text": "to look at system output."
+    }
+  ]
+}

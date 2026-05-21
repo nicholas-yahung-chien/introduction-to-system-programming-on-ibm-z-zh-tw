@@ -20,11 +20,11 @@ features:
     link: /course/
     linkText: 前往課程
   - title: 影片與活動
-    details: 24 支課程影片保留 Kaltura metadata 與原課程活動連結，媒體與字幕可在授權後接入。
+    details: 24 支課程影片已接入 HLS 播放、英文字幕與繁體中文字幕，並保留 Kaltura metadata 與原課程活動連結。
     link: /videos/
     linkText: 查看活動
   - title: 互動練習
-    details: 21 題 H5P short quiz 轉為非計分靜態練習，答題後立即顯示解析與複習方向。
+    details: 55 題非計分靜態練習，涵蓋 21 題 H5P 檢核與 34 題 Badge Quiz 範圍綜合回顧，答題後立即顯示解析。
     link: /practice/
     linkText: 開始練習
   - title: Lab 與互動實作

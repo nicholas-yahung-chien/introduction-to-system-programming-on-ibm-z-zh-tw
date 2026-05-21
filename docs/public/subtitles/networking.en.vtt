@@ -1,0 +1,177 @@
+WEBVTT
+
+1
+00:00:03.410 --> 00:00:19.410
+Chances are you want your mainframe on a network of some sort, maybe not the internet, but back in Course 1 we talked about all the PCIe adapters that a system can have, and chances are some of those are OSA, or Open Systems Adapters.
+
+2
+00:00:19.410 --> 00:00:31.410
+These are the network cards for the mainframe, and they come in a wide variety of flavors, suited for copper and fiber links from gigabit to 10 gigabit, and even up to 25 gigabit speeds.
+
+3
+00:00:31.410 --> 00:00:43.410
+On ZOS, TCPIP is handled by the TCPIP started task, so it starts up and stays up, generally, until the sysprog or another operator takes it down.
+
+4
+00:00:43.410 --> 00:00:50.410
+Generally, we refer to this started TCPIP task as a stack, the TCPIP stack.
+
+5
+00:00:50.410 --> 00:00:57.410
+Before we get into the TCPIP stack, I want to take just a minute to dive into the concepts of IP addresses and sockets.
+
+6
+00:00:57.410 --> 00:01:08.410
+If you're already familiar with this from another platform, the next minute and a half probably won't be all that new to you, so you can go and check your email or scroll around a little bit if you don't want to hear it. I won't be offended.
+
+7
+00:01:08.410 --> 00:01:18.410
+Typically, a system on a network has an IP address, or two, and you'll even see some ZOS systems that have five, six, even more IP addresses.
+
+8
+00:01:19.410 --> 00:01:25.410
+An IP address is a 32-bit address, represented in dotted decimal, like this.
+
+9
+00:01:25.410 --> 00:01:31.410
+So, it looks like four numbers, each between 0 and 255, with dots in between them.
+
+10
+00:01:31.410 --> 00:01:41.410
+That address is a lot like an address for a house, and with that address, we can find the server on the network, or even the internet, that we want to talk to.
+
+11
+00:01:41.410 --> 00:01:54.410
+I'll also mention that the 32-bit address is what's called an IPv4 address, and there's a constant concern that will run out of IPv4 addresses, so there's also IPv6.
+
+12
+00:01:54.410 --> 00:01:59.410
+This is much longer, it's 128 bits, and it looks like this.
+
+13
+00:01:59.410 --> 00:02:06.410
+It's longer, it uses colons, dah-dah-dots, and it's represented in hexadecimal, so there's a couple letters in there, too.
+
+14
+00:02:07.410 --> 00:02:14.410
+Many, many, many, many more possible combinations, and you won't see an IPv6 address everywhere just yet.
+
+15
+00:02:14.410 --> 00:02:24.410
+People are still trying to write out IPv4 for as long as possible, but in case you see an IP address that looks different than what you were expecting, that might be it.
+
+16
+00:02:25.410 --> 00:02:33.410
+Anyway, the IP address, be it IPv4 or IPv6, gets us to the server, but a server can run multiple programs.
+
+17
+00:02:33.410 --> 00:02:36.410
+How do we get to the exact program we want?
+
+18
+00:02:36.410 --> 00:02:46.410
+Those programs operate on what's called a socket, so you've got the IP address, colon, and then the socket number, and all that goes over the network.
+
+19
+00:02:46.410 --> 00:02:54.410
+Once the socket connection is established, the program can start issuing reads and writes on that socket to get or put data.
+
+20
+00:02:54.410 --> 00:02:58.410
+Then when it's done, we close that socket, and life goes on.
+
+21
+00:02:58.410 --> 00:03:06.410
+So we have this TCP IP profile, and within it, we find a number of statements that build our configurations step by step.
+
+22
+00:03:06.410 --> 00:03:10.410
+For example, you'll probably find device, link, and home statements.
+
+23
+00:03:10.410 --> 00:03:14.410
+The device statement states which network devices we want to use.
+
+24
+00:03:14.410 --> 00:03:24.410
+The subsequent link statements say how we want to use them, and then below that in the home statements, that's where we set the IP addresses and net masking and all that stuff.
+
+25
+00:03:24.410 --> 00:03:27.410
+Now, this is a fairly simple setup right here.
+
+26
+00:03:27.410 --> 00:03:30.410
+There's three devices, three link statements, and three IP addresses.
+
+27
+00:03:30.410 --> 00:03:36.410
+It can get quite a bit more complicated, where it's not always a one-to-one-to-one mapping.
+
+28
+00:03:36.410 --> 00:03:40.410
+I just don't want you to think that we're making this complex for no reason.
+
+29
+00:03:40.410 --> 00:03:44.410
+Now, let's talk about that VIPALNK1 entry.
+
+30
+00:03:44.410 --> 00:03:48.410
+That sounds interesting, and, yeah, actually it is.
+
+31
+00:03:48.410 --> 00:03:58.410
+So, typically, an IP address should only be defined in one place, because there needs to be no confusion about where that IP address is.
+
+32
+00:03:58.410 --> 00:04:10.410
+And, typically, if we tell someone that a server is at a specific IP address, and that server goes down, or there's a network problem, people can no longer reach that server.
+
+33
+00:04:10.410 --> 00:04:14.410
+And that's when they start calling you and getting angry, and nobody wants that.
+
+34
+00:04:14.410 --> 00:04:20.410
+What a VIPA does is it defines an IP address to the system virtually.
+
+35
+00:04:20.410 --> 00:04:22.410
+Take a look at this diagram.
+
+36
+00:04:22.410 --> 00:04:29.410
+They've got two LPARs, each defined with the same VIPA, in addition to their own unique IP addresses for each network link.
+
+37
+00:04:29.410 --> 00:04:38.410
+And this is a fairly standard high-availability setup, because if one LPAR is the primary, and OSA Device 1 goes down for whatever reason,
+
+38
+00:04:38.410 --> 00:04:43.410
+that VIPA is still reachable through the second pathway at the same IP address.
+
+39
+00:04:43.410 --> 00:04:48.410
+Or even if the whole LPAR were to go down, the backup takes over.
+
+40
+00:04:48.410 --> 00:04:57.410
+And it's got two links as well, so you can actually lose three links and an LPAR, and the service is still available at that VIPA address.
+
+41
+00:04:57.410 --> 00:04:58.410
+Pretty cool.
+
+42
+00:04:58.410 --> 00:05:07.410
+For that reason, you'll often find critical services associated with a VIPA instead of an IP address that's hard-coded to a single link or device.
+
+43
+00:05:07.410 --> 00:05:17.410
+The virtualization and architecture of Z allows for some pretty crafty ways of implementing highly available and highly performant solutions that you just won't find anywhere else.
+
+44
+00:05:17.410 --> 00:05:20.410
+Especially in distributed environments.

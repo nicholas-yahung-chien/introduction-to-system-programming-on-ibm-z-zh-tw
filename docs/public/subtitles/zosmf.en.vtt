@@ -1,0 +1,457 @@
+WEBVTT
+
+1
+00:00:04.720 --> 00:00:06.440
+Hopefully you've seen that there are
+
+2
+00:00:06.440 --> 00:00:08.480
+many ways of working on a mainframe.
+
+3
+00:00:08.480 --> 00:00:10.240
+We're no longer in the days where
+
+4
+00:00:10.240 --> 00:00:12.600
+everything needs to be a green screen terminal.
+
+5
+00:00:12.600 --> 00:00:14.340
+It's there if that's what you like,
+
+6
+00:00:14.340 --> 00:00:16.240
+but today we can be as graphical,
+
+7
+00:00:16.240 --> 00:00:18.800
+text, or API based as you'd like.
+
+8
+00:00:18.800 --> 00:00:20.840
+After all, the fundamentals of
+
+9
+00:00:20.840 --> 00:00:22.680
+ZOS are well-documented and
+
+10
+00:00:22.680 --> 00:00:24.700
+open to whatever method you want to use.
+
+11
+00:00:24.700 --> 00:00:26.640
+Let's talk about ZOSMF,
+
+12
+00:00:26.640 --> 00:00:29.440
+which stands for the ZOS Management Facility,
+
+13
+00:00:29.440 --> 00:00:33.240
+and it brings things together for some of these approaches.
+
+14
+00:00:33.280 --> 00:00:36.600
+ZOSMF provides system management functions and
+
+15
+00:00:36.600 --> 00:00:39.600
+a task-oriented browser-based user interface.
+
+16
+00:00:39.600 --> 00:00:41.320
+The goal here is twofold.
+
+17
+00:00:41.320 --> 00:00:45.680
+One, making access to the system as easy as opening a browser,
+
+18
+00:00:45.680 --> 00:00:48.320
+and two, making the controls you need
+
+19
+00:00:48.320 --> 00:00:49.800
+make sense for how you'll be
+
+20
+00:00:49.800 --> 00:00:52.000
+using them in a modern context.
+
+21
+00:00:52.000 --> 00:00:53.760
+This includes streamlining
+
+22
+00:00:53.760 --> 00:00:56.280
+the kinds of commands we've been talking about here,
+
+23
+00:00:56.280 --> 00:00:57.800
+but there's also a lot of
+
+24
+00:00:57.800 --> 00:01:01.160
+new capabilities that are unique to ZOSMF itself.
+
+25
+00:01:01.160 --> 00:01:04.640
+ZOSMF is shipped as part of the operating system,
+
+26
+00:01:04.640 --> 00:01:07.000
+and it aims to simplify, optimize,
+
+27
+00:01:07.000 --> 00:01:09.920
+and modernize ZOS to the system programmer,
+
+28
+00:01:09.920 --> 00:01:12.520
+as well as to people who specialize in networking,
+
+29
+00:01:12.520 --> 00:01:14.960
+storage, security, the list goes on.
+
+30
+00:01:14.960 --> 00:01:17.160
+There's really something for everyone.
+
+31
+00:01:17.160 --> 00:01:18.800
+I can hear what you're saying.
+
+32
+00:01:18.800 --> 00:01:21.160
+If this is simpler and more streamlined,
+
+33
+00:01:21.160 --> 00:01:23.040
+why didn't you just show me this earlier?
+
+34
+00:01:23.040 --> 00:01:25.280
+Why did I have to learn about IODF,
+
+35
+00:01:25.280 --> 00:01:28.160
+configs, libraries, and JCL and all that?
+
+36
+00:01:28.160 --> 00:01:30.200
+Well, in many cases,
+
+37
+00:01:30.320 --> 00:01:32.160
+even if the functionality of something
+
+38
+00:01:32.160 --> 00:01:34.000
+is brought into a single button,
+
+39
+00:01:34.000 --> 00:01:35.320
+it's really helpful to know
+
+40
+00:01:35.320 --> 00:01:37.120
+just what that button is doing,
+
+41
+00:01:37.120 --> 00:01:40.680
+just in case you need to debug or troubleshoot a larger issue.
+
+42
+00:01:40.680 --> 00:01:43.080
+The goal here is simplification, assistance,
+
+43
+00:01:43.080 --> 00:01:47.080
+and scriptability, not just hiding the in-between steps.
+
+44
+00:01:47.080 --> 00:01:49.200
+For example, installing software
+
+45
+00:01:49.200 --> 00:01:51.000
+using the software management task
+
+46
+00:01:51.000 --> 00:01:53.280
+guides you through each step of a checklist.
+
+47
+00:01:53.280 --> 00:01:55.040
+And then once the installation
+
+48
+00:01:55.040 --> 00:01:57.040
+takes place and deployment is complete,
+
+49
+00:01:57.040 --> 00:01:58.400
+you have a greater assurance
+
+50
+00:01:58.400 --> 00:02:00.520
+that everything landed in the right place
+
+51
+00:02:00.520 --> 00:02:02.840
+and that the installation has been verified
+
+52
+00:02:02.840 --> 00:02:05.960
+by the provided ZOSMF workflows.
+
+53
+00:02:05.960 --> 00:02:09.200
+Software updates can also be handled through ZOSMF.
+
+54
+00:02:09.200 --> 00:02:11.520
+Just select what needs updating through the GUI,
+
+55
+00:02:11.520 --> 00:02:14.400
+the target zone, and the paths you'd like to use,
+
+56
+00:02:14.400 --> 00:02:16.680
+and then follow the guided steps.
+
+57
+00:02:16.680 --> 00:02:19.600
+ZOSMF is useful for corrective installs,
+
+58
+00:02:19.600 --> 00:02:21.200
+installing recommended updates,
+
+59
+00:02:21.200 --> 00:02:22.840
+as well as functional updates
+
+60
+00:02:22.840 --> 00:02:25.840
+for enabling features or functional categories.
+
+61
+00:02:25.840 --> 00:02:28.520
+We can even integrate ZOSMF with Ansible
+
+62
+00:02:28.520 --> 00:02:30.200
+by leveraging the cloud provisioning
+
+63
+00:02:30.200 --> 00:02:33.520
+and management for ZOS function in ZOSMF.
+
+64
+00:02:33.520 --> 00:02:35.640
+This includes some Ansible roles you can use
+
+65
+00:02:35.640 --> 00:02:38.160
+to drive the provisioning and management of software
+
+66
+00:02:38.160 --> 00:02:43.160
+like Kix, DB2, MQ, IMS, WebSphere Liberty, and ZOS Connect.
+
+67
+00:02:44.640 --> 00:02:46.600
+This is just a way to make it even easier
+
+68
+00:02:46.600 --> 00:02:50.480
+to connect a ZOS environment to an Ansible ecosystem.
+
+69
+00:02:50.480 --> 00:02:51.880
+You'll really see the benefit
+
+70
+00:02:51.880 --> 00:02:53.720
+when you have a mixed skill workforce
+
+71
+00:02:53.720 --> 00:02:55.920
+because the experience system programmer
+
+72
+00:02:55.920 --> 00:02:58.760
+can take a task they know, like the back of their hand,
+
+73
+00:02:58.760 --> 00:03:01.400
+and automate it into what's called a workflow,
+
+74
+00:03:01.400 --> 00:03:04.520
+and then hand that workflow off to a new main framer,
+
+75
+00:03:04.520 --> 00:03:06.280
+and they can guide it through completion
+
+76
+00:03:06.280 --> 00:03:08.120
+without needing to come up with the procedure
+
+77
+00:03:08.120 --> 00:03:09.600
+all by themselves.
+
+78
+00:03:09.600 --> 00:03:12.800
+Even better, because the workflow has already been written
+
+79
+00:03:12.800 --> 00:03:14.360
+and we all know it works,
+
+80
+00:03:14.360 --> 00:03:16.920
+it's going to be a whole heck of a lot more consistent
+
+81
+00:03:16.920 --> 00:03:21.200
+from run to run than someone typing out commands for memory.
+
+82
+00:03:21.200 --> 00:03:23.600
+You don't need me to tell you that's important.
+
+83
+00:03:24.440 --> 00:03:26.760
+These workflows integrate with JCL,
+
+84
+00:03:26.760 --> 00:03:29.000
+Recs, Unix, REST APIs,
+
+85
+00:03:29.000 --> 00:03:31.720
+and other often used mainframe utilities.
+
+86
+00:03:31.720 --> 00:03:34.520
+Again, the goal is really to make things easier,
+
+87
+00:03:34.520 --> 00:03:37.080
+not to displace proven methods.
+
+88
+00:03:37.080 --> 00:03:40.720
+Since ZOSMF is deeply integrated into the operating system,
+
+89
+00:03:40.720 --> 00:03:41.960
+it's just there.
+
+90
+00:03:41.960 --> 00:03:43.920
+You'll have to take some steps to enable it,
+
+91
+00:03:43.920 --> 00:03:47.160
+but you don't need to download or compile ZOSMF.
+
+92
+00:03:47.160 --> 00:03:50.720
+And here's the thing, using a terminal and commands,
+
+93
+00:03:50.720 --> 00:03:54.440
+there's a whole lot you can get into,
+
+94
+00:03:54.440 --> 00:03:58.560
+but there's a lot that you may never need to get into,
+
+95
+00:03:58.560 --> 00:04:01.800
+or you'll only need to do once ever.
+
+96
+00:04:01.800 --> 00:04:02.960
+For that sort of thing,
+
+97
+00:04:02.960 --> 00:04:05.120
+you're probably better off with a stack of books,
+
+98
+00:04:05.120 --> 00:04:06.800
+a terminal, and a couple of hours
+
+99
+00:04:06.800 --> 00:04:08.760
+blocked off on your calendar.
+
+100
+00:04:08.760 --> 00:04:11.640
+But for everyday tasks with predictable variants
+
+101
+00:04:11.640 --> 00:04:13.760
+that you might need to pull off once a month
+
+102
+00:04:13.760 --> 00:04:16.200
+or in preparation of a maintenance window,
+
+103
+00:04:16.200 --> 00:04:19.600
+that's the perfect opportunity to use ZOSMF workflows
+
+104
+00:04:19.640 --> 00:04:22.240
+and automation to make sure you don't accidentally
+
+105
+00:04:22.240 --> 00:04:23.920
+forget a step or install something
+
+106
+00:04:23.920 --> 00:04:25.480
+into the wrong directory.
+
+107
+00:04:25.480 --> 00:04:27.400
+Not that any of us have ever done that.
+
+108
+00:04:28.800 --> 00:04:33.480
+All this to say, make sure ZOSMF is used wherever possible,
+
+109
+00:04:33.480 --> 00:04:37.080
+along with any sort of automation and AI insight dashboards
+
+110
+00:04:37.080 --> 00:04:39.440
+to make sure that the current state of your system
+
+111
+00:04:39.440 --> 00:04:42.480
+matches your expectations of what's going on.
+
+112
+00:04:42.480 --> 00:04:45.600
+When those get out of sync, that's where problems happen.
+
+113
+00:04:45.600 --> 00:04:48.560
+You'll be doing some ZOSMF work in the lab shortly,
+
+114
+00:04:48.560 --> 00:04:50.360
+so I hope you're paying attention.

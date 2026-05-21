@@ -1,0 +1,313 @@
+WEBVTT
+
+1
+00:00:03.570 --> 00:00:07.570
+Now we're going to talk about my good friends Jez and JCL.
+
+2
+00:00:07.570 --> 00:00:13.570
+If you're keeping track of acronyms at home, that's Job Entry Subsystem and Job Control Language.
+
+3
+00:00:13.570 --> 00:00:18.570
+Jez is a component of ZOS that's responsible for managing batch workloads.
+
+4
+00:00:18.570 --> 00:00:22.570
+In other words, you've got this big pile of work that needs to get done.
+
+5
+00:00:22.570 --> 00:00:28.570
+And Jez manages that pile of work, including receiving the jobs, making sure they make sense,
+
+6
+00:00:28.570 --> 00:00:33.570
+putting all the pieces together, scheduling them to run, getting them into the pipeline,
+
+7
+00:00:33.570 --> 00:00:38.570
+and making sure that when they run, the output goes to the right place.
+
+8
+00:00:38.570 --> 00:00:46.570
+JCL is a scripting language that we use to instruct the system how we want it to run those jobs once JCL is ready to run them.
+
+9
+00:00:46.570 --> 00:00:51.570
+Now there are two flavors of Jez, Jez 2 and Jez 3.
+
+10
+00:00:51.570 --> 00:00:58.570
+They handle things a little bit differently, enough for them to be a Jez 2 and a Jez 3, and most people use Jez 2.
+
+11
+00:00:58.570 --> 00:01:04.570
+But the fundamentals are the same. They both accept and queue jobs submitted for execution.
+
+12
+00:01:04.570 --> 00:01:08.570
+They both have the concept of an input and an output queue.
+
+13
+00:01:08.570 --> 00:01:13.570
+They both queue jobs for an initiator. That's a Jez program that goes around and says,
+
+14
+00:01:13.570 --> 00:01:16.570
+hey, give me the next job. We're ready to do some work.
+
+15
+00:01:16.570 --> 00:01:22.570
+And there's also this concept of accepting output from a job when it runs and managing where it goes.
+
+16
+00:01:22.570 --> 00:01:29.570
+It might go to a printer, it might get deleted, or maybe it's saved on a spool for an output manager to retrieve.
+
+17
+00:01:29.570 --> 00:01:39.570
+The term spool is probably a new one. You can just think of it as a method of handling data where new data can be fed in while existing data is pulled off.
+
+18
+00:01:39.570 --> 00:01:44.570
+So a spool functions both as an input and an output for Jez.
+
+19
+00:01:44.570 --> 00:01:48.570
+Some of the jobs that get run on the ZOS are what you call batch jobs.
+
+20
+00:01:48.570 --> 00:01:56.570
+That term comes from the way that they're started, typically with a single job that ends up doing a whole lot of work with minimal human interaction,
+
+21
+00:01:56.570 --> 00:02:01.570
+and they're either scheduled for a specific time or on an as-needed basis.
+
+22
+00:02:01.570 --> 00:02:08.570
+So an example of a batch job might be a job that looks at the inventory of a warehouse and the orders that come in during the day,
+
+23
+00:02:08.570 --> 00:02:13.570
+and determines how the truck should be loaded up overnight for when the drivers show up the next morning.
+
+24
+00:02:13.570 --> 00:02:21.570
+You would just make sure that the job is pointing at the right data, run it, and know that the output will be where you expect it to be the next day.
+
+25
+00:02:21.570 --> 00:02:29.570
+To speed up processing and make things run faster, jobs with similar needs get batched together and run as a group.
+
+26
+00:02:29.570 --> 00:02:32.570
+No need for everyone to drive if you can carpool, right?
+
+27
+00:02:32.570 --> 00:02:41.570
+Batch jobs can also be stored up during working hours and then executed in the evening when there aren't a lot of people logged in doing interactive work.
+
+28
+00:02:41.570 --> 00:02:47.570
+Once a batch job begins, it continues until it's done or a severe error occurs.
+
+29
+00:02:47.570 --> 00:02:54.570
+After a batch job is submitted for execution, there's normally no further interaction required from you until it's done,
+
+30
+00:02:54.570 --> 00:02:59.570
+but you typically watch it for a little while just to make sure nothing obviously wrong is happening.
+
+31
+00:02:59.570 --> 00:03:03.570
+We've spent all this time talking about JES. Let's get over to JCL.
+
+32
+00:03:03.570 --> 00:03:08.570
+JCL is where you specify any resources that are required by the program.
+
+33
+00:03:09.570 --> 00:03:14.570
+Let's say you're running a program that's doing something with a dataset like most jobs are.
+
+34
+00:03:14.570 --> 00:03:19.570
+You obviously need to at least specify an input dataset and probably an output dataset.
+
+35
+00:03:19.570 --> 00:03:24.570
+It also acts as a communicator between the operating system and the program.
+
+36
+00:03:24.570 --> 00:03:28.570
+It makes jobs out of work that can run without any manual intervention,
+
+37
+00:03:28.570 --> 00:03:34.570
+and it works according to the priority levels of each job because that's a thing you can set, too.
+
+38
+00:03:35.570 --> 00:03:40.570
+In the JCL, you specify who you are, which is important for security reasons,
+
+39
+00:03:40.570 --> 00:03:45.570
+and which resources and services are needed for the program to run.
+
+40
+00:03:45.570 --> 00:03:51.570
+Safe to say, without JCL, programs would have a really hard time running on a mainframe.
+
+41
+00:03:51.570 --> 00:03:58.570
+A job is a collection of instructions that performs a specific task when executed by the system.
+
+42
+00:03:58.570 --> 00:04:04.570
+Think of a job as a unit of work, which can be made up of many job steps.
+
+43
+00:04:04.570 --> 00:04:11.570
+Each job step is specified in JCL through a set of job control statements.
+
+44
+00:04:11.570 --> 00:04:17.570
+The operating system uses the job entry subsystem to receive jobs into the operating system
+
+45
+00:04:17.570 --> 00:04:22.570
+and to schedule them for processing, as well as handling the output.
+
+46
+00:04:22.570 --> 00:04:25.570
+Here's how it goes from beginning to end.
+
+47
+00:04:25.570 --> 00:04:30.570
+First, the user creates the JCL for the job, and just a little bit of insider information,
+
+48
+00:04:30.570 --> 00:04:35.570
+very few people sit down and say, I'm going to write some JCL from scratch today.
+
+49
+00:04:35.570 --> 00:04:42.570
+No, they have a few basic templates that they keep around and edit them to fit whatever purpose they have at that particular moment.
+
+50
+00:04:42.570 --> 00:04:46.570
+Anyway, whether it's written from scratch or modified from something they had before,
+
+51
+00:04:46.570 --> 00:04:49.570
+the user has the JCL they want to run.
+
+52
+00:04:49.570 --> 00:04:54.570
+Next, the user submits the JCL to JES, the job entry subsystem.
+
+53
+00:04:54.570 --> 00:04:57.570
+Now begins the job conversion.
+
+54
+00:04:57.570 --> 00:05:01.570
+The JCL gets read by JES and stores that in the spool.
+
+55
+00:05:01.570 --> 00:05:06.570
+All throughout this, the system communicates with the user on the status of their job.
+
+56
+00:05:06.570 --> 00:05:13.570
+When the job is complete, the allocated resource and the space that it took up on the JES spool are released.
+
+57
+00:05:13.570 --> 00:05:16.570
+Now the user can view and interpret the output.
+
+58
+00:05:16.570 --> 00:05:19.570
+Let's take a look at what JCL looks like.
+
+59
+00:05:19.570 --> 00:05:21.570
+This is a sample job card.
+
+60
+00:05:21.570 --> 00:05:26.570
+First, you see the information required for the spooling of the job, where you want the job to go and run.
+
+61
+00:05:26.570 --> 00:05:29.570
+Then there's the slash slash star statement.
+
+62
+00:05:29.570 --> 00:05:33.570
+When you want to insert a space or a comment, prepend it with this.
+
+63
+00:05:33.570 --> 00:05:37.570
+Next is the step and the name of the program you want to execute.
+
+64
+00:05:37.570 --> 00:05:42.570
+In this case, the step is step 10, and the program is sort.
+
+65
+00:05:42.570 --> 00:05:47.570
+For sort in and sort out, those DD statements are the data definitions,
+
+66
+00:05:47.570 --> 00:05:52.570
+and they spell out the input and output data sets that the sort job needs to run.
+
+67
+00:05:52.570 --> 00:05:58.570
+Since the sort out data set is new, we need to specify the details for it.
+
+68
+00:05:58.570 --> 00:06:04.570
+We also have a few DD statements down here, which tells JES what to do with the output of the job itself.
+
+69
+00:06:04.570 --> 00:06:09.570
+Sysin DD Asterik, which some people call a splat.
+
+70
+00:06:09.570 --> 00:06:13.570
+This is the area where we send additional commands to the program.
+
+71
+00:06:13.570 --> 00:06:20.570
+For example, maybe this sort program has a way of sorting things backwards or putting numbers before or after letters.
+
+72
+00:06:20.570 --> 00:06:23.570
+Those might be parameters we'd set in here.
+
+73
+00:06:23.570 --> 00:06:30.570
+To mark the end of the Sysin stream data, we use slash asterik, splat.
+
+74
+00:06:30.570 --> 00:06:36.570
+Now, that's the basics of JCL, and if that made sense, you've got a good foundation to go much further.
+
+75
+00:06:36.570 --> 00:06:42.570
+We aren't going to get into all the features of JCL, otherwise this will be a Coursera course on JCL.
+
+76
+00:06:42.570 --> 00:06:45.570
+But there are a few other things I want you to know.
+
+77
+00:06:45.570 --> 00:06:52.570
+You know what? We're actually running out of time for this video, and we need to continue it on to the next one.
+
+78
+00:06:52.570 --> 00:06:55.570
+That's a bit of a spoiler for part two.

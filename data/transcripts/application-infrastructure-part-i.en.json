@@ -1,0 +1,403 @@
+{
+  "slug": "application-infrastructure-part-i",
+  "title": "Application Infrastructure Part I",
+  "language": "en",
+  "duration": 319.0421875,
+  "segments": [
+    {
+      "start": 3.28,
+      "end": 8.28,
+      "text": "Let's move up the stack a little bit and talk about application infrastructure."
+    },
+    {
+      "start": 8.28,
+      "end": 13.28,
+      "text": "On your phone or personal computer, you typically launch an application to interact with it,"
+    },
+    {
+      "start": 13.28,
+      "end": 18.28,
+      "text": "especially if it's something like a game or a browser or a word processing program."
+    },
+    {
+      "start": 18.28,
+      "end": 23.28,
+      "text": "No matter what type of application it is, it typically sits on top of the operating system"
+    },
+    {
+      "start": 23.28,
+      "end": 29.28,
+      "text": "and relies on the services of the operating system to execute it, and it does something."
+    },
+    {
+      "start": 29.28,
+      "end": 33.28,
+      "text": "On the mainframe, the magic word is transaction."
+    },
+    {
+      "start": 33.28,
+      "end": 39.28,
+      "text": "The simplest way to think of a transaction is an interaction, typically where something is exchanged."
+    },
+    {
+      "start": 39.28,
+      "end": 44.28,
+      "text": "If you were in a store, the transaction would begin when you say, I want to buy this,"
+    },
+    {
+      "start": 44.28,
+      "end": 50.28,
+      "text": "and it would finish when you walk out of the store holding the thing you wanted without getting chased down."
+    },
+    {
+      "start": 50.28,
+      "end": 54.28,
+      "text": "Or if it's an informational transaction, like you're buying an airline ticket,"
+    },
+    {
+      "start": 54.28,
+      "end": 58.28,
+      "text": "the transaction starts when you click to book the flight and isn't concluded"
+    },
+    {
+      "start": 58.28,
+      "end": 63.28,
+      "text": "until you've got some sort of confirmation with a booking ID or something you can reference."
+    },
+    {
+      "start": 63.28,
+      "end": 68.28,
+      "text": "Additionally, if someone were to come along and try to book the same seat on the same flight,"
+    },
+    {
+      "start": 68.28,
+      "end": 71.28,
+      "text": "they wouldn't be able to because you already got it."
+    },
+    {
+      "start": 71.28,
+      "end": 76.28,
+      "text": "What I'm getting at is that at the business level, it's important that there be a clear beginning"
+    },
+    {
+      "start": 76.28,
+      "end": 81.28,
+      "text": "and end point of a transaction, and the same goes for all the smaller technical transactions"
+    },
+    {
+      "start": 81.28,
+      "end": 84.28,
+      "text": "that make up the overall business transaction."
+    },
+    {
+      "start": 84.28,
+      "end": 90.28,
+      "text": "The characteristics of a transaction can best be described by how they adhere to the ACID properties."
+    },
+    {
+      "start": 90.28,
+      "end": 96.28,
+      "text": "ACID stands for atomicity, consistency, isolation, and durability, one at a time."
+    },
+    {
+      "start": 96.28,
+      "end": 102.28,
+      "text": "Atomicity, that's a way of saying that either a transaction happened or it didn't."
+    },
+    {
+      "start": 102.28,
+      "end": 106.28,
+      "text": "Since a transaction can have multiple smaller steps or transactions within it,"
+    },
+    {
+      "start": 106.28,
+      "end": 110.28,
+      "text": "it's important that all of those complete before we consider the transaction done,"
+    },
+    {
+      "start": 110.28,
+      "end": 114.28,
+      "text": "so there's no way to go back later and say, well, actually, we took your money,"
+    },
+    {
+      "start": 114.28,
+      "end": 117.28,
+      "text": "but we never actually gave you what you wanted."
+    },
+    {
+      "start": 117.28,
+      "end": 122.28,
+      "text": "Consistency means that the database or the data related to a transaction"
+    },
+    {
+      "start": 122.28,
+      "end": 126.28,
+      "text": "only moves between one valid state and another valid state,"
+    },
+    {
+      "start": 126.28,
+      "end": 131.28,
+      "text": "and at any time, all the data can be frozen, gone over with a fine-tooth comb,"
+    },
+    {
+      "start": 131.28,
+      "end": 135.28,
+      "text": "and it would all check out and make sense according to its rules."
+    },
+    {
+      "start": 135.28,
+      "end": 140.28,
+      "text": "An inconsistent database is one where bad programming could potentially leave data"
+    },
+    {
+      "start": 140.28,
+      "end": 146.28,
+      "text": "in unacceptable places or update values in undocumented or unsupported ways."
+    },
+    {
+      "start": 146.28,
+      "end": 148.28,
+      "text": "Number three is isolation."
+    },
+    {
+      "start": 148.28,
+      "end": 154.28,
+      "text": "It's generally understood that a system will have lots and lots of transactions happening at the same time,"
+    },
+    {
+      "start": 154.28,
+      "end": 160.28,
+      "text": "and there's a fair amount of scheduling and threading and magic that makes this all possible."
+    },
+    {
+      "start": 160.28,
+      "end": 164.28,
+      "text": "Isolation is a measure of how smoothly a single transaction can happen"
+    },
+    {
+      "start": 164.28,
+      "end": 168.28,
+      "text": "without being affected by all the other transactions around it,"
+    },
+    {
+      "start": 168.28,
+      "end": 171.28,
+      "text": "and this isn't necessarily a performance statement,"
+    },
+    {
+      "start": 171.28,
+      "end": 176.28,
+      "text": "but how often am I going to run into tables that are locked because other people are using them"
+    },
+    {
+      "start": 176.28,
+      "end": 179.28,
+      "text": "or seeing data that is meant to be temporary?"
+    },
+    {
+      "start": 179.28,
+      "end": 185.28,
+      "text": "Put another way, how well can the system scale while keeping complexity down?"
+    },
+    {
+      "start": 185.28,
+      "end": 187.28,
+      "text": "And then D, durability."
+    },
+    {
+      "start": 187.28,
+      "end": 190.28,
+      "text": "How permanent are successful transactions?"
+    },
+    {
+      "start": 190.28,
+      "end": 192.28,
+      "text": "Sometimes software crashes."
+    },
+    {
+      "start": 192.28,
+      "end": 195.28,
+      "text": "Maybe someone thought they were logged into the test system"
+    },
+    {
+      "start": 195.28,
+      "end": 199.28,
+      "text": "when they were actually logged into the production system and they brought down database."
+    },
+    {
+      "start": 199.28,
+      "end": 202.28,
+      "text": "Or maybe a cable got pulled that wasn't supposed to get pulled"
+    },
+    {
+      "start": 202.28,
+      "end": 204.28,
+      "text": "or someone backed a forklift into a DASD."
+    },
+    {
+      "start": 204.28,
+      "end": 205.28,
+      "text": "Stuff happens."
+    },
+    {
+      "start": 205.28,
+      "end": 208.28,
+      "text": "Anyway, the transactions that went through,"
+    },
+    {
+      "start": 208.28,
+      "end": 211.28,
+      "text": "will they still be there when the system comes back up?"
+    },
+    {
+      "start": 211.28,
+      "end": 213.28,
+      "text": "Or will you have to say,"
+    },
+    {
+      "start": 213.28,
+      "end": 219.28,
+      "text": "hey, anybody who made updates in the last 30 minutes should check and make sure they're still there?"
+    },
+    {
+      "start": 219.28,
+      "end": 220.28,
+      "text": "You don't want to do that."
+    },
+    {
+      "start": 220.28,
+      "end": 223.28,
+      "text": "That is the measure of durability."
+    },
+    {
+      "start": 223.28,
+      "end": 225.28,
+      "text": "You've got all four things,"
+    },
+    {
+      "start": 225.28,
+      "end": 229.28,
+      "text": "atomicity, consistency, isolation, and durability."
+    },
+    {
+      "start": 229.28,
+      "end": 234.28,
+      "text": "You've got yourself an excellent platform for important business transactions."
+    },
+    {
+      "start": 234.28,
+      "end": 236.28,
+      "text": "This is an industry-wide concept."
+    },
+    {
+      "start": 236.28,
+      "end": 238.28,
+      "text": "It's not just the mainframe thing."
+    },
+    {
+      "start": 238.28,
+      "end": 242.28,
+      "text": "You can look at any solution and consider its acidity."
+    },
+    {
+      "start": 242.28,
+      "end": 248.28,
+      "text": "So if I were looking for an acid property that ensures that all of the data in a database is valid,"
+    },
+    {
+      "start": 248.28,
+      "end": 253.28,
+      "text": "explainable, and done according to the documented rules for that database,"
+    },
+    {
+      "start": 253.28,
+      "end": 257.28,
+      "text": "which acid property would you be looking for?"
+    },
+    {
+      "start": 257.28,
+      "end": 259.28,
+      "text": "That's the consistency property."
+    },
+    {
+      "start": 259.28,
+      "end": 262.28,
+      "text": "Without it, you get transactions halfway done,"
+    },
+    {
+      "start": 262.28,
+      "end": 267.28,
+      "text": "money being withdrawn from one account without going anywhere else and all sorts of other bad stuff."
+    },
+    {
+      "start": 267.28,
+      "end": 269.28,
+      "text": "So, consistency."
+    },
+    {
+      "start": 269.28,
+      "end": 270.28,
+      "text": "Pretty important."
+    },
+    {
+      "start": 270.28,
+      "end": 273.28,
+      "text": "Because once your database is corrupted,"
+    },
+    {
+      "start": 273.28,
+      "end": 277.28,
+      "text": "any further work could be deemed invalid."
+    },
+    {
+      "start": 277.28,
+      "end": 283.28,
+      "text": "On the mainframe, a transaction processing manager or transaction manager exists to tie together"
+    },
+    {
+      "start": 283.28,
+      "end": 287.28,
+      "text": "many transactions that are required to fulfill a larger transaction."
+    },
+    {
+      "start": 287.28,
+      "end": 291.28,
+      "text": "So in this example, the travel agency sits here in the middle"
+    },
+    {
+      "start": 291.28,
+      "end": 294.28,
+      "text": "and exists to make sure that you get booked on the flight you want"
+    },
+    {
+      "start": 294.28,
+      "end": 296.28,
+      "text": "with the hotel reservation you wanted,"
+    },
+    {
+      "start": 296.28,
+      "end": 298.28,
+      "text": "and you get car rentals where you need them."
+    },
+    {
+      "start": 298.28,
+      "end": 303.28,
+      "text": "For the consumer, the transaction isn't complete until everything is complete"
+    },
+    {
+      "start": 303.28,
+      "end": 307.28,
+      "text": "and you feel confident that your vacation or business trip is booked."
+    },
+    {
+      "start": 307.28,
+      "end": 310.28,
+      "text": "So what magic makes this possible?"
+    },
+    {
+      "start": 310.28,
+      "end": 315.28,
+      "text": "In the next lesson, we'll dig into some of the middleware that powers transactions on the mainframe."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "lab-ishell-and-hierarchical-file-system",
+  "title": "Lab - ISHELL and hierarchical file system",
+  "language": "en",
+  "duration": 21.7803125,
+  "segments": [
+    {
+      "start": 3.18,
+      "end": 10.18,
+      "text": "Let's check out iShell. iShell is a way of performing Unix system service commands from an ISPF panel."
+    },
+    {
+      "start": 10.18,
+      "end": 17.18,
+      "text": "In this exercise, you'll look at the content of the file system, create a new HFS, and create files and folders."
+    }
+  ]
+}

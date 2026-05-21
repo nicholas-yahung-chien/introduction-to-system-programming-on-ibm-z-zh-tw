@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:03.440 --> 00:00:07.120
+Hi, my name is Risa Martinez. I work for USS.
+
+2
+00:00:07.120 --> 00:00:12.680
+So last time, Jeff talked a little bit about COS Unix and Sixplex.
+
+3
+00:00:12.680 --> 00:00:16.920
+So now I'm going to be talking about how they kind of both work together.
+
+4
+00:00:16.920 --> 00:00:18.920
+So in COS Unix,
+
+5
+00:00:18.920 --> 00:00:23.160
+you have access to the entire file system hierarchy.
+
+6
+00:00:23.160 --> 00:00:28.040
+And the way this is done is that once your file system is mounted,
+
+7
+00:00:28.040 --> 00:00:31.020
+an owning LPAR is assigned.
+
+8
+00:00:31.020 --> 00:00:32.740
+So once this is mounted,
+
+9
+00:00:32.820 --> 00:00:36.820
+now all the LPARs and users have access to this file.
+
+10
+00:00:36.820 --> 00:00:39.220
+And this is kind of done in two ways.
+
+11
+00:00:39.220 --> 00:00:41.900
+One way is that through COS Unix,
+
+12
+00:00:41.900 --> 00:00:47.260
+we forward all the transactions and requests associated with one file
+
+13
+00:00:47.260 --> 00:00:49.300
+to the owning LPAR.
+
+14
+00:00:49.300 --> 00:00:52.860
+And another way is called Sixplex Aware.
+
+15
+00:00:52.860 --> 00:00:55.620
+This is also called as Read Write Share.
+
+16
+00:00:55.620 --> 00:01:00.380
+In this case, the files are mounted locally to your LPAR.
+
+17
+00:01:00.380 --> 00:01:03.900
+And instead of forwarding, they're handled within that.
+
+18
+00:01:03.900 --> 00:01:07.220
+The reasons why someone might choose one over the other
+
+19
+00:01:07.220 --> 00:01:11.460
+could be performance or convenience, or it could be just by choice.
+
+20
+00:01:11.460 --> 00:01:17.100
+And overall, just the share file system environment has a lot of advantages,
+
+21
+00:01:17.100 --> 00:01:21.140
+such as your COS Unix data, it's always available regardless.
+
+22
+00:01:21.140 --> 00:01:26.180
+So even if your owning LPAR were to come down for one or the other reason,
+
+23
+00:01:26.180 --> 00:01:31.820
+your COS Unix data is still available for you to use from other systems.
+
+24
+00:01:31.820 --> 00:01:34.460
+This is just a brief explanation how this works,
+
+25
+00:01:34.460 --> 00:01:38.540
+but if you're curious and want to find out more about all the details,
+
+26
+00:01:38.540 --> 00:01:41.980
+there's tons of the commutation online you can go and read.
+
+27
+00:01:41.980 --> 00:01:43.540
+And that's all I had to share.
+
+28
+00:01:43.540 --> 00:01:45.180
+Hopefully this was useful.
+
+29
+00:01:45.180 --> 00:01:46.820
+Again, my name is Lisa Martinez.

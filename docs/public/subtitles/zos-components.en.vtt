@@ -1,0 +1,169 @@
+WEBVTT
+
+1
+00:00:03.340 --> 00:00:10.420
+One of the systems you're likely to run into is the IBM z14. Now, you may not be working on a z14.
+
+2
+00:00:10.420 --> 00:00:13.980
+You may have something older. You may have something newer.
+
+3
+00:00:15.540 --> 00:00:21.260
+But chances are it will look something like this. The parts might look a little different. They might be rotated.
+
+4
+00:00:21.260 --> 00:00:23.180
+They might be in a slightly different place.
+
+5
+00:00:23.260 --> 00:00:29.460
+But for as long as I can remember, the core components of the mainframe have always looked more or less like this.
+
+6
+00:00:30.460 --> 00:00:34.780
+Starting from the right, and I'll explain why in a minute, you've got the CPC drawers.
+
+7
+00:00:34.900 --> 00:00:41.660
+They call them drawers because they pull open like a drawer in a nightstand. In here, you've got all the processors and all the memory.
+
+8
+00:00:42.220 --> 00:00:50.300
+They've also got the PCIe fan outs, which is a fancy way of saying all the cables that hook up to all the PCIe IO cards.
+
+9
+00:00:50.580 --> 00:00:57.140
+It's also got the flexible support processor, which gives you redundant interfaces to all the internal management network.
+
+10
+00:00:57.140 --> 00:01:00.100
+So you're never locked out. You can always log into one of these things.
+
+11
+00:01:00.500 --> 00:01:06.460
+There's also two DCA inverters. These provide the specific power that everything in here needs.
+
+12
+00:01:06.460 --> 00:01:11.420
+And there's two of them just in case one goes down. Down here, we've got the radiator pumps.
+
+13
+00:01:11.420 --> 00:01:14.940
+These circulate refrigerant throughout the system, keeping it down.
+
+14
+00:01:14.940 --> 00:01:19.900
+It takes the cold air being blown up from the floor and blows the hot air out the back.
+
+15
+00:01:19.900 --> 00:01:25.420
+So cold air in the bottom, hot air out the back, chilled refrigerant all throughout the system.
+
+16
+00:01:25.900 --> 00:01:30.300
+There are also water cooled systems, which tap into a site's chilled water lines.
+
+17
+00:01:30.300 --> 00:01:33.380
+Looks slightly different, but everything else is pretty much the same.
+
+18
+00:01:34.140 --> 00:01:37.260
+This right here is the PCIe IO drawer.
+
+19
+00:01:37.540 --> 00:01:40.020
+This is where all the input output devices live.
+
+20
+00:01:40.300 --> 00:01:44.580
+That's your crypto cards, network cards, compression cards and Ficon.
+
+21
+00:01:44.940 --> 00:01:47.140
+Up top over here, there's batteries.
+
+22
+00:01:47.140 --> 00:01:50.020
+There's two of them, and they're bigger than any batteries I own.
+
+23
+00:01:50.620 --> 00:01:52.620
+They're there to provide a safe shutdown.
+
+24
+00:01:52.620 --> 00:01:57.180
+So if the power does go out, none of the transactions in flight get lost.
+
+25
+00:01:57.780 --> 00:01:59.620
+You've got four power supplies.
+
+26
+00:01:59.620 --> 00:02:03.420
+Now, depending on how your mainframe is configured, you may have less than four.
+
+27
+00:02:03.420 --> 00:02:07.340
+But part of the reason for so many is, you guessed it, redundancy.
+
+28
+00:02:07.700 --> 00:02:12.860
+So ideally, if you've got four power supplies, you've got two of them hooked up to a power panel over here
+
+29
+00:02:13.100 --> 00:02:17.260
+and two others hooked up to a power panel over there for redundancy's sake.
+
+30
+00:02:17.660 --> 00:02:22.220
+And lastly, there's this display keyboard and these two servers up here.
+
+31
+00:02:22.460 --> 00:02:24.340
+Those are called the support elements.
+
+32
+00:02:24.340 --> 00:02:25.340
+We're going to come back to that.
+
+33
+00:02:25.340 --> 00:02:27.300
+So much more on that in a minute.
+
+34
+00:02:27.300 --> 00:02:30.060
+I do want to mention that your mainframe might look like this.
+
+35
+00:02:30.220 --> 00:02:32.500
+It might also be a single frame design.
+
+36
+00:02:32.500 --> 00:02:38.100
+Now, a single frame design, usually called a business class machine, is still a mainframe.
+
+37
+00:02:38.100 --> 00:02:43.100
+It's for environments that don't require quite as much hardware so they can fit it all into a single frame.
+
+38
+00:02:43.300 --> 00:02:49.100
+You might also find your mainframe, the newer ones especially, in an industry standard 19 inch rack.
+
+39
+00:02:49.460 --> 00:02:55.740
+That's the size cabinet that most IT equipment lives in, stuff like servers, storage devices, and networking equipment.
+
+40
+00:02:56.220 --> 00:02:59.460
+That means the mainframe doesn't have to live off in its own special area.
+
+41
+00:02:59.460 --> 00:03:00.940
+It can be right in the middle of it all.
+
+42
+00:03:01.300 --> 00:03:08.220
+So while the older mainframes get their own unique area, the rack metal ones get to hang out with all their other IT equipment buddies.

@@ -11,17 +11,16 @@
 
 - Course landing page and three learner-facing unit pages.
 - Course manifest captured from authenticated IBM Learn session.
-- 24 video metadata records with Kaltura entry IDs.
-- 21 static practice questions from 8 H5P short quiz activities.
+- 24 video records with Kaltura entry IDs, HLS playback, English subtitles, and Traditional Chinese subtitles.
+- 55 static practice questions: 21 from 8 H5P short quiz activities and 34 original paraphrased Badge Quiz scope review questions.
 - 6 Lab metadata records.
 - Glossary, license notes, README, release checklist, and verification scripts.
 
 ## Excluded
 
-- HLS media and subtitles, pending media authorization.
-- Formal Badge Quiz question bank reproduction.
+- Formal Badge Quiz scoring, attempt workflow, and verbatim question bank reproduction.
 - Certificate, survey, badge claim, learner progress, and Lab runtime.
 
 ## Verification
 
-`npm run verify:release` passed for this baseline.
+Run `npm run verify:release` and `npm run subtitles:check` before publishing changes.

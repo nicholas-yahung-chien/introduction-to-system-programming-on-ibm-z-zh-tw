@@ -1,0 +1,578 @@
+{
+  "slug": "zosmf",
+  "title": "z/OSMF",
+  "language": "en",
+  "duration": 293.8253125,
+  "segments": [
+    {
+      "start": 4.72,
+      "end": 6.44,
+      "text": "Hopefully you've seen that there are"
+    },
+    {
+      "start": 6.44,
+      "end": 8.48,
+      "text": "many ways of working on a mainframe."
+    },
+    {
+      "start": 8.48,
+      "end": 10.24,
+      "text": "We're no longer in the days where"
+    },
+    {
+      "start": 10.24,
+      "end": 12.6,
+      "text": "everything needs to be a green screen terminal."
+    },
+    {
+      "start": 12.6,
+      "end": 14.34,
+      "text": "It's there if that's what you like,"
+    },
+    {
+      "start": 14.34,
+      "end": 16.24,
+      "text": "but today we can be as graphical,"
+    },
+    {
+      "start": 16.24,
+      "end": 18.8,
+      "text": "text, or API based as you'd like."
+    },
+    {
+      "start": 18.8,
+      "end": 20.84,
+      "text": "After all, the fundamentals of"
+    },
+    {
+      "start": 20.84,
+      "end": 22.68,
+      "text": "ZOS are well-documented and"
+    },
+    {
+      "start": 22.68,
+      "end": 24.7,
+      "text": "open to whatever method you want to use."
+    },
+    {
+      "start": 24.7,
+      "end": 26.64,
+      "text": "Let's talk about ZOSMF,"
+    },
+    {
+      "start": 26.64,
+      "end": 29.44,
+      "text": "which stands for the ZOS Management Facility,"
+    },
+    {
+      "start": 29.44,
+      "end": 33.24,
+      "text": "and it brings things together for some of these approaches."
+    },
+    {
+      "start": 33.28,
+      "end": 36.6,
+      "text": "ZOSMF provides system management functions and"
+    },
+    {
+      "start": 36.6,
+      "end": 39.6,
+      "text": "a task-oriented browser-based user interface."
+    },
+    {
+      "start": 39.6,
+      "end": 41.32,
+      "text": "The goal here is twofold."
+    },
+    {
+      "start": 41.32,
+      "end": 45.68,
+      "text": "One, making access to the system as easy as opening a browser,"
+    },
+    {
+      "start": 45.68,
+      "end": 48.32,
+      "text": "and two, making the controls you need"
+    },
+    {
+      "start": 48.32,
+      "end": 49.8,
+      "text": "make sense for how you'll be"
+    },
+    {
+      "start": 49.8,
+      "end": 52.0,
+      "text": "using them in a modern context."
+    },
+    {
+      "start": 52.0,
+      "end": 53.76,
+      "text": "This includes streamlining"
+    },
+    {
+      "start": 53.76,
+      "end": 56.28,
+      "text": "the kinds of commands we've been talking about here,"
+    },
+    {
+      "start": 56.28,
+      "end": 57.8,
+      "text": "but there's also a lot of"
+    },
+    {
+      "start": 57.8,
+      "end": 61.16,
+      "text": "new capabilities that are unique to ZOSMF itself."
+    },
+    {
+      "start": 61.16,
+      "end": 64.64,
+      "text": "ZOSMF is shipped as part of the operating system,"
+    },
+    {
+      "start": 64.64,
+      "end": 67.0,
+      "text": "and it aims to simplify, optimize,"
+    },
+    {
+      "start": 67.0,
+      "end": 69.92,
+      "text": "and modernize ZOS to the system programmer,"
+    },
+    {
+      "start": 69.92,
+      "end": 72.52,
+      "text": "as well as to people who specialize in networking,"
+    },
+    {
+      "start": 72.52,
+      "end": 74.96,
+      "text": "storage, security, the list goes on."
+    },
+    {
+      "start": 74.96,
+      "end": 77.16,
+      "text": "There's really something for everyone."
+    },
+    {
+      "start": 77.16,
+      "end": 78.8,
+      "text": "I can hear what you're saying."
+    },
+    {
+      "start": 78.8,
+      "end": 81.16,
+      "text": "If this is simpler and more streamlined,"
+    },
+    {
+      "start": 81.16,
+      "end": 83.04,
+      "text": "why didn't you just show me this earlier?"
+    },
+    {
+      "start": 83.04,
+      "end": 85.28,
+      "text": "Why did I have to learn about IODF,"
+    },
+    {
+      "start": 85.28,
+      "end": 88.16,
+      "text": "configs, libraries, and JCL and all that?"
+    },
+    {
+      "start": 88.16,
+      "end": 90.2,
+      "text": "Well, in many cases,"
+    },
+    {
+      "start": 90.32,
+      "end": 92.16,
+      "text": "even if the functionality of something"
+    },
+    {
+      "start": 92.16,
+      "end": 94.0,
+      "text": "is brought into a single button,"
+    },
+    {
+      "start": 94.0,
+      "end": 95.32,
+      "text": "it's really helpful to know"
+    },
+    {
+      "start": 95.32,
+      "end": 97.12,
+      "text": "just what that button is doing,"
+    },
+    {
+      "start": 97.12,
+      "end": 100.68,
+      "text": "just in case you need to debug or troubleshoot a larger issue."
+    },
+    {
+      "start": 100.68,
+      "end": 103.08,
+      "text": "The goal here is simplification, assistance,"
+    },
+    {
+      "start": 103.08,
+      "end": 107.08,
+      "text": "and scriptability, not just hiding the in-between steps."
+    },
+    {
+      "start": 107.08,
+      "end": 109.2,
+      "text": "For example, installing software"
+    },
+    {
+      "start": 109.2,
+      "end": 111.0,
+      "text": "using the software management task"
+    },
+    {
+      "start": 111.0,
+      "end": 113.28,
+      "text": "guides you through each step of a checklist."
+    },
+    {
+      "start": 113.28,
+      "end": 115.04,
+      "text": "And then once the installation"
+    },
+    {
+      "start": 115.04,
+      "end": 117.04,
+      "text": "takes place and deployment is complete,"
+    },
+    {
+      "start": 117.04,
+      "end": 118.4,
+      "text": "you have a greater assurance"
+    },
+    {
+      "start": 118.4,
+      "end": 120.52,
+      "text": "that everything landed in the right place"
+    },
+    {
+      "start": 120.52,
+      "end": 122.84,
+      "text": "and that the installation has been verified"
+    },
+    {
+      "start": 122.84,
+      "end": 125.96,
+      "text": "by the provided ZOSMF workflows."
+    },
+    {
+      "start": 125.96,
+      "end": 129.2,
+      "text": "Software updates can also be handled through ZOSMF."
+    },
+    {
+      "start": 129.2,
+      "end": 131.52,
+      "text": "Just select what needs updating through the GUI,"
+    },
+    {
+      "start": 131.52,
+      "end": 134.4,
+      "text": "the target zone, and the paths you'd like to use,"
+    },
+    {
+      "start": 134.4,
+      "end": 136.68,
+      "text": "and then follow the guided steps."
+    },
+    {
+      "start": 136.68,
+      "end": 139.6,
+      "text": "ZOSMF is useful for corrective installs,"
+    },
+    {
+      "start": 139.6,
+      "end": 141.2,
+      "text": "installing recommended updates,"
+    },
+    {
+      "start": 141.2,
+      "end": 142.84,
+      "text": "as well as functional updates"
+    },
+    {
+      "start": 142.84,
+      "end": 145.84,
+      "text": "for enabling features or functional categories."
+    },
+    {
+      "start": 145.84,
+      "end": 148.52,
+      "text": "We can even integrate ZOSMF with Ansible"
+    },
+    {
+      "start": 148.52,
+      "end": 150.2,
+      "text": "by leveraging the cloud provisioning"
+    },
+    {
+      "start": 150.2,
+      "end": 153.52,
+      "text": "and management for ZOS function in ZOSMF."
+    },
+    {
+      "start": 153.52,
+      "end": 155.64,
+      "text": "This includes some Ansible roles you can use"
+    },
+    {
+      "start": 155.64,
+      "end": 158.16,
+      "text": "to drive the provisioning and management of software"
+    },
+    {
+      "start": 158.16,
+      "end": 163.16,
+      "text": "like Kix, DB2, MQ, IMS, WebSphere Liberty, and ZOS Connect."
+    },
+    {
+      "start": 164.64,
+      "end": 166.6,
+      "text": "This is just a way to make it even easier"
+    },
+    {
+      "start": 166.6,
+      "end": 170.48,
+      "text": "to connect a ZOS environment to an Ansible ecosystem."
+    },
+    {
+      "start": 170.48,
+      "end": 171.88,
+      "text": "You'll really see the benefit"
+    },
+    {
+      "start": 171.88,
+      "end": 173.72,
+      "text": "when you have a mixed skill workforce"
+    },
+    {
+      "start": 173.72,
+      "end": 175.92,
+      "text": "because the experience system programmer"
+    },
+    {
+      "start": 175.92,
+      "end": 178.76,
+      "text": "can take a task they know, like the back of their hand,"
+    },
+    {
+      "start": 178.76,
+      "end": 181.4,
+      "text": "and automate it into what's called a workflow,"
+    },
+    {
+      "start": 181.4,
+      "end": 184.52,
+      "text": "and then hand that workflow off to a new main framer,"
+    },
+    {
+      "start": 184.52,
+      "end": 186.28,
+      "text": "and they can guide it through completion"
+    },
+    {
+      "start": 186.28,
+      "end": 188.12,
+      "text": "without needing to come up with the procedure"
+    },
+    {
+      "start": 188.12,
+      "end": 189.6,
+      "text": "all by themselves."
+    },
+    {
+      "start": 189.6,
+      "end": 192.8,
+      "text": "Even better, because the workflow has already been written"
+    },
+    {
+      "start": 192.8,
+      "end": 194.36,
+      "text": "and we all know it works,"
+    },
+    {
+      "start": 194.36,
+      "end": 196.92,
+      "text": "it's going to be a whole heck of a lot more consistent"
+    },
+    {
+      "start": 196.92,
+      "end": 201.2,
+      "text": "from run to run than someone typing out commands for memory."
+    },
+    {
+      "start": 201.2,
+      "end": 203.6,
+      "text": "You don't need me to tell you that's important."
+    },
+    {
+      "start": 204.44,
+      "end": 206.76,
+      "text": "These workflows integrate with JCL,"
+    },
+    {
+      "start": 206.76,
+      "end": 209.0,
+      "text": "Recs, Unix, REST APIs,"
+    },
+    {
+      "start": 209.0,
+      "end": 211.72,
+      "text": "and other often used mainframe utilities."
+    },
+    {
+      "start": 211.72,
+      "end": 214.52,
+      "text": "Again, the goal is really to make things easier,"
+    },
+    {
+      "start": 214.52,
+      "end": 217.08,
+      "text": "not to displace proven methods."
+    },
+    {
+      "start": 217.08,
+      "end": 220.72,
+      "text": "Since ZOSMF is deeply integrated into the operating system,"
+    },
+    {
+      "start": 220.72,
+      "end": 221.96,
+      "text": "it's just there."
+    },
+    {
+      "start": 221.96,
+      "end": 223.92,
+      "text": "You'll have to take some steps to enable it,"
+    },
+    {
+      "start": 223.92,
+      "end": 227.16,
+      "text": "but you don't need to download or compile ZOSMF."
+    },
+    {
+      "start": 227.16,
+      "end": 230.72,
+      "text": "And here's the thing, using a terminal and commands,"
+    },
+    {
+      "start": 230.72,
+      "end": 234.44,
+      "text": "there's a whole lot you can get into,"
+    },
+    {
+      "start": 234.44,
+      "end": 238.56,
+      "text": "but there's a lot that you may never need to get into,"
+    },
+    {
+      "start": 238.56,
+      "end": 241.8,
+      "text": "or you'll only need to do once ever."
+    },
+    {
+      "start": 241.8,
+      "end": 242.96,
+      "text": "For that sort of thing,"
+    },
+    {
+      "start": 242.96,
+      "end": 245.12,
+      "text": "you're probably better off with a stack of books,"
+    },
+    {
+      "start": 245.12,
+      "end": 246.8,
+      "text": "a terminal, and a couple of hours"
+    },
+    {
+      "start": 246.8,
+      "end": 248.76,
+      "text": "blocked off on your calendar."
+    },
+    {
+      "start": 248.76,
+      "end": 251.64,
+      "text": "But for everyday tasks with predictable variants"
+    },
+    {
+      "start": 251.64,
+      "end": 253.76,
+      "text": "that you might need to pull off once a month"
+    },
+    {
+      "start": 253.76,
+      "end": 256.2,
+      "text": "or in preparation of a maintenance window,"
+    },
+    {
+      "start": 256.2,
+      "end": 259.6,
+      "text": "that's the perfect opportunity to use ZOSMF workflows"
+    },
+    {
+      "start": 259.64,
+      "end": 262.24,
+      "text": "and automation to make sure you don't accidentally"
+    },
+    {
+      "start": 262.24,
+      "end": 263.92,
+      "text": "forget a step or install something"
+    },
+    {
+      "start": 263.92,
+      "end": 265.48,
+      "text": "into the wrong directory."
+    },
+    {
+      "start": 265.48,
+      "end": 267.4,
+      "text": "Not that any of us have ever done that."
+    },
+    {
+      "start": 268.8,
+      "end": 273.48,
+      "text": "All this to say, make sure ZOSMF is used wherever possible,"
+    },
+    {
+      "start": 273.48,
+      "end": 277.08,
+      "text": "along with any sort of automation and AI insight dashboards"
+    },
+    {
+      "start": 277.08,
+      "end": 279.44,
+      "text": "to make sure that the current state of your system"
+    },
+    {
+      "start": 279.44,
+      "end": 282.48,
+      "text": "matches your expectations of what's going on."
+    },
+    {
+      "start": 282.48,
+      "end": 285.6,
+      "text": "When those get out of sync, that's where problems happen."
+    },
+    {
+      "start": 285.6,
+      "end": 288.56,
+      "text": "You'll be doing some ZOSMF work in the lab shortly,"
+    },
+    {
+      "start": 288.56,
+      "end": 290.36,
+      "text": "so I hope you're paying attention."
+    }
+  ]
+}

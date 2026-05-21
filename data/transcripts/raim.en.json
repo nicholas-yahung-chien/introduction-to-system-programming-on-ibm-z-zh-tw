@@ -1,0 +1,113 @@
+{
+  "slug": "raim",
+  "title": "RAIM",
+  "language": "en",
+  "duration": 132.655625,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 8.22,
+      "text": "Hi, everyone. My name is Tina Tarconeo, and I am a director on the IBM Z team, and today"
+    },
+    {
+      "start": 8.22,
+      "end": 15.06,
+      "text": "I want to talk to you about one of my favorite parts of the IBM Z system, and that's its redundancy and availability characteristics."
+    },
+    {
+      "start": 15.7,
+      "end": 17.3,
+      "text": "In today's world,"
+    },
+    {
+      "start": 17.3,
+      "end": 23.26,
+      "text": "workloads are getting stronger and stronger, and we require more and more of them, and we're seeing bigger and"
+    },
+    {
+      "start": 24.26,
+      "end": 30.9,
+      "text": "more dense memory available, and so we introduced over ten years ago something called RAME memory,"
+    },
+    {
+      "start": 31.38,
+      "end": 38.5,
+      "text": "Redundant Array of Independent Memory. This is one of the key characteristics of what makes the system so available and so reliable."
+    },
+    {
+      "start": 39.58,
+      "end": 45.78,
+      "text": "So as you know, I talked about workloads. Things like in-transaction analytics are becoming more and more prevalent,"
+    },
+    {
+      "start": 45.78,
+      "end": 51.68,
+      "text": "and we're increasing the size of memory, right? So in IBM Z14, you can have up to 32 terabytes of memory."
+    },
+    {
+      "start": 51.98,
+      "end": 58.06,
+      "text": "So what is RAME memory? As I said, we introduced it with IBM Z196, and it is"
+    },
+    {
+      "start": 58.5,
+      "end": 60.9,
+      "text": "the key characteristics of our availability."
+    },
+    {
+      "start": 60.94,
+      "end": 68.46,
+      "text": "So if you can imagine a processor unit, every processor unit has one memory unit, and within the memory unit is five DIMMs, and"
+    },
+    {
+      "start": 68.62,
+      "end": 72.7,
+      "text": "up to one DIMM is set aside for redundant memory."
+    },
+    {
+      "start": 72.7,
+      "end": 79.26,
+      "text": "That means you can lose a channel, and you can lose an entire DIMM and still have complete availability of your memory subsystem."
+    },
+    {
+      "start": 79.5,
+      "end": 87.62,
+      "text": "Like I said, this was introduced with IBM Z196 in 2010, and every server that's come out after will include this RAME memory."
+    },
+    {
+      "start": 88.1,
+      "end": 94.14,
+      "text": "Now, what happens if you don't have this? That means in the middle of a transaction, if you have a memory error, data is lost."
+    },
+    {
+      "start": 94.26,
+      "end": 100.98,
+      "text": "That's not good, especially when we have qualities of service and service agreements with our clients, right?"
+    },
+    {
+      "start": 100.98,
+      "end": 107.94,
+      "text": "That they expect 100% availability. In fact, that is what the Z in IBM Z stands for, zero downtime."
+    },
+    {
+      "start": 107.94,
+      "end": 111.02,
+      "text": "That includes the server and all of the subsystems within it."
+    },
+    {
+      "start": 111.02,
+      "end": 117.5,
+      "text": "This is just one aspect of how we've built availability and reliability into every subsystem of the IBM mainframe."
+    },
+    {
+      "start": 117.5,
+      "end": 122.62,
+      "text": "That includes the memory, like I talked about, but also the I.O. and the processing units."
+    },
+    {
+      "start": 122.62,
+      "end": 129.02,
+      "text": "So, when I brag about the mainframe and what a great server it is, this is the main reason I like to start with with our clients."
+    }
+  ]
+}

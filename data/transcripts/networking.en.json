@@ -1,0 +1,228 @@
+{
+  "slug": "networking",
+  "title": "Networking",
+  "language": "en",
+  "duration": 324.80075,
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 19.41,
+      "text": "Chances are you want your mainframe on a network of some sort, maybe not the internet, but back in Course 1 we talked about all the PCIe adapters that a system can have, and chances are some of those are OSA, or Open Systems Adapters."
+    },
+    {
+      "start": 19.41,
+      "end": 31.41,
+      "text": "These are the network cards for the mainframe, and they come in a wide variety of flavors, suited for copper and fiber links from gigabit to 10 gigabit, and even up to 25 gigabit speeds."
+    },
+    {
+      "start": 31.41,
+      "end": 43.41,
+      "text": "On ZOS, TCPIP is handled by the TCPIP started task, so it starts up and stays up, generally, until the sysprog or another operator takes it down."
+    },
+    {
+      "start": 43.41,
+      "end": 50.41,
+      "text": "Generally, we refer to this started TCPIP task as a stack, the TCPIP stack."
+    },
+    {
+      "start": 50.41,
+      "end": 57.41,
+      "text": "Before we get into the TCPIP stack, I want to take just a minute to dive into the concepts of IP addresses and sockets."
+    },
+    {
+      "start": 57.41,
+      "end": 68.41,
+      "text": "If you're already familiar with this from another platform, the next minute and a half probably won't be all that new to you, so you can go and check your email or scroll around a little bit if you don't want to hear it. I won't be offended."
+    },
+    {
+      "start": 68.41,
+      "end": 78.41,
+      "text": "Typically, a system on a network has an IP address, or two, and you'll even see some ZOS systems that have five, six, even more IP addresses."
+    },
+    {
+      "start": 79.41,
+      "end": 85.41,
+      "text": "An IP address is a 32-bit address, represented in dotted decimal, like this."
+    },
+    {
+      "start": 85.41,
+      "end": 91.41,
+      "text": "So, it looks like four numbers, each between 0 and 255, with dots in between them."
+    },
+    {
+      "start": 91.41,
+      "end": 101.41,
+      "text": "That address is a lot like an address for a house, and with that address, we can find the server on the network, or even the internet, that we want to talk to."
+    },
+    {
+      "start": 101.41,
+      "end": 114.41,
+      "text": "I'll also mention that the 32-bit address is what's called an IPv4 address, and there's a constant concern that will run out of IPv4 addresses, so there's also IPv6."
+    },
+    {
+      "start": 114.41,
+      "end": 119.41,
+      "text": "This is much longer, it's 128 bits, and it looks like this."
+    },
+    {
+      "start": 119.41,
+      "end": 126.41,
+      "text": "It's longer, it uses colons, dah-dah-dots, and it's represented in hexadecimal, so there's a couple letters in there, too."
+    },
+    {
+      "start": 127.41,
+      "end": 134.41,
+      "text": "Many, many, many, many more possible combinations, and you won't see an IPv6 address everywhere just yet."
+    },
+    {
+      "start": 134.41,
+      "end": 144.41,
+      "text": "People are still trying to write out IPv4 for as long as possible, but in case you see an IP address that looks different than what you were expecting, that might be it."
+    },
+    {
+      "start": 145.41,
+      "end": 153.41,
+      "text": "Anyway, the IP address, be it IPv4 or IPv6, gets us to the server, but a server can run multiple programs."
+    },
+    {
+      "start": 153.41,
+      "end": 156.41,
+      "text": "How do we get to the exact program we want?"
+    },
+    {
+      "start": 156.41,
+      "end": 166.41,
+      "text": "Those programs operate on what's called a socket, so you've got the IP address, colon, and then the socket number, and all that goes over the network."
+    },
+    {
+      "start": 166.41,
+      "end": 174.41,
+      "text": "Once the socket connection is established, the program can start issuing reads and writes on that socket to get or put data."
+    },
+    {
+      "start": 174.41,
+      "end": 178.41,
+      "text": "Then when it's done, we close that socket, and life goes on."
+    },
+    {
+      "start": 178.41,
+      "end": 186.41,
+      "text": "So we have this TCP IP profile, and within it, we find a number of statements that build our configurations step by step."
+    },
+    {
+      "start": 186.41,
+      "end": 190.41,
+      "text": "For example, you'll probably find device, link, and home statements."
+    },
+    {
+      "start": 190.41,
+      "end": 194.41,
+      "text": "The device statement states which network devices we want to use."
+    },
+    {
+      "start": 194.41,
+      "end": 204.41,
+      "text": "The subsequent link statements say how we want to use them, and then below that in the home statements, that's where we set the IP addresses and net masking and all that stuff."
+    },
+    {
+      "start": 204.41,
+      "end": 207.41,
+      "text": "Now, this is a fairly simple setup right here."
+    },
+    {
+      "start": 207.41,
+      "end": 210.41,
+      "text": "There's three devices, three link statements, and three IP addresses."
+    },
+    {
+      "start": 210.41,
+      "end": 216.41,
+      "text": "It can get quite a bit more complicated, where it's not always a one-to-one-to-one mapping."
+    },
+    {
+      "start": 216.41,
+      "end": 220.41,
+      "text": "I just don't want you to think that we're making this complex for no reason."
+    },
+    {
+      "start": 220.41,
+      "end": 224.41,
+      "text": "Now, let's talk about that VIPALNK1 entry."
+    },
+    {
+      "start": 224.41,
+      "end": 228.41,
+      "text": "That sounds interesting, and, yeah, actually it is."
+    },
+    {
+      "start": 228.41,
+      "end": 238.41,
+      "text": "So, typically, an IP address should only be defined in one place, because there needs to be no confusion about where that IP address is."
+    },
+    {
+      "start": 238.41,
+      "end": 250.41,
+      "text": "And, typically, if we tell someone that a server is at a specific IP address, and that server goes down, or there's a network problem, people can no longer reach that server."
+    },
+    {
+      "start": 250.41,
+      "end": 254.41,
+      "text": "And that's when they start calling you and getting angry, and nobody wants that."
+    },
+    {
+      "start": 254.41,
+      "end": 260.41,
+      "text": "What a VIPA does is it defines an IP address to the system virtually."
+    },
+    {
+      "start": 260.41,
+      "end": 262.41,
+      "text": "Take a look at this diagram."
+    },
+    {
+      "start": 262.41,
+      "end": 269.41,
+      "text": "They've got two LPARs, each defined with the same VIPA, in addition to their own unique IP addresses for each network link."
+    },
+    {
+      "start": 269.41,
+      "end": 278.41,
+      "text": "And this is a fairly standard high-availability setup, because if one LPAR is the primary, and OSA Device 1 goes down for whatever reason,"
+    },
+    {
+      "start": 278.41,
+      "end": 283.41,
+      "text": "that VIPA is still reachable through the second pathway at the same IP address."
+    },
+    {
+      "start": 283.41,
+      "end": 288.41,
+      "text": "Or even if the whole LPAR were to go down, the backup takes over."
+    },
+    {
+      "start": 288.41,
+      "end": 297.41,
+      "text": "And it's got two links as well, so you can actually lose three links and an LPAR, and the service is still available at that VIPA address."
+    },
+    {
+      "start": 297.41,
+      "end": 298.41,
+      "text": "Pretty cool."
+    },
+    {
+      "start": 298.41,
+      "end": 307.41,
+      "text": "For that reason, you'll often find critical services associated with a VIPA instead of an IP address that's hard-coded to a single link or device."
+    },
+    {
+      "start": 307.41,
+      "end": 317.41,
+      "text": "The virtualization and architecture of Z allows for some pretty crafty ways of implementing highly available and highly performant solutions that you just won't find anywhere else."
+    },
+    {
+      "start": 317.41,
+      "end": 320.41,
+      "text": "Especially in distributed environments."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+WEBVTT
+
+1
+00:00:03.380 --> 00:00:08.220
+Hi, everyone. My name is Tina Tarconeo, and I am a director on the IBM Z team, and today
+
+2
+00:00:08.220 --> 00:00:15.060
+I want to talk to you about one of my favorite parts of the IBM Z system, and that's its redundancy and availability characteristics.
+
+3
+00:00:15.700 --> 00:00:17.300
+In today's world,
+
+4
+00:00:17.300 --> 00:00:23.260
+workloads are getting stronger and stronger, and we require more and more of them, and we're seeing bigger and
+
+5
+00:00:24.260 --> 00:00:30.900
+more dense memory available, and so we introduced over ten years ago something called RAME memory,
+
+6
+00:00:31.380 --> 00:00:38.500
+Redundant Array of Independent Memory. This is one of the key characteristics of what makes the system so available and so reliable.
+
+7
+00:00:39.580 --> 00:00:45.780
+So as you know, I talked about workloads. Things like in-transaction analytics are becoming more and more prevalent,
+
+8
+00:00:45.780 --> 00:00:51.680
+and we're increasing the size of memory, right? So in IBM Z14, you can have up to 32 terabytes of memory.
+
+9
+00:00:51.980 --> 00:00:58.060
+So what is RAME memory? As I said, we introduced it with IBM Z196, and it is
+
+10
+00:00:58.500 --> 00:01:00.900
+the key characteristics of our availability.
+
+11
+00:01:00.940 --> 00:01:08.460
+So if you can imagine a processor unit, every processor unit has one memory unit, and within the memory unit is five DIMMs, and
+
+12
+00:01:08.620 --> 00:01:12.700
+up to one DIMM is set aside for redundant memory.
+
+13
+00:01:12.700 --> 00:01:19.260
+That means you can lose a channel, and you can lose an entire DIMM and still have complete availability of your memory subsystem.
+
+14
+00:01:19.500 --> 00:01:27.620
+Like I said, this was introduced with IBM Z196 in 2010, and every server that's come out after will include this RAME memory.
+
+15
+00:01:28.100 --> 00:01:34.140
+Now, what happens if you don't have this? That means in the middle of a transaction, if you have a memory error, data is lost.
+
+16
+00:01:34.260 --> 00:01:40.980
+That's not good, especially when we have qualities of service and service agreements with our clients, right?
+
+17
+00:01:40.980 --> 00:01:47.940
+That they expect 100% availability. In fact, that is what the Z in IBM Z stands for, zero downtime.
+
+18
+00:01:47.940 --> 00:01:51.020
+That includes the server and all of the subsystems within it.
+
+19
+00:01:51.020 --> 00:01:57.500
+This is just one aspect of how we've built availability and reliability into every subsystem of the IBM mainframe.
+
+20
+00:01:57.500 --> 00:02:02.620
+That includes the memory, like I talked about, but also the I.O. and the processing units.
+
+21
+00:02:02.620 --> 00:02:09.020
+So, when I brag about the mainframe and what a great server it is, this is the main reason I like to start with with our clients.

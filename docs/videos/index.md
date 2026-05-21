@@ -1,8 +1,8 @@
 # 影片與活動清單
 
-本頁彙整課程影片與相關學習活動。第一版已擷取 Kaltura entry ID 與 IBM Learn 活動連結；影片媒體與字幕可在授權確認後用既有腳本下載、轉檔、轉錄與翻譯。
+本頁彙整課程影片與相關學習活動。24 支課程影片已接入 HLS 播放清單、英文字幕與繁體中文字幕；每個活動仍保留 IBM Learn 原課程連結，方便回到正式學習脈絡。
 
-目前公開頁面採取 source-only 呈現，不會假裝本站已完成影片部署。請需要正式觀看或完成進度時回 IBM Learn 原課程。
+影片播放、字幕與本地化學習頁面僅作為靜態課程轉置使用；正式觀看進度、Lab runtime、Badge Quiz attempt、certificate 與 badge claim 仍以 IBM Learn 原課程為準。
 
 <CourseManifest />
 

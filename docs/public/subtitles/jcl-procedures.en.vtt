@@ -1,0 +1,817 @@
+WEBVTT
+
+1
+00:00:03.410 --> 00:00:05.450
+When we talked about JCL,
+
+2
+00:00:05.450 --> 00:00:08.290
+we mentioned that it can be used to call a program.
+
+3
+00:00:08.290 --> 00:00:09.930
+That's something you're probably pretty familiar
+
+4
+00:00:09.930 --> 00:00:11.490
+with running a program.
+
+5
+00:00:11.490 --> 00:00:14.130
+JCL can also call a procedure.
+
+6
+00:00:14.130 --> 00:00:18.330
+Now, a procedure is a set of frequently used JCL statements
+
+7
+00:00:18.330 --> 00:00:20.610
+that have been grouped together and named
+
+8
+00:00:20.610 --> 00:00:23.490
+so they can be invoked using a single name.
+
+9
+00:00:23.490 --> 00:00:26.590
+Most JCL procedures perform a general function,
+
+10
+00:00:26.590 --> 00:00:29.950
+which allows them to be called from a variety of jobs.
+
+11
+00:00:29.950 --> 00:00:31.610
+And that just makes a whole lot of sense
+
+12
+00:00:31.610 --> 00:00:33.330
+from an efficiency standpoint.
+
+13
+00:00:33.370 --> 00:00:36.290
+It's easier and cleaner to reference a procedure
+
+14
+00:00:36.290 --> 00:00:37.970
+than a series of statements,
+
+15
+00:00:37.970 --> 00:00:41.910
+especially if they're gonna be used the same way each time.
+
+16
+00:00:41.910 --> 00:00:45.370
+Procedures are usually stored in system data sets.
+
+17
+00:00:45.370 --> 00:00:48.290
+That makes them the procedure libraries,
+
+18
+00:00:48.290 --> 00:00:53.360
+or proc lib for short.
+
+19
+00:00:53.360 --> 00:00:55.160
+You can think of a procedure like a play
+
+20
+00:00:55.160 --> 00:00:57.200
+that a football team might have.
+
+21
+00:00:57.200 --> 00:00:59.640
+All of the movements and the details are all set
+
+22
+00:00:59.640 --> 00:01:01.160
+and rehearsed ahead of time,
+
+23
+00:01:01.160 --> 00:01:03.080
+and you just have to call it by name.
+
+24
+00:01:03.080 --> 00:01:05.280
+That makes the proc lib the playbook,
+
+25
+00:01:05.280 --> 00:01:07.240
+a collection of commonly used steps,
+
+26
+00:01:07.240 --> 00:01:08.880
+each with its own name.
+
+27
+00:01:08.880 --> 00:01:11.040
+When a procedure is placed into proc lib,
+
+28
+00:01:11.040 --> 00:01:13.780
+it can be made available to a wider audience.
+
+29
+00:01:13.780 --> 00:01:15.620
+And it can also be referenced simply by name
+
+30
+00:01:15.620 --> 00:01:17.960
+instead of specifying the full path each time.
+
+31
+00:01:17.960 --> 00:01:19.960
+However, procedures can also be stored
+
+32
+00:01:19.960 --> 00:01:23.420
+in private proc libs or even within a job.
+
+33
+00:01:23.420 --> 00:01:25.440
+This restricts who can call them,
+
+34
+00:01:25.440 --> 00:01:27.780
+and sometimes that's by design.
+
+35
+00:01:27.780 --> 00:01:29.600
+There are two types of procedures,
+
+36
+00:01:29.600 --> 00:01:33.000
+catalog procedures and in-stream procedures.
+
+37
+00:01:33.000 --> 00:01:34.640
+Both types are invoked by using
+
+38
+00:01:34.640 --> 00:01:36.960
+one of the following JCL statements.
+
+39
+00:01:36.960 --> 00:01:41.680
+You can say step name exec proc equals procedure name,
+
+40
+00:01:41.680 --> 00:01:45.000
+or step name exec procedure name.
+
+41
+00:01:45.000 --> 00:01:46.440
+You can see how this works here,
+
+42
+00:01:46.440 --> 00:01:50.220
+and it spells out some of the benefits of using a procedure.
+
+43
+00:01:50.220 --> 00:01:53.320
+All these steps and everything that connects it all together,
+
+44
+00:01:53.320 --> 00:01:55.640
+it's now all within this single procedure,
+
+45
+00:01:55.640 --> 00:01:57.920
+and a programmer can very easily reference
+
+46
+00:01:57.920 --> 00:01:59.880
+that one procedure.
+
+47
+00:01:59.880 --> 00:02:02.580
+Here's an example of an in-stream procedure.
+
+48
+00:02:02.580 --> 00:02:06.420
+So we've got this line up here saying here's our procedure,
+
+49
+00:02:06.420 --> 00:02:08.180
+and below it here's step one,
+
+50
+00:02:08.180 --> 00:02:11.580
+which is going to execute a program called APGM.
+
+51
+00:02:12.780 --> 00:02:16.740
+And the whole thing goes between the proc and P-E-N-D,
+
+52
+00:02:16.740 --> 00:02:18.720
+procedure end statement.
+
+53
+00:02:18.720 --> 00:02:21.040
+This is our in-stream procedure.
+
+54
+00:02:21.040 --> 00:02:23.260
+If you're using a catalog procedure,
+
+55
+00:02:23.260 --> 00:02:27.260
+you don't have to code the proc and P-N statements.
+
+56
+00:02:27.260 --> 00:02:30.220
+However, if an in-stream proc statement
+
+57
+00:02:30.220 --> 00:02:32.780
+is coded into a catalog procedure,
+
+58
+00:02:32.780 --> 00:02:36.060
+then it has to be the procedure's first statement.
+
+59
+00:02:36.060 --> 00:02:36.900
+You can see here,
+
+60
+00:02:36.900 --> 00:02:40.260
+once we've defined that in-stream procedure by name,
+
+61
+00:02:40.260 --> 00:02:42.500
+we can reference it in later steps.
+
+62
+00:02:42.500 --> 00:02:45.180
+And as you can also see, like we've mentioned before,
+
+63
+00:02:45.180 --> 00:02:47.620
+there are two ways of calling it.
+
+64
+00:02:47.620 --> 00:02:50.460
+You can also see that when you reference a procedure,
+
+65
+00:02:50.460 --> 00:02:53.420
+you could be referencing an in-stream procedure,
+
+66
+00:02:53.420 --> 00:02:57.460
+one in a system proc lib, or one in a private proc lib.
+
+67
+00:02:57.460 --> 00:03:00.900
+Now, if the procedure is in a private procedure library,
+
+68
+00:03:00.900 --> 00:03:02.940
+that library needs to be specified
+
+69
+00:03:02.940 --> 00:03:05.940
+on the job's JCL lib statement,
+
+70
+00:03:05.940 --> 00:03:09.220
+which needs to appear before the exec statement.
+
+71
+00:03:09.220 --> 00:03:13.060
+And if the called procedure is cataloged in a system library,
+
+72
+00:03:13.060 --> 00:03:16.300
+it will be retrieved from the sys1.proc lib,
+
+73
+00:03:16.300 --> 00:03:18.800
+or another defined procedure library.
+
+74
+00:03:18.800 --> 00:03:20.380
+If it's not in any of those,
+
+75
+00:03:20.380 --> 00:03:23.100
+then it won't be able to run your specified procedure.
+
+76
+00:03:23.100 --> 00:03:24.640
+It can't find it.
+
+77
+00:03:24.640 --> 00:03:26.720
+About that JCL lib statement,
+
+78
+00:03:26.760 --> 00:03:30.320
+we mentioned that it can be used to define private proc libs.
+
+79
+00:03:30.320 --> 00:03:32.340
+It can also be used to determine the order
+
+80
+00:03:32.340 --> 00:03:34.760
+in which the proc libs should be searched.
+
+81
+00:03:34.760 --> 00:03:38.640
+So if you specify proc libs in your JCL lib statement,
+
+82
+00:03:38.640 --> 00:03:41.120
+it will look for those before it looks
+
+83
+00:03:41.120 --> 00:03:43.220
+in the default system procedure library.
+
+84
+00:03:44.300 --> 00:03:47.060
+You may only need to specify one proc lib here,
+
+85
+00:03:47.060 --> 00:03:49.460
+or if you need to specify two or more,
+
+86
+00:03:49.460 --> 00:03:51.040
+just separate them by commas
+
+87
+00:03:51.040 --> 00:03:53.320
+and put them inside parentheses.
+
+88
+00:03:53.320 --> 00:03:57.040
+You only get one JCL lib statement per job,
+
+89
+00:03:57.040 --> 00:03:59.640
+and it must appear after the job statement
+
+90
+00:03:59.640 --> 00:04:02.460
+and before the first exec statement.
+
+91
+00:04:02.460 --> 00:04:05.660
+We have another useful statement called include.
+
+92
+00:04:05.660 --> 00:04:08.100
+If you have a series of JCL statements coded
+
+93
+00:04:08.100 --> 00:04:09.860
+within a member of a PDS,
+
+94
+00:04:09.860 --> 00:04:13.760
+you can insert them into JCL using an include statement.
+
+95
+00:04:13.760 --> 00:04:16.000
+So here's the include statement.
+
+96
+00:04:16.000 --> 00:04:19.920
+It's got the name of the include, the statement include,
+
+97
+00:04:19.920 --> 00:04:22.080
+and then the dataset name.
+
+98
+00:04:22.080 --> 00:04:24.560
+When the JCL is being read, it gets there
+
+99
+00:04:24.560 --> 00:04:25.820
+and it just replaces it
+
+100
+00:04:25.820 --> 00:04:28.480
+with all the contents of that dataset.
+
+101
+00:04:28.480 --> 00:04:30.840
+Where this comes in handy is when you need to define
+
+102
+00:04:30.840 --> 00:04:34.760
+a whole bunch of DD statements for a series of JCLs.
+
+103
+00:04:34.760 --> 00:04:37.720
+Now, you could just copy and paste them,
+
+104
+00:04:37.720 --> 00:04:40.520
+but then you would also have to go around fixing all of them
+
+105
+00:04:40.520 --> 00:04:42.360
+every single time you wanted to make a change
+
+106
+00:04:42.360 --> 00:04:44.160
+to those DD statements.
+
+107
+00:04:44.160 --> 00:04:46.880
+It's a whole lot easier to write them once,
+
+108
+00:04:46.880 --> 00:04:49.520
+so you can reference them with an include statement.
+
+109
+00:04:49.520 --> 00:04:51.360
+And if there's updates to be made,
+
+110
+00:04:51.360 --> 00:04:53.940
+you only have to make those updates in one place.
+
+111
+00:04:54.920 --> 00:04:58.240
+A couple of limitations on procedures and includes.
+
+112
+00:04:58.240 --> 00:05:02.260
+Procedures can be nested up to a maximum of 15 levels.
+
+113
+00:05:02.260 --> 00:05:04.860
+So that's a procedure, calling a procedure,
+
+114
+00:05:04.860 --> 00:05:07.080
+calling a procedure, calling a procedure,
+
+115
+00:05:07.080 --> 00:05:08.960
+and you get the idea.
+
+116
+00:05:10.080 --> 00:05:12.280
+So you get some flexibility,
+
+117
+00:05:12.280 --> 00:05:14.200
+but you can't just go nuts with procedures
+
+118
+00:05:14.200 --> 00:05:15.400
+referencing other procedures.
+
+119
+00:05:15.400 --> 00:05:16.920
+Same thing with includes.
+
+120
+00:05:16.920 --> 00:05:20.520
+You get up to a maximum of 15 levels there as well.
+
+121
+00:05:20.520 --> 00:05:23.160
+A procedure can reference an include group,
+
+122
+00:05:23.160 --> 00:05:26.060
+and an include group can access a procedure.
+
+123
+00:05:26.060 --> 00:05:28.520
+So what you're seeing here is an example
+
+124
+00:05:28.520 --> 00:05:31.140
+of a procedure called eval,
+
+125
+00:05:31.140 --> 00:05:35.240
+which has a procedure named EPRT nested within it.
+
+126
+00:05:35.240 --> 00:05:39.080
+In addition, the procedure EPRT has an include group
+
+127
+00:05:39.080 --> 00:05:42.920
+called genRDD nested within it.
+
+128
+00:05:42.920 --> 00:05:46.880
+In JCL, we can set what's called symbolic parameters.
+
+129
+00:05:46.880 --> 00:05:50.060
+Symbolic parameters, usually just called symbolics,
+
+130
+00:05:50.060 --> 00:05:52.220
+can be assigned through three statements,
+
+131
+00:05:52.220 --> 00:05:56.260
+proc statements, exec statements, and set statements.
+
+132
+00:05:56.260 --> 00:05:58.860
+This means you can define a symbolic parameter,
+
+133
+00:05:58.860 --> 00:06:00.280
+assign it a value,
+
+134
+00:06:00.280 --> 00:06:03.180
+and then you can just reference that symbolic later on.
+
+135
+00:06:03.180 --> 00:06:04.920
+So the next time you run the JCL,
+
+136
+00:06:04.920 --> 00:06:07.220
+if you want to run it with a different value in there,
+
+137
+00:06:07.220 --> 00:06:09.640
+just change the symbolic definition.
+
+138
+00:06:09.640 --> 00:06:13.180
+You get to define the symbolic names and values.
+
+139
+00:06:13.180 --> 00:06:15.720
+In addition to the symbolic parameters that you define,
+
+140
+00:06:15.720 --> 00:06:18.060
+there are a number of system symbols,
+
+141
+00:06:18.060 --> 00:06:20.700
+and these come in two flavors.
+
+142
+00:06:20.700 --> 00:06:22.740
+There's dynamic system symbols,
+
+143
+00:06:22.740 --> 00:06:25.620
+whose values can change at any point after an IPL,
+
+144
+00:06:25.620 --> 00:06:27.740
+like current, date, and time.
+
+145
+00:06:27.740 --> 00:06:30.660
+The full set of dynamic system symbols is fixed,
+
+146
+00:06:30.660 --> 00:06:32.940
+and you cannot define additional ones.
+
+147
+00:06:32.940 --> 00:06:35.140
+What you have is what you get.
+
+148
+00:06:35.140 --> 00:06:37.300
+There's also static system symbols.
+
+149
+00:06:37.300 --> 00:06:39.620
+These are set at IPL time,
+
+150
+00:06:39.620 --> 00:06:43.060
+and won't change until the next time the system IPLs.
+
+151
+00:06:43.060 --> 00:06:47.380
+So for example, the system name and systplex name.
+
+152
+00:06:47.380 --> 00:06:49.980
+Static system symbols have two types.
+
+153
+00:06:49.980 --> 00:06:52.380
+There's syst and define static symbols,
+
+154
+00:06:52.380 --> 00:06:56.700
+and these include ampersand sysclone, systname, systplex,
+
+155
+00:06:56.700 --> 00:06:59.860
+sys-r1, and syst-a-l-v-l.
+
+156
+00:06:59.860 --> 00:07:02.620
+That's used for the system architecture level.
+
+157
+00:07:02.620 --> 00:07:05.200
+Then there's installation defined static symbols,
+
+158
+00:07:05.200 --> 00:07:08.260
+which your system programmer, maybe that's you,
+
+159
+00:07:08.260 --> 00:07:09.380
+gets to set.
+
+160
+00:07:09.380 --> 00:07:12.900
+These are defined in the syst1.parmlib dataset,
+
+161
+00:07:12.900 --> 00:07:15.300
+IEA sim member.
+
+162
+00:07:15.300 --> 00:07:16.420
+In the example here,
+
+163
+00:07:16.420 --> 00:07:19.180
+you'll see a mix of JCL symbols in red,
+
+164
+00:07:19.180 --> 00:07:21.660
+and system symbols in blue.
+
+165
+00:07:21.660 --> 00:07:23.980
+Note that you can use static system symbols,
+
+166
+00:07:23.980 --> 00:07:27.660
+such as systname in started task JCL procedures,
+
+167
+00:07:27.660 --> 00:07:30.940
+but not in regular batch JCL.
+
+168
+00:07:30.940 --> 00:07:34.220
+Overriding a parameter modifies only the one parameter.
+
+169
+00:07:34.220 --> 00:07:36.280
+All the other parameters stay unaffected,
+
+170
+00:07:36.280 --> 00:07:38.360
+unless you modify them as well.
+
+171
+00:07:38.360 --> 00:07:41.900
+So if you override the dataset name on a DD statement,
+
+172
+00:07:41.900 --> 00:07:45.320
+which includes the unit and vol equals seer parameters,
+
+173
+00:07:45.340 --> 00:07:47.400
+it'll change the dataset name,
+
+174
+00:07:47.400 --> 00:07:49.760
+but the unit and vol equals seer parameters
+
+175
+00:07:49.760 --> 00:07:52.040
+will remain unchanged.
+
+176
+00:07:52.040 --> 00:07:55.040
+But you can't correct invalid parameters
+
+177
+00:07:55.040 --> 00:07:56.920
+in a procedure through overrides,
+
+178
+00:07:56.920 --> 00:07:59.840
+because before doing any substitutions,
+
+179
+00:07:59.840 --> 00:08:02.880
+the system scans the original procedure statements
+
+180
+00:08:02.880 --> 00:08:05.780
+and issues error messages based on those.
+
+181
+00:08:05.780 --> 00:08:09.320
+So it's got to be valid before you issue overrides.
+
+182
+00:08:09.320 --> 00:08:11.740
+If you made a mistake while you were creating a procedure
+
+183
+00:08:11.740 --> 00:08:15.280
+and you typed AL instead of all, we've all been there,
+
+184
+00:08:16.100 --> 00:08:19.040
+you can't substitute your way out of that situation.
+
+185
+00:08:19.040 --> 00:08:22.960
+Lastly, you can override the output JCL and DD statements
+
+186
+00:08:22.960 --> 00:08:26.080
+by specifying the step for which they apply.
+
+187
+00:08:26.080 --> 00:08:28.400
+If no step has been named previously,
+
+188
+00:08:28.400 --> 00:08:31.360
+the changes apply to the very first step.
+
+189
+00:08:31.360 --> 00:08:32.900
+If you have specified a step
+
+190
+00:08:32.900 --> 00:08:35.320
+and you want to change a couple more output JCL
+
+191
+00:08:35.320 --> 00:08:36.700
+and DD statements,
+
+192
+00:08:36.700 --> 00:08:39.700
+you only have to specify it the first time.
+
+193
+00:08:39.700 --> 00:08:40.960
+The ones that follow it,
+
+194
+00:08:40.960 --> 00:08:43.200
+it just assumes it's in the same one as above.
+
+195
+00:08:44.200 --> 00:08:47.520
+And there's your introduction to JCL procedures.
+
+196
+00:08:47.520 --> 00:08:50.160
+We got into some fairly tricky concepts there.
+
+197
+00:08:50.160 --> 00:08:52.480
+So don't worry if you feel a little lost,
+
+198
+00:08:52.480 --> 00:08:54.080
+overwhelmed or intimidated.
+
+199
+00:08:54.080 --> 00:08:56.560
+I mean, I'm looking at my camera operator right now
+
+200
+00:08:56.560 --> 00:08:58.120
+and he looks like he's about to pass out.
+
+201
+00:08:58.120 --> 00:09:00.080
+So I'm gonna go check on him
+
+202
+00:09:00.080 --> 00:09:02.520
+and I'll see you in the next lesson, all right?
+
+203
+00:09:02.520 --> 00:09:03.800
+Hey man, you all right?
+
+204
+00:09:03.800 --> 00:09:04.640
+You doing all right?

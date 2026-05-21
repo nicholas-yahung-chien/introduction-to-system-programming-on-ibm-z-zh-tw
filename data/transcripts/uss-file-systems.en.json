@@ -1,0 +1,153 @@
+{
+  "slug": "uss-file-systems",
+  "title": "USS file systems",
+  "language": "en",
+  "duration": 111.0378125,
+  "segments": [
+    {
+      "start": 3.44,
+      "end": 7.12,
+      "text": "Hi, my name is Risa Martinez. I work for USS."
+    },
+    {
+      "start": 7.12,
+      "end": 12.68,
+      "text": "So last time, Jeff talked a little bit about COS Unix and Sixplex."
+    },
+    {
+      "start": 12.68,
+      "end": 16.92,
+      "text": "So now I'm going to be talking about how they kind of both work together."
+    },
+    {
+      "start": 16.92,
+      "end": 18.92,
+      "text": "So in COS Unix,"
+    },
+    {
+      "start": 18.92,
+      "end": 23.16,
+      "text": "you have access to the entire file system hierarchy."
+    },
+    {
+      "start": 23.16,
+      "end": 28.04,
+      "text": "And the way this is done is that once your file system is mounted,"
+    },
+    {
+      "start": 28.04,
+      "end": 31.02,
+      "text": "an owning LPAR is assigned."
+    },
+    {
+      "start": 31.02,
+      "end": 32.74,
+      "text": "So once this is mounted,"
+    },
+    {
+      "start": 32.82,
+      "end": 36.82,
+      "text": "now all the LPARs and users have access to this file."
+    },
+    {
+      "start": 36.82,
+      "end": 39.22,
+      "text": "And this is kind of done in two ways."
+    },
+    {
+      "start": 39.22,
+      "end": 41.9,
+      "text": "One way is that through COS Unix,"
+    },
+    {
+      "start": 41.9,
+      "end": 47.26,
+      "text": "we forward all the transactions and requests associated with one file"
+    },
+    {
+      "start": 47.26,
+      "end": 49.3,
+      "text": "to the owning LPAR."
+    },
+    {
+      "start": 49.3,
+      "end": 52.86,
+      "text": "And another way is called Sixplex Aware."
+    },
+    {
+      "start": 52.86,
+      "end": 55.62,
+      "text": "This is also called as Read Write Share."
+    },
+    {
+      "start": 55.62,
+      "end": 60.38,
+      "text": "In this case, the files are mounted locally to your LPAR."
+    },
+    {
+      "start": 60.38,
+      "end": 63.9,
+      "text": "And instead of forwarding, they're handled within that."
+    },
+    {
+      "start": 63.9,
+      "end": 67.22,
+      "text": "The reasons why someone might choose one over the other"
+    },
+    {
+      "start": 67.22,
+      "end": 71.46,
+      "text": "could be performance or convenience, or it could be just by choice."
+    },
+    {
+      "start": 71.46,
+      "end": 77.1,
+      "text": "And overall, just the share file system environment has a lot of advantages,"
+    },
+    {
+      "start": 77.1,
+      "end": 81.14,
+      "text": "such as your COS Unix data, it's always available regardless."
+    },
+    {
+      "start": 81.14,
+      "end": 86.18,
+      "text": "So even if your owning LPAR were to come down for one or the other reason,"
+    },
+    {
+      "start": 86.18,
+      "end": 91.82,
+      "text": "your COS Unix data is still available for you to use from other systems."
+    },
+    {
+      "start": 91.82,
+      "end": 94.46,
+      "text": "This is just a brief explanation how this works,"
+    },
+    {
+      "start": 94.46,
+      "end": 98.54,
+      "text": "but if you're curious and want to find out more about all the details,"
+    },
+    {
+      "start": 98.54,
+      "end": 101.98,
+      "text": "there's tons of the commutation online you can go and read."
+    },
+    {
+      "start": 101.98,
+      "end": 103.54,
+      "text": "And that's all I had to share."
+    },
+    {
+      "start": 103.54,
+      "end": 105.18,
+      "text": "Hopefully this was useful."
+    },
+    {
+      "start": 105.18,
+      "end": 106.82,
+      "text": "Again, my name is Lisa Martinez."
+    }
+  ]
+}

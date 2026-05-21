@@ -1,0 +1,309 @@
+WEBVTT
+
+1
+00:00:03.410 --> 00:00:07.650
+Some of the programs you'll use on the mainframe are also known as utilities.
+
+2
+00:00:08.350 --> 00:00:14.850
+Utilities perform a specific task and can be called through JCL to do things like copy data sets and members,
+
+3
+00:00:15.170 --> 00:00:22.930
+sort records, generate data. In this section, we'll take a look at just a few of the more commonly used ZOS utilities.
+
+4
+00:00:23.630 --> 00:00:26.770
+We'll start with system utilities. Here you'll find
+
+5
+00:00:27.170 --> 00:00:29.950
+ICKDSF, which is used to install,
+
+6
+00:00:30.430 --> 00:00:36.110
+initialize, and manage DASD. There's also IDH init with two T's at the end.
+
+7
+00:00:36.350 --> 00:00:39.630
+That's used to initialize tapes for long-term storage.
+
+8
+00:00:40.110 --> 00:00:45.670
+And there's IEH list, which is a utility used to list entries in a PDS
+
+9
+00:00:45.870 --> 00:00:53.190
+to look at a DASD's volume table of contents or VTOC or to view an operating system volumes catalog.
+
+10
+00:00:53.990 --> 00:00:57.230
+You'll notice that with these there's a sort of a format going on.
+
+11
+00:00:57.230 --> 00:01:02.430
+There's a prefix followed by an abbreviated representation of what it does.
+
+12
+00:01:03.070 --> 00:01:08.590
+Well, the prefixes correspond with the ZOS component that they work in. For example,
+
+13
+00:01:09.130 --> 00:01:19.070
+ICK is device support facilities, IEH is data facility product, DFP, and IEF is allocation,
+
+14
+00:01:19.230 --> 00:01:24.910
+IPL, JES, scheduler, and well, it's actually a number of core components.
+
+15
+00:01:25.550 --> 00:01:29.630
+Then there's data set utilities, which typically start with IEB.
+
+16
+00:01:30.110 --> 00:01:36.630
+You may be wondering why we're spending so much time on data sets and why there are so many data set utilities.
+
+17
+00:01:36.870 --> 00:01:40.190
+Well, the simple fact is that the mainframe deals in data.
+
+18
+00:01:40.510 --> 00:01:47.510
+It's constantly creating records based on what applications are doing and those applications are updating records.
+
+19
+00:01:47.510 --> 00:01:51.750
+And there's always going to be need to take information created in one place and
+
+20
+00:01:51.910 --> 00:01:56.270
+repurpose it to be used as input for a programmer made into a report.
+
+21
+00:01:56.670 --> 00:02:00.710
+More importantly, it means you can handle those types of situations quickly
+
+22
+00:02:01.150 --> 00:02:08.430
+instead of editing records individually line by line by hand because you needed to remove the fifth column of each record.
+
+23
+00:02:09.270 --> 00:02:14.630
+Another word about utilities, a lot of times the utility is multi-purpose like a Swiss Army knife.
+
+24
+00:02:14.870 --> 00:02:20.910
+So if you use one set of parameters, it'll create a data set but use it with another set of parameters
+
+25
+00:02:21.350 --> 00:02:23.110
+and it generates debug data.
+
+26
+00:02:23.390 --> 00:02:28.830
+And the only way to really know what a utility is capable of is to look at the documentation.
+
+27
+00:02:29.590 --> 00:02:33.630
+I'll also point out that you can often use different utilities to do the same thing.
+
+28
+00:02:34.150 --> 00:02:38.830
+They might do them slightly differently, but there's more than one way to copy a data set.
+
+29
+00:02:39.670 --> 00:02:42.110
+So let's look at that IEB copy.
+
+30
+00:02:42.550 --> 00:02:48.190
+As you might guess, it's there for copying, but it can also do merges of PDS's and PDSE's.
+
+31
+00:02:48.590 --> 00:02:56.190
+It can do compression of PDS's and PDSE's and it can even convert PDS's into PDSE's and vice versa.
+
+32
+00:02:56.950 --> 00:02:58.830
+Here's what invoking it looks like.
+
+33
+00:02:59.070 --> 00:03:02.710
+We're using it here to copy one PDS into another PDS.
+
+34
+00:03:03.230 --> 00:03:07.230
+There's no input needed, just specifying the two data sets right down here.
+
+35
+00:03:08.430 --> 00:03:11.750
+Quick quiz on IEB copy and it's a true or false.
+
+36
+00:03:13.070 --> 00:03:14.230
+True or false.
+
+37
+00:03:14.630 --> 00:03:18.510
+I can use IEB copy to merge VSAM data sets.
+
+38
+00:03:19.790 --> 00:03:22.270
+The answer to that is false.
+
+39
+00:03:22.590 --> 00:03:25.310
+It's for PDS's and PDSE's only.
+
+40
+00:03:25.310 --> 00:03:30.590
+When we want to work in VSAM data sets, we need to use another utility, which we'll take a look at later.
+
+41
+00:03:31.390 --> 00:03:36.470
+Here's IE beginner, which does not mean that it's utility for people brand new to the mainframe.
+
+42
+00:03:36.950 --> 00:03:44.750
+The name is IEB, the prefix for dataset utility, and then G-E-N-E-R for generate records.
+
+43
+00:03:45.230 --> 00:03:51.150
+And it can be used to back up a dataset, produce a partition dataset from members of a sequential dataset,
+
+44
+00:03:51.470 --> 00:03:57.470
+print out the contents of datasets, and even convert data formats and change settings for a dataset.
+
+45
+00:03:58.230 --> 00:04:00.510
+Very nice to know about all those capabilities.
+
+46
+00:04:01.230 --> 00:04:03.430
+Here it is getting called through JCL.
+
+47
+00:04:03.430 --> 00:04:11.670
+We're copying one dataset to another, and you can see we're also specifying a few parameters about how we want that new dataset to be created.
+
+48
+00:04:12.550 --> 00:04:18.910
+DF sort is a high performance sort, merge, copy, analysis, and reporting product for ZOS,
+
+49
+00:04:18.910 --> 00:04:22.230
+and it can handle data at the record, field, and bit level.
+
+50
+00:04:22.710 --> 00:04:28.310
+This is one of the biggest Swiss Army knives out there because it can sort, merge, and copy.
+
+51
+00:04:28.430 --> 00:04:32.190
+But while it's doing that, it can also reformat data along the way.
+
+52
+00:04:32.510 --> 00:04:37.390
+So you can use it to change data formats, edit, delete, and add fields, repeat records.
+
+53
+00:04:37.750 --> 00:04:43.830
+You can even use it to perform arithmetic on data, summing up values and records while you're sorting or merging them.
+
+54
+00:04:44.390 --> 00:04:52.830
+And it's important to know about all the capabilities of these utilities because you will be in a situation where you're presented with a set of data that looks one way,
+
+55
+00:04:53.230 --> 00:04:56.390
+and it needs to be formatted in a different way for a program to take it.
+
+56
+00:04:56.950 --> 00:05:04.950
+When you're able to say, I finally got to use that function of DF sort or IAB copy, and it works, it's a great feeling.
+
+57
+00:05:05.310 --> 00:05:13.310
+So before writing your own code to do something and starting from scratch, check the utilities because chances are someone else had to do it before,
+
+58
+00:05:13.590 --> 00:05:15.870
+and maybe there's a utility for it you can use.
+
+59
+00:05:16.670 --> 00:05:20.910
+Lastly, I want to show you a special program, IEF-BR14.
+
+60
+00:05:21.350 --> 00:05:24.470
+This is an IEF, so it has to do with allocation.
+
+61
+00:05:24.870 --> 00:05:30.950
+And I can tell you that BR14 means branch to register 14, which is an assembler instruction.
+
+62
+00:05:31.630 --> 00:05:37.310
+But all you really need to know is that IEF-BR14 is a program designed to do nothing.
+
+63
+00:05:37.910 --> 00:05:48.830
+So you remember how in JCL you can specify a new catalog delete for a data set and it will allocate a new member and it will catalog that member if the job ran correctly?
+
+64
+00:05:49.070 --> 00:05:52.430
+Well, what if all we want to do is create a new data set?
+
+65
+00:05:53.110 --> 00:06:02.830
+That method in JCL is a pretty handy way of doing it, and it's a shame we have to do it while calling a program because I'm really not interested in what running that program is actually going to do.
+
+66
+00:06:03.630 --> 00:06:06.030
+That's where IEF-BR14 comes in.
+
+67
+00:06:06.390 --> 00:06:14.750
+It lets you use those JCL features while executing a program, and that program is actually just there because you have to specify a program.
+
+68
+00:06:14.790 --> 00:06:15.590
+It does nothing.
+
+69
+00:06:15.870 --> 00:06:24.350
+So in this example, we're creating a new data set with new catalog, and we're not specifying the third parameter because we just know it's going to work.
+
+70
+00:06:24.950 --> 00:06:28.790
+And then we're also using this DD statement to delete an existing data set.
+
+71
+00:06:29.510 --> 00:06:34.150
+It's kind of a hack, but it's an official hack and people use it all over the place.
+
+72
+00:06:34.710 --> 00:06:38.830
+Actually know a guy who has IEF-BR14 as their custom license plate.
+
+73
+00:06:39.710 --> 00:06:41.270
+Last one, IDCAMS.
+
+74
+00:06:41.310 --> 00:06:46.270
+This one is for generating and modifying VSAM as well as non-VSAM data sets.
+
+75
+00:06:46.550 --> 00:06:53.470
+And I feel like I keep saying this, but you become an expert in IDCAMS and you can get that across to an employer.
+
+76
+00:06:53.910 --> 00:06:55.550
+That's time well spent right there.
+
+77
+00:06:56.310 --> 00:06:59.670
+Speaking of time well spent, that brings us to the end of this lesson.

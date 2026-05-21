@@ -1,0 +1,9 @@
+WEBVTT
+
+1
+00:00:03.180 --> 00:00:10.180
+Let's check out iShell. iShell is a way of performing Unix system service commands from an ISPF panel.
+
+2
+00:00:10.180 --> 00:00:17.180
+In this exercise, you'll look at the content of the file system, create a new HFS, and create files and folders.

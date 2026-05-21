@@ -1,0 +1,1028 @@
+{
+  "slug": "jcl-procedures",
+  "title": "JCL Procedures",
+  "language": "en",
+  "duration": 548.2695625,
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 5.45,
+      "text": "When we talked about JCL,"
+    },
+    {
+      "start": 5.45,
+      "end": 8.29,
+      "text": "we mentioned that it can be used to call a program."
+    },
+    {
+      "start": 8.29,
+      "end": 9.93,
+      "text": "That's something you're probably pretty familiar"
+    },
+    {
+      "start": 9.93,
+      "end": 11.49,
+      "text": "with running a program."
+    },
+    {
+      "start": 11.49,
+      "end": 14.13,
+      "text": "JCL can also call a procedure."
+    },
+    {
+      "start": 14.13,
+      "end": 18.33,
+      "text": "Now, a procedure is a set of frequently used JCL statements"
+    },
+    {
+      "start": 18.33,
+      "end": 20.61,
+      "text": "that have been grouped together and named"
+    },
+    {
+      "start": 20.61,
+      "end": 23.49,
+      "text": "so they can be invoked using a single name."
+    },
+    {
+      "start": 23.49,
+      "end": 26.59,
+      "text": "Most JCL procedures perform a general function,"
+    },
+    {
+      "start": 26.59,
+      "end": 29.95,
+      "text": "which allows them to be called from a variety of jobs."
+    },
+    {
+      "start": 29.95,
+      "end": 31.61,
+      "text": "And that just makes a whole lot of sense"
+    },
+    {
+      "start": 31.61,
+      "end": 33.33,
+      "text": "from an efficiency standpoint."
+    },
+    {
+      "start": 33.37,
+      "end": 36.29,
+      "text": "It's easier and cleaner to reference a procedure"
+    },
+    {
+      "start": 36.29,
+      "end": 37.97,
+      "text": "than a series of statements,"
+    },
+    {
+      "start": 37.97,
+      "end": 41.91,
+      "text": "especially if they're gonna be used the same way each time."
+    },
+    {
+      "start": 41.91,
+      "end": 45.37,
+      "text": "Procedures are usually stored in system data sets."
+    },
+    {
+      "start": 45.37,
+      "end": 48.29,
+      "text": "That makes them the procedure libraries,"
+    },
+    {
+      "start": 48.29,
+      "end": 53.36,
+      "text": "or proc lib for short."
+    },
+    {
+      "start": 53.36,
+      "end": 55.16,
+      "text": "You can think of a procedure like a play"
+    },
+    {
+      "start": 55.16,
+      "end": 57.2,
+      "text": "that a football team might have."
+    },
+    {
+      "start": 57.2,
+      "end": 59.64,
+      "text": "All of the movements and the details are all set"
+    },
+    {
+      "start": 59.64,
+      "end": 61.16,
+      "text": "and rehearsed ahead of time,"
+    },
+    {
+      "start": 61.16,
+      "end": 63.08,
+      "text": "and you just have to call it by name."
+    },
+    {
+      "start": 63.08,
+      "end": 65.28,
+      "text": "That makes the proc lib the playbook,"
+    },
+    {
+      "start": 65.28,
+      "end": 67.24,
+      "text": "a collection of commonly used steps,"
+    },
+    {
+      "start": 67.24,
+      "end": 68.88,
+      "text": "each with its own name."
+    },
+    {
+      "start": 68.88,
+      "end": 71.04,
+      "text": "When a procedure is placed into proc lib,"
+    },
+    {
+      "start": 71.04,
+      "end": 73.78,
+      "text": "it can be made available to a wider audience."
+    },
+    {
+      "start": 73.78,
+      "end": 75.62,
+      "text": "And it can also be referenced simply by name"
+    },
+    {
+      "start": 75.62,
+      "end": 77.96,
+      "text": "instead of specifying the full path each time."
+    },
+    {
+      "start": 77.96,
+      "end": 79.96,
+      "text": "However, procedures can also be stored"
+    },
+    {
+      "start": 79.96,
+      "end": 83.42,
+      "text": "in private proc libs or even within a job."
+    },
+    {
+      "start": 83.42,
+      "end": 85.44,
+      "text": "This restricts who can call them,"
+    },
+    {
+      "start": 85.44,
+      "end": 87.78,
+      "text": "and sometimes that's by design."
+    },
+    {
+      "start": 87.78,
+      "end": 89.6,
+      "text": "There are two types of procedures,"
+    },
+    {
+      "start": 89.6,
+      "end": 93.0,
+      "text": "catalog procedures and in-stream procedures."
+    },
+    {
+      "start": 93.0,
+      "end": 94.64,
+      "text": "Both types are invoked by using"
+    },
+    {
+      "start": 94.64,
+      "end": 96.96,
+      "text": "one of the following JCL statements."
+    },
+    {
+      "start": 96.96,
+      "end": 101.68,
+      "text": "You can say step name exec proc equals procedure name,"
+    },
+    {
+      "start": 101.68,
+      "end": 105.0,
+      "text": "or step name exec procedure name."
+    },
+    {
+      "start": 105.0,
+      "end": 106.44,
+      "text": "You can see how this works here,"
+    },
+    {
+      "start": 106.44,
+      "end": 110.22,
+      "text": "and it spells out some of the benefits of using a procedure."
+    },
+    {
+      "start": 110.22,
+      "end": 113.32,
+      "text": "All these steps and everything that connects it all together,"
+    },
+    {
+      "start": 113.32,
+      "end": 115.64,
+      "text": "it's now all within this single procedure,"
+    },
+    {
+      "start": 115.64,
+      "end": 117.92,
+      "text": "and a programmer can very easily reference"
+    },
+    {
+      "start": 117.92,
+      "end": 119.88,
+      "text": "that one procedure."
+    },
+    {
+      "start": 119.88,
+      "end": 122.58,
+      "text": "Here's an example of an in-stream procedure."
+    },
+    {
+      "start": 122.58,
+      "end": 126.42,
+      "text": "So we've got this line up here saying here's our procedure,"
+    },
+    {
+      "start": 126.42,
+      "end": 128.18,
+      "text": "and below it here's step one,"
+    },
+    {
+      "start": 128.18,
+      "end": 131.58,
+      "text": "which is going to execute a program called APGM."
+    },
+    {
+      "start": 132.78,
+      "end": 136.74,
+      "text": "And the whole thing goes between the proc and P-E-N-D,"
+    },
+    {
+      "start": 136.74,
+      "end": 138.72,
+      "text": "procedure end statement."
+    },
+    {
+      "start": 138.72,
+      "end": 141.04,
+      "text": "This is our in-stream procedure."
+    },
+    {
+      "start": 141.04,
+      "end": 143.26,
+      "text": "If you're using a catalog procedure,"
+    },
+    {
+      "start": 143.26,
+      "end": 147.26,
+      "text": "you don't have to code the proc and P-N statements."
+    },
+    {
+      "start": 147.26,
+      "end": 150.22,
+      "text": "However, if an in-stream proc statement"
+    },
+    {
+      "start": 150.22,
+      "end": 152.78,
+      "text": "is coded into a catalog procedure,"
+    },
+    {
+      "start": 152.78,
+      "end": 156.06,
+      "text": "then it has to be the procedure's first statement."
+    },
+    {
+      "start": 156.06,
+      "end": 156.9,
+      "text": "You can see here,"
+    },
+    {
+      "start": 156.9,
+      "end": 160.26,
+      "text": "once we've defined that in-stream procedure by name,"
+    },
+    {
+      "start": 160.26,
+      "end": 162.5,
+      "text": "we can reference it in later steps."
+    },
+    {
+      "start": 162.5,
+      "end": 165.18,
+      "text": "And as you can also see, like we've mentioned before,"
+    },
+    {
+      "start": 165.18,
+      "end": 167.62,
+      "text": "there are two ways of calling it."
+    },
+    {
+      "start": 167.62,
+      "end": 170.46,
+      "text": "You can also see that when you reference a procedure,"
+    },
+    {
+      "start": 170.46,
+      "end": 173.42,
+      "text": "you could be referencing an in-stream procedure,"
+    },
+    {
+      "start": 173.42,
+      "end": 177.46,
+      "text": "one in a system proc lib, or one in a private proc lib."
+    },
+    {
+      "start": 177.46,
+      "end": 180.9,
+      "text": "Now, if the procedure is in a private procedure library,"
+    },
+    {
+      "start": 180.9,
+      "end": 182.94,
+      "text": "that library needs to be specified"
+    },
+    {
+      "start": 182.94,
+      "end": 185.94,
+      "text": "on the job's JCL lib statement,"
+    },
+    {
+      "start": 185.94,
+      "end": 189.22,
+      "text": "which needs to appear before the exec statement."
+    },
+    {
+      "start": 189.22,
+      "end": 193.06,
+      "text": "And if the called procedure is cataloged in a system library,"
+    },
+    {
+      "start": 193.06,
+      "end": 196.3,
+      "text": "it will be retrieved from the sys1.proc lib,"
+    },
+    {
+      "start": 196.3,
+      "end": 198.8,
+      "text": "or another defined procedure library."
+    },
+    {
+      "start": 198.8,
+      "end": 200.38,
+      "text": "If it's not in any of those,"
+    },
+    {
+      "start": 200.38,
+      "end": 203.1,
+      "text": "then it won't be able to run your specified procedure."
+    },
+    {
+      "start": 203.1,
+      "end": 204.64,
+      "text": "It can't find it."
+    },
+    {
+      "start": 204.64,
+      "end": 206.72,
+      "text": "About that JCL lib statement,"
+    },
+    {
+      "start": 206.76,
+      "end": 210.32,
+      "text": "we mentioned that it can be used to define private proc libs."
+    },
+    {
+      "start": 210.32,
+      "end": 212.34,
+      "text": "It can also be used to determine the order"
+    },
+    {
+      "start": 212.34,
+      "end": 214.76,
+      "text": "in which the proc libs should be searched."
+    },
+    {
+      "start": 214.76,
+      "end": 218.64,
+      "text": "So if you specify proc libs in your JCL lib statement,"
+    },
+    {
+      "start": 218.64,
+      "end": 221.12,
+      "text": "it will look for those before it looks"
+    },
+    {
+      "start": 221.12,
+      "end": 223.22,
+      "text": "in the default system procedure library."
+    },
+    {
+      "start": 224.3,
+      "end": 227.06,
+      "text": "You may only need to specify one proc lib here,"
+    },
+    {
+      "start": 227.06,
+      "end": 229.46,
+      "text": "or if you need to specify two or more,"
+    },
+    {
+      "start": 229.46,
+      "end": 231.04,
+      "text": "just separate them by commas"
+    },
+    {
+      "start": 231.04,
+      "end": 233.32,
+      "text": "and put them inside parentheses."
+    },
+    {
+      "start": 233.32,
+      "end": 237.04,
+      "text": "You only get one JCL lib statement per job,"
+    },
+    {
+      "start": 237.04,
+      "end": 239.64,
+      "text": "and it must appear after the job statement"
+    },
+    {
+      "start": 239.64,
+      "end": 242.46,
+      "text": "and before the first exec statement."
+    },
+    {
+      "start": 242.46,
+      "end": 245.66,
+      "text": "We have another useful statement called include."
+    },
+    {
+      "start": 245.66,
+      "end": 248.1,
+      "text": "If you have a series of JCL statements coded"
+    },
+    {
+      "start": 248.1,
+      "end": 249.86,
+      "text": "within a member of a PDS,"
+    },
+    {
+      "start": 249.86,
+      "end": 253.76,
+      "text": "you can insert them into JCL using an include statement."
+    },
+    {
+      "start": 253.76,
+      "end": 256.0,
+      "text": "So here's the include statement."
+    },
+    {
+      "start": 256.0,
+      "end": 259.92,
+      "text": "It's got the name of the include, the statement include,"
+    },
+    {
+      "start": 259.92,
+      "end": 262.08,
+      "text": "and then the dataset name."
+    },
+    {
+      "start": 262.08,
+      "end": 264.56,
+      "text": "When the JCL is being read, it gets there"
+    },
+    {
+      "start": 264.56,
+      "end": 265.82,
+      "text": "and it just replaces it"
+    },
+    {
+      "start": 265.82,
+      "end": 268.48,
+      "text": "with all the contents of that dataset."
+    },
+    {
+      "start": 268.48,
+      "end": 270.84,
+      "text": "Where this comes in handy is when you need to define"
+    },
+    {
+      "start": 270.84,
+      "end": 274.76,
+      "text": "a whole bunch of DD statements for a series of JCLs."
+    },
+    {
+      "start": 274.76,
+      "end": 277.72,
+      "text": "Now, you could just copy and paste them,"
+    },
+    {
+      "start": 277.72,
+      "end": 280.52,
+      "text": "but then you would also have to go around fixing all of them"
+    },
+    {
+      "start": 280.52,
+      "end": 282.36,
+      "text": "every single time you wanted to make a change"
+    },
+    {
+      "start": 282.36,
+      "end": 284.16,
+      "text": "to those DD statements."
+    },
+    {
+      "start": 284.16,
+      "end": 286.88,
+      "text": "It's a whole lot easier to write them once,"
+    },
+    {
+      "start": 286.88,
+      "end": 289.52,
+      "text": "so you can reference them with an include statement."
+    },
+    {
+      "start": 289.52,
+      "end": 291.36,
+      "text": "And if there's updates to be made,"
+    },
+    {
+      "start": 291.36,
+      "end": 293.94,
+      "text": "you only have to make those updates in one place."
+    },
+    {
+      "start": 294.92,
+      "end": 298.24,
+      "text": "A couple of limitations on procedures and includes."
+    },
+    {
+      "start": 298.24,
+      "end": 302.26,
+      "text": "Procedures can be nested up to a maximum of 15 levels."
+    },
+    {
+      "start": 302.26,
+      "end": 304.86,
+      "text": "So that's a procedure, calling a procedure,"
+    },
+    {
+      "start": 304.86,
+      "end": 307.08,
+      "text": "calling a procedure, calling a procedure,"
+    },
+    {
+      "start": 307.08,
+      "end": 308.96,
+      "text": "and you get the idea."
+    },
+    {
+      "start": 310.08,
+      "end": 312.28,
+      "text": "So you get some flexibility,"
+    },
+    {
+      "start": 312.28,
+      "end": 314.2,
+      "text": "but you can't just go nuts with procedures"
+    },
+    {
+      "start": 314.2,
+      "end": 315.4,
+      "text": "referencing other procedures."
+    },
+    {
+      "start": 315.4,
+      "end": 316.92,
+      "text": "Same thing with includes."
+    },
+    {
+      "start": 316.92,
+      "end": 320.52,
+      "text": "You get up to a maximum of 15 levels there as well."
+    },
+    {
+      "start": 320.52,
+      "end": 323.16,
+      "text": "A procedure can reference an include group,"
+    },
+    {
+      "start": 323.16,
+      "end": 326.06,
+      "text": "and an include group can access a procedure."
+    },
+    {
+      "start": 326.06,
+      "end": 328.52,
+      "text": "So what you're seeing here is an example"
+    },
+    {
+      "start": 328.52,
+      "end": 331.14,
+      "text": "of a procedure called eval,"
+    },
+    {
+      "start": 331.14,
+      "end": 335.24,
+      "text": "which has a procedure named EPRT nested within it."
+    },
+    {
+      "start": 335.24,
+      "end": 339.08,
+      "text": "In addition, the procedure EPRT has an include group"
+    },
+    {
+      "start": 339.08,
+      "end": 342.92,
+      "text": "called genRDD nested within it."
+    },
+    {
+      "start": 342.92,
+      "end": 346.88,
+      "text": "In JCL, we can set what's called symbolic parameters."
+    },
+    {
+      "start": 346.88,
+      "end": 350.06,
+      "text": "Symbolic parameters, usually just called symbolics,"
+    },
+    {
+      "start": 350.06,
+      "end": 352.22,
+      "text": "can be assigned through three statements,"
+    },
+    {
+      "start": 352.22,
+      "end": 356.26,
+      "text": "proc statements, exec statements, and set statements."
+    },
+    {
+      "start": 356.26,
+      "end": 358.86,
+      "text": "This means you can define a symbolic parameter,"
+    },
+    {
+      "start": 358.86,
+      "end": 360.28,
+      "text": "assign it a value,"
+    },
+    {
+      "start": 360.28,
+      "end": 363.18,
+      "text": "and then you can just reference that symbolic later on."
+    },
+    {
+      "start": 363.18,
+      "end": 364.92,
+      "text": "So the next time you run the JCL,"
+    },
+    {
+      "start": 364.92,
+      "end": 367.22,
+      "text": "if you want to run it with a different value in there,"
+    },
+    {
+      "start": 367.22,
+      "end": 369.64,
+      "text": "just change the symbolic definition."
+    },
+    {
+      "start": 369.64,
+      "end": 373.18,
+      "text": "You get to define the symbolic names and values."
+    },
+    {
+      "start": 373.18,
+      "end": 375.72,
+      "text": "In addition to the symbolic parameters that you define,"
+    },
+    {
+      "start": 375.72,
+      "end": 378.06,
+      "text": "there are a number of system symbols,"
+    },
+    {
+      "start": 378.06,
+      "end": 380.7,
+      "text": "and these come in two flavors."
+    },
+    {
+      "start": 380.7,
+      "end": 382.74,
+      "text": "There's dynamic system symbols,"
+    },
+    {
+      "start": 382.74,
+      "end": 385.62,
+      "text": "whose values can change at any point after an IPL,"
+    },
+    {
+      "start": 385.62,
+      "end": 387.74,
+      "text": "like current, date, and time."
+    },
+    {
+      "start": 387.74,
+      "end": 390.66,
+      "text": "The full set of dynamic system symbols is fixed,"
+    },
+    {
+      "start": 390.66,
+      "end": 392.94,
+      "text": "and you cannot define additional ones."
+    },
+    {
+      "start": 392.94,
+      "end": 395.14,
+      "text": "What you have is what you get."
+    },
+    {
+      "start": 395.14,
+      "end": 397.3,
+      "text": "There's also static system symbols."
+    },
+    {
+      "start": 397.3,
+      "end": 399.62,
+      "text": "These are set at IPL time,"
+    },
+    {
+      "start": 399.62,
+      "end": 403.06,
+      "text": "and won't change until the next time the system IPLs."
+    },
+    {
+      "start": 403.06,
+      "end": 407.38,
+      "text": "So for example, the system name and systplex name."
+    },
+    {
+      "start": 407.38,
+      "end": 409.98,
+      "text": "Static system symbols have two types."
+    },
+    {
+      "start": 409.98,
+      "end": 412.38,
+      "text": "There's syst and define static symbols,"
+    },
+    {
+      "start": 412.38,
+      "end": 416.7,
+      "text": "and these include ampersand sysclone, systname, systplex,"
+    },
+    {
+      "start": 416.7,
+      "end": 419.86,
+      "text": "sys-r1, and syst-a-l-v-l."
+    },
+    {
+      "start": 419.86,
+      "end": 422.62,
+      "text": "That's used for the system architecture level."
+    },
+    {
+      "start": 422.62,
+      "end": 425.2,
+      "text": "Then there's installation defined static symbols,"
+    },
+    {
+      "start": 425.2,
+      "end": 428.26,
+      "text": "which your system programmer, maybe that's you,"
+    },
+    {
+      "start": 428.26,
+      "end": 429.38,
+      "text": "gets to set."
+    },
+    {
+      "start": 429.38,
+      "end": 432.9,
+      "text": "These are defined in the syst1.parmlib dataset,"
+    },
+    {
+      "start": 432.9,
+      "end": 435.3,
+      "text": "IEA sim member."
+    },
+    {
+      "start": 435.3,
+      "end": 436.42,
+      "text": "In the example here,"
+    },
+    {
+      "start": 436.42,
+      "end": 439.18,
+      "text": "you'll see a mix of JCL symbols in red,"
+    },
+    {
+      "start": 439.18,
+      "end": 441.66,
+      "text": "and system symbols in blue."
+    },
+    {
+      "start": 441.66,
+      "end": 443.98,
+      "text": "Note that you can use static system symbols,"
+    },
+    {
+      "start": 443.98,
+      "end": 447.66,
+      "text": "such as systname in started task JCL procedures,"
+    },
+    {
+      "start": 447.66,
+      "end": 450.94,
+      "text": "but not in regular batch JCL."
+    },
+    {
+      "start": 450.94,
+      "end": 454.22,
+      "text": "Overriding a parameter modifies only the one parameter."
+    },
+    {
+      "start": 454.22,
+      "end": 456.28,
+      "text": "All the other parameters stay unaffected,"
+    },
+    {
+      "start": 456.28,
+      "end": 458.36,
+      "text": "unless you modify them as well."
+    },
+    {
+      "start": 458.36,
+      "end": 461.9,
+      "text": "So if you override the dataset name on a DD statement,"
+    },
+    {
+      "start": 461.9,
+      "end": 465.32,
+      "text": "which includes the unit and vol equals seer parameters,"
+    },
+    {
+      "start": 465.34,
+      "end": 467.4,
+      "text": "it'll change the dataset name,"
+    },
+    {
+      "start": 467.4,
+      "end": 469.76,
+      "text": "but the unit and vol equals seer parameters"
+    },
+    {
+      "start": 469.76,
+      "end": 472.04,
+      "text": "will remain unchanged."
+    },
+    {
+      "start": 472.04,
+      "end": 475.04,
+      "text": "But you can't correct invalid parameters"
+    },
+    {
+      "start": 475.04,
+      "end": 476.92,
+      "text": "in a procedure through overrides,"
+    },
+    {
+      "start": 476.92,
+      "end": 479.84,
+      "text": "because before doing any substitutions,"
+    },
+    {
+      "start": 479.84,
+      "end": 482.88,
+      "text": "the system scans the original procedure statements"
+    },
+    {
+      "start": 482.88,
+      "end": 485.78,
+      "text": "and issues error messages based on those."
+    },
+    {
+      "start": 485.78,
+      "end": 489.32,
+      "text": "So it's got to be valid before you issue overrides."
+    },
+    {
+      "start": 489.32,
+      "end": 491.74,
+      "text": "If you made a mistake while you were creating a procedure"
+    },
+    {
+      "start": 491.74,
+      "end": 495.28,
+      "text": "and you typed AL instead of all, we've all been there,"
+    },
+    {
+      "start": 496.1,
+      "end": 499.04,
+      "text": "you can't substitute your way out of that situation."
+    },
+    {
+      "start": 499.04,
+      "end": 502.96,
+      "text": "Lastly, you can override the output JCL and DD statements"
+    },
+    {
+      "start": 502.96,
+      "end": 506.08,
+      "text": "by specifying the step for which they apply."
+    },
+    {
+      "start": 506.08,
+      "end": 508.4,
+      "text": "If no step has been named previously,"
+    },
+    {
+      "start": 508.4,
+      "end": 511.36,
+      "text": "the changes apply to the very first step."
+    },
+    {
+      "start": 511.36,
+      "end": 512.9,
+      "text": "If you have specified a step"
+    },
+    {
+      "start": 512.9,
+      "end": 515.32,
+      "text": "and you want to change a couple more output JCL"
+    },
+    {
+      "start": 515.32,
+      "end": 516.7,
+      "text": "and DD statements,"
+    },
+    {
+      "start": 516.7,
+      "end": 519.7,
+      "text": "you only have to specify it the first time."
+    },
+    {
+      "start": 519.7,
+      "end": 520.96,
+      "text": "The ones that follow it,"
+    },
+    {
+      "start": 520.96,
+      "end": 523.2,
+      "text": "it just assumes it's in the same one as above."
+    },
+    {
+      "start": 524.2,
+      "end": 527.52,
+      "text": "And there's your introduction to JCL procedures."
+    },
+    {
+      "start": 527.52,
+      "end": 530.16,
+      "text": "We got into some fairly tricky concepts there."
+    },
+    {
+      "start": 530.16,
+      "end": 532.48,
+      "text": "So don't worry if you feel a little lost,"
+    },
+    {
+      "start": 532.48,
+      "end": 534.08,
+      "text": "overwhelmed or intimidated."
+    },
+    {
+      "start": 534.08,
+      "end": 536.56,
+      "text": "I mean, I'm looking at my camera operator right now"
+    },
+    {
+      "start": 536.56,
+      "end": 538.12,
+      "text": "and he looks like he's about to pass out."
+    },
+    {
+      "start": 538.12,
+      "end": 540.08,
+      "text": "So I'm gonna go check on him"
+    },
+    {
+      "start": 540.08,
+      "end": 542.52,
+      "text": "and I'll see you in the next lesson, all right?"
+    },
+    {
+      "start": 542.52,
+      "end": 543.8,
+      "text": "Hey man, you all right?"
+    },
+    {
+      "start": 543.8,
+      "end": 544.64,
+      "text": "You doing all right?"
+    }
+  ]
+}

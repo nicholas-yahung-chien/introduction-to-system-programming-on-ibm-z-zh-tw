@@ -1,0 +1,483 @@
+{
+  "slug": "uss-processes-and-permissions",
+  "title": "USS Processes and Permissions",
+  "language": "en",
+  "duration": 436.86025,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 10.38,
+      "text": "Unix has its own unique way of handling processes, and understanding it will help in creating scripts and debugging problems."
+    },
+    {
+      "start": 10.38,
+      "end": 15.38,
+      "text": "Starting from the top and working our way down, a process is an instance of a running program."
+    },
+    {
+      "start": 15.38,
+      "end": 21.38,
+      "text": "A process can kick off other processes, which can in turn kick off other additional processes."
+    },
+    {
+      "start": 21.38,
+      "end": 25.38,
+      "text": "If you were to chart all this out, it would kind of look like a family tree."
+    },
+    {
+      "start": 25.38,
+      "end": 29.38,
+      "text": "And those processes are called parent processes and child processes."
+    },
+    {
+      "start": 29.38,
+      "end": 38.38,
+      "text": "So a parent process creates child processes, and that organization of parent processes and child processes is called a process tree."
+    },
+    {
+      "start": 38.38,
+      "end": 47.38,
+      "text": "When a parent process spawns a child process, that parent process can share some, none, or all of its resources with the child process."
+    },
+    {
+      "start": 47.38,
+      "end": 53.38,
+      "text": "The parent process can run alongside the child process, or it can wait until the child process is done."
+    },
+    {
+      "start": 53.38,
+      "end": 60.38,
+      "text": "In Unix, the command to see the processes that are running is ps, short for process status."
+    },
+    {
+      "start": 60.38,
+      "end": 68.38,
+      "text": "The bpx batch utility gives you a way of running Unix scripts and applications as zos batch jobs."
+    },
+    {
+      "start": 68.38,
+      "end": 73.38,
+      "text": "There's two ways of invoking this, as JCL and as a tso command."
+    },
+    {
+      "start": 73.38,
+      "end": 76.38,
+      "text": "You can see here, that looks like Unix stuff to me."
+    },
+    {
+      "start": 76.38,
+      "end": 81.38,
+      "text": "We've got a shell script here and dd statements for the output and error streams over here."
+    },
+    {
+      "start": 81.38,
+      "end": 84.38,
+      "text": "You can also run bpx batch as a tso command."
+    },
+    {
+      "start": 84.38,
+      "end": 91.38,
+      "text": "Here's one example, the sh tells bpx batch to start a shell and run shell commands or scripts."
+    },
+    {
+      "start": 91.38,
+      "end": 98.38,
+      "text": "So if you want to run a script and then redirect the output to do something you'd normally type into the shell, that's where you'd do that."
+    },
+    {
+      "start": 98.38,
+      "end": 103.38,
+      "text": "You can also use bpx batch pgm, which is for a program."
+    },
+    {
+      "start": 103.38,
+      "end": 107.38,
+      "text": "It will kick off a program in what's called a spawn or a fork and exec."
+    },
+    {
+      "start": 107.38,
+      "end": 113.38,
+      "text": "It takes the parameters you specify, which are separated by spaces, and sends them into the program."
+    },
+    {
+      "start": 113.38,
+      "end": 121.38,
+      "text": "So not only can you use bpx batch to do Unix from zos, there's a few different ways you can do it depending on your needs."
+    },
+    {
+      "start": 121.38,
+      "end": 126.38,
+      "text": "You've seen in the JCL example that there are three types of files that a running program uses."
+    },
+    {
+      "start": 126.38,
+      "end": 131.38,
+      "text": "There's standard input, standard output, and standard error."
+    },
+    {
+      "start": 131.38,
+      "end": 137.38,
+      "text": "Input is any source of input, which could be from the keyboard or it could be the output from another program."
+    },
+    {
+      "start": 137.38,
+      "end": 142.38,
+      "text": "Standard output is where a program typically writes out its progress and informational messages,"
+    },
+    {
+      "start": 142.38,
+      "end": 148.38,
+      "text": "and standard error is where you'd look for details on why a program isn't running quite right."
+    },
+    {
+      "start": 148.38,
+      "end": 151.38,
+      "text": "Hopefully you don't have to spend too much time looking in there."
+    },
+    {
+      "start": 151.38,
+      "end": 156.38,
+      "text": "One thing you'll have to keep track of in Unix is users, groups, and permissions."
+    },
+    {
+      "start": 156.38,
+      "end": 159.38,
+      "text": "Each user has a user ID or UID."
+    },
+    {
+      "start": 159.38,
+      "end": 167.38,
+      "text": "On a zos system with rackf, part of your rackf profile contains the information about your USS user ID,"
+    },
+    {
+      "start": 167.38,
+      "end": 172.38,
+      "text": "what directory all of your stuff is in, what type of shell you like to use, all that kind of stuff."
+    },
+    {
+      "start": 172.38,
+      "end": 180.38,
+      "text": "And a user who is logged in can also issue the switch user command, su, pronounced sue, to become another user."
+    },
+    {
+      "start": 180.38,
+      "end": 184.38,
+      "text": "They of course need permission to do that and they might have to enter the password to switch,"
+    },
+    {
+      "start": 184.38,
+      "end": 189.38,
+      "text": "but that really helps when you've set something up for another user and you want to try it out as them before you tell them,"
+    },
+    {
+      "start": 189.38,
+      "end": 191.38,
+      "text": "it's all good, ready to go."
+    },
+    {
+      "start": 191.38,
+      "end": 195.38,
+      "text": "In addition to user IDs, there are also group IDs."
+    },
+    {
+      "start": 195.38,
+      "end": 201.38,
+      "text": "The idea there being that you can have a bunch of users in a group that have access to some of the same files,"
+    },
+    {
+      "start": 201.38,
+      "end": 204.38,
+      "text": "but not necessarily all of the same files."
+    },
+    {
+      "start": 204.38,
+      "end": 210.38,
+      "text": "So about that whole access thing, when you look at a thing, and I'm being purposely vague here,"
+    },
+    {
+      "start": 210.38,
+      "end": 215.38,
+      "text": "but when you look at a thing in Unix, you get back something that looks like this."
+    },
+    {
+      "start": 215.38,
+      "end": 218.38,
+      "text": "The first character says what that thing is."
+    },
+    {
+      "start": 218.38,
+      "end": 224.38,
+      "text": "It could be a file, in which case you'd see a dash, it could be a directory, in which case you'll see a D,"
+    },
+    {
+      "start": 224.38,
+      "end": 229.38,
+      "text": "or a symbolic link, a type of shortcut or pointer, which shows up as an L."
+    },
+    {
+      "start": 229.38,
+      "end": 232.38,
+      "text": "Then you get this series of letters and dashes."
+    },
+    {
+      "start": 232.38,
+      "end": 237.38,
+      "text": "The letters are R, W, and X, which stand for read, write, and execute."
+    },
+    {
+      "start": 237.38,
+      "end": 242.38,
+      "text": "And it determines whether the file can be read, write, or executed, run as a program."
+    },
+    {
+      "start": 242.38,
+      "end": 244.38,
+      "text": "And there's three sets of these letters."
+    },
+    {
+      "start": 244.38,
+      "end": 248.38,
+      "text": "The first set is saying what the owner of the file can do with it."
+    },
+    {
+      "start": 248.38,
+      "end": 252.38,
+      "text": "It only makes sense that a user would have read and write access to their own file,"
+    },
+    {
+      "start": 252.38,
+      "end": 257.38,
+      "text": "though they probably wouldn't have execute access unless it's a program or a script they want to run."
+    },
+    {
+      "start": 257.38,
+      "end": 259.38,
+      "text": "The next section is for the group."
+    },
+    {
+      "start": 259.38,
+      "end": 262.38,
+      "text": "A file is also associated with a group."
+    },
+    {
+      "start": 262.38,
+      "end": 266.38,
+      "text": "And I might have a file that my coworkers need to read, but I don't want them to write to it."
+    },
+    {
+      "start": 266.38,
+      "end": 269.38,
+      "text": "So I can set that up with just read access for them."
+    },
+    {
+      "start": 269.38,
+      "end": 272.38,
+      "text": "The last group is for other, for everybody else."
+    },
+    {
+      "start": 272.38,
+      "end": 278.38,
+      "text": "If I want other people who aren't me, or people who aren't specifically in that group to have some sort of access,"
+    },
+    {
+      "start": 278.38,
+      "end": 281.38,
+      "text": "I set those permissions here."
+    },
+    {
+      "start": 281.38,
+      "end": 283.38,
+      "text": "Good job, guys. Take five."
+    },
+    {
+      "start": 283.38,
+      "end": 287.81,
+      "text": "These are the permissions for files."
+    },
+    {
+      "start": 287.81,
+      "end": 291.81,
+      "text": "They look the same for directories, but with a slightly different meaning."
+    },
+    {
+      "start": 291.81,
+      "end": 296.81,
+      "text": "Read means that you can see the contents, write means you can add or delete things,"
+    },
+    {
+      "start": 296.81,
+      "end": 299.81,
+      "text": "and execute means you can go into the directory."
+    },
+    {
+      "start": 299.81,
+      "end": 302.81,
+      "text": "Sometimes it makes sense to represent permissions numerically."
+    },
+    {
+      "start": 302.81,
+      "end": 306.81,
+      "text": "You'll see this a lot of times when you're setting permissions from the command line."
+    },
+    {
+      "start": 306.81,
+      "end": 308.81,
+      "text": "Each permission has a value."
+    },
+    {
+      "start": 308.81,
+      "end": 313.81,
+      "text": "Read is four, write is two, execute is one."
+    },
+    {
+      "start": 313.81,
+      "end": 319.81,
+      "text": "You figure out what permissions you want, if any, add them together, and that's it."
+    },
+    {
+      "start": 319.81,
+      "end": 322.81,
+      "text": "Here's what all the combinations look like."
+    },
+    {
+      "start": 322.81,
+      "end": 328.81,
+      "text": "So if I have a file where I need full access, including read, write, and execute,"
+    },
+    {
+      "start": 328.81,
+      "end": 332.81,
+      "text": "and no one else gets anything, it would be 700."
+    },
+    {
+      "start": 332.81,
+      "end": 336.81,
+      "text": "Another example, if I have a file that I can read, write, and execute,"
+    },
+    {
+      "start": 336.81,
+      "end": 341.81,
+      "text": "the specified group members can read and execute, but not write,"
+    },
+    {
+      "start": 341.81,
+      "end": 345.81,
+      "text": "and everybody else can only read, that would be..."
+    },
+    {
+      "start": 345.81,
+      "end": 348.81,
+      "text": "You know what? Why don't you tell me?"
+    },
+    {
+      "start": 348.81,
+      "end": 350.81,
+      "text": "Pop quiz time!"
+    },
+    {
+      "start": 350.81,
+      "end": 352.81,
+      "text": "The answer is seven, five, four."
+    },
+    {
+      "start": 352.81,
+      "end": 357.81,
+      "text": "Seven because that's everything, plus it's four plus two plus one."
+    },
+    {
+      "start": 357.81,
+      "end": 363.81,
+      "text": "Five for group because that's read four plus execute one equals five."
+    },
+    {
+      "start": 363.81,
+      "end": 368.81,
+      "text": "And for others, they get four because they can read it, but nothing else."
+    },
+    {
+      "start": 368.81,
+      "end": 372.81,
+      "text": "Here's a listing of some other common user group other permissions."
+    },
+    {
+      "start": 372.81,
+      "end": 377.81,
+      "text": "These will come in handy, so, you know, maybe take a screenshot or something."
+    },
+    {
+      "start": 377.81,
+      "end": 380.81,
+      "text": "If you have a file and you want to change the permissions on it,"
+    },
+    {
+      "start": 380.81,
+      "end": 383.81,
+      "text": "use the chmod command, chmod."
+    },
+    {
+      "start": 383.81,
+      "end": 387.81,
+      "text": "You say chmod, the numerical permission, followed by the file name."
+    },
+    {
+      "start": 387.81,
+      "end": 393.81,
+      "text": "You can also do it in one section at a time by typing chmod g plus w, for example,"
+    },
+    {
+      "start": 393.81,
+      "end": 395.81,
+      "text": "to give write access to the group."
+    },
+    {
+      "start": 395.81,
+      "end": 397.81,
+      "text": "But be careful what permissions you give out."
+    },
+    {
+      "start": 397.81,
+      "end": 402.81,
+      "text": "When you give permissions to others, so someone else not in the group can have access to a file,"
+    },
+    {
+      "start": 402.81,
+      "end": 406.81,
+      "text": "you're giving those permissions to literally everybody else on the system."
+    },
+    {
+      "start": 406.81,
+      "end": 410.81,
+      "text": "If you're working with people you need to share access with, consider using a group."
+    },
+    {
+      "start": 410.81,
+      "end": 413.81,
+      "text": "That's literally what they're there for."
+    },
+    {
+      "start": 413.81,
+      "end": 416.81,
+      "text": "Like I said, Unix is its own beast."
+    },
+    {
+      "start": 416.81,
+      "end": 421.81,
+      "text": "And like zos, there's no single spot that marks when you've learned all there is to learn."
+    },
+    {
+      "start": 421.81,
+      "end": 425.81,
+      "text": "But we have hit a pretty good spot right here where at least you're prepared"
+    },
+    {
+      "start": 425.81,
+      "end": 428.81,
+      "text": "to get started with Unix system services on zos."
+    },
+    {
+      "start": 428.81,
+      "end": 431.81,
+      "text": "So that brings this lesson to a close."
+    }
+  ]
+}

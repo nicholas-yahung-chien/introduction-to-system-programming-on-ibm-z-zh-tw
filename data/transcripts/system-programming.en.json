@@ -1,0 +1,368 @@
+{
+  "slug": "system-programming",
+  "title": "System Programming",
+  "language": "en",
+  "duration": 294.173625,
+  "segments": [
+    {
+      "start": 3.44,
+      "end": 5.44,
+      "text": "Hi there, it's me again."
+    },
+    {
+      "start": 5.44,
+      "end": 10.44,
+      "text": "In this course, we're going to take a closer look at some system programmer concepts."
+    },
+    {
+      "start": 10.44,
+      "end": 13.44,
+      "text": "What's a system programmer? I'm so glad you asked."
+    },
+    {
+      "start": 13.44,
+      "end": 15.44,
+      "text": "That's exactly what we're going to cover here."
+    },
+    {
+      "start": 15.44,
+      "end": 20.44,
+      "text": "The role of a system programmer basically comes down to describing the person who installs,"
+    },
+    {
+      "start": 20.44,
+      "end": 23.44,
+      "text": "customizes, and maintains the operating system."
+    },
+    {
+      "start": 23.44,
+      "end": 26.44,
+      "text": "Now, in reality, it's a bit more fuzzy than that."
+    },
+    {
+      "start": 26.44,
+      "end": 29.44,
+      "text": "Your typical system programmer, or SysProg,"
+    },
+    {
+      "start": 29.44,
+      "end": 36.44,
+      "text": "became SysProg by having a whole lot of experiences in a number of areas all around the operating system."
+    },
+    {
+      "start": 36.44,
+      "end": 41.44,
+      "text": "So, what is expected of a SysProg and what a SysProg does on a day-to-day basis"
+    },
+    {
+      "start": 41.44,
+      "end": 45.44,
+      "text": "will differ greatly from one business to the next."
+    },
+    {
+      "start": 45.44,
+      "end": 51.44,
+      "text": "However it's defined, the SysProg plays a central role in just about everything that has to do with their mainframe."
+    },
+    {
+      "start": 51.44,
+      "end": 58.44,
+      "text": "A system programmer needs to have knowledge of hardware, processors, system libraries and data sets,"
+    },
+    {
+      "start": 58.44,
+      "end": 61.44,
+      "text": "storage, software, security, networking."
+    },
+    {
+      "start": 61.44,
+      "end": 66.44,
+      "text": "The system programmer may not be the one who actually hands-on keyboard makes those changes,"
+    },
+    {
+      "start": 66.44,
+      "end": 70.44,
+      "text": "but they do need to understand the changes so they can help plan them,"
+    },
+    {
+      "start": 70.44,
+      "end": 73.44,
+      "text": "minimizing impact to production workloads."
+    },
+    {
+      "start": 73.44,
+      "end": 77.44,
+      "text": "They typically handle building and maintaining IODF configurations,"
+    },
+    {
+      "start": 77.44,
+      "end": 82.44,
+      "text": "architecting the connections to storage devices and other mainframes."
+    },
+    {
+      "start": 82.44,
+      "end": 86.44,
+      "text": "They know the system backwards and forwards, physically and logically."
+    },
+    {
+      "start": 87.44,
+      "end": 90.44,
+      "text": "Some typical situations a SysProg needs to be able to handle"
+    },
+    {
+      "start": 90.44,
+      "end": 96.44,
+      "text": "might include selecting a performance management strategy to best optimize the mainframe performance,"
+    },
+    {
+      "start": 96.44,
+      "end": 99.44,
+      "text": "determining when and how to expand the system."
+    },
+    {
+      "start": 99.44,
+      "end": 105.44,
+      "text": "You know, it's not always in the budget or the production schedule to be upgrading to the latest and greatest all the time."
+    },
+    {
+      "start": 105.44,
+      "end": 111.44,
+      "text": "A system programmer needs to be able to determine when they should roll in that new mainframe."
+    },
+    {
+      "start": 111.44,
+      "end": 116.44,
+      "text": "They need to establish a baseline for performance and track that performance over time,"
+    },
+    {
+      "start": 116.44,
+      "end": 122.44,
+      "text": "so problems with customers waiting too long or transactions timing out don't sneak up on them."
+    },
+    {
+      "start": 122.44,
+      "end": 128.44,
+      "text": "A lot of what a SysProg does is making sure that a system is prepared for anticipated workloads,"
+    },
+    {
+      "start": 128.44,
+      "end": 131.44,
+      "text": "and some of this involves working with the business side of things."
+    },
+    {
+      "start": 131.44,
+      "end": 136.44,
+      "text": "For example, Imagine a retail business is planning on having a huge sale in the middle of the summer"
+    },
+    {
+      "start": 136.44,
+      "end": 140.44,
+      "text": "that's going to drive massive amounts of shoppers to their website."
+    },
+    {
+      "start": 140.44,
+      "end": 147.44,
+      "text": "The SysProg needs to know about that, and they have to have the system ready to handle that anticipated load of all those new people."
+    },
+    {
+      "start": 147.44,
+      "end": 152.44,
+      "text": "Perhaps most importantly, a SysProg needs to maintain a list of procedures"
+    },
+    {
+      "start": 152.44,
+      "end": 156.44,
+      "text": "for how certain situations should be handled on their mainframe systems."
+    },
+    {
+      "start": 156.44,
+      "end": 162.44,
+      "text": "Now, I'm talking about actual written out procedures for when you see this type of problem,"
+    },
+    {
+      "start": 162.44,
+      "end": 169.44,
+      "text": "look for these indicators, and based on conditions A, B, and C, perform actions D, E, or F."
+    },
+    {
+      "start": 169.44,
+      "end": 170.44,
+      "text": "Let me put it another way."
+    },
+    {
+      "start": 170.44,
+      "end": 175.44,
+      "text": "You ever hit a problem on your computer and you search for the error you get on the internet"
+    },
+    {
+      "start": 175.44,
+      "end": 179.44,
+      "text": "and you find somebody else describing exactly the same problem,"
+    },
+    {
+      "start": 179.44,
+      "end": 183.44,
+      "text": "and instead of describing how they fix it, they just up and disappear,"
+    },
+    {
+      "start": 183.44,
+      "end": 186.44,
+      "text": "or maybe they came back and their only update is,"
+    },
+    {
+      "start": 186.44,
+      "end": 187.44,
+      "text": "never mind, I fixed it."
+    },
+    {
+      "start": 187.44,
+      "end": 191.44,
+      "text": "Procedures aren't always the most fun thing in the world to write,"
+    },
+    {
+      "start": 191.44,
+      "end": 194.44,
+      "text": "but when you run into an issue and seconds count,"
+    },
+    {
+      "start": 194.44,
+      "end": 198.44,
+      "text": "a well-written procedure that perfectly describes what you're seeing"
+    },
+    {
+      "start": 198.44,
+      "end": 201.44,
+      "text": "and what you have to do is a beautiful thing."
+    },
+    {
+      "start": 201.44,
+      "end": 206.44,
+      "text": "A SysProg may not directly handle security aspects of operations."
+    },
+    {
+      "start": 206.44,
+      "end": 209.44,
+      "text": "They might have a dedicated security administrator for that,"
+    },
+    {
+      "start": 209.44,
+      "end": 213.44,
+      "text": "but the SysProg still needs to have a firm handle on who should"
+    },
+    {
+      "start": 213.44,
+      "end": 217.44,
+      "text": "and shouldn't have access to various system resources."
+    },
+    {
+      "start": 217.44,
+      "end": 221.44,
+      "text": "The reason the system programmer needs to be involved in all these areas"
+    },
+    {
+      "start": 221.44,
+      "end": 225.44,
+      "text": "is that there is a high expectation when it comes to enterprise systems."
+    },
+    {
+      "start": 225.44,
+      "end": 229.44,
+      "text": "These are not something went wrong, try again situations."
+    },
+    {
+      "start": 229.44,
+      "end": 233.44,
+      "text": "In many cases, the expectation is 24 by 7 operation,"
+    },
+    {
+      "start": 233.44,
+      "end": 237.44,
+      "text": "and often is the case that there is a contract in place guaranteeing"
+    },
+    {
+      "start": 237.44,
+      "end": 240.44,
+      "text": "a certain level of performance and availability."
+    },
+    {
+      "start": 240.44,
+      "end": 246.44,
+      "text": "So being reliable and performant isn't just a nice thing, it's the business."
+    },
+    {
+      "start": 246.44,
+      "end": 249.44,
+      "text": "For that reason, change control is an extremely important aspect"
+    },
+    {
+      "start": 249.44,
+      "end": 251.44,
+      "text": "of working in an enterprise environment."
+    },
+    {
+      "start": 251.44,
+      "end": 254.44,
+      "text": "Making changes will often require discussing what you want to do"
+    },
+    {
+      "start": 254.44,
+      "end": 257.44,
+      "text": "with a team of others to make sure it won't affect them"
+    },
+    {
+      "start": 257.44,
+      "end": 261.44,
+      "text": "or that they can anticipate them and work around those changes."
+    },
+    {
+      "start": 261.44,
+      "end": 264.44,
+      "text": "Even something that seems very simple and could do no harm,"
+    },
+    {
+      "start": 264.44,
+      "end": 266.44,
+      "text": "like upgrading a piece of software,"
+    },
+    {
+      "start": 266.44,
+      "end": 269.44,
+      "text": "may introduce changes that affect other users."
+    },
+    {
+      "start": 269.44,
+      "end": 274.44,
+      "text": "Software, operating system, and hardware changes are often planned out weeks,"
+    },
+    {
+      "start": 274.44,
+      "end": 276.44,
+      "text": "if not months in advance."
+    },
+    {
+      "start": 276.44,
+      "end": 279.44,
+      "text": "As a system programmer, this is your system."
+    },
+    {
+      "start": 279.44,
+      "end": 282.44,
+      "text": "You know it best, you know what it's capable of,"
+    },
+    {
+      "start": 282.44,
+      "end": 284.44,
+      "text": "what might put business objectives at risk,"
+    },
+    {
+      "start": 284.44,
+      "end": 287.44,
+      "text": "and how to handle certain situations that come up."
+    },
+    {
+      "start": 287.44,
+      "end": 290.44,
+      "text": "It's a tough job, but I'm pretty sure you're up to it."
+    }
+  ]
+}

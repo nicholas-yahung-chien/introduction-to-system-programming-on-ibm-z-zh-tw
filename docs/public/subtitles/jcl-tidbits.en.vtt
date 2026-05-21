@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:03.440 --> 00:00:11.440
+Hello, my name is Ed Prior, and I'm a ZOS function tester, and I've come here to talk a little bit more in depth about a few things that Jeff mentioned.
+
+2
+00:00:11.440 --> 00:00:19.440
+Specifically, we support conditional logic inside JCL. You can use if, then, and else to control the flow of your job.
+
+3
+00:00:19.440 --> 00:00:26.440
+So if you have a program that has a return code associated with it, you can actually code into your JCL,
+
+4
+00:00:26.440 --> 00:00:35.440
+you know, slash slash if return code less than four, or if return code greater than eight, or if return code is greater than four but less than eight,
+
+5
+00:00:35.440 --> 00:00:43.440
+then do this step, else do this other step. It gives you a great deal of control over what your program is actually doing.
+
+6
+00:00:43.440 --> 00:00:53.440
+We also mentioned nested procedures. So if you follow the general rule, don't put the sequence proc proc pend pend in your code,
+
+7
+00:00:53.440 --> 00:01:01.440
+you won't bump into this issue. The idea being that you're not allowed to code a procedure inside of another procedure.
+
+8
+00:01:01.440 --> 00:01:08.440
+They have to be separate. So proc pend, then proc pend, not proc proc pend. Pretty cool, right?
+
+9
+00:01:08.440 --> 00:01:17.440
+While you're working with procedures, you can nest them, as we mentioned, but you also are allowed to scope symbols as you drop down that chain.
+
+10
+00:01:17.440 --> 00:01:26.440
+So as you dive deeper into your nested procs, you end up allowing yourself to overwrite different symbols at different levels. Pretty cool.
+
+11
+00:01:26.440 --> 00:01:35.440
+One thing I learned recently was the actual connecting fiber between those DD statements in your JCL and the actual programs you're running.
+
+12
+00:01:35.440 --> 00:01:45.440
+So the names on those DDs, so your sys in or your sort in or your out whatever, that's actually controlled by the programmer who wrote the program.
+
+13
+00:01:45.440 --> 00:01:54.440
+So you give it the DD name that's controlled by whatever they opened as a DCB inside their program.
+
+14
+00:01:54.440 --> 00:02:03.440
+Talking more about dispositions in JCL, if you want to have a temporary data set that you can stuff output into and then forget about later,
+
+15
+00:02:03.440 --> 00:02:14.440
+you can use the disposition combination new delete on your DD statement to specify a data set that the system will clean up at job termination time,
+
+16
+00:02:14.440 --> 00:02:22.440
+allowing you to fill the needs that your program has without having to worry about allocating space on a disk beforehand.
+
+17
+00:02:22.440 --> 00:02:28.440
+I'm Ed Prior, and this has been just a deeper dive into a few topics. I hope you've enjoyed.

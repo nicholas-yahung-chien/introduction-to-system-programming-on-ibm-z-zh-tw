@@ -1,0 +1,353 @@
+{
+  "slug": "generation-data-groups",
+  "title": "Generation data groups",
+  "language": "en",
+  "duration": 272.9505625,
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 9.69,
+      "text": "Okay, I'm really glad to see Generation Data Groups or GDGs included in the list of topics"
+    },
+    {
+      "start": 9.69,
+      "end": 14.41,
+      "text": "for this course because I think they're just something that's a great example of a feature"
+    },
+    {
+      "start": 14.41,
+      "end": 20.49,
+      "text": "in ZOS that just makes perfect sense to have and it's executed in such a brilliant way"
+    },
+    {
+      "start": 20.49,
+      "end": 23.29,
+      "text": "you'll just wish it were available everywhere."
+    },
+    {
+      "start": 23.29,
+      "end": 27.03,
+      "text": "So picture a program that gathers data during the day."
+    },
+    {
+      "start": 27.03,
+      "end": 31.57,
+      "text": "Maybe it tracks problem tickets that were opened or guests checking into a hotel."
+    },
+    {
+      "start": 31.57,
+      "end": 35.17,
+      "text": "No matter what, you've got a whole bunch of data being generated and every once in"
+    },
+    {
+      "start": 35.17,
+      "end": 40.31,
+      "text": "a while it's nice to start with a fresh data set so you're not opening up this huge thing"
+    },
+    {
+      "start": 40.31,
+      "end": 41.85,
+      "text": "each time."
+    },
+    {
+      "start": 41.85,
+      "end": 46.99,
+      "text": "So you create a new data set and update the program to start looking in that and when"
+    },
+    {
+      "start": 46.99,
+      "end": 50.89,
+      "text": "you want to look for an old data set, you go through all the old ones and you find the"
+    },
+    {
+      "start": 50.89,
+      "end": 52.03,
+      "text": "one you want."
+    },
+    {
+      "start": 52.03,
+      "end": 53.57,
+      "text": "It seems pretty simple."
+    },
+    {
+      "start": 53.57,
+      "end": 58.39,
+      "text": "In fact, it's a pattern that you see so often on ZOS that we have a special way of dealing"
+    },
+    {
+      "start": 58.39,
+      "end": 61.01,
+      "text": "with that exact type of situation."
+    },
+    {
+      "start": 61.01,
+      "end": 66.51,
+      "text": "A generation data group is a collection of historically related data sets that are arranged"
+    },
+    {
+      "start": 66.51,
+      "end": 68.43,
+      "text": "in chronological order."
+    },
+    {
+      "start": 68.43,
+      "end": 72.99,
+      "text": "So you have that program writing out data and maybe your procedure is to cut over a"
+    },
+    {
+      "start": 72.99,
+      "end": 75.41,
+      "text": "new data set every month."
+    },
+    {
+      "start": 75.41,
+      "end": 79.61,
+      "text": "Let's say we're in September so we've got August and July sitting in there as the minus"
+    },
+    {
+      "start": 79.61,
+      "end": 83.03,
+      "text": "one and minus two months relative to September."
+    },
+    {
+      "start": 83.03,
+      "end": 87.25,
+      "text": "October comes along and here's where GDGs leap into action."
+    },
+    {
+      "start": 87.25,
+      "end": 91.63,
+      "text": "We specify that you want a plus one generation of the data set."
+    },
+    {
+      "start": 91.63,
+      "end": 97.39,
+      "text": "That moves September into the minus one slot and August down to the minus two slot."
+    },
+    {
+      "start": 97.39,
+      "end": 102.55,
+      "text": "Now my program can continue referencing the same data set, generation zero, of the current"
+    },
+    {
+      "start": 102.55,
+      "end": 103.83,
+      "text": "version."
+    },
+    {
+      "start": 103.83,
+      "end": 108.19,
+      "text": "And if we're going to do something like compare this month's numbers to last month's numbers,"
+    },
+    {
+      "start": 108.19,
+      "end": 112.51,
+      "text": "we just specify that we want to read from the minus one generation."
+    },
+    {
+      "start": 112.51,
+      "end": 115.43,
+      "text": "All of the logic is handled by the GDG."
+    },
+    {
+      "start": 115.45,
+      "end": 120.17,
+      "text": "We also get to specify just how many generations we want to keep around so it doesn't just"
+    },
+    {
+      "start": 120.17,
+      "end": 123.41,
+      "text": "keep growing until it runs out of space."
+    },
+    {
+      "start": 123.41,
+      "end": 129.01,
+      "text": "Here you can see an example of specifying a GDG where we can add a new generation, use"
+    },
+    {
+      "start": 129.01,
+      "end": 132.77,
+      "text": "the current generation, or use an older generation."
+    },
+    {
+      "start": 132.77,
+      "end": 136.25,
+      "text": "The example down here is creating a new generation."
+    },
+    {
+      "start": 136.25,
+      "end": 139.29,
+      "text": "That's called using a relative data set name."
+    },
+    {
+      "start": 139.29,
+      "end": 140.77,
+      "text": "Let me ask you something."
+    },
+    {
+      "start": 140.77,
+      "end": 147.35,
+      "text": "Let's say we have a GDG and then we submit a job which creates a plus one generation."
+    },
+    {
+      "start": 147.35,
+      "end": 151.55,
+      "text": "And then we run another job which creates another plus one generation."
+    },
+    {
+      "start": 151.55,
+      "end": 156.07,
+      "text": "If we want to reference the data that we were originally referencing before those two jobs"
+    },
+    {
+      "start": 156.07,
+      "end": 160.15,
+      "text": "ran, what generation would we refer to?"
+    },
+    {
+      "start": 160.15,
+      "end": 164.65,
+      "text": "Because that data started out as the current version, zero, it got moved to the minus one"
+    },
+    {
+      "start": 164.65,
+      "end": 166.87,
+      "text": "version when we created the new one."
+    },
+    {
+      "start": 166.87,
+      "end": 170.35,
+      "text": "And when we ran that second job, it got moved to the minus two slot."
+    },
+    {
+      "start": 170.35,
+      "end": 173.29,
+      "text": "So the correct answer is minus two."
+    },
+    {
+      "start": 173.29,
+      "end": 176.29,
+      "text": "There's an easier, more future-proof way of doing this though."
+    },
+    {
+      "start": 176.29,
+      "end": 181.13,
+      "text": "We can also give the absolute data set name which specifies the generation number and"
+    },
+    {
+      "start": 181.13,
+      "end": 182.93,
+      "text": "version number."
+    },
+    {
+      "start": 182.93,
+      "end": 187.75,
+      "text": "Now when we first start a GDG, both the generation and version numbers are zero."
+    },
+    {
+      "start": 187.75,
+      "end": 196.65,
+      "text": "So you get the data set name dot G0000V00 which is why people sometimes refer to this as the"
+    },
+    {
+      "start": 196.65,
+      "end": 198.05,
+      "text": "GUVU number."
+    },
+    {
+      "start": 198.05,
+      "end": 202.09,
+      "text": "As in, yeah, the relative number will change at the end of the week so when you document"
+    },
+    {
+      "start": 202.09,
+      "end": 206.05,
+      "text": "where you saw that problem, make sure you write down the GUVU number so we can find"
+    },
+    {
+      "start": 206.05,
+      "end": 208.33,
+      "text": "it later on."
+    },
+    {
+      "start": 208.33,
+      "end": 212.33,
+      "text": "I said you can specify how many generations you want to keep around and here's where that"
+    },
+    {
+      "start": 212.33,
+      "end": 215.13,
+      "text": "option is along with a few others."
+    },
+    {
+      "start": 215.13,
+      "end": 220.09,
+      "text": "You specify the name of the GDG data set, then we specify the limit."
+    },
+    {
+      "start": 220.09,
+      "end": 222.69,
+      "text": "That's how many generations we want to keep around."
+    },
+    {
+      "start": 222.69,
+      "end": 226.73,
+      "text": "You can also specify just how we want the generations to be handled."
+    },
+    {
+      "start": 226.73,
+      "end": 232.19,
+      "text": "This no empty parameter means that when the limit of GDGs is hit, the oldest one falls"
+    },
+    {
+      "start": 232.19,
+      "end": 235.33,
+      "text": "off the end and everything else moves down a slot."
+    },
+    {
+      "start": 235.33,
+      "end": 238.67,
+      "text": "And this repeats every time a new generation gets added."
+    },
+    {
+      "start": 238.67,
+      "end": 244.03,
+      "text": "If you specify the empty parameter, once your limit gets hit, all the generations get deleted"
+    },
+    {
+      "start": 244.03,
+      "end": 248.47,
+      "text": "so you probably want to go with the no empty parameter in there."
+    },
+    {
+      "start": 248.49,
+      "end": 254.47,
+      "text": "You can also specify if you want the generations to be first in, first out, or last in, first"
+    },
+    {
+      "start": 254.47,
+      "end": 257.83,
+      "text": "out with the FIFO or LIFO parameter."
+    },
+    {
+      "start": 257.83,
+      "end": 263.67,
+      "text": "LIFO is the default, though you can specify this using the GDG order JCL keyword for a"
+    },
+    {
+      "start": 263.67,
+      "end": 264.77,
+      "text": "job."
+    },
+    {
+      "start": 264.77,
+      "end": 267.47,
+      "text": "And that's a little introduction to GDGs."
+    },
+    {
+      "start": 267.47,
+      "end": 268.71,
+      "text": "I told you it would be exciting."
+    }
+  ]
+}

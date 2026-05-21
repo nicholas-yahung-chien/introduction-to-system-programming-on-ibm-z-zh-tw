@@ -1,0 +1,277 @@
+WEBVTT
+
+1
+00:00:03.410 --> 00:00:09.690
+Okay, I'm really glad to see Generation Data Groups or GDGs included in the list of topics
+
+2
+00:00:09.690 --> 00:00:14.410
+for this course because I think they're just something that's a great example of a feature
+
+3
+00:00:14.410 --> 00:00:20.490
+in ZOS that just makes perfect sense to have and it's executed in such a brilliant way
+
+4
+00:00:20.490 --> 00:00:23.290
+you'll just wish it were available everywhere.
+
+5
+00:00:23.290 --> 00:00:27.030
+So picture a program that gathers data during the day.
+
+6
+00:00:27.030 --> 00:00:31.570
+Maybe it tracks problem tickets that were opened or guests checking into a hotel.
+
+7
+00:00:31.570 --> 00:00:35.170
+No matter what, you've got a whole bunch of data being generated and every once in
+
+8
+00:00:35.170 --> 00:00:40.310
+a while it's nice to start with a fresh data set so you're not opening up this huge thing
+
+9
+00:00:40.310 --> 00:00:41.850
+each time.
+
+10
+00:00:41.850 --> 00:00:46.990
+So you create a new data set and update the program to start looking in that and when
+
+11
+00:00:46.990 --> 00:00:50.890
+you want to look for an old data set, you go through all the old ones and you find the
+
+12
+00:00:50.890 --> 00:00:52.030
+one you want.
+
+13
+00:00:52.030 --> 00:00:53.570
+It seems pretty simple.
+
+14
+00:00:53.570 --> 00:00:58.390
+In fact, it's a pattern that you see so often on ZOS that we have a special way of dealing
+
+15
+00:00:58.390 --> 00:01:01.010
+with that exact type of situation.
+
+16
+00:01:01.010 --> 00:01:06.510
+A generation data group is a collection of historically related data sets that are arranged
+
+17
+00:01:06.510 --> 00:01:08.430
+in chronological order.
+
+18
+00:01:08.430 --> 00:01:12.990
+So you have that program writing out data and maybe your procedure is to cut over a
+
+19
+00:01:12.990 --> 00:01:15.410
+new data set every month.
+
+20
+00:01:15.410 --> 00:01:19.610
+Let's say we're in September so we've got August and July sitting in there as the minus
+
+21
+00:01:19.610 --> 00:01:23.030
+one and minus two months relative to September.
+
+22
+00:01:23.030 --> 00:01:27.250
+October comes along and here's where GDGs leap into action.
+
+23
+00:01:27.250 --> 00:01:31.630
+We specify that you want a plus one generation of the data set.
+
+24
+00:01:31.630 --> 00:01:37.390
+That moves September into the minus one slot and August down to the minus two slot.
+
+25
+00:01:37.390 --> 00:01:42.550
+Now my program can continue referencing the same data set, generation zero, of the current
+
+26
+00:01:42.550 --> 00:01:43.830
+version.
+
+27
+00:01:43.830 --> 00:01:48.190
+And if we're going to do something like compare this month's numbers to last month's numbers,
+
+28
+00:01:48.190 --> 00:01:52.510
+we just specify that we want to read from the minus one generation.
+
+29
+00:01:52.510 --> 00:01:55.430
+All of the logic is handled by the GDG.
+
+30
+00:01:55.450 --> 00:02:00.170
+We also get to specify just how many generations we want to keep around so it doesn't just
+
+31
+00:02:00.170 --> 00:02:03.410
+keep growing until it runs out of space.
+
+32
+00:02:03.410 --> 00:02:09.010
+Here you can see an example of specifying a GDG where we can add a new generation, use
+
+33
+00:02:09.010 --> 00:02:12.770
+the current generation, or use an older generation.
+
+34
+00:02:12.770 --> 00:02:16.250
+The example down here is creating a new generation.
+
+35
+00:02:16.250 --> 00:02:19.290
+That's called using a relative data set name.
+
+36
+00:02:19.290 --> 00:02:20.770
+Let me ask you something.
+
+37
+00:02:20.770 --> 00:02:27.350
+Let's say we have a GDG and then we submit a job which creates a plus one generation.
+
+38
+00:02:27.350 --> 00:02:31.550
+And then we run another job which creates another plus one generation.
+
+39
+00:02:31.550 --> 00:02:36.070
+If we want to reference the data that we were originally referencing before those two jobs
+
+40
+00:02:36.070 --> 00:02:40.150
+ran, what generation would we refer to?
+
+41
+00:02:40.150 --> 00:02:44.650
+Because that data started out as the current version, zero, it got moved to the minus one
+
+42
+00:02:44.650 --> 00:02:46.870
+version when we created the new one.
+
+43
+00:02:46.870 --> 00:02:50.350
+And when we ran that second job, it got moved to the minus two slot.
+
+44
+00:02:50.350 --> 00:02:53.290
+So the correct answer is minus two.
+
+45
+00:02:53.290 --> 00:02:56.290
+There's an easier, more future-proof way of doing this though.
+
+46
+00:02:56.290 --> 00:03:01.130
+We can also give the absolute data set name which specifies the generation number and
+
+47
+00:03:01.130 --> 00:03:02.930
+version number.
+
+48
+00:03:02.930 --> 00:03:07.750
+Now when we first start a GDG, both the generation and version numbers are zero.
+
+49
+00:03:07.750 --> 00:03:16.650
+So you get the data set name dot G0000V00 which is why people sometimes refer to this as the
+
+50
+00:03:16.650 --> 00:03:18.050
+GUVU number.
+
+51
+00:03:18.050 --> 00:03:22.090
+As in, yeah, the relative number will change at the end of the week so when you document
+
+52
+00:03:22.090 --> 00:03:26.050
+where you saw that problem, make sure you write down the GUVU number so we can find
+
+53
+00:03:26.050 --> 00:03:28.330
+it later on.
+
+54
+00:03:28.330 --> 00:03:32.330
+I said you can specify how many generations you want to keep around and here's where that
+
+55
+00:03:32.330 --> 00:03:35.130
+option is along with a few others.
+
+56
+00:03:35.130 --> 00:03:40.090
+You specify the name of the GDG data set, then we specify the limit.
+
+57
+00:03:40.090 --> 00:03:42.690
+That's how many generations we want to keep around.
+
+58
+00:03:42.690 --> 00:03:46.730
+You can also specify just how we want the generations to be handled.
+
+59
+00:03:46.730 --> 00:03:52.190
+This no empty parameter means that when the limit of GDGs is hit, the oldest one falls
+
+60
+00:03:52.190 --> 00:03:55.330
+off the end and everything else moves down a slot.
+
+61
+00:03:55.330 --> 00:03:58.670
+And this repeats every time a new generation gets added.
+
+62
+00:03:58.670 --> 00:04:04.030
+If you specify the empty parameter, once your limit gets hit, all the generations get deleted
+
+63
+00:04:04.030 --> 00:04:08.470
+so you probably want to go with the no empty parameter in there.
+
+64
+00:04:08.490 --> 00:04:14.470
+You can also specify if you want the generations to be first in, first out, or last in, first
+
+65
+00:04:14.470 --> 00:04:17.830
+out with the FIFO or LIFO parameter.
+
+66
+00:04:17.830 --> 00:04:23.670
+LIFO is the default, though you can specify this using the GDG order JCL keyword for a
+
+67
+00:04:23.670 --> 00:04:24.770
+job.
+
+68
+00:04:24.770 --> 00:04:27.470
+And that's a little introduction to GDGs.
+
+69
+00:04:27.470 --> 00:04:28.710
+I told you it would be exciting.

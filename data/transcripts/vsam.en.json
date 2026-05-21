@@ -1,0 +1,678 @@
+{
+  "slug": "vsam",
+  "title": "VSAM",
+  "language": "en",
+  "duration": 370.892375,
+  "segments": [
+    {
+      "start": 3.5,
+      "end": 6.14,
+      "text": "There's a lot to say about VSAM."
+    },
+    {
+      "start": 6.14,
+      "end": 10.5,
+      "text": "I've seen multi-part presentations on the topic of VSAM."
+    },
+    {
+      "start": 10.5,
+      "end": 15.3,
+      "text": "There are courses on VSAM alone that run four to five days."
+    },
+    {
+      "start": 15.3,
+      "end": 20.14,
+      "text": "We've got a couple minutes, so let's get going."
+    },
+    {
+      "start": 20.14,
+      "end": 21.4,
+      "text": "We'll start with the basics."
+    },
+    {
+      "start": 21.4,
+      "end": 25.26,
+      "text": "VSAM stands for Virtual Storage Access Method."
+    },
+    {
+      "start": 25.26,
+      "end": 27.62,
+      "text": "It's a way of storing and accessing data"
+    },
+    {
+      "start": 27.62,
+      "end": 30.9,
+      "text": "that's different from what we've been using up until now."
+    },
+    {
+      "start": 30.9,
+      "end": 33.74,
+      "text": "So why do we need another type of data set?"
+    },
+    {
+      "start": 33.74,
+      "end": 36.02,
+      "text": "The ones we were looking at before made perfect sense."
+    },
+    {
+      "start": 36.02,
+      "end": 38.94,
+      "text": "I open it up, I put my data in, I close it."
+    },
+    {
+      "start": 38.94,
+      "end": 40.66,
+      "text": "The data is still there next week."
+    },
+    {
+      "start": 40.66,
+      "end": 42.26,
+      "text": "All is good, right?"
+    },
+    {
+      "start": 42.26,
+      "end": 44.14,
+      "text": "Well, for you and I, sure."
+    },
+    {
+      "start": 44.14,
+      "end": 46.38,
+      "text": "But what about the applications?"
+    },
+    {
+      "start": 46.38,
+      "end": 49.66,
+      "text": "Applications generally aren't reading blogs, writing novels,"
+    },
+    {
+      "start": 49.66,
+      "end": 51.34,
+      "text": "scrolling social media."
+    },
+    {
+      "start": 51.34,
+      "end": 53.62,
+      "text": "They've got a specific piece of data"
+    },
+    {
+      "start": 53.62,
+      "end": 56.54,
+      "text": "that they've got to get to present to their user."
+    },
+    {
+      "start": 56.54,
+      "end": 59.38,
+      "text": "Or they've got to make an update on a very specific piece"
+    },
+    {
+      "start": 59.5,
+      "end": 61.98,
+      "text": "of data in a very specific place."
+    },
+    {
+      "start": 61.98,
+      "end": 64.78,
+      "text": "VSAM gives applications a method of reading"
+    },
+    {
+      "start": 64.78,
+      "end": 67.42,
+      "text": "and writing data that makes sense for them."
+    },
+    {
+      "start": 67.42,
+      "end": 70.38,
+      "text": "In fact, if you were to try and open up a VSAM data set"
+    },
+    {
+      "start": 70.38,
+      "end": 73.02,
+      "text": "in ISPF, all it would do is tell you,"
+    },
+    {
+      "start": 73.02,
+      "end": 75.14,
+      "text": "yep, that's a VSAM data set,"
+    },
+    {
+      "start": 75.14,
+      "end": 78.1,
+      "text": "because it's not readable by standard methods."
+    },
+    {
+      "start": 78.1,
+      "end": 79.78,
+      "text": "So how does this work?"
+    },
+    {
+      "start": 79.78,
+      "end": 82.46,
+      "text": "Well, like the other data sets we've talked about,"
+    },
+    {
+      "start": 82.46,
+      "end": 84.42,
+      "text": "VSAM has records."
+    },
+    {
+      "start": 84.42,
+      "end": 86.34,
+      "text": "In VSAM, those records are kept"
+    },
+    {
+      "start": 86.34,
+      "end": 88.62,
+      "text": "in what's called a control interval."
+    },
+    {
+      "start": 88.62,
+      "end": 91.54,
+      "text": "And a control interval is a continuous area"
+    },
+    {
+      "start": 91.54,
+      "end": 93.5,
+      "text": "of storage on DASD."
+    },
+    {
+      "start": 93.5,
+      "end": 95.58,
+      "text": "And they can be different sizes."
+    },
+    {
+      "start": 95.58,
+      "end": 98.98,
+      "text": "So when an application goes to read a control interval,"
+    },
+    {
+      "start": 98.98,
+      "end": 101.58,
+      "text": "that specific area of storage gets read"
+    },
+    {
+      "start": 101.58,
+      "end": 106.18,
+      "text": "into the VSAM I-O buffer so the application can read it."
+    },
+    {
+      "start": 106.18,
+      "end": 108.94,
+      "text": "VSAM has four types of data sets,"
+    },
+    {
+      "start": 108.94,
+      "end": 110.94,
+      "text": "based around four different ways"
+    },
+    {
+      "start": 110.94,
+      "end": 113.3,
+      "text": "that applications generally like to consume"
+    },
+    {
+      "start": 113.3,
+      "end": 115.18,
+      "text": "and record data."
+    },
+    {
+      "start": 115.18,
+      "end": 118.4,
+      "text": "They are keyed sequence data sets."
+    },
+    {
+      "start": 118.44,
+      "end": 120.64,
+      "text": "Entry sequence data sets."
+    },
+    {
+      "start": 120.64,
+      "end": 122.44,
+      "text": "Relative record data sets."
+    },
+    {
+      "start": 122.44,
+      "end": 124.96,
+      "text": "And linear data sets."
+    },
+    {
+      "start": 124.96,
+      "end": 126.74,
+      "text": "Okay, one at a time."
+    },
+    {
+      "start": 126.74,
+      "end": 130.44,
+      "text": "Keyed sequence data sets, or KSDS."
+    },
+    {
+      "start": 130.44,
+      "end": 135.24,
+      "text": "In a KSDS, each record is identified by a unique key."
+    },
+    {
+      "start": 135.24,
+      "end": 138.64,
+      "text": "When you write new data, you create a key for it."
+    },
+    {
+      "start": 138.64,
+      "end": 141.52,
+      "text": "For example, if this were an automobile assembly line,"
+    },
+    {
+      "start": 141.52,
+      "end": 145.98,
+      "text": "the index might be a unique vehicle identification number."
+    },
+    {
+      "start": 145.98,
+      "end": 148.18,
+      "text": "And the data portion holds what features"
+    },
+    {
+      "start": 148.18,
+      "end": 150.5,
+      "text": "that car is being built with, what color it is,"
+    },
+    {
+      "start": 150.5,
+      "end": 153.72,
+      "text": "which dealership it's going to, all that stuff."
+    },
+    {
+      "start": 153.72,
+      "end": 156.86,
+      "text": "Whenever we want that specific piece of information,"
+    },
+    {
+      "start": 156.86,
+      "end": 158.76,
+      "text": "we look it up by the key."
+    },
+    {
+      "start": 158.76,
+      "end": 163.06,
+      "text": "This is the most commonly used type of VSAM data set."
+    },
+    {
+      "start": 163.06,
+      "end": 165.74,
+      "text": "And then there's entry sequence data sets."
+    },
+    {
+      "start": 165.74,
+      "end": 170.22,
+      "text": "In an ESDS, each new entry goes in right after the last one"
+    },
+    {
+      "start": 170.22,
+      "end": 173.66,
+      "text": "and records are referenced by the relative byte address."
+    },
+    {
+      "start": 173.66,
+      "end": 176.94,
+      "text": "So if we know the records are 64 bytes each,"
+    },
+    {
+      "start": 176.94,
+      "end": 181.02,
+      "text": "and we want to reference the first record, the RBA is zero."
+    },
+    {
+      "start": 181.02,
+      "end": 182.92,
+      "text": "And for the second, it's 64."
+    },
+    {
+      "start": 182.92,
+      "end": 185.82,
+      "text": "And for the third one, it's 128, and so on."
+    },
+    {
+      "start": 185.82,
+      "end": 188.42,
+      "text": "Because the records go in one right after the other,"
+    },
+    {
+      "start": 188.42,
+      "end": 189.74,
+      "text": "and that's their structure,"
+    },
+    {
+      "start": 189.74,
+      "end": 192.06,
+      "text": "you can't delete a record once it's in there."
+    },
+    {
+      "start": 192.06,
+      "end": 194.72,
+      "text": "You can only mark it as inactive."
+    },
+    {
+      "start": 194.72,
+      "end": 197.7,
+      "text": "This structure generally lends itself to high performance"
+    },
+    {
+      "start": 197.7,
+      "end": 201.1,
+      "text": "when data is loaded and read sequentially."
+    },
+    {
+      "start": 201.1,
+      "end": 204.46,
+      "text": "Now, an RRDS or relative record data set"
+    },
+    {
+      "start": 204.46,
+      "end": 206.58,
+      "text": "is similar to an ESDS,"
+    },
+    {
+      "start": 206.58,
+      "end": 208.38,
+      "text": "except that the records are referenced"
+    },
+    {
+      "start": 208.38,
+      "end": 211.84,
+      "text": "by the relative record number or RRN."
+    },
+    {
+      "start": 211.84,
+      "end": 213.98,
+      "text": "This number is how many records down"
+    },
+    {
+      "start": 213.98,
+      "end": 215.3,
+      "text": "from the first record we are,"
+    },
+    {
+      "start": 215.3,
+      "end": 217.58,
+      "text": "similar to rows in a spreadsheet."
+    },
+    {
+      "start": 217.58,
+      "end": 220.42,
+      "text": "And like a spreadsheet, we can have empty records,"
+    },
+    {
+      "start": 220.42,
+      "end": 222.9,
+      "text": "we can delete records, we can jump around,"
+    },
+    {
+      "start": 222.9,
+      "end": 224.82,
+      "text": "or we can go sequentially."
+    },
+    {
+      "start": 224.82,
+      "end": 227.06,
+      "text": "Lastly, there's linear data sets."
+    },
+    {
+      "start": 227.06,
+      "end": 228.78,
+      "text": "These aren't used as often,"
+    },
+    {
+      "start": 228.78,
+      "end": 231.38,
+      "text": "but are still helpful when dealing with byte stream data,"
+    },
+    {
+      "start": 231.38,
+      "end": 234.22,
+      "text": "like logs, or where an application will be managing"
+    },
+    {
+      "start": 234.22,
+      "end": 236.66,
+      "text": "the data after it grabs it."
+    },
+    {
+      "start": 236.66,
+      "end": 239.5,
+      "text": "Let's test your understanding of these VSAM data set types"
+    },
+    {
+      "start": 239.5,
+      "end": 241.18,
+      "text": "with a little pop quiz."
+    },
+    {
+      "start": 241.18,
+      "end": 243.78,
+      "text": "Let's say I need a VSAM data set"
+    },
+    {
+      "start": 243.78,
+      "end": 246.14,
+      "text": "to record data in sequence."
+    },
+    {
+      "start": 246.14,
+      "end": 248.46,
+      "text": "And I just happen to know that the program"
+    },
+    {
+      "start": 248.46,
+      "end": 252.1,
+      "text": "that processes this data is going to read it in sequence"
+    },
+    {
+      "start": 252.1,
+      "end": 254.02,
+      "text": "without skipping around."
+    },
+    {
+      "start": 254.02,
+      "end": 256.72,
+      "text": "What type of data set should I be looking into?"
+    },
+    {
+      "start": 257.72,
+      "end": 262.2,
+      "text": "The answer is an ESDS, or entry sequence data set."
+    },
+    {
+      "start": 262.2,
+      "end": 264.76,
+      "text": "Because members go in based on when they're recorded"
+    },
+    {
+      "start": 264.76,
+      "end": 267.7,
+      "text": "and we have no need to reference individual records"
+    },
+    {
+      "start": 267.7,
+      "end": 269.66,
+      "text": "by name or relative number,"
+    },
+    {
+      "start": 269.66,
+      "end": 273.42,
+      "text": "we can make efficient use of an ESDS here."
+    },
+    {
+      "start": 273.42,
+      "end": 275.96,
+      "text": "No matter what data set type you're using,"
+    },
+    {
+      "start": 275.96,
+      "end": 278.44,
+      "text": "they usually get created using an IBM utility"
+    },
+    {
+      "start": 278.44,
+      "end": 281.72,
+      "text": "called ID cams through JCL."
+    },
+    {
+      "start": 281.72,
+      "end": 284.2,
+      "text": "In your JCL, you'll specify the cluster,"
+    },
+    {
+      "start": 284.24,
+      "end": 287.2,
+      "text": "that's the logical representation of that data set,"
+    },
+    {
+      "start": 287.2,
+      "end": 289.6,
+      "text": "and all that goes along with it."
+    },
+    {
+      "start": 289.6,
+      "end": 291.56,
+      "text": "So in this example here,"
+    },
+    {
+      "start": 291.56,
+      "end": 294.8,
+      "text": "you can see we're invoking the ID cams program"
+    },
+    {
+      "start": 294.8,
+      "end": 299.8,
+      "text": "and creating a cluster with the name example.ksds2."
+    },
+    {
+      "start": 300.44,
+      "end": 301.68,
+      "text": "If I were a betting man,"
+    },
+    {
+      "start": 301.68,
+      "end": 304.92,
+      "text": "I'd say this is a key sequence data set."
+    },
+    {
+      "start": 304.92,
+      "end": 306.32,
+      "text": "And not just because of the name,"
+    },
+    {
+      "start": 306.32,
+      "end": 310.24,
+      "text": "but because down here we're specifying the key length."
+    },
+    {
+      "start": 310.24,
+      "end": 313.64,
+      "text": "Here it's six bytes starting at the fifth byte,"
+    },
+    {
+      "start": 313.64,
+      "end": 317.64,
+      "text": "byte four since we start from zero, of the data record."
+    },
+    {
+      "start": 317.64,
+      "end": 320.32,
+      "text": "We need to provide the information for the cluster itself"
+    },
+    {
+      "start": 320.32,
+      "end": 324.04,
+      "text": "as well as the data and index of the cluster."
+    },
+    {
+      "start": 324.04,
+      "end": 326.88,
+      "text": "In this example, we're also specifying which catalog"
+    },
+    {
+      "start": 326.88,
+      "end": 329.04,
+      "text": "we wanna keep the cluster in."
+    },
+    {
+      "start": 329.04,
+      "end": 332.72,
+      "text": "You can also use JCL itself to create VSAM data sets,"
+    },
+    {
+      "start": 332.72,
+      "end": 335.96,
+      "text": "in which case you specify the record organization,"
+    },
+    {
+      "start": 335.96,
+      "end": 337.92,
+      "text": "record parameter."
+    },
+    {
+      "start": 337.92,
+      "end": 340.72,
+      "text": "The fundamentals, however, stay the same."
+    },
+    {
+      "start": 340.72,
+      "end": 342.88,
+      "text": "So that's a little bit about VSAM."
+    },
+    {
+      "start": 342.88,
+      "end": 343.72,
+      "text": "I gotta tell you,"
+    },
+    {
+      "start": 343.72,
+      "end": 346.54,
+      "text": "this is one of those things that everybody uses."
+    },
+    {
+      "start": 346.54,
+      "end": 348.96,
+      "text": "It's very prevalent in the mainframe community."
+    },
+    {
+      "start": 348.96,
+      "end": 350.44,
+      "text": "It's also one of those things"
+    },
+    {
+      "start": 350.44,
+      "end": 353.24,
+      "text": "that's fairly unique to the Z platform."
+    },
+    {
+      "start": 353.24,
+      "end": 356.44,
+      "text": "And there's a lot of performance and code simplification"
+    },
+    {
+      "start": 356.44,
+      "end": 358.04,
+      "text": "to be gained by using it."
+    },
+    {
+      "start": 358.04,
+      "end": 360.16,
+      "text": "So when you're done with this course"
+    },
+    {
+      "start": 360.16,
+      "end": 362.04,
+      "text": "and you're trying to take the next step,"
+    },
+    {
+      "start": 362.04,
+      "end": 364.08,
+      "text": "make sure you read further into it."
+    },
+    {
+      "start": 364.08,
+      "end": 366.88,
+      "text": "You can never have too much VSAM knowledge."
+    }
+  ]
+}

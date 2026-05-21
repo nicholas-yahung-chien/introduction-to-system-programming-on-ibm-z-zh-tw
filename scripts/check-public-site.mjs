@@ -13,7 +13,7 @@ const requiredPages = [
     requiredText: ['課程內容', '影片與活動', '互動練習', 'Lab 與互動實作', '詞彙表', '授權資訊']
   },
   { name: 'course', source: 'docs/course/index.md', output: 'course/index.html', requiredText: ['課程首頁', 'JES 與 JCL 入門', '系統程式設計元件', 'z/OSMF 與 USS'] },
-  { name: 'videos', source: 'docs/videos/index.md', output: 'videos/index.html', requiredText: ['影片與活動清單', 'source-only', '影片 metadata'] },
+  { name: 'videos', source: 'docs/videos/index.md', output: 'videos/index.html', requiredText: ['影片與活動清單', 'HLS', '影片 metadata'] },
   { name: 'practice', source: 'docs/practice/index.md', output: 'practice/index.html', requiredText: ['互動練習', '練習題目', '檢核點 1', '檢核點 8'] },
   { name: 'labs', source: 'docs/labs/index.md', output: 'labs/index.html', requiredText: ['Lab 與互動實作', '練習 6'] },
   { name: 'glossary', source: 'docs/glossary/index.md', output: 'glossary/index.html', requiredText: ['IBM Z 詞彙表', '依字母查閱', '課程相關詞彙', 'J', 'Z'] },

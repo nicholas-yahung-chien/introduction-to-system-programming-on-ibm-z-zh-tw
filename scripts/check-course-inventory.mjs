@@ -36,10 +36,10 @@ expect('live Moodle quizzes', audit.liveCounts.quiz, 1)
 expect('live H5P activities', audit.liveCounts.hvp, 8)
 
 expect('static practice questions', practiceQuestions.length, expectedStaticPracticeQuestions)
-expect('assessment static practice questions', assessment.summary.staticPracticeQuestions, 21)
-expect('assessment static practice sources', assessment.summary.staticPracticeSources, 8)
+expect('assessment static practice questions', assessment.summary.staticPracticeQuestions, 55)
+expect('assessment static practice sources', assessment.summary.staticPracticeSources, 9)
 expect('assessment badge quiz questions per attempt', expectedBadgePerAttempt, 20)
-expect('assessment badge quiz captured unique questions', expectedBadgeCapturedQuestions, 0)
+expect('assessment badge quiz captured unique questions', expectedBadgeCapturedQuestions, 34)
 expect('assessment lab pages', assessment.summary.labPages, 6)
 
 if (findings.length > 0) {
@@ -47,4 +47,4 @@ if (findings.length > 0) {
   process.exit(1)
 }
 
-console.log(`Course inventory checks passed: 53 activities, 24 videos, 6 labs, ${expectedStaticPracticeQuestions} static practice questions, ${expectedBadgePerAttempt} questions per Badge Quiz attempt.`)
+console.log(`Course inventory checks passed: 53 activities, 24 videos, 6 labs, ${expectedStaticPracticeQuestions} static practice questions, ${expectedBadgeCapturedQuestions} Badge Quiz scope questions, ${expectedBadgePerAttempt} questions per Badge Quiz attempt.`)

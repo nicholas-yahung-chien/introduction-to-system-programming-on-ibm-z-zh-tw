@@ -1,0 +1,288 @@
+{
+  "slug": "jes-and-jcl-part-2",
+  "title": "JES and JCL Part 2",
+  "language": "en",
+  "duration": 235.218125,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 9.42,
+      "text": "JCL statements consist of one or more 80 byte records, however, be careful when you get"
+    },
+    {
+      "start": 9.42,
+      "end": 16.26,
+      "text": "close to the end of that line there, because columns 73 through 80 are ignored by zos and"
+    },
+    {
+      "start": 16.26,
+      "end": 19.18,
+      "text": "are usually used for sequence numbers."
+    },
+    {
+      "start": 19.18,
+      "end": 22.74,
+      "text": "If you've got a command with a whole lot of parameters that you need to continue onto"
+    },
+    {
+      "start": 22.74,
+      "end": 25.86,
+      "text": "the second line, here's what you do."
+    },
+    {
+      "start": 25.86,
+      "end": 29.14,
+      "text": "And note, this is only how you continue for a parameter."
+    },
+    {
+      "start": 29.14,
+      "end": 34.58,
+      "text": "If you've got a comment or a parameter field enclosed in parentheses, those require something"
+    },
+    {
+      "start": 34.58,
+      "end": 36.38,
+      "text": "slightly different."
+    },
+    {
+      "start": 36.38,
+      "end": 42.54,
+      "text": "But if you've got a list of parameters, interrupt the field after a complete parameter entry,"
+    },
+    {
+      "start": 42.54,
+      "end": 44.78,
+      "text": "making sure to end it with a comma."
+    },
+    {
+      "start": 44.78,
+      "end": 49.06,
+      "text": "That comma needs to come at or before column 71."
+    },
+    {
+      "start": 49.06,
+      "end": 53.78,
+      "text": "In the next line, which you're going to be continuing into, start it with two forward"
+    },
+    {
+      "start": 53.78,
+      "end": 56.56,
+      "text": "slashes and then a blank space."
+    },
+    {
+      "start": 56.56,
+      "end": 63.06,
+      "text": "If column three starts with anything other than a blank space or an asterisk, splat,"
+    },
+    {
+      "start": 63.06,
+      "end": 66.84,
+      "text": "it will assume it's a new line and probably won't run right."
+    },
+    {
+      "start": 66.84,
+      "end": 71.12,
+      "text": "You can then pick up your continued command starting anywhere from columns four through"
+    },
+    {
+      "start": 71.12,
+      "end": 72.32,
+      "text": "16."
+    },
+    {
+      "start": 72.32,
+      "end": 77.8,
+      "text": "You should also know that there's different types of statements, job, exec, and dd."
+    },
+    {
+      "start": 77.8,
+      "end": 81.68,
+      "text": "And you can see all three types here, and they all have parameters that are expected"
+    },
+    {
+      "start": 81.68,
+      "end": 83.28,
+      "text": "to follow them."
+    },
+    {
+      "start": 83.32,
+      "end": 87.64,
+      "text": "I also want to talk to you about those dispositions you see here, because you'll definitely be"
+    },
+    {
+      "start": 87.64,
+      "end": 89.24,
+      "text": "running into those."
+    },
+    {
+      "start": 89.24,
+      "end": 92.84,
+      "text": "But before we can get into that, we have to cover cataloging."
+    },
+    {
+      "start": 92.84,
+      "end": 98.88,
+      "text": "Now cataloging a dataset just means that we add the exact location of that dataset so"
+    },
+    {
+      "start": 98.88,
+      "end": 103.44,
+      "text": "we can find it later, referencing it only by its name."
+    },
+    {
+      "start": 103.44,
+      "end": 107.24,
+      "text": "Datasets can exist without being in a catalog, you just have to know exactly where they are"
+    },
+    {
+      "start": 107.24,
+      "end": 108.8,
+      "text": "to use them."
+    },
+    {
+      "start": 108.8,
+      "end": 113.36,
+      "text": "Having a dataset in your catalog is like having a phone number in your address book."
+    },
+    {
+      "start": 113.36,
+      "end": 118.84,
+      "text": "So if you want to reference a dataset by its name later on, make sure it's in the catalog."
+    },
+    {
+      "start": 118.84,
+      "end": 120.18,
+      "text": "That's it."
+    },
+    {
+      "start": 120.18,
+      "end": 125.8,
+      "text": "When you specify the disposition in a dd statement, you're specifying what to do with the datasets"
+    },
+    {
+      "start": 125.8,
+      "end": 127.44,
+      "text": "in JCL."
+    },
+    {
+      "start": 127.44,
+      "end": 131.08,
+      "text": "And you do this across three fields separated by a comma."
+    },
+    {
+      "start": 131.08,
+      "end": 134.0,
+      "text": "And don't worry, there is an example after this."
+    },
+    {
+      "start": 134.0,
+      "end": 137.6,
+      "text": "You start with DISP equals, that sets it all up."
+    },
+    {
+      "start": 137.6,
+      "end": 142.12,
+      "text": "In the first field, we're specifying whether it should be new, either it doesn't exist"
+    },
+    {
+      "start": 142.12,
+      "end": 148.76,
+      "text": "yet so we should make it, old, meaning it should already exist, share, the data can"
+    },
+    {
+      "start": 148.76,
+      "end": 154.84,
+      "text": "be used by other jobs, and mod, if the dataset doesn't already exist, then create it."
+    },
+    {
+      "start": 154.84,
+      "end": 158.54,
+      "text": "And if it already does exist, then use that."
+    },
+    {
+      "start": 158.54,
+      "end": 163.76,
+      "text": "In the next statement, we specify what action the system needs to perform on the dataset"
+    },
+    {
+      "start": 163.76,
+      "end": 166.8,
+      "text": "when the job step terminates normally."
+    },
+    {
+      "start": 166.8,
+      "end": 172.96,
+      "text": "And we can either delete it, get rid of it, keep it, and if you're referencing a dataset"
+    },
+    {
+      "start": 172.96,
+      "end": 178.52,
+      "text": "that you expected to be there when it started, you probably want to keep it around, pass,"
+    },
+    {
+      "start": 178.52,
+      "end": 182.64,
+      "text": "meaning that if there's a step after this step that needs the dataset, let them use"
+    },
+    {
+      "start": 182.64,
+      "end": 189.0,
+      "text": "it, catalog, add it to the catalog, make it permanent, or uncatalog, remove it from the"
+    },
+    {
+      "start": 189.0,
+      "end": 190.52,
+      "text": "catalog."
+    },
+    {
+      "start": 190.52,
+      "end": 195.48,
+      "text": "And then lastly, in the third column, what to do if a job step terminates abnormally,"
+    },
+    {
+      "start": 195.48,
+      "end": 197.72,
+      "text": "if something bad happens."
+    },
+    {
+      "start": 197.72,
+      "end": 202.96,
+      "text": "Same as the previous column, but there's no option for pass because if the job is stopping,"
+    },
+    {
+      "start": 202.96,
+      "end": 205.8,
+      "text": "there are no future steps to pass it on to."
+    },
+    {
+      "start": 205.8,
+      "end": 212.04,
+      "text": "So here's an example of a DD statement with a disposition of new catalog delete."
+    },
+    {
+      "start": 212.04,
+      "end": 216.36,
+      "text": "We're going to create a new dataset, and if the job runs successfully, add it to the"
+    },
+    {
+      "start": 216.36,
+      "end": 219.32,
+      "text": "catalog, otherwise delete it."
+    },
+    {
+      "start": 219.32,
+      "end": 224.38,
+      "text": "I know this was a lot of information, and believe me, I wish that were everything."
+    },
+    {
+      "start": 224.38,
+      "end": 229.82,
+      "text": "For the full details on JES and JCL, refer to the user guide and reference linked in"
+    },
+    {
+      "start": 229.82,
+      "end": 230.58,
+      "text": "this lesson."
+    }
+  ]
+}

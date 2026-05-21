@@ -20,7 +20,85 @@
 
 ## 影片
 
+<VideoLesson
+  title="系統程式設計"
+  entry-id="1_y7shsh9a"
+  video-src="/media/system-programming.mp4"
+  subtitle-src="/subtitles/system-programming.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119078"
+/>
 
+<LessonNotes slug="system-programming" />
+
+<VideoLesson
+  title="JES 與 JCL 第 1 部分"
+  entry-id="1_ev0bd4j9"
+  video-src="/media/jes-and-jcl-part-1.mp4"
+  subtitle-src="/subtitles/jes-and-jcl-part-1.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119026"
+/>
+
+<LessonNotes slug="jes-and-jcl-part-1" />
+
+<VideoLesson
+  title="JES 與 JCL 第 2 部分"
+  entry-id="1_qq2x3dnn"
+  video-src="/media/jes-and-jcl-part-2.mp4"
+  subtitle-src="/subtitles/jes-and-jcl-part-2.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119034"
+/>
+
+<LessonNotes slug="jes-and-jcl-part-2" />
+
+<VideoLesson
+  title="提交與查看 JCL"
+  entry-id="1_87joxm59"
+  video-src="/media/submitting-and-viewing-jcl.mp4"
+  subtitle-src="/subtitles/submitting-and-viewing-jcl.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119076"
+/>
+
+<LessonNotes slug="submitting-and-viewing-jcl" />
+
+<VideoLesson
+  title="Lab 熟悉環境：建立連線"
+  entry-id="1_599iixml"
+  video-src="/media/lab-familiarization-getting-connected.mp4"
+  subtitle-src="/subtitles/lab-familiarization-getting-connected.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=226062"
+/>
+
+<LessonNotes slug="lab-familiarization-getting-connected" />
+
+<VideoLesson
+  title="Lab 熟悉環境：終端機與密碼問題"
+  entry-id="1_jqny88jg"
+  video-src="/media/lab-familiarization-terminal-and-password-issues.mp4"
+  subtitle-src="/subtitles/lab-familiarization-terminal-and-password-issues.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=226063"
+/>
+
+<LessonNotes slug="lab-familiarization-terminal-and-password-issues" />
+
+<VideoLesson
+  title="JCL 程序"
+  entry-id="1_67vf8cdm"
+  video-src="/media/jcl-procedures.mp4"
+  subtitle-src="/subtitles/jcl-procedures.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119067"
+/>
+
+<LessonNotes slug="jcl-procedures" />
+
+<VideoLesson
+  title="JCL 補充重點"
+  entry-id="1_hytagu5v"
+  video-src="/media/jcl-tidbits.mp4"
+  subtitle-src="/subtitles/jcl-tidbits.zh-Hant-TW.vtt"
+  source-url="https://learn.ibm.com/mod/video/view.php?id=119033"
+/>
+
+<LessonNotes slug="jcl-tidbits" />
 
 ## 閱讀材料
 

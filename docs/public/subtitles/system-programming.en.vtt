@@ -1,0 +1,289 @@
+WEBVTT
+
+1
+00:00:03.440 --> 00:00:05.440
+Hi there, it's me again.
+
+2
+00:00:05.440 --> 00:00:10.440
+In this course, we're going to take a closer look at some system programmer concepts.
+
+3
+00:00:10.440 --> 00:00:13.440
+What's a system programmer? I'm so glad you asked.
+
+4
+00:00:13.440 --> 00:00:15.440
+That's exactly what we're going to cover here.
+
+5
+00:00:15.440 --> 00:00:20.440
+The role of a system programmer basically comes down to describing the person who installs,
+
+6
+00:00:20.440 --> 00:00:23.440
+customizes, and maintains the operating system.
+
+7
+00:00:23.440 --> 00:00:26.440
+Now, in reality, it's a bit more fuzzy than that.
+
+8
+00:00:26.440 --> 00:00:29.440
+Your typical system programmer, or SysProg,
+
+9
+00:00:29.440 --> 00:00:36.440
+became SysProg by having a whole lot of experiences in a number of areas all around the operating system.
+
+10
+00:00:36.440 --> 00:00:41.440
+So, what is expected of a SysProg and what a SysProg does on a day-to-day basis
+
+11
+00:00:41.440 --> 00:00:45.440
+will differ greatly from one business to the next.
+
+12
+00:00:45.440 --> 00:00:51.440
+However it's defined, the SysProg plays a central role in just about everything that has to do with their mainframe.
+
+13
+00:00:51.440 --> 00:00:58.440
+A system programmer needs to have knowledge of hardware, processors, system libraries and data sets,
+
+14
+00:00:58.440 --> 00:01:01.440
+storage, software, security, networking.
+
+15
+00:01:01.440 --> 00:01:06.440
+The system programmer may not be the one who actually hands-on keyboard makes those changes,
+
+16
+00:01:06.440 --> 00:01:10.440
+but they do need to understand the changes so they can help plan them,
+
+17
+00:01:10.440 --> 00:01:13.440
+minimizing impact to production workloads.
+
+18
+00:01:13.440 --> 00:01:17.440
+They typically handle building and maintaining IODF configurations,
+
+19
+00:01:17.440 --> 00:01:22.440
+architecting the connections to storage devices and other mainframes.
+
+20
+00:01:22.440 --> 00:01:26.440
+They know the system backwards and forwards, physically and logically.
+
+21
+00:01:27.440 --> 00:01:30.440
+Some typical situations a SysProg needs to be able to handle
+
+22
+00:01:30.440 --> 00:01:36.440
+might include selecting a performance management strategy to best optimize the mainframe performance,
+
+23
+00:01:36.440 --> 00:01:39.440
+determining when and how to expand the system.
+
+24
+00:01:39.440 --> 00:01:45.440
+You know, it's not always in the budget or the production schedule to be upgrading to the latest and greatest all the time.
+
+25
+00:01:45.440 --> 00:01:51.440
+A system programmer needs to be able to determine when they should roll in that new mainframe.
+
+26
+00:01:51.440 --> 00:01:56.440
+They need to establish a baseline for performance and track that performance over time,
+
+27
+00:01:56.440 --> 00:02:02.440
+so problems with customers waiting too long or transactions timing out don't sneak up on them.
+
+28
+00:02:02.440 --> 00:02:08.440
+A lot of what a SysProg does is making sure that a system is prepared for anticipated workloads,
+
+29
+00:02:08.440 --> 00:02:11.440
+and some of this involves working with the business side of things.
+
+30
+00:02:11.440 --> 00:02:16.440
+For example, Imagine a retail business is planning on having a huge sale in the middle of the summer
+
+31
+00:02:16.440 --> 00:02:20.440
+that's going to drive massive amounts of shoppers to their website.
+
+32
+00:02:20.440 --> 00:02:27.440
+The SysProg needs to know about that, and they have to have the system ready to handle that anticipated load of all those new people.
+
+33
+00:02:27.440 --> 00:02:32.440
+Perhaps most importantly, a SysProg needs to maintain a list of procedures
+
+34
+00:02:32.440 --> 00:02:36.440
+for how certain situations should be handled on their mainframe systems.
+
+35
+00:02:36.440 --> 00:02:42.440
+Now, I'm talking about actual written out procedures for when you see this type of problem,
+
+36
+00:02:42.440 --> 00:02:49.440
+look for these indicators, and based on conditions A, B, and C, perform actions D, E, or F.
+
+37
+00:02:49.440 --> 00:02:50.440
+Let me put it another way.
+
+38
+00:02:50.440 --> 00:02:55.440
+You ever hit a problem on your computer and you search for the error you get on the internet
+
+39
+00:02:55.440 --> 00:02:59.440
+and you find somebody else describing exactly the same problem,
+
+40
+00:02:59.440 --> 00:03:03.440
+and instead of describing how they fix it, they just up and disappear,
+
+41
+00:03:03.440 --> 00:03:06.440
+or maybe they came back and their only update is,
+
+42
+00:03:06.440 --> 00:03:07.440
+never mind, I fixed it.
+
+43
+00:03:07.440 --> 00:03:11.440
+Procedures aren't always the most fun thing in the world to write,
+
+44
+00:03:11.440 --> 00:03:14.440
+but when you run into an issue and seconds count,
+
+45
+00:03:14.440 --> 00:03:18.440
+a well-written procedure that perfectly describes what you're seeing
+
+46
+00:03:18.440 --> 00:03:21.440
+and what you have to do is a beautiful thing.
+
+47
+00:03:21.440 --> 00:03:26.440
+A SysProg may not directly handle security aspects of operations.
+
+48
+00:03:26.440 --> 00:03:29.440
+They might have a dedicated security administrator for that,
+
+49
+00:03:29.440 --> 00:03:33.440
+but the SysProg still needs to have a firm handle on who should
+
+50
+00:03:33.440 --> 00:03:37.440
+and shouldn't have access to various system resources.
+
+51
+00:03:37.440 --> 00:03:41.440
+The reason the system programmer needs to be involved in all these areas
+
+52
+00:03:41.440 --> 00:03:45.440
+is that there is a high expectation when it comes to enterprise systems.
+
+53
+00:03:45.440 --> 00:03:49.440
+These are not something went wrong, try again situations.
+
+54
+00:03:49.440 --> 00:03:53.440
+In many cases, the expectation is 24 by 7 operation,
+
+55
+00:03:53.440 --> 00:03:57.440
+and often is the case that there is a contract in place guaranteeing
+
+56
+00:03:57.440 --> 00:04:00.440
+a certain level of performance and availability.
+
+57
+00:04:00.440 --> 00:04:06.440
+So being reliable and performant isn't just a nice thing, it's the business.
+
+58
+00:04:06.440 --> 00:04:09.440
+For that reason, change control is an extremely important aspect
+
+59
+00:04:09.440 --> 00:04:11.440
+of working in an enterprise environment.
+
+60
+00:04:11.440 --> 00:04:14.440
+Making changes will often require discussing what you want to do
+
+61
+00:04:14.440 --> 00:04:17.440
+with a team of others to make sure it won't affect them
+
+62
+00:04:17.440 --> 00:04:21.440
+or that they can anticipate them and work around those changes.
+
+63
+00:04:21.440 --> 00:04:24.440
+Even something that seems very simple and could do no harm,
+
+64
+00:04:24.440 --> 00:04:26.440
+like upgrading a piece of software,
+
+65
+00:04:26.440 --> 00:04:29.440
+may introduce changes that affect other users.
+
+66
+00:04:29.440 --> 00:04:34.440
+Software, operating system, and hardware changes are often planned out weeks,
+
+67
+00:04:34.440 --> 00:04:36.440
+if not months in advance.
+
+68
+00:04:36.440 --> 00:04:39.440
+As a system programmer, this is your system.
+
+69
+00:04:39.440 --> 00:04:42.440
+You know it best, you know what it's capable of,
+
+70
+00:04:42.440 --> 00:04:44.440
+what might put business objectives at risk,
+
+71
+00:04:44.440 --> 00:04:47.440
+and how to handle certain situations that come up.
+
+72
+00:04:47.440 --> 00:04:50.440
+It's a tough job, but I'm pretty sure you're up to it.

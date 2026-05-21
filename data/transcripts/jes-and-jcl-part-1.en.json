@@ -1,0 +1,398 @@
+{
+  "slug": "jes-and-jcl-part-1",
+  "title": "JES and JCL Part 1",
+  "language": "en",
+  "duration": 420.118625,
+  "segments": [
+    {
+      "start": 3.57,
+      "end": 7.57,
+      "text": "Now we're going to talk about my good friends Jez and JCL."
+    },
+    {
+      "start": 7.57,
+      "end": 13.57,
+      "text": "If you're keeping track of acronyms at home, that's Job Entry Subsystem and Job Control Language."
+    },
+    {
+      "start": 13.57,
+      "end": 18.57,
+      "text": "Jez is a component of ZOS that's responsible for managing batch workloads."
+    },
+    {
+      "start": 18.57,
+      "end": 22.57,
+      "text": "In other words, you've got this big pile of work that needs to get done."
+    },
+    {
+      "start": 22.57,
+      "end": 28.57,
+      "text": "And Jez manages that pile of work, including receiving the jobs, making sure they make sense,"
+    },
+    {
+      "start": 28.57,
+      "end": 33.57,
+      "text": "putting all the pieces together, scheduling them to run, getting them into the pipeline,"
+    },
+    {
+      "start": 33.57,
+      "end": 38.57,
+      "text": "and making sure that when they run, the output goes to the right place."
+    },
+    {
+      "start": 38.57,
+      "end": 46.57,
+      "text": "JCL is a scripting language that we use to instruct the system how we want it to run those jobs once JCL is ready to run them."
+    },
+    {
+      "start": 46.57,
+      "end": 51.57,
+      "text": "Now there are two flavors of Jez, Jez 2 and Jez 3."
+    },
+    {
+      "start": 51.57,
+      "end": 58.57,
+      "text": "They handle things a little bit differently, enough for them to be a Jez 2 and a Jez 3, and most people use Jez 2."
+    },
+    {
+      "start": 58.57,
+      "end": 64.57,
+      "text": "But the fundamentals are the same. They both accept and queue jobs submitted for execution."
+    },
+    {
+      "start": 64.57,
+      "end": 68.57,
+      "text": "They both have the concept of an input and an output queue."
+    },
+    {
+      "start": 68.57,
+      "end": 73.57,
+      "text": "They both queue jobs for an initiator. That's a Jez program that goes around and says,"
+    },
+    {
+      "start": 73.57,
+      "end": 76.57,
+      "text": "hey, give me the next job. We're ready to do some work."
+    },
+    {
+      "start": 76.57,
+      "end": 82.57,
+      "text": "And there's also this concept of accepting output from a job when it runs and managing where it goes."
+    },
+    {
+      "start": 82.57,
+      "end": 89.57,
+      "text": "It might go to a printer, it might get deleted, or maybe it's saved on a spool for an output manager to retrieve."
+    },
+    {
+      "start": 89.57,
+      "end": 99.57,
+      "text": "The term spool is probably a new one. You can just think of it as a method of handling data where new data can be fed in while existing data is pulled off."
+    },
+    {
+      "start": 99.57,
+      "end": 104.57,
+      "text": "So a spool functions both as an input and an output for Jez."
+    },
+    {
+      "start": 104.57,
+      "end": 108.57,
+      "text": "Some of the jobs that get run on the ZOS are what you call batch jobs."
+    },
+    {
+      "start": 108.57,
+      "end": 116.57,
+      "text": "That term comes from the way that they're started, typically with a single job that ends up doing a whole lot of work with minimal human interaction,"
+    },
+    {
+      "start": 116.57,
+      "end": 121.57,
+      "text": "and they're either scheduled for a specific time or on an as-needed basis."
+    },
+    {
+      "start": 121.57,
+      "end": 128.57,
+      "text": "So an example of a batch job might be a job that looks at the inventory of a warehouse and the orders that come in during the day,"
+    },
+    {
+      "start": 128.57,
+      "end": 133.57,
+      "text": "and determines how the truck should be loaded up overnight for when the drivers show up the next morning."
+    },
+    {
+      "start": 133.57,
+      "end": 141.57,
+      "text": "You would just make sure that the job is pointing at the right data, run it, and know that the output will be where you expect it to be the next day."
+    },
+    {
+      "start": 141.57,
+      "end": 149.57,
+      "text": "To speed up processing and make things run faster, jobs with similar needs get batched together and run as a group."
+    },
+    {
+      "start": 149.57,
+      "end": 152.57,
+      "text": "No need for everyone to drive if you can carpool, right?"
+    },
+    {
+      "start": 152.57,
+      "end": 161.57,
+      "text": "Batch jobs can also be stored up during working hours and then executed in the evening when there aren't a lot of people logged in doing interactive work."
+    },
+    {
+      "start": 161.57,
+      "end": 167.57,
+      "text": "Once a batch job begins, it continues until it's done or a severe error occurs."
+    },
+    {
+      "start": 167.57,
+      "end": 174.57,
+      "text": "After a batch job is submitted for execution, there's normally no further interaction required from you until it's done,"
+    },
+    {
+      "start": 174.57,
+      "end": 179.57,
+      "text": "but you typically watch it for a little while just to make sure nothing obviously wrong is happening."
+    },
+    {
+      "start": 179.57,
+      "end": 183.57,
+      "text": "We've spent all this time talking about JES. Let's get over to JCL."
+    },
+    {
+      "start": 183.57,
+      "end": 188.57,
+      "text": "JCL is where you specify any resources that are required by the program."
+    },
+    {
+      "start": 189.57,
+      "end": 194.57,
+      "text": "Let's say you're running a program that's doing something with a dataset like most jobs are."
+    },
+    {
+      "start": 194.57,
+      "end": 199.57,
+      "text": "You obviously need to at least specify an input dataset and probably an output dataset."
+    },
+    {
+      "start": 199.57,
+      "end": 204.57,
+      "text": "It also acts as a communicator between the operating system and the program."
+    },
+    {
+      "start": 204.57,
+      "end": 208.57,
+      "text": "It makes jobs out of work that can run without any manual intervention,"
+    },
+    {
+      "start": 208.57,
+      "end": 214.57,
+      "text": "and it works according to the priority levels of each job because that's a thing you can set, too."
+    },
+    {
+      "start": 215.57,
+      "end": 220.57,
+      "text": "In the JCL, you specify who you are, which is important for security reasons,"
+    },
+    {
+      "start": 220.57,
+      "end": 225.57,
+      "text": "and which resources and services are needed for the program to run."
+    },
+    {
+      "start": 225.57,
+      "end": 231.57,
+      "text": "Safe to say, without JCL, programs would have a really hard time running on a mainframe."
+    },
+    {
+      "start": 231.57,
+      "end": 238.57,
+      "text": "A job is a collection of instructions that performs a specific task when executed by the system."
+    },
+    {
+      "start": 238.57,
+      "end": 244.57,
+      "text": "Think of a job as a unit of work, which can be made up of many job steps."
+    },
+    {
+      "start": 244.57,
+      "end": 251.57,
+      "text": "Each job step is specified in JCL through a set of job control statements."
+    },
+    {
+      "start": 251.57,
+      "end": 257.57,
+      "text": "The operating system uses the job entry subsystem to receive jobs into the operating system"
+    },
+    {
+      "start": 257.57,
+      "end": 262.57,
+      "text": "and to schedule them for processing, as well as handling the output."
+    },
+    {
+      "start": 262.57,
+      "end": 265.57,
+      "text": "Here's how it goes from beginning to end."
+    },
+    {
+      "start": 265.57,
+      "end": 270.57,
+      "text": "First, the user creates the JCL for the job, and just a little bit of insider information,"
+    },
+    {
+      "start": 270.57,
+      "end": 275.57,
+      "text": "very few people sit down and say, I'm going to write some JCL from scratch today."
+    },
+    {
+      "start": 275.57,
+      "end": 282.57,
+      "text": "No, they have a few basic templates that they keep around and edit them to fit whatever purpose they have at that particular moment."
+    },
+    {
+      "start": 282.57,
+      "end": 286.57,
+      "text": "Anyway, whether it's written from scratch or modified from something they had before,"
+    },
+    {
+      "start": 286.57,
+      "end": 289.57,
+      "text": "the user has the JCL they want to run."
+    },
+    {
+      "start": 289.57,
+      "end": 294.57,
+      "text": "Next, the user submits the JCL to JES, the job entry subsystem."
+    },
+    {
+      "start": 294.57,
+      "end": 297.57,
+      "text": "Now begins the job conversion."
+    },
+    {
+      "start": 297.57,
+      "end": 301.57,
+      "text": "The JCL gets read by JES and stores that in the spool."
+    },
+    {
+      "start": 301.57,
+      "end": 306.57,
+      "text": "All throughout this, the system communicates with the user on the status of their job."
+    },
+    {
+      "start": 306.57,
+      "end": 313.57,
+      "text": "When the job is complete, the allocated resource and the space that it took up on the JES spool are released."
+    },
+    {
+      "start": 313.57,
+      "end": 316.57,
+      "text": "Now the user can view and interpret the output."
+    },
+    {
+      "start": 316.57,
+      "end": 319.57,
+      "text": "Let's take a look at what JCL looks like."
+    },
+    {
+      "start": 319.57,
+      "end": 321.57,
+      "text": "This is a sample job card."
+    },
+    {
+      "start": 321.57,
+      "end": 326.57,
+      "text": "First, you see the information required for the spooling of the job, where you want the job to go and run."
+    },
+    {
+      "start": 326.57,
+      "end": 329.57,
+      "text": "Then there's the slash slash star statement."
+    },
+    {
+      "start": 329.57,
+      "end": 333.57,
+      "text": "When you want to insert a space or a comment, prepend it with this."
+    },
+    {
+      "start": 333.57,
+      "end": 337.57,
+      "text": "Next is the step and the name of the program you want to execute."
+    },
+    {
+      "start": 337.57,
+      "end": 342.57,
+      "text": "In this case, the step is step 10, and the program is sort."
+    },
+    {
+      "start": 342.57,
+      "end": 347.57,
+      "text": "For sort in and sort out, those DD statements are the data definitions,"
+    },
+    {
+      "start": 347.57,
+      "end": 352.57,
+      "text": "and they spell out the input and output data sets that the sort job needs to run."
+    },
+    {
+      "start": 352.57,
+      "end": 358.57,
+      "text": "Since the sort out data set is new, we need to specify the details for it."
+    },
+    {
+      "start": 358.57,
+      "end": 364.57,
+      "text": "We also have a few DD statements down here, which tells JES what to do with the output of the job itself."
+    },
+    {
+      "start": 364.57,
+      "end": 369.57,
+      "text": "Sysin DD Asterik, which some people call a splat."
+    },
+    {
+      "start": 369.57,
+      "end": 373.57,
+      "text": "This is the area where we send additional commands to the program."
+    },
+    {
+      "start": 373.57,
+      "end": 380.57,
+      "text": "For example, maybe this sort program has a way of sorting things backwards or putting numbers before or after letters."
+    },
+    {
+      "start": 380.57,
+      "end": 383.57,
+      "text": "Those might be parameters we'd set in here."
+    },
+    {
+      "start": 383.57,
+      "end": 390.57,
+      "text": "To mark the end of the Sysin stream data, we use slash asterik, splat."
+    },
+    {
+      "start": 390.57,
+      "end": 396.57,
+      "text": "Now, that's the basics of JCL, and if that made sense, you've got a good foundation to go much further."
+    },
+    {
+      "start": 396.57,
+      "end": 402.57,
+      "text": "We aren't going to get into all the features of JCL, otherwise this will be a Coursera course on JCL."
+    },
+    {
+      "start": 402.57,
+      "end": 405.57,
+      "text": "But there are a few other things I want you to know."
+    },
+    {
+      "start": 405.57,
+      "end": 412.57,
+      "text": "You know what? We're actually running out of time for this video, and we need to continue it on to the next one."
+    },
+    {
+      "start": 412.57,
+      "end": 415.57,
+      "text": "That's a bit of a spoiler for part two."
+    }
+  ]
+}

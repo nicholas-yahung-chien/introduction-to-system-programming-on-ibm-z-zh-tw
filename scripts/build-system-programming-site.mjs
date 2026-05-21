@@ -1,4 +1,5 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 import path from 'node:path'
 
 const root = process.cwd()
@@ -166,7 +167,16 @@ const sections = captured.sections.map((section) => ({
         title: activity.title,
         titleZh: titleZhByActivity.get(activity.title) || activity.title,
         sourceUrl: activity.href || 'https://learn.ibm.com/course/view.php?id=7512',
-        ...(video?.kaltura ? { kaltura: video.kaltura, mediaStatus: 'source-only' } : {}),
+        ...(video?.kaltura ? {
+          kaltura: video.kaltura,
+          mediaStatus: 'deployed',
+          media: {
+            videoSrc: `/media/${activity.slug}.mp4`,
+            hlsSrc: `/hls/${activity.slug}/index.m3u8`,
+            subtitleSrc: `/subtitles/${activity.slug}.zh-Hant-TW.vtt`,
+            englishSubtitleSrc: `/subtitles/${activity.slug}.en.vtt`,
+          },
+        } : {}),
       }
     })
 }))
@@ -310,6 +320,19 @@ for (const [sourceReference, title] of sourceMeta.map(([id, title]) => [id, titl
       }
     })
   })
+}
+
+if (existsSync(path.join(root, 'data/practice-questions.json'))) {
+  const existingPracticeQuestions = JSON.parse(await import('node:fs/promises').then(({ readFile }) => readFile(path.join(root, 'data/practice-questions.json'), 'utf8')))
+  practiceQuestions.push(...existingPracticeQuestions.filter((question) => question.sourceReference === 'badge-quiz-scope'))
+}
+if (existsSync(path.join(root, 'data/practice-sources.json'))) {
+  const existingPracticeSources = JSON.parse(await import('node:fs/promises').then(({ readFile }) => readFile(path.join(root, 'data/practice-sources.json'), 'utf8')))
+  for (const source of existingPracticeSources.sources.filter((source) => source.id === 'badge-quiz-scope')) {
+    if (!sourceInventory.sources.some((candidate) => candidate.id === source.id)) {
+      sourceInventory.sources.push(source)
+    }
+  }
 }
 
 function questionTranslations() {
@@ -468,7 +491,7 @@ function questionTranslations() {
 }
 
 function mdVideoBlock(video) {
-  return `<VideoLesson\n  title="${video.titleZh}"\n  entry-id="${video.entryId}"\n  source-url="${video.sourceUrl}"\n/>\n\n<LessonNotes slug="${video.slug}" />`
+  return `<VideoLesson\n  title="${video.titleZh}"\n  entry-id="${video.entryId}"\n  video-src="/media/${video.slug}.mp4"\n  subtitle-src="/subtitles/${video.slug}.zh-Hant-TW.vtt"\n  source-url="${video.sourceUrl}"\n/>\n\n<LessonNotes slug="${video.slug}" />`
 }
 
 function sectionPage(sectionSlug, heading, intro, context, goals, order, reading, checks) {
@@ -533,11 +556,12 @@ const packageJson = {
   scripts: {
     dev: 'vitepress dev docs --host 127.0.0.1',
     build: 'vitepress build docs',
-    'build:github': 'cross-env VITEPRESS_BASE=/introduction-to-system-programming-on-ibm-z-zh-tw/ VITE_SKIP_LOCAL_MEDIA=1 vitepress build docs && node scripts/copy-public-assets.mjs && node scripts/prune-dist-media.mjs',
-    'build:cloudflare': 'cross-env VITEPRESS_BASE=/ VITE_SKIP_LOCAL_MEDIA=1 vitepress build docs && node scripts/copy-public-assets.mjs && node scripts/prune-dist-media.mjs',
+    'build:github': 'cross-env VITEPRESS_BASE=/introduction-to-system-programming-on-ibm-z-zh-tw/ VITE_MEDIA_BASE_URL=https://introduction-to-system-programming-on-ibm-z-media.pages.dev VITE_SKIP_LOCAL_MEDIA=1 vitepress build docs && node scripts/copy-public-assets.mjs && node scripts/prune-dist-media.mjs',
+    'build:cloudflare': 'cross-env VITEPRESS_BASE=/ VITE_MEDIA_BASE_URL=https://introduction-to-system-programming-on-ibm-z-media.pages.dev VITE_SKIP_LOCAL_MEDIA=1 vitepress build docs && node scripts/copy-public-assets.mjs && node scripts/prune-dist-media.mjs',
     'verify:release': 'npm run build:github && npm run build:cloudflare && npm run site:check && npm run content:quality && npm run practice:check && npm run course:inventory:check',
     preview: 'vitepress preview docs --host 127.0.0.1',
     'deploy:cloudflare': 'npm run build:cloudflare && npx wrangler pages deploy docs/.vitepress/dist --project-name introduction-to-system-programming-on-ibm-z-zh-tw --branch main',
+    'deploy:media': 'npm run media:package && npx wrangler pages deploy dist-media --project-name introduction-to-system-programming-on-ibm-z-media --branch main',
     'capture:course': 'node scripts/capture-course.mjs',
     'capture:assets': 'node scripts/extract-live-course-assets.mjs',
     'site:generate': 'node scripts/build-system-programming-site.mjs',
@@ -567,9 +591,9 @@ const packageJson = {
   }
 }
 
-const releaseChecklist = `# Release Checklist\n\n## Content\n\n- [ ] Confirm IBM Learn source URL is https://learn.ibm.com/course/view.php?id=7512\n- [ ] Confirm public pages do not imply Lab runtime, formal quiz scoring, certificate, badge claim, or learner progress are hosted on this site.\n- [ ] Confirm H5P static practice remains non-scoring.\n- [ ] Confirm video assets are either deployed or clearly marked source-only.\n\n## Verification\n\n\`\`\`powershell\nnpm run verify:release\n\`\`\`\n\n## Deployment\n\n- Cloudflare Pages project: \`introduction-to-system-programming-on-ibm-z-zh-tw\`\n- GitHub Pages base path: \`/introduction-to-system-programming-on-ibm-z-zh-tw/\`\n`
+const releaseChecklist = `# Release Checklist\n\n## Content\n\n- [ ] Confirm IBM Learn source URL is https://learn.ibm.com/course/view.php?id=7512\n- [ ] Confirm public pages do not imply Lab runtime, formal quiz scoring, certificate, badge claim, or learner progress are hosted on this site.\n- [ ] Confirm H5P static practice remains non-scoring.\n- [ ] Confirm video assets, HLS playlists, and subtitles are deployed or clearly documented if unavailable.\n\n## Verification\n\n\`\`\`powershell\nnpm run verify:release\n\`\`\`\n\n## Deployment\n\n- Cloudflare Pages project: \`introduction-to-system-programming-on-ibm-z-zh-tw\`\n- GitHub Pages base path: \`/introduction-to-system-programming-on-ibm-z-zh-tw/\`\n`
 
-const signoff = `# First Edition Signoff\n\nThis file records the first converted baseline for the Traditional Chinese static course site. It is a repository planning and handoff record only; do not link it from the public VitePress site.\n\n## Signoff Status\n\n- Status: prepared for review\n- Prepared date: ${new Date().toISOString().slice(0, 10)}\n- Course source: \`https://learn.ibm.com/course/view.php?id=7512\`\n- Course title: \`Introduction to System Programming on IBM Z\`\n- Locale: \`zh-Hant-TW\`\n\n## Included Scope\n\n- VitePress static course site.\n- Course landing page and learner-facing unit pages.\n- 24 course video metadata entries, currently marked source-only until media authorization/deployment is confirmed.\n- 21 static practice questions converted from 8 H5P short quiz activities.\n- Lab metadata for 6 IBM Remote Lab Platform activities.\n- Glossary, license notes, release checklist, and automated quality checks.\n\n## Excluded From This Baseline\n\n- Formal Badge Quiz question bank reproduction.\n- Certificate, survey, practitioner badge claim, and Moodle learner-state workflows.\n- Login-dependent learner progress tracking.\n- Recreated IBM Remote Lab Platform runtime.\n- HLS media and subtitles until media authorization is confirmed.\n`
+const signoff = `# First Edition Signoff\n\nThis file records the first converted baseline for the Traditional Chinese static course site. It is a repository planning and handoff record only; do not link it from the public VitePress site.\n\n## Signoff Status\n\n- Status: prepared for review\n- Prepared date: ${new Date().toISOString().slice(0, 10)}\n- Course source: \`https://learn.ibm.com/course/view.php?id=7512\`\n- Course title: \`Introduction to System Programming on IBM Z\`\n- Locale: \`zh-Hant-TW\`\n\n## Included Scope\n\n- VitePress static course site.\n- Course landing page and learner-facing unit pages.\n- 24 course video entries with local MP4, HLS playlists, English subtitles, and Traditional Chinese subtitles.\n- 55 static practice questions: 21 from 8 H5P short quiz activities plus 34 original paraphrased Badge Quiz scope review questions.\n- Lab metadata for 6 IBM Remote Lab Platform activities.\n- Glossary, license notes, release checklist, and automated quality checks.\n\n## Excluded From This Baseline\n\n- Formal Badge Quiz scoring, attempt workflow, and verbatim question bank reproduction.\n- Certificate, survey, practitioner badge claim, and Moodle learner-state workflows.\n- Login-dependent learner progress tracking.\n- Recreated IBM Remote Lab Platform runtime.\n- HLS media and subtitles until media authorization is confirmed.\n`
 
 async function writeJson(file, value) {
   await writeFile(path.join(root, file), JSON.stringify(value, null, 2) + '\n', 'utf8')
@@ -581,8 +605,12 @@ async function writeText(file, value) {
 }
 
 await writeJson('data/course-manifest.json', manifest)
-await writeJson('data/video-assets.json', videos)
-await writeJson('docs/public/manifest/video-assets.json', videos)
+if (!existsSync(path.join(root, 'data/video-assets.json'))) {
+  await writeJson('data/video-assets.json', videos)
+}
+if (!existsSync(path.join(root, 'docs/public/manifest/video-assets.json'))) {
+  await writeJson('docs/public/manifest/video-assets.json', videos)
+}
 await writeJson('data/lesson-notes.json', lessonNotes)
 await writeJson('data/labs.json', labs)
 await writeJson('data/practice-sources.json', sourceInventory)
@@ -592,7 +620,9 @@ await writeJson('data/assessment-inventory.json', {
     staticPracticeQuestions: practiceQuestions.length,
     staticPracticeSources: sourceInventory.sources.length,
     badgeQuizQuestionsPerAttempt: 20,
-    badgeQuizCapturedUniqueQuestions: 0,
+    badgeQuizCapturedUniqueQuestions: practiceQuestions.filter((question) => question.sourceReference === 'badge-quiz-scope').length,
+    badgeQuizScopePracticeQuestions: practiceQuestions.filter((question) => question.sourceReference === 'badge-quiz-scope').length,
+    badgeQuizPublicMode: 'original paraphrased scope practice; no verbatim question-bank reproduction',
     labPages: labs.length,
   },
   sources: sourceInventory.sources,
@@ -603,8 +633,9 @@ await writeJson('data/course-inventory-audit.json', {
     activities: captured.sections.flatMap((section) => section.activities).length,
     videos: videos.length,
     labs: labs.length,
-    hvpActivities: sourceInventory.sources.length,
+    hvpActivities: sourceMeta.length,
     staticPracticeQuestions: practiceQuestions.length,
+    badgeQuizScopePracticeQuestions: practiceQuestions.filter((question) => question.sourceReference === 'badge-quiz-scope').length,
   },
   liveCounts: Object.fromEntries(Object.entries(captured.sections.flatMap((section) => section.activities).reduce((counts, activity) => {
     counts[activity.type] = (counts[activity.type] || 0) + 1
@@ -634,9 +665,7 @@ await writeText('RELEASE-CHECKLIST.md', releaseChecklist)
 await writeText('FIRST-EDITION-SIGNOFF.md', signoff)
 await writeJson('package.json', packageJson)
 
-await rm(path.join(root, 'docs/public/subtitles'), { recursive: true, force: true })
 await mkdir(path.join(root, 'docs/public/subtitles'), { recursive: true })
-await rm(path.join(root, 'data/transcripts'), { recursive: true, force: true })
 await mkdir(path.join(root, 'data/transcripts'), { recursive: true })
 
 await rm(path.join(root, 'docs/glossary'), { recursive: true, force: true })

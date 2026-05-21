@@ -1,0 +1,341 @@
+WEBVTT
+
+1
+00:00:03.380 --> 00:00:09.780
+The ZOS system libraries are where a lot of the customization data for the operating system lives.
+
+2
+00:00:09.780 --> 00:00:16.780
+You'll find a lot of important information here, including where to find other important information, so kind of important.
+
+3
+00:00:16.780 --> 00:00:21.280
+We've mentioned a few of these before during the module on IPLing a system,
+
+4
+00:00:21.280 --> 00:00:26.980
+and I know you wanted to know more information about those datasets, so here we are, let's get started.
+
+5
+00:00:26.980 --> 00:00:30.380
+First up, sys1.linklib.
+
+6
+00:00:30.480 --> 00:00:36.780
+This contains much of the executable code, also known as modules for ZOS components and utilities.
+
+7
+00:00:36.780 --> 00:00:47.480
+In here, you'll find the module MSTJCL00, which contains the initial JCL statements that start the master scheduler subsystem.
+
+8
+00:00:47.480 --> 00:00:49.680
+So that's how JES gets started.
+
+9
+00:00:49.680 --> 00:00:52.080
+sys1.LPAlib.
+
+10
+00:00:52.080 --> 00:00:55.980
+LPAlib stands for Link Pack Area Library.
+
+11
+00:00:55.980 --> 00:00:59.780
+These modules are shared by all address spaces in the system,
+
+12
+00:00:59.880 --> 00:01:07.380
+and because they are read-only and not self-modifying, they can be used by a number of address spaces at the same time.
+
+13
+00:01:07.380 --> 00:01:14.180
+There are four types of modules you'll find in the LPA, dynamic, fixed, modified, pageable,
+
+14
+00:01:14.180 --> 00:01:18.080
+and it all comes down to how they should be handled in memory.
+
+15
+00:01:18.080 --> 00:01:22.980
+sys1.Nucleus contains the basic supervisor modules for the system,
+
+16
+00:01:22.980 --> 00:01:28.880
+the core of the system that is required for it to begin loading the full version of the operating system.
+
+17
+00:01:28.880 --> 00:01:32.180
+We just recently talked about sys1.PROClib,
+
+18
+00:01:32.180 --> 00:01:38.180
+which is where the IBM-supplied JCL procedures for performing system functions live.
+
+19
+00:01:38.180 --> 00:01:45.680
+And my favorite, sys1.PARMlib contains the control parameters for ZOS and some program products.
+
+20
+00:01:45.680 --> 00:01:51.780
+If you've used Linux or Unix-based operating system before, it's similar to what you'd find in slash etc.
+
+21
+00:01:51.780 --> 00:01:58.580
+So if you're looking to increase a value from 25 to 30 or change the name of what something on the system gets called,
+
+22
+00:01:58.580 --> 00:02:02.880
+chances are it's in sys1.PARMlib.
+
+23
+00:02:02.880 --> 00:02:07.880
+What makes up a particular system is how these system libraries are configured.
+
+24
+00:02:07.880 --> 00:02:12.080
+In addition, there's also information that comes from other non-IBM vendors,
+
+25
+00:02:12.080 --> 00:02:16.480
+as well as how a particular company chooses to set up their system.
+
+26
+00:02:16.480 --> 00:02:21.680
+You can organize a lot of this customization information into these six areas.
+
+27
+00:02:21.680 --> 00:02:27.680
+There's the ZOS software, the non-ZOS software, middleware like Kix DB2,
+
+28
+00:02:27.680 --> 00:02:34.180
+non-IBM software that comes from other vendors, customization data, user-defined exits,
+
+29
+00:02:34.180 --> 00:02:40.680
+which boils down to ways that users have customized and extended software, as well as user data.
+
+30
+00:02:40.680 --> 00:02:45.480
+When a program calls a module, the system needs to know where it is in order to run it,
+
+31
+00:02:45.480 --> 00:02:49.680
+and it has a certain order it goes through when searching for modules.
+
+32
+00:02:49.680 --> 00:02:54.580
+The first place it looks is in the Job Pack area, or JPA.
+
+33
+00:02:54.580 --> 00:02:57.980
+If it's not in there, it'll look in the Task Live.
+
+34
+00:02:57.980 --> 00:03:01.680
+Next stop is the Step Live or Job Live.
+
+35
+00:03:01.680 --> 00:03:10.180
+These are specific DD names that can be used to allocate data sets to be searched ahead of the default system search order for programs.
+
+36
+00:03:10.180 --> 00:03:19.480
+We then hit LPA, that Linked Pack area, where it will hit the dynamic, then the fixed, and then the modified, and then the pageable modules.
+
+37
+00:03:19.480 --> 00:03:26.180
+And then Linked List, as specified in ProgXX and Linked List XX.
+
+38
+00:03:26.180 --> 00:03:31.480
+By default, the Linked List begins with sys1.linklib, and there's more to follow,
+
+39
+00:03:31.480 --> 00:03:37.880
+but you can view and change the order in your ProgXX, and add other libraries to that list.
+
+40
+00:03:37.880 --> 00:03:44.180
+By the way, the list of places that the system searches for modules is called a concatenation.
+
+41
+00:03:44.180 --> 00:03:47.080
+In order for modules to work, they need to be ready to go.
+
+42
+00:03:47.080 --> 00:03:51.380
+It's not practical to keep all modules loaded in main memory all the time,
+
+43
+00:03:51.380 --> 00:03:59.580
+but each time the system has to go and look for a module, that takes time, and it pulls the CPU away from doing other important stuff.
+
+44
+00:03:59.580 --> 00:04:04.780
+So there's this concept of a Library Lookaside Facility, or LLA.
+
+45
+00:04:04.780 --> 00:04:10.780
+This reduces the amount of IO needed to locate and fetch modules from DASD storage.
+
+46
+00:04:10.780 --> 00:04:17.080
+LLA takes a look at the modules and determines which ones could really benefit from being staged.
+
+47
+00:04:17.080 --> 00:04:24.580
+Similarly, there's a VLF, or Virtual Lookaside Facility, which is used to store named objects in virtual storage
+
+48
+00:04:24.580 --> 00:04:29.580
+and retrieve those on behalf of users in multiple address spaces.
+
+49
+00:04:29.580 --> 00:04:32.880
+So let's look at how these get set up in a few examples.
+
+50
+00:04:32.880 --> 00:04:39.480
+Let's start with the LoadXX member, which is one of the first modules that gets loaded at IPL time.
+
+51
+00:04:39.480 --> 00:04:42.680
+In here, you'll see the parmlibe concatenation.
+
+52
+00:04:42.680 --> 00:04:46.580
+You can specify up to 16 partition data sets in here.
+
+53
+00:04:46.580 --> 00:04:51.680
+You can see in this configuration, there is a sys0.IPLPARM,
+
+54
+00:04:51.680 --> 00:04:58.480
+and it will automatically add sys1.parmlibe to the end of the concatenation, even if you don't specify it.
+
+55
+00:04:58.480 --> 00:05:01.880
+There's also the IEA sysxx member.
+
+56
+00:05:01.880 --> 00:05:04.880
+Now, this is where the installation defaults go.
+
+57
+00:05:04.880 --> 00:05:09.180
+These are the parameters that will not change unless you're altering the physical
+
+58
+00:05:09.180 --> 00:05:13.780
+or logically defined environment that your system is operating in.
+
+59
+00:05:13.780 --> 00:05:17.180
+If you want to see the concatenation without digging through the data sets,
+
+60
+00:05:17.180 --> 00:05:21.780
+you can type dparmlibe, and it will list them out for you.
+
+61
+00:05:21.780 --> 00:05:26.480
+You can also look at the IPL information with dIPL info.
+
+62
+00:05:26.480 --> 00:05:31.380
+That will show you when the system was last IPLed, what the version of the operating system is,
+
+63
+00:05:31.380 --> 00:05:35.280
+and what the contents of IEA sys and IEA sim are.
+
+64
+00:05:35.280 --> 00:05:37.680
+That determines which members get loaded.
+
+65
+00:05:37.680 --> 00:05:43.180
+You'll also see the IODF device number and the IPL device and serial number.
+
+66
+00:05:43.180 --> 00:05:45.280
+This command is critically important.
+
+67
+00:05:45.280 --> 00:05:51.480
+I can remember from my sysprog days, sometimes we'd bring up a system and it would just not be behaving correctly.
+
+68
+00:05:51.480 --> 00:05:55.280
+Something we thought we installed wasn't there, modules weren't loading.
+
+69
+00:05:55.280 --> 00:06:02.280
+Step one is to issue a dIPL info and make sure that what you're running is what you think you're running.
+
+70
+00:06:02.280 --> 00:06:07.180
+Maybe we forgot to change the IPL volume or change one of those IEA members.
+
+71
+00:06:07.180 --> 00:06:09.980
+This is your sanity check right here.
+
+72
+00:06:09.980 --> 00:06:13.180
+Each IEA member has its own purpose and story,
+
+73
+00:06:13.180 --> 00:06:18.680
+and importantly, sections of documentation describing exactly how to use it.
+
+74
+00:06:18.680 --> 00:06:20.280
+We're not going to go through them all here.
+
+75
+00:06:20.280 --> 00:06:26.580
+The important thing to take away is where to look to find them, generally in the ZOS system libraries,
+
+76
+00:06:26.580 --> 00:06:31.080
+and where to find more about them by using the manuals or a search engine.
+
+77
+00:06:31.080 --> 00:06:38.080
+I do want to show you those IEA simxx members though, since we've covered the topic of symbols a little while ago,
+
+78
+00:06:38.080 --> 00:06:39.780
+and I want to tie back to that.
+
+79
+00:06:39.780 --> 00:06:45.980
+If you look in IEA sysxx, you'll see some of those static system symbols getting set,
+
+80
+00:06:45.980 --> 00:06:49.780
+like sysname, which is equal to SC04.
+
+81
+00:06:49.780 --> 00:06:52.580
+You can see a few other symbols getting set in there as well.
+
+82
+00:06:52.580 --> 00:06:57.980
+So later on, when you want to reference a specific data set built specifically for that system,
+
+83
+00:06:57.980 --> 00:07:02.680
+we can just say ampersand sysname, and we've used a symbol.
+
+84
+00:07:02.680 --> 00:07:07.880
+If you ever wanted to display the list of symbols available, just type dsymbols.
+
+85
+00:07:07.880 --> 00:07:13.080
+And now that symbols doesn't sound like a real word anymore, I think it's time to move on to the next topic.

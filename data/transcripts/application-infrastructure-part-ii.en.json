@@ -1,0 +1,313 @@
+{
+  "slug": "application-infrastructure-part-ii",
+  "title": "Application Infrastructure Part II",
+  "language": "en",
+  "duration": 340.26525,
+  "segments": [
+    {
+      "start": 3.28,
+      "end": 9.28,
+      "text": "On the mainframe, the big three that immediately come to mind are Kix, IMS, and DB2."
+    },
+    {
+      "start": 9.28,
+      "end": 16.28,
+      "text": "When I first started working on Z-Systems, I heard these said together so often that I thought it was two things, Kix, IMS, and DB2."
+    },
+    {
+      "start": 16.28,
+      "end": 18.28,
+      "text": "But we're talking about three components here."
+    },
+    {
+      "start": 18.28,
+      "end": 26.28,
+      "text": "There's Kix, or C-I-C-S, spelled C-I-C-S, IMS, and DB2. Three different things."
+    },
+    {
+      "start": 26.28,
+      "end": 28.28,
+      "text": "Let's start with Kix."
+    },
+    {
+      "start": 28.28,
+      "end": 36.28,
+      "text": "Kix has been around for a long time, and it powers many of the world's transactions, such as ATMs, managing insurance policies,"
+    },
+    {
+      "start": 36.28,
+      "end": 44.28,
+      "text": "utility bills, retail, shopping, and others. And it does it all securely and reliably day in and day out."
+    },
+    {
+      "start": 44.28,
+      "end": 51.28,
+      "text": "A Kix transaction can consist of many facets, including delivering the user interface, retrieving and updating information,"
+    },
+    {
+      "start": 51.28,
+      "end": 55.28,
+      "text": "and communicating with other applications and network-attached devices."
+    },
+    {
+      "start": 55.28,
+      "end": 62.28,
+      "text": "In Kix, a transaction typically lasts a very short time and is associated with one unit of work."
+    },
+    {
+      "start": 62.28,
+      "end": 68.28,
+      "text": "Kix takes the work to be processed and lines it up with the program or programs required to complete it."
+    },
+    {
+      "start": 68.28,
+      "end": 74.28,
+      "text": "This is the job of the transaction manager to ensure the work completes successfully according to the process"
+    },
+    {
+      "start": 74.28,
+      "end": 78.28,
+      "text": "and that there's nothing left hanging out there when we tell the user that it's complete."
+    },
+    {
+      "start": 78.28,
+      "end": 81.28,
+      "text": "Here's what's under the hood that lets this all happen."
+    },
+    {
+      "start": 81.28,
+      "end": 87.28,
+      "text": "A Kix system manages an area of storage called a region, which lives in an address space."
+    },
+    {
+      "start": 87.28,
+      "end": 90.28,
+      "text": "You'll hear that term a lot, a Kix region."
+    },
+    {
+      "start": 90.28,
+      "end": 96.28,
+      "text": "A Kix region uses domains, which contain management nodes for transaction processing."
+    },
+    {
+      "start": 96.28,
+      "end": 102.28,
+      "text": "Now, a single region can be defined to perform all the functions necessary to process a transaction."
+    },
+    {
+      "start": 102.28,
+      "end": 110.28,
+      "text": "Typically, a Kix installation will have several different regions, each one devoted to a different type of transaction."
+    },
+    {
+      "start": 110.28,
+      "end": 112.28,
+      "text": "Think of it like an auto repair center."
+    },
+    {
+      "start": 112.28,
+      "end": 117.28,
+      "text": "This area is for bodywork, over here is for transmission issues, tires and wheels over there."
+    },
+    {
+      "start": 117.28,
+      "end": 123.28,
+      "text": "That way, all the tools that are needed are close by and the area isn't crowded with stuff that they don't need."
+    },
+    {
+      "start": 123.28,
+      "end": 129.28,
+      "text": "There are three types of domains that supervise and control transaction processing."
+    },
+    {
+      "start": 129.28,
+      "end": 133.28,
+      "text": "Remember, these are the domains within the region."
+    },
+    {
+      "start": 133.28,
+      "end": 137.28,
+      "text": "We've covered a lot there, so let's make sure we've got the basic order right."
+    },
+    {
+      "start": 137.28,
+      "end": 145.28,
+      "text": "A Kix system manages an area of storage called a blank, and within that, it uses blanks."
+    },
+    {
+      "start": 145.28,
+      "end": 148.28,
+      "text": "Let's see if you remember what those are called."
+    },
+    {
+      "start": 148.28,
+      "end": 157.28,
+      "text": "So, a Kix system manages areas of storage called regions, and then within the regions, it manages domains."
+    },
+    {
+      "start": 157.28,
+      "end": 166.28,
+      "text": "There's the transaction manager, the XM, which is responsible for receiving transaction requests and creating the organizing tasks to process them."
+    },
+    {
+      "start": 166.28,
+      "end": 174.28,
+      "text": "Then there's the program manager, or PG, which handles locating and invoking applications required for processing transactions."
+    },
+    {
+      "start": 174.28,
+      "end": 177.28,
+      "text": "And then there's the storage manager, SM."
+    },
+    {
+      "start": 177.28,
+      "end": 183.28,
+      "text": "This domain is responsible for allocating memory resources required for all of this to happen."
+    },
+    {
+      "start": 183.28,
+      "end": 186.28,
+      "text": "You can see in this diagram, we have three types of regions."
+    },
+    {
+      "start": 186.28,
+      "end": 192.28,
+      "text": "There's the TOR, terminal owning region, which handles connections to terminals and other remote devices."
+    },
+    {
+      "start": 193.28,
+      "end": 199.28,
+      "text": "Then there's the AOR for application owning region, and the DOR for data owning region."
+    },
+    {
+      "start": 199.28,
+      "end": 202.28,
+      "text": "The glue that connects these regions is VTAM."
+    },
+    {
+      "start": 202.28,
+      "end": 207.28,
+      "text": "Now, we haven't really spent much time talking about VTAM yet, and we're not going to get deep into it."
+    },
+    {
+      "start": 207.28,
+      "end": 211.28,
+      "text": "Just know that it has to do with networking, and it's part of comm server."
+    },
+    {
+      "start": 211.28,
+      "end": 218.28,
+      "text": "The AORs and DORs talk with other applications like databases and user written applications."
+    },
+    {
+      "start": 218.28,
+      "end": 221.28,
+      "text": "One of those databases could be IMS."
+    },
+    {
+      "start": 221.28,
+      "end": 223.28,
+      "text": "Now, what's IMS?"
+    },
+    {
+      "start": 223.28,
+      "end": 230.28,
+      "text": "IMS, Information Management System, has a long and interesting history as well, which includes some development done for NASA."
+    },
+    {
+      "start": 230.28,
+      "end": 238.28,
+      "text": "What makes IMS unique is that it has, or is, depending on how you look at it, a hierarchical database management system."
+    },
+    {
+      "start": 238.28,
+      "end": 245.28,
+      "text": "It is widely used for manufacturing type applications, but you'll see it in just about any industry."
+    },
+    {
+      "start": 245.28,
+      "end": 248.28,
+      "text": "IMS consists of three components."
+    },
+    {
+      "start": 248.28,
+      "end": 252.28,
+      "text": "One is the database manager, that's the IMS DB."
+    },
+    {
+      "start": 252.28,
+      "end": 256.28,
+      "text": "Then there's the transaction manager, that's the IMS TM."
+    },
+    {
+      "start": 256.28,
+      "end": 262.28,
+      "text": "And then there's the system services that provide common services to both the DB and the TM."
+    },
+    {
+      "start": 262.28,
+      "end": 268.28,
+      "text": "These work together to deliver data and transactional capabilities in an extremely efficient way."
+    },
+    {
+      "start": 268.28,
+      "end": 275.28,
+      "text": "For more complex data handling needs, there's DB2, Big D, little b, 2."
+    },
+    {
+      "start": 275.28,
+      "end": 287.28,
+      "text": "DB2 is a database, and it offers exceptional availability, massive scalability, flexibility and installation across platforms and locations, and a low total cost of ownership."
+    },
+    {
+      "start": 287.28,
+      "end": 294.28,
+      "text": "DB2 is considered to be a relational database, so data exists in one or more constructs known as tables."
+    },
+    {
+      "start": 294.28,
+      "end": 297.28,
+      "text": "And within those tables, there are columns and rows."
+    },
+    {
+      "start": 297.28,
+      "end": 303.28,
+      "text": "And you interact with data by using the Structured Query Language, or SQL."
+    },
+    {
+      "start": 303.28,
+      "end": 307.28,
+      "text": "Though you can also use DB2 for unstructured data and so much more."
+    },
+    {
+      "start": 307.28,
+      "end": 310.28,
+      "text": "Remember those ACID properties we talked about before?"
+    },
+    {
+      "start": 310.28,
+      "end": 314.28,
+      "text": "DB2 people take each one of those very seriously."
+    },
+    {
+      "start": 314.28,
+      "end": 320.28,
+      "text": "They won't chase something that gives them increased availability if it means giving up consistency and vice versa."
+    },
+    {
+      "start": 320.28,
+      "end": 330.28,
+      "text": "When it comes to truly enterprise applications, the middleware like Kix, IMS and DB2 need to step up and deliver time after time after time after time."
+    },
+    {
+      "start": 331.28,
+      "end": 333.28,
+      "text": "Can't stop, won't stop."
+    },
+    {
+      "start": 334.28,
+      "end": 335.28,
+      "text": "Transaction."
+    }
+  ]
+}

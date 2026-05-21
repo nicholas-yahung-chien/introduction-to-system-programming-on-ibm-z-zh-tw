@@ -1,0 +1,218 @@
+{
+  "slug": "zos-components",
+  "title": "zOS Components",
+  "language": "en",
+  "duration": 191.47175,
+  "segments": [
+    {
+      "start": 3.34,
+      "end": 10.42,
+      "text": "One of the systems you're likely to run into is the IBM z14. Now, you may not be working on a z14."
+    },
+    {
+      "start": 10.42,
+      "end": 13.98,
+      "text": "You may have something older. You may have something newer."
+    },
+    {
+      "start": 15.54,
+      "end": 21.26,
+      "text": "But chances are it will look something like this. The parts might look a little different. They might be rotated."
+    },
+    {
+      "start": 21.26,
+      "end": 23.18,
+      "text": "They might be in a slightly different place."
+    },
+    {
+      "start": 23.26,
+      "end": 29.46,
+      "text": "But for as long as I can remember, the core components of the mainframe have always looked more or less like this."
+    },
+    {
+      "start": 30.46,
+      "end": 34.78,
+      "text": "Starting from the right, and I'll explain why in a minute, you've got the CPC drawers."
+    },
+    {
+      "start": 34.9,
+      "end": 41.66,
+      "text": "They call them drawers because they pull open like a drawer in a nightstand. In here, you've got all the processors and all the memory."
+    },
+    {
+      "start": 42.22,
+      "end": 50.3,
+      "text": "They've also got the PCIe fan outs, which is a fancy way of saying all the cables that hook up to all the PCIe IO cards."
+    },
+    {
+      "start": 50.58,
+      "end": 57.14,
+      "text": "It's also got the flexible support processor, which gives you redundant interfaces to all the internal management network."
+    },
+    {
+      "start": 57.14,
+      "end": 60.1,
+      "text": "So you're never locked out. You can always log into one of these things."
+    },
+    {
+      "start": 60.5,
+      "end": 66.46,
+      "text": "There's also two DCA inverters. These provide the specific power that everything in here needs."
+    },
+    {
+      "start": 66.46,
+      "end": 71.42,
+      "text": "And there's two of them just in case one goes down. Down here, we've got the radiator pumps."
+    },
+    {
+      "start": 71.42,
+      "end": 74.94,
+      "text": "These circulate refrigerant throughout the system, keeping it down."
+    },
+    {
+      "start": 74.94,
+      "end": 79.9,
+      "text": "It takes the cold air being blown up from the floor and blows the hot air out the back."
+    },
+    {
+      "start": 79.9,
+      "end": 85.42,
+      "text": "So cold air in the bottom, hot air out the back, chilled refrigerant all throughout the system."
+    },
+    {
+      "start": 85.9,
+      "end": 90.3,
+      "text": "There are also water cooled systems, which tap into a site's chilled water lines."
+    },
+    {
+      "start": 90.3,
+      "end": 93.38,
+      "text": "Looks slightly different, but everything else is pretty much the same."
+    },
+    {
+      "start": 94.14,
+      "end": 97.26,
+      "text": "This right here is the PCIe IO drawer."
+    },
+    {
+      "start": 97.54,
+      "end": 100.02,
+      "text": "This is where all the input output devices live."
+    },
+    {
+      "start": 100.3,
+      "end": 104.58,
+      "text": "That's your crypto cards, network cards, compression cards and Ficon."
+    },
+    {
+      "start": 104.94,
+      "end": 107.14,
+      "text": "Up top over here, there's batteries."
+    },
+    {
+      "start": 107.14,
+      "end": 110.02,
+      "text": "There's two of them, and they're bigger than any batteries I own."
+    },
+    {
+      "start": 110.62,
+      "end": 112.62,
+      "text": "They're there to provide a safe shutdown."
+    },
+    {
+      "start": 112.62,
+      "end": 117.18,
+      "text": "So if the power does go out, none of the transactions in flight get lost."
+    },
+    {
+      "start": 117.78,
+      "end": 119.62,
+      "text": "You've got four power supplies."
+    },
+    {
+      "start": 119.62,
+      "end": 123.42,
+      "text": "Now, depending on how your mainframe is configured, you may have less than four."
+    },
+    {
+      "start": 123.42,
+      "end": 127.34,
+      "text": "But part of the reason for so many is, you guessed it, redundancy."
+    },
+    {
+      "start": 127.7,
+      "end": 132.86,
+      "text": "So ideally, if you've got four power supplies, you've got two of them hooked up to a power panel over here"
+    },
+    {
+      "start": 133.1,
+      "end": 137.26,
+      "text": "and two others hooked up to a power panel over there for redundancy's sake."
+    },
+    {
+      "start": 137.66,
+      "end": 142.22,
+      "text": "And lastly, there's this display keyboard and these two servers up here."
+    },
+    {
+      "start": 142.46,
+      "end": 144.34,
+      "text": "Those are called the support elements."
+    },
+    {
+      "start": 144.34,
+      "end": 145.34,
+      "text": "We're going to come back to that."
+    },
+    {
+      "start": 145.34,
+      "end": 147.3,
+      "text": "So much more on that in a minute."
+    },
+    {
+      "start": 147.3,
+      "end": 150.06,
+      "text": "I do want to mention that your mainframe might look like this."
+    },
+    {
+      "start": 150.22,
+      "end": 152.5,
+      "text": "It might also be a single frame design."
+    },
+    {
+      "start": 152.5,
+      "end": 158.1,
+      "text": "Now, a single frame design, usually called a business class machine, is still a mainframe."
+    },
+    {
+      "start": 158.1,
+      "end": 163.1,
+      "text": "It's for environments that don't require quite as much hardware so they can fit it all into a single frame."
+    },
+    {
+      "start": 163.3,
+      "end": 169.1,
+      "text": "You might also find your mainframe, the newer ones especially, in an industry standard 19 inch rack."
+    },
+    {
+      "start": 169.46,
+      "end": 175.74,
+      "text": "That's the size cabinet that most IT equipment lives in, stuff like servers, storage devices, and networking equipment."
+    },
+    {
+      "start": 176.22,
+      "end": 179.46,
+      "text": "That means the mainframe doesn't have to live off in its own special area."
+    },
+    {
+      "start": 179.46,
+      "end": 180.94,
+      "text": "It can be right in the middle of it all."
+    },
+    {
+      "start": 181.3,
+      "end": 188.22,
+      "text": "So while the older mainframes get their own unique area, the rack metal ones get to hang out with all their other IT equipment buddies."
+    }
+  ]
+}

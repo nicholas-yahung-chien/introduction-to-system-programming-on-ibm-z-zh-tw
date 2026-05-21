@@ -1,0 +1,93 @@
+{
+  "slug": "jcl-tidbits",
+  "title": "JCL Tidbits",
+  "language": "en",
+  "duration": 151.9049375,
+  "segments": [
+    {
+      "start": 3.44,
+      "end": 11.44,
+      "text": "Hello, my name is Ed Prior, and I'm a ZOS function tester, and I've come here to talk a little bit more in depth about a few things that Jeff mentioned."
+    },
+    {
+      "start": 11.44,
+      "end": 19.44,
+      "text": "Specifically, we support conditional logic inside JCL. You can use if, then, and else to control the flow of your job."
+    },
+    {
+      "start": 19.44,
+      "end": 26.44,
+      "text": "So if you have a program that has a return code associated with it, you can actually code into your JCL,"
+    },
+    {
+      "start": 26.44,
+      "end": 35.44,
+      "text": "you know, slash slash if return code less than four, or if return code greater than eight, or if return code is greater than four but less than eight,"
+    },
+    {
+      "start": 35.44,
+      "end": 43.44,
+      "text": "then do this step, else do this other step. It gives you a great deal of control over what your program is actually doing."
+    },
+    {
+      "start": 43.44,
+      "end": 53.44,
+      "text": "We also mentioned nested procedures. So if you follow the general rule, don't put the sequence proc proc pend pend in your code,"
+    },
+    {
+      "start": 53.44,
+      "end": 61.44,
+      "text": "you won't bump into this issue. The idea being that you're not allowed to code a procedure inside of another procedure."
+    },
+    {
+      "start": 61.44,
+      "end": 68.44,
+      "text": "They have to be separate. So proc pend, then proc pend, not proc proc pend. Pretty cool, right?"
+    },
+    {
+      "start": 68.44,
+      "end": 77.44,
+      "text": "While you're working with procedures, you can nest them, as we mentioned, but you also are allowed to scope symbols as you drop down that chain."
+    },
+    {
+      "start": 77.44,
+      "end": 86.44,
+      "text": "So as you dive deeper into your nested procs, you end up allowing yourself to overwrite different symbols at different levels. Pretty cool."
+    },
+    {
+      "start": 86.44,
+      "end": 95.44,
+      "text": "One thing I learned recently was the actual connecting fiber between those DD statements in your JCL and the actual programs you're running."
+    },
+    {
+      "start": 95.44,
+      "end": 105.44,
+      "text": "So the names on those DDs, so your sys in or your sort in or your out whatever, that's actually controlled by the programmer who wrote the program."
+    },
+    {
+      "start": 105.44,
+      "end": 114.44,
+      "text": "So you give it the DD name that's controlled by whatever they opened as a DCB inside their program."
+    },
+    {
+      "start": 114.44,
+      "end": 123.44,
+      "text": "Talking more about dispositions in JCL, if you want to have a temporary data set that you can stuff output into and then forget about later,"
+    },
+    {
+      "start": 123.44,
+      "end": 134.44,
+      "text": "you can use the disposition combination new delete on your DD statement to specify a data set that the system will clean up at job termination time,"
+    },
+    {
+      "start": 134.44,
+      "end": 142.44,
+      "text": "allowing you to fill the needs that your program has without having to worry about allocating space on a disk beforehand."
+    },
+    {
+      "start": 142.44,
+      "end": 148.44,
+      "text": "I'm Ed Prior, and this has been just a deeper dive into a few topics. I hope you've enjoyed."
+    }
+  ]
+}

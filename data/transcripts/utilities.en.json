@@ -1,0 +1,393 @@
+{
+  "slug": "utilities",
+  "title": "Utilities",
+  "language": "en",
+  "duration": 424.182125,
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 7.65,
+      "text": "Some of the programs you'll use on the mainframe are also known as utilities."
+    },
+    {
+      "start": 8.35,
+      "end": 14.85,
+      "text": "Utilities perform a specific task and can be called through JCL to do things like copy data sets and members,"
+    },
+    {
+      "start": 15.17,
+      "end": 22.93,
+      "text": "sort records, generate data. In this section, we'll take a look at just a few of the more commonly used ZOS utilities."
+    },
+    {
+      "start": 23.63,
+      "end": 26.77,
+      "text": "We'll start with system utilities. Here you'll find"
+    },
+    {
+      "start": 27.17,
+      "end": 29.95,
+      "text": "ICKDSF, which is used to install,"
+    },
+    {
+      "start": 30.43,
+      "end": 36.11,
+      "text": "initialize, and manage DASD. There's also IDH init with two T's at the end."
+    },
+    {
+      "start": 36.35,
+      "end": 39.63,
+      "text": "That's used to initialize tapes for long-term storage."
+    },
+    {
+      "start": 40.11,
+      "end": 45.67,
+      "text": "And there's IEH list, which is a utility used to list entries in a PDS"
+    },
+    {
+      "start": 45.87,
+      "end": 53.19,
+      "text": "to look at a DASD's volume table of contents or VTOC or to view an operating system volumes catalog."
+    },
+    {
+      "start": 53.99,
+      "end": 57.23,
+      "text": "You'll notice that with these there's a sort of a format going on."
+    },
+    {
+      "start": 57.23,
+      "end": 62.43,
+      "text": "There's a prefix followed by an abbreviated representation of what it does."
+    },
+    {
+      "start": 63.07,
+      "end": 68.59,
+      "text": "Well, the prefixes correspond with the ZOS component that they work in. For example,"
+    },
+    {
+      "start": 69.13,
+      "end": 79.07,
+      "text": "ICK is device support facilities, IEH is data facility product, DFP, and IEF is allocation,"
+    },
+    {
+      "start": 79.23,
+      "end": 84.91,
+      "text": "IPL, JES, scheduler, and well, it's actually a number of core components."
+    },
+    {
+      "start": 85.55,
+      "end": 89.63,
+      "text": "Then there's data set utilities, which typically start with IEB."
+    },
+    {
+      "start": 90.11,
+      "end": 96.63,
+      "text": "You may be wondering why we're spending so much time on data sets and why there are so many data set utilities."
+    },
+    {
+      "start": 96.87,
+      "end": 100.19,
+      "text": "Well, the simple fact is that the mainframe deals in data."
+    },
+    {
+      "start": 100.51,
+      "end": 107.51,
+      "text": "It's constantly creating records based on what applications are doing and those applications are updating records."
+    },
+    {
+      "start": 107.51,
+      "end": 111.75,
+      "text": "And there's always going to be need to take information created in one place and"
+    },
+    {
+      "start": 111.91,
+      "end": 116.27,
+      "text": "repurpose it to be used as input for a programmer made into a report."
+    },
+    {
+      "start": 116.67,
+      "end": 120.71,
+      "text": "More importantly, it means you can handle those types of situations quickly"
+    },
+    {
+      "start": 121.15,
+      "end": 128.43,
+      "text": "instead of editing records individually line by line by hand because you needed to remove the fifth column of each record."
+    },
+    {
+      "start": 129.27,
+      "end": 134.63,
+      "text": "Another word about utilities, a lot of times the utility is multi-purpose like a Swiss Army knife."
+    },
+    {
+      "start": 134.87,
+      "end": 140.91,
+      "text": "So if you use one set of parameters, it'll create a data set but use it with another set of parameters"
+    },
+    {
+      "start": 141.35,
+      "end": 143.11,
+      "text": "and it generates debug data."
+    },
+    {
+      "start": 143.39,
+      "end": 148.83,
+      "text": "And the only way to really know what a utility is capable of is to look at the documentation."
+    },
+    {
+      "start": 149.59,
+      "end": 153.63,
+      "text": "I'll also point out that you can often use different utilities to do the same thing."
+    },
+    {
+      "start": 154.15,
+      "end": 158.83,
+      "text": "They might do them slightly differently, but there's more than one way to copy a data set."
+    },
+    {
+      "start": 159.67,
+      "end": 162.11,
+      "text": "So let's look at that IEB copy."
+    },
+    {
+      "start": 162.55,
+      "end": 168.19,
+      "text": "As you might guess, it's there for copying, but it can also do merges of PDS's and PDSE's."
+    },
+    {
+      "start": 168.59,
+      "end": 176.19,
+      "text": "It can do compression of PDS's and PDSE's and it can even convert PDS's into PDSE's and vice versa."
+    },
+    {
+      "start": 176.95,
+      "end": 178.83,
+      "text": "Here's what invoking it looks like."
+    },
+    {
+      "start": 179.07,
+      "end": 182.71,
+      "text": "We're using it here to copy one PDS into another PDS."
+    },
+    {
+      "start": 183.23,
+      "end": 187.23,
+      "text": "There's no input needed, just specifying the two data sets right down here."
+    },
+    {
+      "start": 188.43,
+      "end": 191.75,
+      "text": "Quick quiz on IEB copy and it's a true or false."
+    },
+    {
+      "start": 193.07,
+      "end": 194.23,
+      "text": "True or false."
+    },
+    {
+      "start": 194.63,
+      "end": 198.51,
+      "text": "I can use IEB copy to merge VSAM data sets."
+    },
+    {
+      "start": 199.79,
+      "end": 202.27,
+      "text": "The answer to that is false."
+    },
+    {
+      "start": 202.59,
+      "end": 205.31,
+      "text": "It's for PDS's and PDSE's only."
+    },
+    {
+      "start": 205.31,
+      "end": 210.59,
+      "text": "When we want to work in VSAM data sets, we need to use another utility, which we'll take a look at later."
+    },
+    {
+      "start": 211.39,
+      "end": 216.47,
+      "text": "Here's IE beginner, which does not mean that it's utility for people brand new to the mainframe."
+    },
+    {
+      "start": 216.95,
+      "end": 224.75,
+      "text": "The name is IEB, the prefix for dataset utility, and then G-E-N-E-R for generate records."
+    },
+    {
+      "start": 225.23,
+      "end": 231.15,
+      "text": "And it can be used to back up a dataset, produce a partition dataset from members of a sequential dataset,"
+    },
+    {
+      "start": 231.47,
+      "end": 237.47,
+      "text": "print out the contents of datasets, and even convert data formats and change settings for a dataset."
+    },
+    {
+      "start": 238.23,
+      "end": 240.51,
+      "text": "Very nice to know about all those capabilities."
+    },
+    {
+      "start": 241.23,
+      "end": 243.43,
+      "text": "Here it is getting called through JCL."
+    },
+    {
+      "start": 243.43,
+      "end": 251.67,
+      "text": "We're copying one dataset to another, and you can see we're also specifying a few parameters about how we want that new dataset to be created."
+    },
+    {
+      "start": 252.55,
+      "end": 258.91,
+      "text": "DF sort is a high performance sort, merge, copy, analysis, and reporting product for ZOS,"
+    },
+    {
+      "start": 258.91,
+      "end": 262.23,
+      "text": "and it can handle data at the record, field, and bit level."
+    },
+    {
+      "start": 262.71,
+      "end": 268.31,
+      "text": "This is one of the biggest Swiss Army knives out there because it can sort, merge, and copy."
+    },
+    {
+      "start": 268.43,
+      "end": 272.19,
+      "text": "But while it's doing that, it can also reformat data along the way."
+    },
+    {
+      "start": 272.51,
+      "end": 277.39,
+      "text": "So you can use it to change data formats, edit, delete, and add fields, repeat records."
+    },
+    {
+      "start": 277.75,
+      "end": 283.83,
+      "text": "You can even use it to perform arithmetic on data, summing up values and records while you're sorting or merging them."
+    },
+    {
+      "start": 284.39,
+      "end": 292.83,
+      "text": "And it's important to know about all the capabilities of these utilities because you will be in a situation where you're presented with a set of data that looks one way,"
+    },
+    {
+      "start": 293.23,
+      "end": 296.39,
+      "text": "and it needs to be formatted in a different way for a program to take it."
+    },
+    {
+      "start": 296.95,
+      "end": 304.95,
+      "text": "When you're able to say, I finally got to use that function of DF sort or IAB copy, and it works, it's a great feeling."
+    },
+    {
+      "start": 305.31,
+      "end": 313.31,
+      "text": "So before writing your own code to do something and starting from scratch, check the utilities because chances are someone else had to do it before,"
+    },
+    {
+      "start": 313.59,
+      "end": 315.87,
+      "text": "and maybe there's a utility for it you can use."
+    },
+    {
+      "start": 316.67,
+      "end": 320.91,
+      "text": "Lastly, I want to show you a special program, IEF-BR14."
+    },
+    {
+      "start": 321.35,
+      "end": 324.47,
+      "text": "This is an IEF, so it has to do with allocation."
+    },
+    {
+      "start": 324.87,
+      "end": 330.95,
+      "text": "And I can tell you that BR14 means branch to register 14, which is an assembler instruction."
+    },
+    {
+      "start": 331.63,
+      "end": 337.31,
+      "text": "But all you really need to know is that IEF-BR14 is a program designed to do nothing."
+    },
+    {
+      "start": 337.91,
+      "end": 348.83,
+      "text": "So you remember how in JCL you can specify a new catalog delete for a data set and it will allocate a new member and it will catalog that member if the job ran correctly?"
+    },
+    {
+      "start": 349.07,
+      "end": 352.43,
+      "text": "Well, what if all we want to do is create a new data set?"
+    },
+    {
+      "start": 353.11,
+      "end": 362.83,
+      "text": "That method in JCL is a pretty handy way of doing it, and it's a shame we have to do it while calling a program because I'm really not interested in what running that program is actually going to do."
+    },
+    {
+      "start": 363.63,
+      "end": 366.03,
+      "text": "That's where IEF-BR14 comes in."
+    },
+    {
+      "start": 366.39,
+      "end": 374.75,
+      "text": "It lets you use those JCL features while executing a program, and that program is actually just there because you have to specify a program."
+    },
+    {
+      "start": 374.79,
+      "end": 375.59,
+      "text": "It does nothing."
+    },
+    {
+      "start": 375.87,
+      "end": 384.35,
+      "text": "So in this example, we're creating a new data set with new catalog, and we're not specifying the third parameter because we just know it's going to work."
+    },
+    {
+      "start": 384.95,
+      "end": 388.79,
+      "text": "And then we're also using this DD statement to delete an existing data set."
+    },
+    {
+      "start": 389.51,
+      "end": 394.15,
+      "text": "It's kind of a hack, but it's an official hack and people use it all over the place."
+    },
+    {
+      "start": 394.71,
+      "end": 398.83,
+      "text": "Actually know a guy who has IEF-BR14 as their custom license plate."
+    },
+    {
+      "start": 399.71,
+      "end": 401.27,
+      "text": "Last one, IDCAMS."
+    },
+    {
+      "start": 401.31,
+      "end": 406.27,
+      "text": "This one is for generating and modifying VSAM as well as non-VSAM data sets."
+    },
+    {
+      "start": 406.55,
+      "end": 413.47,
+      "text": "And I feel like I keep saying this, but you become an expert in IDCAMS and you can get that across to an employer."
+    },
+    {
+      "start": 413.91,
+      "end": 415.55,
+      "text": "That's time well spent right there."
+    },
+    {
+      "start": 416.31,
+      "end": 419.67,
+      "text": "Speaking of time well spent, that brings us to the end of this lesson."
+    }
+  ]
+}

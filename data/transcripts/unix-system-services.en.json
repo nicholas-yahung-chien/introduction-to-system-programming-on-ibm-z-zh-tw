@@ -1,0 +1,428 @@
+{
+  "slug": "unix-system-services",
+  "title": "UNIX System Services",
+  "language": "en",
+  "duration": 334.553125,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 8.18,
+      "text": "ZOS isn't the only operating system you'll find in an enterprise environment."
+    },
+    {
+      "start": 8.18,
+      "end": 13.3,
+      "text": "Over the years, Unix has also become widely used in a variety of industries."
+    },
+    {
+      "start": 13.3,
+      "end": 17.5,
+      "text": "It was so popular that a bunch of people who wanted their own version of Unix went out"
+    },
+    {
+      "start": 17.5,
+      "end": 18.5,
+      "text": "and made Linux."
+    },
+    {
+      "start": 18.5,
+      "end": 23.5,
+      "text": "Now, the evolution of Unix and the history of Linux is pretty interesting, and it's"
+    },
+    {
+      "start": 23.5,
+      "end": 27.54,
+      "text": "a fun research rabbit hole to go down, but the guys behind the camera are giving me a"
+    },
+    {
+      "start": 27.54,
+      "end": 30.46,
+      "text": "look right now, so I better get back on topic."
+    },
+    {
+      "start": 30.86,
+      "end": 35.54,
+      "text": "Today, Linux is everywhere, but before Linux really took off, people in mainframe shops"
+    },
+    {
+      "start": 35.54,
+      "end": 38.14,
+      "text": "really wanted a way to use Unix."
+    },
+    {
+      "start": 38.14,
+      "end": 43.7,
+      "text": "So the operating system was enhanced with Unix System Services, or USS."
+    },
+    {
+      "start": 43.7,
+      "end": 50.58,
+      "text": "Now, point of clarification, USS is not a virtual or an emulated operating system."
+    },
+    {
+      "start": 50.58,
+      "end": 56.86,
+      "text": "It's an implementation of a Unix environment, so you can use commands like ls, grep, cat,"
+    },
+    {
+      "start": 56.86,
+      "end": 62.54,
+      "text": "and makedir, and you can even write and run shell scripts without leaving zos."
+    },
+    {
+      "start": 62.54,
+      "end": 64.14,
+      "text": "Pretty neat trick."
+    },
+    {
+      "start": 64.14,
+      "end": 68.86,
+      "text": "And again, because it's an implementation, it's using the same APIs behind the scenes"
+    },
+    {
+      "start": 68.86,
+      "end": 74.54,
+      "text": "that zos does, so it's not like going into USS gobbles up another operating system's"
+    },
+    {
+      "start": 74.54,
+      "end": 76.42,
+      "text": "worth of resources."
+    },
+    {
+      "start": 76.42,
+      "end": 79.84,
+      "text": "And it's not just there in case you feel like typing Unix commands."
+    },
+    {
+      "start": 79.84,
+      "end": 86.14,
+      "text": "For some zos middleware, you'll find installation, configuration, and automation utilities implemented"
+    },
+    {
+      "start": 86.14,
+      "end": 87.94,
+      "text": "using USS."
+    },
+    {
+      "start": 87.94,
+      "end": 92.74,
+      "text": "And for someone with a Unix Linux background, like myself, I like being able to script and"
+    },
+    {
+      "start": 92.74,
+      "end": 94.98,
+      "text": "hack away at shell scripts."
+    },
+    {
+      "start": 94.98,
+      "end": 99.42,
+      "text": "Before we move on, here's an easy one just to make sure we're all good on the basics."
+    },
+    {
+      "start": 99.42,
+      "end": 101.46,
+      "text": "Fill in the blank."
+    },
+    {
+      "start": 101.46,
+      "end": 105.54,
+      "text": "Unix System Services on zos is a what?"
+    },
+    {
+      "start": 105.54,
+      "end": 112.1,
+      "text": "Implementation, virtual operating system, hypervisor, or Linux kernel module."
+    },
+    {
+      "start": 112.1,
+      "end": 116.14,
+      "text": "I hope you picked implementation, and I'm going to keep driving that point home because"
+    },
+    {
+      "start": 116.14,
+      "end": 120.98,
+      "text": "it's important to remember that USS is just that, an implementation."
+    },
+    {
+      "start": 120.98,
+      "end": 125.24,
+      "text": "It's not a separate operating system, or a virtualized operating system, or a remote"
+    },
+    {
+      "start": 125.24,
+      "end": 127.28,
+      "text": "system, or anything like that."
+    },
+    {
+      "start": 127.28,
+      "end": 130.76,
+      "text": "Okay, now there's two main ways of driving USS."
+    },
+    {
+      "start": 130.76,
+      "end": 137.4,
+      "text": "The first is the interactive mode, which you can get to with the tso command omvs."
+    },
+    {
+      "start": 137.4,
+      "end": 141.46,
+      "text": "That gives you a shell, which is how you can enter commands and see output."
+    },
+    {
+      "start": 141.46,
+      "end": 146.94,
+      "text": "You can also use the i shell, which gives you a panel driven interface into USS."
+    },
+    {
+      "start": 146.94,
+      "end": 151.82,
+      "text": "Behind the scenes, it's all the same API, so it really comes down to a matter of taste."
+    },
+    {
+      "start": 151.82,
+      "end": 157.52,
+      "text": "Even between zos and uss, it's not an all one or the other type thing."
+    },
+    {
+      "start": 157.52,
+      "end": 159.7,
+      "text": "You can have one interacting with the other."
+    },
+    {
+      "start": 159.7,
+      "end": 162.9,
+      "text": "For example, you can move files from one environment to the other."
+    },
+    {
+      "start": 162.9,
+      "end": 166.24,
+      "text": "You can issue tso commands from the shell command line."
+    },
+    {
+      "start": 166.24,
+      "end": 169.82,
+      "text": "You can interact with Unix files through the tso commands."
+    },
+    {
+      "start": 169.82,
+      "end": 173.38,
+      "text": "You can even write JCL scripts that include shell commands."
+    },
+    {
+      "start": 173.38,
+      "end": 176.02,
+      "text": "It's all intertwined."
+    },
+    {
+      "start": 176.02,
+      "end": 177.94,
+      "text": "Here's what the omvs shell looks like."
+    },
+    {
+      "start": 177.94,
+      "end": 182.5,
+      "text": "There's a command line, there's the function keys, and over here on the right, the status"
+    },
+    {
+      "start": 182.5,
+      "end": 183.74,
+      "text": "indicator."
+    },
+    {
+      "start": 183.74,
+      "end": 188.58,
+      "text": "The status indicator will go back and forth between input and running, depending on if"
+    },
+    {
+      "start": 188.58,
+      "end": 192.06,
+      "text": "it's waiting for you, or you're waiting for it."
+    },
+    {
+      "start": 192.06,
+      "end": 196.74,
+      "text": "Working with directories and files is one of the first things you'll need to do in Unix,"
+    },
+    {
+      "start": 196.74,
+      "end": 200.14,
+      "text": "and there's a whole lot of commands that you'll use to make that happen."
+    },
+    {
+      "start": 200.14,
+      "end": 206.86,
+      "text": "When you want to make a directory, which is just another word for folder, use mkdir, short"
+    },
+    {
+      "start": 206.86,
+      "end": 208.7,
+      "text": "for make directory."
+    },
+    {
+      "start": 208.7,
+      "end": 211.22,
+      "text": "Then cd is used to change the directory."
+    },
+    {
+      "start": 211.22,
+      "end": 215.92,
+      "text": "So after you've made a directory, you can use cd to go into it."
+    },
+    {
+      "start": 215.92,
+      "end": 220.54,
+      "text": "And then you can use ls, the list command, to look around that directory."
+    },
+    {
+      "start": 220.54,
+      "end": 225.5,
+      "text": "And if you want to move files back and forth between a Unix file system and zos, then check"
+    },
+    {
+      "start": 225.5,
+      "end": 229.14,
+      "text": "out the oput and oget commands."
+    },
+    {
+      "start": 229.14,
+      "end": 232.02,
+      "text": "That's basically the file system structure of a Unix system."
+    },
+    {
+      "start": 232.02,
+      "end": 236.22,
+      "text": "You've got the file system, and you can fill it with files and directories, and within"
+    },
+    {
+      "start": 236.22,
+      "end": 240.78,
+      "text": "those directories, you can put even more files and directories, and so on."
+    },
+    {
+      "start": 240.78,
+      "end": 243.18,
+      "text": "And a file can be something that you can read."
+    },
+    {
+      "start": 243.18,
+      "end": 246.22,
+      "text": "It can also be an executable program."
+    },
+    {
+      "start": 246.22,
+      "end": 249.94,
+      "text": "And there's other types of things that you can put in a directory as well, but files"
+    },
+    {
+      "start": 249.94,
+      "end": 252.54,
+      "text": "and folders is the main name of the game."
+    },
+    {
+      "start": 252.54,
+      "end": 257.94,
+      "text": "Now I could stand here and list Unix commands for hours, but I don't think that would be"
+    },
+    {
+      "start": 257.94,
+      "end": 259.82,
+      "text": "a good use of either of our times."
+    },
+    {
+      "start": 259.82,
+      "end": 262.34,
+      "text": "Suffice to say, lots of commands."
+    },
+    {
+      "start": 262.34,
+      "end": 266.98,
+      "text": "And you won't find every command that you would expect to find on a Linux system, but"
+    },
+    {
+      "start": 266.98,
+      "end": 268.66,
+      "text": "it's still a good amount."
+    },
+    {
+      "start": 268.66,
+      "end": 273.98,
+      "text": "And if you really want to run Linux, there are plenty of ways of running Linux on z."
+    },
+    {
+      "start": 273.98,
+      "end": 279.28,
+      "text": "Unix system services can use a type of file system called zfs, and one interesting thing"
+    },
+    {
+      "start": 279.28,
+      "end": 283.44,
+      "text": "about zfs is that it's sysplex aware, and you'll learn a little bit more about that"
+    },
+    {
+      "start": 283.44,
+      "end": 286.2,
+      "text": "from my friend Louisa in a few minutes."
+    },
+    {
+      "start": 286.2,
+      "end": 289.36,
+      "text": "You can also mount a file system over a network."
+    },
+    {
+      "start": 289.36,
+      "end": 293.2,
+      "text": "This is called NFS, or network file system."
+    },
+    {
+      "start": 293.2,
+      "end": 298.04,
+      "text": "These network file systems can be mainframe to mainframe, or even mainframe to desktop"
+    },
+    {
+      "start": 298.04,
+      "end": 300.2,
+      "text": "or desktop to mainframe."
+    },
+    {
+      "start": 300.2,
+      "end": 304.4,
+      "text": "NFS is the commonality that makes all of that possible."
+    },
+    {
+      "start": 304.4,
+      "end": 306.12,
+      "text": "And lastly, there's the TFS."
+    },
+    {
+      "start": 306.12,
+      "end": 308.58,
+      "text": "This is the temporary file system."
+    },
+    {
+      "start": 308.58,
+      "end": 313.86,
+      "text": "It's an in-memory physical file system, and as the name suggests, it's a good place for"
+    },
+    {
+      "start": 313.86,
+      "end": 317.42,
+      "text": "writing up files that you only need for a short amount of time."
+    },
+    {
+      "start": 317.42,
+      "end": 321.66,
+      "text": "If you need those files to be there tomorrow or next week, it's probably a good idea to"
+    },
+    {
+      "start": 321.66,
+      "end": 326.3,
+      "text": "make sure those get copied somewhere more permanent when you're done for the day."
+    },
+    {
+      "start": 326.3,
+      "end": 330.02,
+      "text": "And since we're done for the day, let's close this up and get on to the next topic."
+    }
+  ]
+}

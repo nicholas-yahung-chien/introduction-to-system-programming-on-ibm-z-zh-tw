@@ -26,7 +26,13 @@
             "uiconfId": "39954662",
             "entryId": "1_y7shsh9a"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/system-programming.mp4",
+            "hlsSrc": "/hls/system-programming/index.m3u8",
+            "subtitleSrc": "/subtitles/system-programming.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/system-programming.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -39,7 +45,13 @@
             "uiconfId": "39954662",
             "entryId": "1_ev0bd4j9"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/jes-and-jcl-part-1.mp4",
+            "hlsSrc": "/hls/jes-and-jcl-part-1/index.m3u8",
+            "subtitleSrc": "/subtitles/jes-and-jcl-part-1.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/jes-and-jcl-part-1.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -52,7 +64,13 @@
             "uiconfId": "39954662",
             "entryId": "1_qq2x3dnn"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/jes-and-jcl-part-2.mp4",
+            "hlsSrc": "/hls/jes-and-jcl-part-2/index.m3u8",
+            "subtitleSrc": "/subtitles/jes-and-jcl-part-2.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/jes-and-jcl-part-2.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -65,7 +83,13 @@
             "uiconfId": "39954662",
             "entryId": "1_87joxm59"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/submitting-and-viewing-jcl.mp4",
+            "hlsSrc": "/hls/submitting-and-viewing-jcl/index.m3u8",
+            "subtitleSrc": "/subtitles/submitting-and-viewing-jcl.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/submitting-and-viewing-jcl.en.vtt"
+          }
         },
         {
           "type": "page",
@@ -85,7 +109,13 @@
             "uiconfId": "39954662",
             "entryId": "1_599iixml"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/lab-familiarization-getting-connected.mp4",
+            "hlsSrc": "/hls/lab-familiarization-getting-connected/index.m3u8",
+            "subtitleSrc": "/subtitles/lab-familiarization-getting-connected.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/lab-familiarization-getting-connected.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -98,7 +128,13 @@
             "uiconfId": "39954662",
             "entryId": "1_jqny88jg"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/lab-familiarization-terminal-and-password-issues.mp4",
+            "hlsSrc": "/hls/lab-familiarization-terminal-and-password-issues/index.m3u8",
+            "subtitleSrc": "/subtitles/lab-familiarization-terminal-and-password-issues.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/lab-familiarization-terminal-and-password-issues.en.vtt"
+          }
         },
         {
           "type": "page",
@@ -153,7 +189,13 @@
             "uiconfId": "39954662",
             "entryId": "1_67vf8cdm"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/jcl-procedures.mp4",
+            "hlsSrc": "/hls/jcl-procedures/index.m3u8",
+            "subtitleSrc": "/subtitles/jcl-procedures.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/jcl-procedures.en.vtt"
+          }
         },
         {
           "type": "lab",
@@ -173,7 +215,13 @@
             "uiconfId": "39954662",
             "entryId": "1_hytagu5v"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/jcl-tidbits.mp4",
+            "hlsSrc": "/hls/jcl-tidbits/index.m3u8",
+            "subtitleSrc": "/subtitles/jcl-tidbits.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/jcl-tidbits.en.vtt"
+          }
         },
         {
           "type": "hvp",
@@ -207,7 +255,13 @@
             "uiconfId": "39954662",
             "entryId": "1_9lmq9qq3"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/vsam.mp4",
+            "hlsSrc": "/hls/vsam/index.m3u8",
+            "subtitleSrc": "/subtitles/vsam.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/vsam.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -220,7 +274,13 @@
             "uiconfId": "39954662",
             "entryId": "1_9urmmmlw"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/zos-components.mp4",
+            "hlsSrc": "/hls/zos-components/index.m3u8",
+            "subtitleSrc": "/subtitles/zos-components.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/zos-components.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -233,7 +293,13 @@
             "uiconfId": "39954662",
             "entryId": "1_ll8ls0vj"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/zos-system-libraries.mp4",
+            "hlsSrc": "/hls/zos-system-libraries/index.m3u8",
+            "subtitleSrc": "/subtitles/zos-system-libraries.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/zos-system-libraries.en.vtt"
+          }
         },
         {
           "type": "hvp",
@@ -253,7 +319,13 @@
             "uiconfId": "39954662",
             "entryId": "1_zvt102vh"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/application-infrastructure-part-i.mp4",
+            "hlsSrc": "/hls/application-infrastructure-part-i/index.m3u8",
+            "subtitleSrc": "/subtitles/application-infrastructure-part-i.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/application-infrastructure-part-i.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -266,7 +338,13 @@
             "uiconfId": "39954662",
             "entryId": "1_1wa1wszd"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/application-infrastructure-part-ii.mp4",
+            "hlsSrc": "/hls/application-infrastructure-part-ii/index.m3u8",
+            "subtitleSrc": "/subtitles/application-infrastructure-part-ii.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/application-infrastructure-part-ii.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -279,7 +357,13 @@
             "uiconfId": "39954662",
             "entryId": "1_6tc3hwx2"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/language-environment.mp4",
+            "hlsSrc": "/hls/language-environment/index.m3u8",
+            "subtitleSrc": "/subtitles/language-environment.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/language-environment.en.vtt"
+          }
         },
         {
           "type": "hvp",
@@ -299,7 +383,13 @@
             "uiconfId": "39954662",
             "entryId": "1_mkn6kr2s"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/generation-data-groups.mp4",
+            "hlsSrc": "/hls/generation-data-groups/index.m3u8",
+            "subtitleSrc": "/subtitles/generation-data-groups.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/generation-data-groups.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -312,7 +402,13 @@
             "uiconfId": "39954662",
             "entryId": "1_vmpwi0dd"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/raim.mp4",
+            "hlsSrc": "/hls/raim/index.m3u8",
+            "subtitleSrc": "/subtitles/raim.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/raim.en.vtt"
+          }
         },
         {
           "type": "hvp",
@@ -339,7 +435,13 @@
             "uiconfId": "39954662",
             "entryId": "1_6z54930n"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/networking.mp4",
+            "hlsSrc": "/hls/networking/index.m3u8",
+            "subtitleSrc": "/subtitles/networking.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/networking.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -352,7 +454,13 @@
             "uiconfId": "39954662",
             "entryId": "1_3sl59nke"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/utilities.mp4",
+            "hlsSrc": "/hls/utilities/index.m3u8",
+            "subtitleSrc": "/subtitles/utilities.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/utilities.en.vtt"
+          }
         },
         {
           "type": "forum",
@@ -379,7 +487,13 @@
             "uiconfId": "39954662",
             "entryId": "1_2nlec8ir"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/zosmf.mp4",
+            "hlsSrc": "/hls/zosmf/index.m3u8",
+            "subtitleSrc": "/subtitles/zosmf.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/zosmf.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -392,7 +506,13 @@
             "uiconfId": "39954662",
             "entryId": "1_7ejss2uv"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/lab-using-zosmf.mp4",
+            "hlsSrc": "/hls/lab-using-zosmf/index.m3u8",
+            "subtitleSrc": "/subtitles/lab-using-zosmf.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/lab-using-zosmf.en.vtt"
+          }
         },
         {
           "type": "lab",
@@ -426,7 +546,13 @@
             "uiconfId": "39954662",
             "entryId": "1_tte63slm"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/unix-system-services.mp4",
+            "hlsSrc": "/hls/unix-system-services/index.m3u8",
+            "subtitleSrc": "/subtitles/unix-system-services.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/unix-system-services.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -439,7 +565,13 @@
             "uiconfId": "39954662",
             "entryId": "1_qhwqq81g"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/uss-file-systems.mp4",
+            "hlsSrc": "/hls/uss-file-systems/index.m3u8",
+            "subtitleSrc": "/subtitles/uss-file-systems.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/uss-file-systems.en.vtt"
+          }
         },
         {
           "type": "video",
@@ -452,7 +584,13 @@
             "uiconfId": "39954662",
             "entryId": "1_fabmoily"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/lab-ishell-and-hierarchical-file-system.mp4",
+            "hlsSrc": "/hls/lab-ishell-and-hierarchical-file-system/index.m3u8",
+            "subtitleSrc": "/subtitles/lab-ishell-and-hierarchical-file-system.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/lab-ishell-and-hierarchical-file-system.en.vtt"
+          }
         },
         {
           "type": "lab",
@@ -479,7 +617,13 @@
             "uiconfId": "39954662",
             "entryId": "1_n310dnox"
           },
-          "mediaStatus": "source-only"
+          "mediaStatus": "deployed",
+          "media": {
+            "videoSrc": "/media/uss-processes-and-permissions.mp4",
+            "hlsSrc": "/hls/uss-processes-and-permissions/index.m3u8",
+            "subtitleSrc": "/subtitles/uss-processes-and-permissions.zh-Hant-TW.vtt",
+            "englishSubtitleSrc": "/subtitles/uss-processes-and-permissions.en.vtt"
+          }
         },
         {
           "type": "forum",

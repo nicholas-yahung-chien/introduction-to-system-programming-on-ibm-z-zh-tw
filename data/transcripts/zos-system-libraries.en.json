@@ -1,0 +1,433 @@
+{
+  "slug": "zos-system-libraries",
+  "title": "zOS System Libraries",
+  "language": "en",
+  "duration": 436.6048125,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 9.78,
+      "text": "The ZOS system libraries are where a lot of the customization data for the operating system lives."
+    },
+    {
+      "start": 9.78,
+      "end": 16.78,
+      "text": "You'll find a lot of important information here, including where to find other important information, so kind of important."
+    },
+    {
+      "start": 16.78,
+      "end": 21.28,
+      "text": "We've mentioned a few of these before during the module on IPLing a system,"
+    },
+    {
+      "start": 21.28,
+      "end": 26.98,
+      "text": "and I know you wanted to know more information about those datasets, so here we are, let's get started."
+    },
+    {
+      "start": 26.98,
+      "end": 30.38,
+      "text": "First up, sys1.linklib."
+    },
+    {
+      "start": 30.48,
+      "end": 36.78,
+      "text": "This contains much of the executable code, also known as modules for ZOS components and utilities."
+    },
+    {
+      "start": 36.78,
+      "end": 47.48,
+      "text": "In here, you'll find the module MSTJCL00, which contains the initial JCL statements that start the master scheduler subsystem."
+    },
+    {
+      "start": 47.48,
+      "end": 49.68,
+      "text": "So that's how JES gets started."
+    },
+    {
+      "start": 49.68,
+      "end": 52.08,
+      "text": "sys1.LPAlib."
+    },
+    {
+      "start": 52.08,
+      "end": 55.98,
+      "text": "LPAlib stands for Link Pack Area Library."
+    },
+    {
+      "start": 55.98,
+      "end": 59.78,
+      "text": "These modules are shared by all address spaces in the system,"
+    },
+    {
+      "start": 59.88,
+      "end": 67.38,
+      "text": "and because they are read-only and not self-modifying, they can be used by a number of address spaces at the same time."
+    },
+    {
+      "start": 67.38,
+      "end": 74.18,
+      "text": "There are four types of modules you'll find in the LPA, dynamic, fixed, modified, pageable,"
+    },
+    {
+      "start": 74.18,
+      "end": 78.08,
+      "text": "and it all comes down to how they should be handled in memory."
+    },
+    {
+      "start": 78.08,
+      "end": 82.98,
+      "text": "sys1.Nucleus contains the basic supervisor modules for the system,"
+    },
+    {
+      "start": 82.98,
+      "end": 88.88,
+      "text": "the core of the system that is required for it to begin loading the full version of the operating system."
+    },
+    {
+      "start": 88.88,
+      "end": 92.18,
+      "text": "We just recently talked about sys1.PROClib,"
+    },
+    {
+      "start": 92.18,
+      "end": 98.18,
+      "text": "which is where the IBM-supplied JCL procedures for performing system functions live."
+    },
+    {
+      "start": 98.18,
+      "end": 105.68,
+      "text": "And my favorite, sys1.PARMlib contains the control parameters for ZOS and some program products."
+    },
+    {
+      "start": 105.68,
+      "end": 111.78,
+      "text": "If you've used Linux or Unix-based operating system before, it's similar to what you'd find in slash etc."
+    },
+    {
+      "start": 111.78,
+      "end": 118.58,
+      "text": "So if you're looking to increase a value from 25 to 30 or change the name of what something on the system gets called,"
+    },
+    {
+      "start": 118.58,
+      "end": 122.88,
+      "text": "chances are it's in sys1.PARMlib."
+    },
+    {
+      "start": 122.88,
+      "end": 127.88,
+      "text": "What makes up a particular system is how these system libraries are configured."
+    },
+    {
+      "start": 127.88,
+      "end": 132.08,
+      "text": "In addition, there's also information that comes from other non-IBM vendors,"
+    },
+    {
+      "start": 132.08,
+      "end": 136.48,
+      "text": "as well as how a particular company chooses to set up their system."
+    },
+    {
+      "start": 136.48,
+      "end": 141.68,
+      "text": "You can organize a lot of this customization information into these six areas."
+    },
+    {
+      "start": 141.68,
+      "end": 147.68,
+      "text": "There's the ZOS software, the non-ZOS software, middleware like Kix DB2,"
+    },
+    {
+      "start": 147.68,
+      "end": 154.18,
+      "text": "non-IBM software that comes from other vendors, customization data, user-defined exits,"
+    },
+    {
+      "start": 154.18,
+      "end": 160.68,
+      "text": "which boils down to ways that users have customized and extended software, as well as user data."
+    },
+    {
+      "start": 160.68,
+      "end": 165.48,
+      "text": "When a program calls a module, the system needs to know where it is in order to run it,"
+    },
+    {
+      "start": 165.48,
+      "end": 169.68,
+      "text": "and it has a certain order it goes through when searching for modules."
+    },
+    {
+      "start": 169.68,
+      "end": 174.58,
+      "text": "The first place it looks is in the Job Pack area, or JPA."
+    },
+    {
+      "start": 174.58,
+      "end": 177.98,
+      "text": "If it's not in there, it'll look in the Task Live."
+    },
+    {
+      "start": 177.98,
+      "end": 181.68,
+      "text": "Next stop is the Step Live or Job Live."
+    },
+    {
+      "start": 181.68,
+      "end": 190.18,
+      "text": "These are specific DD names that can be used to allocate data sets to be searched ahead of the default system search order for programs."
+    },
+    {
+      "start": 190.18,
+      "end": 199.48,
+      "text": "We then hit LPA, that Linked Pack area, where it will hit the dynamic, then the fixed, and then the modified, and then the pageable modules."
+    },
+    {
+      "start": 199.48,
+      "end": 206.18,
+      "text": "And then Linked List, as specified in ProgXX and Linked List XX."
+    },
+    {
+      "start": 206.18,
+      "end": 211.48,
+      "text": "By default, the Linked List begins with sys1.linklib, and there's more to follow,"
+    },
+    {
+      "start": 211.48,
+      "end": 217.88,
+      "text": "but you can view and change the order in your ProgXX, and add other libraries to that list."
+    },
+    {
+      "start": 217.88,
+      "end": 224.18,
+      "text": "By the way, the list of places that the system searches for modules is called a concatenation."
+    },
+    {
+      "start": 224.18,
+      "end": 227.08,
+      "text": "In order for modules to work, they need to be ready to go."
+    },
+    {
+      "start": 227.08,
+      "end": 231.38,
+      "text": "It's not practical to keep all modules loaded in main memory all the time,"
+    },
+    {
+      "start": 231.38,
+      "end": 239.58,
+      "text": "but each time the system has to go and look for a module, that takes time, and it pulls the CPU away from doing other important stuff."
+    },
+    {
+      "start": 239.58,
+      "end": 244.78,
+      "text": "So there's this concept of a Library Lookaside Facility, or LLA."
+    },
+    {
+      "start": 244.78,
+      "end": 250.78,
+      "text": "This reduces the amount of IO needed to locate and fetch modules from DASD storage."
+    },
+    {
+      "start": 250.78,
+      "end": 257.08,
+      "text": "LLA takes a look at the modules and determines which ones could really benefit from being staged."
+    },
+    {
+      "start": 257.08,
+      "end": 264.58,
+      "text": "Similarly, there's a VLF, or Virtual Lookaside Facility, which is used to store named objects in virtual storage"
+    },
+    {
+      "start": 264.58,
+      "end": 269.58,
+      "text": "and retrieve those on behalf of users in multiple address spaces."
+    },
+    {
+      "start": 269.58,
+      "end": 272.88,
+      "text": "So let's look at how these get set up in a few examples."
+    },
+    {
+      "start": 272.88,
+      "end": 279.48,
+      "text": "Let's start with the LoadXX member, which is one of the first modules that gets loaded at IPL time."
+    },
+    {
+      "start": 279.48,
+      "end": 282.68,
+      "text": "In here, you'll see the parmlibe concatenation."
+    },
+    {
+      "start": 282.68,
+      "end": 286.58,
+      "text": "You can specify up to 16 partition data sets in here."
+    },
+    {
+      "start": 286.58,
+      "end": 291.68,
+      "text": "You can see in this configuration, there is a sys0.IPLPARM,"
+    },
+    {
+      "start": 291.68,
+      "end": 298.48,
+      "text": "and it will automatically add sys1.parmlibe to the end of the concatenation, even if you don't specify it."
+    },
+    {
+      "start": 298.48,
+      "end": 301.88,
+      "text": "There's also the IEA sysxx member."
+    },
+    {
+      "start": 301.88,
+      "end": 304.88,
+      "text": "Now, this is where the installation defaults go."
+    },
+    {
+      "start": 304.88,
+      "end": 309.18,
+      "text": "These are the parameters that will not change unless you're altering the physical"
+    },
+    {
+      "start": 309.18,
+      "end": 313.78,
+      "text": "or logically defined environment that your system is operating in."
+    },
+    {
+      "start": 313.78,
+      "end": 317.18,
+      "text": "If you want to see the concatenation without digging through the data sets,"
+    },
+    {
+      "start": 317.18,
+      "end": 321.78,
+      "text": "you can type dparmlibe, and it will list them out for you."
+    },
+    {
+      "start": 321.78,
+      "end": 326.48,
+      "text": "You can also look at the IPL information with dIPL info."
+    },
+    {
+      "start": 326.48,
+      "end": 331.38,
+      "text": "That will show you when the system was last IPLed, what the version of the operating system is,"
+    },
+    {
+      "start": 331.38,
+      "end": 335.28,
+      "text": "and what the contents of IEA sys and IEA sim are."
+    },
+    {
+      "start": 335.28,
+      "end": 337.68,
+      "text": "That determines which members get loaded."
+    },
+    {
+      "start": 337.68,
+      "end": 343.18,
+      "text": "You'll also see the IODF device number and the IPL device and serial number."
+    },
+    {
+      "start": 343.18,
+      "end": 345.28,
+      "text": "This command is critically important."
+    },
+    {
+      "start": 345.28,
+      "end": 351.48,
+      "text": "I can remember from my sysprog days, sometimes we'd bring up a system and it would just not be behaving correctly."
+    },
+    {
+      "start": 351.48,
+      "end": 355.28,
+      "text": "Something we thought we installed wasn't there, modules weren't loading."
+    },
+    {
+      "start": 355.28,
+      "end": 362.28,
+      "text": "Step one is to issue a dIPL info and make sure that what you're running is what you think you're running."
+    },
+    {
+      "start": 362.28,
+      "end": 367.18,
+      "text": "Maybe we forgot to change the IPL volume or change one of those IEA members."
+    },
+    {
+      "start": 367.18,
+      "end": 369.98,
+      "text": "This is your sanity check right here."
+    },
+    {
+      "start": 369.98,
+      "end": 373.18,
+      "text": "Each IEA member has its own purpose and story,"
+    },
+    {
+      "start": 373.18,
+      "end": 378.68,
+      "text": "and importantly, sections of documentation describing exactly how to use it."
+    },
+    {
+      "start": 378.68,
+      "end": 380.28,
+      "text": "We're not going to go through them all here."
+    },
+    {
+      "start": 380.28,
+      "end": 386.58,
+      "text": "The important thing to take away is where to look to find them, generally in the ZOS system libraries,"
+    },
+    {
+      "start": 386.58,
+      "end": 391.08,
+      "text": "and where to find more about them by using the manuals or a search engine."
+    },
+    {
+      "start": 391.08,
+      "end": 398.08,
+      "text": "I do want to show you those IEA simxx members though, since we've covered the topic of symbols a little while ago,"
+    },
+    {
+      "start": 398.08,
+      "end": 399.78,
+      "text": "and I want to tie back to that."
+    },
+    {
+      "start": 399.78,
+      "end": 405.98,
+      "text": "If you look in IEA sysxx, you'll see some of those static system symbols getting set,"
+    },
+    {
+      "start": 405.98,
+      "end": 409.78,
+      "text": "like sysname, which is equal to SC04."
+    },
+    {
+      "start": 409.78,
+      "end": 412.58,
+      "text": "You can see a few other symbols getting set in there as well."
+    },
+    {
+      "start": 412.58,
+      "end": 417.98,
+      "text": "So later on, when you want to reference a specific data set built specifically for that system,"
+    },
+    {
+      "start": 417.98,
+      "end": 422.68,
+      "text": "we can just say ampersand sysname, and we've used a symbol."
+    },
+    {
+      "start": 422.68,
+      "end": 427.88,
+      "text": "If you ever wanted to display the list of symbols available, just type dsymbols."
+    },
+    {
+      "start": 427.88,
+      "end": 433.08,
+      "text": "And now that symbols doesn't sound like a real word anymore, I think it's time to move on to the next topic."
+    }
+  ]
+}

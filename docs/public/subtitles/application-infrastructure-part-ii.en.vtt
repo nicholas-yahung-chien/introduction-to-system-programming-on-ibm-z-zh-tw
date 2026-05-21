@@ -1,0 +1,245 @@
+WEBVTT
+
+1
+00:00:03.280 --> 00:00:09.280
+On the mainframe, the big three that immediately come to mind are Kix, IMS, and DB2.
+
+2
+00:00:09.280 --> 00:00:16.280
+When I first started working on Z-Systems, I heard these said together so often that I thought it was two things, Kix, IMS, and DB2.
+
+3
+00:00:16.280 --> 00:00:18.280
+But we're talking about three components here.
+
+4
+00:00:18.280 --> 00:00:26.280
+There's Kix, or C-I-C-S, spelled C-I-C-S, IMS, and DB2. Three different things.
+
+5
+00:00:26.280 --> 00:00:28.280
+Let's start with Kix.
+
+6
+00:00:28.280 --> 00:00:36.280
+Kix has been around for a long time, and it powers many of the world's transactions, such as ATMs, managing insurance policies,
+
+7
+00:00:36.280 --> 00:00:44.280
+utility bills, retail, shopping, and others. And it does it all securely and reliably day in and day out.
+
+8
+00:00:44.280 --> 00:00:51.280
+A Kix transaction can consist of many facets, including delivering the user interface, retrieving and updating information,
+
+9
+00:00:51.280 --> 00:00:55.280
+and communicating with other applications and network-attached devices.
+
+10
+00:00:55.280 --> 00:01:02.280
+In Kix, a transaction typically lasts a very short time and is associated with one unit of work.
+
+11
+00:01:02.280 --> 00:01:08.280
+Kix takes the work to be processed and lines it up with the program or programs required to complete it.
+
+12
+00:01:08.280 --> 00:01:14.280
+This is the job of the transaction manager to ensure the work completes successfully according to the process
+
+13
+00:01:14.280 --> 00:01:18.280
+and that there's nothing left hanging out there when we tell the user that it's complete.
+
+14
+00:01:18.280 --> 00:01:21.280
+Here's what's under the hood that lets this all happen.
+
+15
+00:01:21.280 --> 00:01:27.280
+A Kix system manages an area of storage called a region, which lives in an address space.
+
+16
+00:01:27.280 --> 00:01:30.280
+You'll hear that term a lot, a Kix region.
+
+17
+00:01:30.280 --> 00:01:36.280
+A Kix region uses domains, which contain management nodes for transaction processing.
+
+18
+00:01:36.280 --> 00:01:42.280
+Now, a single region can be defined to perform all the functions necessary to process a transaction.
+
+19
+00:01:42.280 --> 00:01:50.280
+Typically, a Kix installation will have several different regions, each one devoted to a different type of transaction.
+
+20
+00:01:50.280 --> 00:01:52.280
+Think of it like an auto repair center.
+
+21
+00:01:52.280 --> 00:01:57.280
+This area is for bodywork, over here is for transmission issues, tires and wheels over there.
+
+22
+00:01:57.280 --> 00:02:03.280
+That way, all the tools that are needed are close by and the area isn't crowded with stuff that they don't need.
+
+23
+00:02:03.280 --> 00:02:09.280
+There are three types of domains that supervise and control transaction processing.
+
+24
+00:02:09.280 --> 00:02:13.280
+Remember, these are the domains within the region.
+
+25
+00:02:13.280 --> 00:02:17.280
+We've covered a lot there, so let's make sure we've got the basic order right.
+
+26
+00:02:17.280 --> 00:02:25.280
+A Kix system manages an area of storage called a blank, and within that, it uses blanks.
+
+27
+00:02:25.280 --> 00:02:28.280
+Let's see if you remember what those are called.
+
+28
+00:02:28.280 --> 00:02:37.280
+So, a Kix system manages areas of storage called regions, and then within the regions, it manages domains.
+
+29
+00:02:37.280 --> 00:02:46.280
+There's the transaction manager, the XM, which is responsible for receiving transaction requests and creating the organizing tasks to process them.
+
+30
+00:02:46.280 --> 00:02:54.280
+Then there's the program manager, or PG, which handles locating and invoking applications required for processing transactions.
+
+31
+00:02:54.280 --> 00:02:57.280
+And then there's the storage manager, SM.
+
+32
+00:02:57.280 --> 00:03:03.280
+This domain is responsible for allocating memory resources required for all of this to happen.
+
+33
+00:03:03.280 --> 00:03:06.280
+You can see in this diagram, we have three types of regions.
+
+34
+00:03:06.280 --> 00:03:12.280
+There's the TOR, terminal owning region, which handles connections to terminals and other remote devices.
+
+35
+00:03:13.280 --> 00:03:19.280
+Then there's the AOR for application owning region, and the DOR for data owning region.
+
+36
+00:03:19.280 --> 00:03:22.280
+The glue that connects these regions is VTAM.
+
+37
+00:03:22.280 --> 00:03:27.280
+Now, we haven't really spent much time talking about VTAM yet, and we're not going to get deep into it.
+
+38
+00:03:27.280 --> 00:03:31.280
+Just know that it has to do with networking, and it's part of comm server.
+
+39
+00:03:31.280 --> 00:03:38.280
+The AORs and DORs talk with other applications like databases and user written applications.
+
+40
+00:03:38.280 --> 00:03:41.280
+One of those databases could be IMS.
+
+41
+00:03:41.280 --> 00:03:43.280
+Now, what's IMS?
+
+42
+00:03:43.280 --> 00:03:50.280
+IMS, Information Management System, has a long and interesting history as well, which includes some development done for NASA.
+
+43
+00:03:50.280 --> 00:03:58.280
+What makes IMS unique is that it has, or is, depending on how you look at it, a hierarchical database management system.
+
+44
+00:03:58.280 --> 00:04:05.280
+It is widely used for manufacturing type applications, but you'll see it in just about any industry.
+
+45
+00:04:05.280 --> 00:04:08.280
+IMS consists of three components.
+
+46
+00:04:08.280 --> 00:04:12.280
+One is the database manager, that's the IMS DB.
+
+47
+00:04:12.280 --> 00:04:16.280
+Then there's the transaction manager, that's the IMS TM.
+
+48
+00:04:16.280 --> 00:04:22.280
+And then there's the system services that provide common services to both the DB and the TM.
+
+49
+00:04:22.280 --> 00:04:28.280
+These work together to deliver data and transactional capabilities in an extremely efficient way.
+
+50
+00:04:28.280 --> 00:04:35.280
+For more complex data handling needs, there's DB2, Big D, little b, 2.
+
+51
+00:04:35.280 --> 00:04:47.280
+DB2 is a database, and it offers exceptional availability, massive scalability, flexibility and installation across platforms and locations, and a low total cost of ownership.
+
+52
+00:04:47.280 --> 00:04:54.280
+DB2 is considered to be a relational database, so data exists in one or more constructs known as tables.
+
+53
+00:04:54.280 --> 00:04:57.280
+And within those tables, there are columns and rows.
+
+54
+00:04:57.280 --> 00:05:03.280
+And you interact with data by using the Structured Query Language, or SQL.
+
+55
+00:05:03.280 --> 00:05:07.280
+Though you can also use DB2 for unstructured data and so much more.
+
+56
+00:05:07.280 --> 00:05:10.280
+Remember those ACID properties we talked about before?
+
+57
+00:05:10.280 --> 00:05:14.280
+DB2 people take each one of those very seriously.
+
+58
+00:05:14.280 --> 00:05:20.280
+They won't chase something that gives them increased availability if it means giving up consistency and vice versa.
+
+59
+00:05:20.280 --> 00:05:30.280
+When it comes to truly enterprise applications, the middleware like Kix, IMS and DB2 need to step up and deliver time after time after time after time.
+
+60
+00:05:31.280 --> 00:05:33.280
+Can't stop, won't stop.
+
+61
+00:05:34.280 --> 00:05:35.280
+Transaction.

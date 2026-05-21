@@ -1,0 +1,537 @@
+WEBVTT
+
+1
+00:00:03.500 --> 00:00:06.140
+There's a lot to say about VSAM.
+
+2
+00:00:06.140 --> 00:00:10.500
+I've seen multi-part presentations on the topic of VSAM.
+
+3
+00:00:10.500 --> 00:00:15.300
+There are courses on VSAM alone that run four to five days.
+
+4
+00:00:15.300 --> 00:00:20.140
+We've got a couple minutes, so let's get going.
+
+5
+00:00:20.140 --> 00:00:21.400
+We'll start with the basics.
+
+6
+00:00:21.400 --> 00:00:25.260
+VSAM stands for Virtual Storage Access Method.
+
+7
+00:00:25.260 --> 00:00:27.620
+It's a way of storing and accessing data
+
+8
+00:00:27.620 --> 00:00:30.900
+that's different from what we've been using up until now.
+
+9
+00:00:30.900 --> 00:00:33.740
+So why do we need another type of data set?
+
+10
+00:00:33.740 --> 00:00:36.020
+The ones we were looking at before made perfect sense.
+
+11
+00:00:36.020 --> 00:00:38.940
+I open it up, I put my data in, I close it.
+
+12
+00:00:38.940 --> 00:00:40.660
+The data is still there next week.
+
+13
+00:00:40.660 --> 00:00:42.260
+All is good, right?
+
+14
+00:00:42.260 --> 00:00:44.140
+Well, for you and I, sure.
+
+15
+00:00:44.140 --> 00:00:46.380
+But what about the applications?
+
+16
+00:00:46.380 --> 00:00:49.660
+Applications generally aren't reading blogs, writing novels,
+
+17
+00:00:49.660 --> 00:00:51.340
+scrolling social media.
+
+18
+00:00:51.340 --> 00:00:53.620
+They've got a specific piece of data
+
+19
+00:00:53.620 --> 00:00:56.540
+that they've got to get to present to their user.
+
+20
+00:00:56.540 --> 00:00:59.380
+Or they've got to make an update on a very specific piece
+
+21
+00:00:59.500 --> 00:01:01.980
+of data in a very specific place.
+
+22
+00:01:01.980 --> 00:01:04.780
+VSAM gives applications a method of reading
+
+23
+00:01:04.780 --> 00:01:07.420
+and writing data that makes sense for them.
+
+24
+00:01:07.420 --> 00:01:10.380
+In fact, if you were to try and open up a VSAM data set
+
+25
+00:01:10.380 --> 00:01:13.020
+in ISPF, all it would do is tell you,
+
+26
+00:01:13.020 --> 00:01:15.140
+yep, that's a VSAM data set,
+
+27
+00:01:15.140 --> 00:01:18.100
+because it's not readable by standard methods.
+
+28
+00:01:18.100 --> 00:01:19.780
+So how does this work?
+
+29
+00:01:19.780 --> 00:01:22.460
+Well, like the other data sets we've talked about,
+
+30
+00:01:22.460 --> 00:01:24.420
+VSAM has records.
+
+31
+00:01:24.420 --> 00:01:26.340
+In VSAM, those records are kept
+
+32
+00:01:26.340 --> 00:01:28.620
+in what's called a control interval.
+
+33
+00:01:28.620 --> 00:01:31.540
+And a control interval is a continuous area
+
+34
+00:01:31.540 --> 00:01:33.500
+of storage on DASD.
+
+35
+00:01:33.500 --> 00:01:35.580
+And they can be different sizes.
+
+36
+00:01:35.580 --> 00:01:38.980
+So when an application goes to read a control interval,
+
+37
+00:01:38.980 --> 00:01:41.580
+that specific area of storage gets read
+
+38
+00:01:41.580 --> 00:01:46.180
+into the VSAM I-O buffer so the application can read it.
+
+39
+00:01:46.180 --> 00:01:48.940
+VSAM has four types of data sets,
+
+40
+00:01:48.940 --> 00:01:50.940
+based around four different ways
+
+41
+00:01:50.940 --> 00:01:53.300
+that applications generally like to consume
+
+42
+00:01:53.300 --> 00:01:55.180
+and record data.
+
+43
+00:01:55.180 --> 00:01:58.400
+They are keyed sequence data sets.
+
+44
+00:01:58.440 --> 00:02:00.640
+Entry sequence data sets.
+
+45
+00:02:00.640 --> 00:02:02.440
+Relative record data sets.
+
+46
+00:02:02.440 --> 00:02:04.960
+And linear data sets.
+
+47
+00:02:04.960 --> 00:02:06.740
+Okay, one at a time.
+
+48
+00:02:06.740 --> 00:02:10.440
+Keyed sequence data sets, or KSDS.
+
+49
+00:02:10.440 --> 00:02:15.240
+In a KSDS, each record is identified by a unique key.
+
+50
+00:02:15.240 --> 00:02:18.640
+When you write new data, you create a key for it.
+
+51
+00:02:18.640 --> 00:02:21.520
+For example, if this were an automobile assembly line,
+
+52
+00:02:21.520 --> 00:02:25.980
+the index might be a unique vehicle identification number.
+
+53
+00:02:25.980 --> 00:02:28.180
+And the data portion holds what features
+
+54
+00:02:28.180 --> 00:02:30.500
+that car is being built with, what color it is,
+
+55
+00:02:30.500 --> 00:02:33.720
+which dealership it's going to, all that stuff.
+
+56
+00:02:33.720 --> 00:02:36.860
+Whenever we want that specific piece of information,
+
+57
+00:02:36.860 --> 00:02:38.760
+we look it up by the key.
+
+58
+00:02:38.760 --> 00:02:43.060
+This is the most commonly used type of VSAM data set.
+
+59
+00:02:43.060 --> 00:02:45.740
+And then there's entry sequence data sets.
+
+60
+00:02:45.740 --> 00:02:50.220
+In an ESDS, each new entry goes in right after the last one
+
+61
+00:02:50.220 --> 00:02:53.660
+and records are referenced by the relative byte address.
+
+62
+00:02:53.660 --> 00:02:56.940
+So if we know the records are 64 bytes each,
+
+63
+00:02:56.940 --> 00:03:01.020
+and we want to reference the first record, the RBA is zero.
+
+64
+00:03:01.020 --> 00:03:02.920
+And for the second, it's 64.
+
+65
+00:03:02.920 --> 00:03:05.820
+And for the third one, it's 128, and so on.
+
+66
+00:03:05.820 --> 00:03:08.420
+Because the records go in one right after the other,
+
+67
+00:03:08.420 --> 00:03:09.740
+and that's their structure,
+
+68
+00:03:09.740 --> 00:03:12.060
+you can't delete a record once it's in there.
+
+69
+00:03:12.060 --> 00:03:14.720
+You can only mark it as inactive.
+
+70
+00:03:14.720 --> 00:03:17.700
+This structure generally lends itself to high performance
+
+71
+00:03:17.700 --> 00:03:21.100
+when data is loaded and read sequentially.
+
+72
+00:03:21.100 --> 00:03:24.460
+Now, an RRDS or relative record data set
+
+73
+00:03:24.460 --> 00:03:26.580
+is similar to an ESDS,
+
+74
+00:03:26.580 --> 00:03:28.380
+except that the records are referenced
+
+75
+00:03:28.380 --> 00:03:31.840
+by the relative record number or RRN.
+
+76
+00:03:31.840 --> 00:03:33.980
+This number is how many records down
+
+77
+00:03:33.980 --> 00:03:35.300
+from the first record we are,
+
+78
+00:03:35.300 --> 00:03:37.580
+similar to rows in a spreadsheet.
+
+79
+00:03:37.580 --> 00:03:40.420
+And like a spreadsheet, we can have empty records,
+
+80
+00:03:40.420 --> 00:03:42.900
+we can delete records, we can jump around,
+
+81
+00:03:42.900 --> 00:03:44.820
+or we can go sequentially.
+
+82
+00:03:44.820 --> 00:03:47.060
+Lastly, there's linear data sets.
+
+83
+00:03:47.060 --> 00:03:48.780
+These aren't used as often,
+
+84
+00:03:48.780 --> 00:03:51.380
+but are still helpful when dealing with byte stream data,
+
+85
+00:03:51.380 --> 00:03:54.220
+like logs, or where an application will be managing
+
+86
+00:03:54.220 --> 00:03:56.660
+the data after it grabs it.
+
+87
+00:03:56.660 --> 00:03:59.500
+Let's test your understanding of these VSAM data set types
+
+88
+00:03:59.500 --> 00:04:01.180
+with a little pop quiz.
+
+89
+00:04:01.180 --> 00:04:03.780
+Let's say I need a VSAM data set
+
+90
+00:04:03.780 --> 00:04:06.140
+to record data in sequence.
+
+91
+00:04:06.140 --> 00:04:08.460
+And I just happen to know that the program
+
+92
+00:04:08.460 --> 00:04:12.100
+that processes this data is going to read it in sequence
+
+93
+00:04:12.100 --> 00:04:14.020
+without skipping around.
+
+94
+00:04:14.020 --> 00:04:16.720
+What type of data set should I be looking into?
+
+95
+00:04:17.720 --> 00:04:22.200
+The answer is an ESDS, or entry sequence data set.
+
+96
+00:04:22.200 --> 00:04:24.760
+Because members go in based on when they're recorded
+
+97
+00:04:24.760 --> 00:04:27.700
+and we have no need to reference individual records
+
+98
+00:04:27.700 --> 00:04:29.660
+by name or relative number,
+
+99
+00:04:29.660 --> 00:04:33.420
+we can make efficient use of an ESDS here.
+
+100
+00:04:33.420 --> 00:04:35.960
+No matter what data set type you're using,
+
+101
+00:04:35.960 --> 00:04:38.440
+they usually get created using an IBM utility
+
+102
+00:04:38.440 --> 00:04:41.720
+called ID cams through JCL.
+
+103
+00:04:41.720 --> 00:04:44.200
+In your JCL, you'll specify the cluster,
+
+104
+00:04:44.240 --> 00:04:47.200
+that's the logical representation of that data set,
+
+105
+00:04:47.200 --> 00:04:49.600
+and all that goes along with it.
+
+106
+00:04:49.600 --> 00:04:51.560
+So in this example here,
+
+107
+00:04:51.560 --> 00:04:54.800
+you can see we're invoking the ID cams program
+
+108
+00:04:54.800 --> 00:04:59.800
+and creating a cluster with the name example.ksds2.
+
+109
+00:05:00.440 --> 00:05:01.680
+If I were a betting man,
+
+110
+00:05:01.680 --> 00:05:04.920
+I'd say this is a key sequence data set.
+
+111
+00:05:04.920 --> 00:05:06.320
+And not just because of the name,
+
+112
+00:05:06.320 --> 00:05:10.240
+but because down here we're specifying the key length.
+
+113
+00:05:10.240 --> 00:05:13.640
+Here it's six bytes starting at the fifth byte,
+
+114
+00:05:13.640 --> 00:05:17.640
+byte four since we start from zero, of the data record.
+
+115
+00:05:17.640 --> 00:05:20.320
+We need to provide the information for the cluster itself
+
+116
+00:05:20.320 --> 00:05:24.040
+as well as the data and index of the cluster.
+
+117
+00:05:24.040 --> 00:05:26.880
+In this example, we're also specifying which catalog
+
+118
+00:05:26.880 --> 00:05:29.040
+we wanna keep the cluster in.
+
+119
+00:05:29.040 --> 00:05:32.720
+You can also use JCL itself to create VSAM data sets,
+
+120
+00:05:32.720 --> 00:05:35.960
+in which case you specify the record organization,
+
+121
+00:05:35.960 --> 00:05:37.920
+record parameter.
+
+122
+00:05:37.920 --> 00:05:40.720
+The fundamentals, however, stay the same.
+
+123
+00:05:40.720 --> 00:05:42.880
+So that's a little bit about VSAM.
+
+124
+00:05:42.880 --> 00:05:43.720
+I gotta tell you,
+
+125
+00:05:43.720 --> 00:05:46.540
+this is one of those things that everybody uses.
+
+126
+00:05:46.540 --> 00:05:48.960
+It's very prevalent in the mainframe community.
+
+127
+00:05:48.960 --> 00:05:50.440
+It's also one of those things
+
+128
+00:05:50.440 --> 00:05:53.240
+that's fairly unique to the Z platform.
+
+129
+00:05:53.240 --> 00:05:56.440
+And there's a lot of performance and code simplification
+
+130
+00:05:56.440 --> 00:05:58.040
+to be gained by using it.
+
+131
+00:05:58.040 --> 00:06:00.160
+So when you're done with this course
+
+132
+00:06:00.160 --> 00:06:02.040
+and you're trying to take the next step,
+
+133
+00:06:02.040 --> 00:06:04.080
+make sure you read further into it.
+
+134
+00:06:04.080 --> 00:06:06.880
+You can never have too much VSAM knowledge.
