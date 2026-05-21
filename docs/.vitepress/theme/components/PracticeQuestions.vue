@@ -44,7 +44,8 @@ const sourceLabels: Record<string, string> = {
   'short-language-environment': '檢核點 5',
   'short-raim': '檢核點 6',
   'short-using-zosmf': '檢核點 7',
-  'short-lab-ishell-and-hfs': '檢核點 8'
+  'short-lab-ishell-and-hfs': '檢核點 8',
+  'badge-quiz': '綜合回顧'
 }
 
 const filteredQuestions = computed(() => {

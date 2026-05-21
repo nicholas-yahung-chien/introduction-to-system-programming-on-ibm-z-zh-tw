@@ -3,7 +3,13 @@ import path from 'node:path'
 
 const mediaBase = 'https://introduction-to-system-programming-on-ibm-z-media.pages.dev'
 const quizUrl = 'https://learn.ibm.com/mod/quiz/view.php?id=348813'
-const sourceId = 'badge-quiz-scope'
+const sourceId = 'badge-quiz'
+const previousBadgeSourceId = 'badge-quiz-scope'
+const sectionByLessonSlug = new Map([
+  ['jes-and-jcl', 'JES 與 JCL 入門'],
+  ['system-programming-components', '系統程式設計元件'],
+  ['zosmf-and-unix-system-services', 'z/OSMF 與 UNIX System Services'],
+])
 
 const badgeItems = [
   ['badge-quiz-scope-q01', 'jes-and-jcl', 'JES 與 JCL 綜合回顧', '/course/jes-and-jcl', '1_67vf8cdm', '某個 JCL system symbol 在 IPL 時決定，直到下一次 IPL 才會重新設定；這種 symbol 最接近哪一類？', [['a', 'Dynamic'], ['b', 'Static'], ['c', 'Concurrent'], ['d', 'Temporary']], ['b'], 'Static system symbols 會在 IPL 時建立或載入，通常在下一次 IPL 前維持固定。'],
@@ -45,10 +51,10 @@ const badgeItems = [
 function badgeQuestion([id, lessonSlug, lessonTitle, coursePath, videoEntryId, prompt, choices, correctChoiceIds, explanation], index) {
   return {
     id,
-    section: 'Badge Quiz 綜合回顧',
+    section: sectionByLessonSlug.get(lessonSlug),
     lessonSlug,
     lessonTitle,
-    sourceType: 'badge-quiz-scope',
+    sourceType: 'moodle-quiz',
     sourceUrl: quizUrl,
     sourceReference: sourceId,
     prompt,
@@ -460,19 +466,19 @@ await write('handoff/course-site-implementation-framework.md', `# IBM Learn 課�
 `)
 
 const practiceQuestions = JSON.parse(await readFile('data/practice-questions.json', 'utf8'))
-const retained = practiceQuestions.filter((question) => question.sourceReference !== sourceId)
+const retained = practiceQuestions.filter((question) => ![sourceId, previousBadgeSourceId].includes(question.sourceReference))
 const badgeQuestions = badgeItems.map(badgeQuestion)
 await writeFile('data/practice-questions.json', `${JSON.stringify([...retained, ...badgeQuestions], null, 2)}\n`, 'utf8')
 
 const practiceSources = JSON.parse(await readFile('data/practice-sources.json', 'utf8'))
-practiceSources.sources = practiceSources.sources.filter((source) => source.id !== sourceId)
+practiceSources.sources = practiceSources.sources.filter((source) => ![sourceId, previousBadgeSourceId].includes(source.id))
 practiceSources.sources.push({
   id: sourceId,
-  title: 'Badge Quiz scope review',
-  type: 'quiz-scope',
+  title: '綜合回顧（Badge Quiz）',
+  type: 'moodle-quiz',
   sourceUrl: quizUrl,
-  sectionSlug: 'badge-quiz',
-  sectionTitle: 'Badge Quiz 綜合回顧',
+  sectionSlug: 'comprehensive-review',
+  sectionTitle: '綜合回顧',
   status: 'derived-scope',
   intendedUse: '已參考登入後可見的 Badge Quiz review 考點，轉為本站原創改寫的非計分綜合練習；不公開重製 IBM 正式題庫原文，正式成績、attempt 與 badge eligibility 仍回 IBM Learn。',
 })

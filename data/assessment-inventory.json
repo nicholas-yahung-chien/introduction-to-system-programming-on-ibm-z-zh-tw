@@ -90,12 +90,12 @@
       "intendedUse": "已從 IBM Learn H5P short quiz 擷取，轉為非計分靜態互動練習；正式課程完成狀態仍回 IBM Learn。"
     },
     {
-      "id": "badge-quiz-scope",
-      "title": "Badge Quiz scope review",
-      "type": "quiz-scope",
+      "id": "badge-quiz",
+      "title": "綜合回顧（Badge Quiz）",
+      "type": "moodle-quiz",
       "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-      "sectionSlug": "badge-quiz",
-      "sectionTitle": "Badge Quiz 綜合回顧",
+      "sectionSlug": "comprehensive-review",
+      "sectionTitle": "綜合回顧",
       "status": "derived-scope",
       "intendedUse": "已參考登入後可見的 Badge Quiz review 考點，轉為本站原創改寫的非計分綜合練習；不公開重製 IBM 正式題庫原文，正式成績、attempt 與 badge eligibility 仍回 IBM Learn。"
     }

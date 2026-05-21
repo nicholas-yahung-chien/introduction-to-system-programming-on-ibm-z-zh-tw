@@ -6,6 +6,7 @@ const sourceInventory = JSON.parse(await readFile('data/practice-sources.json', 
 const findings = []
 const questionIds = new Set()
 const sourceIds = new Set()
+const courseSectionLabels = new Set(['JES 與 JCL 入門', '系統程式設計元件', 'z/OSMF 與 UNIX System Services'])
 const learnerFacingChineseFields = ['section', 'lessonTitle', 'prompt', 'explanation']
 const mojibakeHints = ['�', '嚙', '剜', '', '', '方', '堆']
 
@@ -99,6 +100,16 @@ if (Array.isArray(questions)) {
 
     if (sourceIds.size > 0 && !sourceIds.has(question.sourceReference)) {
       findings.push(`${question.id}: sourceReference does not match data/practice-sources.json.`)
+    }
+
+    if (question.sourceReference === 'badge-quiz') {
+      if (!courseSectionLabels.has(question.section)) {
+        findings.push(`${question.id}: Badge Quiz practice must stay under a course section filter, found "${question.section}".`)
+      }
+    }
+
+    if (question.sourceReference === 'badge-quiz-scope') {
+      findings.push(`${question.id}: use sourceReference "badge-quiz" so the UI label matches prior course sites.`)
     }
   }
 }

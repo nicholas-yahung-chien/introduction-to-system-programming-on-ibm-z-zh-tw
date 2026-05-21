@@ -787,12 +787,12 @@
   },
   {
     "id": "badge-quiz-scope-q01",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JES 與 JCL 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "某個 JCL system symbol 在 IPL 時決定，直到下一次 IPL 才會重新設定；這種 symbol 最接近哪一類？",
     "choices": [
       {
@@ -825,12 +825,12 @@
   },
   {
     "id": "badge-quiz-scope-q02",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 公用程式綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "若 JCL 步驟只需要觸發配置邏輯並以 RC=0 結束，常用哪個 IBM utility？",
     "choices": [
       {
@@ -863,12 +863,12 @@
   },
   {
     "id": "badge-quiz-scope-q03",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "z/OSMF 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "使用者要登入 z/OSMF，核心前提通常是什麼？",
     "choices": [
       {
@@ -901,12 +901,12 @@
   },
   {
     "id": "badge-quiz-scope-q04",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "z/OSMF 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "z/OSMF 的定位最完整來說，是協助管理者用瀏覽器介面、工作流程與 API 來簡化 z/OS 管理。下列何者最合理？",
     "choices": [
       {
@@ -939,12 +939,12 @@
   },
   {
     "id": "badge-quiz-scope-q05",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "資料集與 JCL 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "PDS 目錄空間不足時，若希望目錄可較有彈性地擴充，應優先考慮哪種資料集類型？",
     "choices": [
       {
@@ -977,12 +977,12 @@
   },
   {
     "id": "badge-quiz-scope-q06",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL 程序綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "JCL 需要指定程序庫搜尋順序時，應使用哪個 statement？",
     "choices": [
       {
@@ -1015,12 +1015,12 @@
   },
   {
     "id": "badge-quiz-scope-q07",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "安全與系統元件綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 z/OS 與 z/VM 環境中，常見負責存取控制與稽核的 IBM 安全產品是哪一個？",
     "choices": [
       {
@@ -1053,12 +1053,12 @@
   },
   {
     "id": "badge-quiz-scope-q08",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 公用程式綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "若要把 sequential data set 複製成 PDS 的成員，常用哪個 utility？",
     "choices": [
       {
@@ -1091,12 +1091,12 @@
   },
   {
     "id": "badge-quiz-scope-q09",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL 資料集配置綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 JCL 配置新資料集時，若要沿用另一個已配置資料集的屬性，常用哪個參數？",
     "choices": [
       {
@@ -1129,12 +1129,12 @@
   },
   {
     "id": "badge-quiz-scope-q10",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "USS 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 TSO/E 中想進入 z/OS UNIX shell，通常輸入哪個命令？",
     "choices": [
       {
@@ -1167,12 +1167,12 @@
   },
   {
     "id": "badge-quiz-scope-q11",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL 資料流綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "JCL 中的 in-stream data 最接近下列哪種描述？",
     "choices": [
       {
@@ -1205,12 +1205,12 @@
   },
   {
     "id": "badge-quiz-scope-q12",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 公用程式綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "若輸入與輸出是同一個 volume 上的同一個 PDS，哪個 utility 常可用來執行 compress？",
     "choices": [
       {
@@ -1243,12 +1243,12 @@
   },
   {
     "id": "badge-quiz-scope-q13",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JES 與工作執行綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在大型主機上，由一連串 step 組成、交給作業系統執行特定任務的工作單位稱為什麼？",
     "choices": [
       {
@@ -1281,12 +1281,12 @@
   },
   {
     "id": "badge-quiz-scope-q14",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "USS 檔案系統綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 USS 檔案系統中，用來掛載另一個檔案系統的空目錄通常稱為什麼？",
     "choices": [
       {
@@ -1319,12 +1319,12 @@
   },
   {
     "id": "badge-quiz-scope-q15",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 公用程式綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "初始化、安裝或管理 DASD 時，常見會使用哪個 IBM utility？",
     "choices": [
       {
@@ -1357,12 +1357,12 @@
   },
   {
     "id": "badge-quiz-scope-q16",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL 語法綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "z/OS 以哪兩個開頭字元辨識一行是 JCL statement？",
     "choices": [
       {
@@ -1395,12 +1395,12 @@
   },
   {
     "id": "badge-quiz-scope-q17",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 公用程式綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "需要建立或修改 sequential data set、PDS 或 PDSE 內容時，哪個 utility 經常被提到？",
     "choices": [
       {
@@ -1433,12 +1433,12 @@
   },
   {
     "id": "badge-quiz-scope-q18",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "系統程式庫綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "SYS1.PARMLIB 中，哪類成員常保存安裝預設與 IPL 間不常改變的系統參數？",
     "choices": [
       {
@@ -1471,12 +1471,12 @@
   },
   {
     "id": "badge-quiz-scope-q19",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "系統程式庫綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "哪個 z/OS 系統資料集包含可由多位使用者共享的唯讀程式？",
     "choices": [
       {
@@ -1509,12 +1509,12 @@
   },
   {
     "id": "badge-quiz-scope-q20",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "Job 結束狀態綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "Job 非正常失敗結束時，在 z/OS 語境中常稱為什麼？",
     "choices": [
       {
@@ -1547,12 +1547,12 @@
   },
   {
     "id": "badge-quiz-scope-q21",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "網路元件綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 z/OS 元件中，負責 TCP/IP 通訊、Internet 存取與相關網路服務的是哪一個？",
     "choices": [
       {
@@ -1585,12 +1585,12 @@
   },
   {
     "id": "badge-quiz-scope-q22",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "z/OSMF 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "z/OSMF 的主要 Web 管理介面應以哪種協定存取？",
     "choices": [
       {
@@ -1623,12 +1623,12 @@
   },
   {
     "id": "badge-quiz-scope-q23",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "RAIM 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "IBM Z 用來提升記憶體可用性、可偵測並修正記憶體錯誤的冗餘設計稱為什麼？",
     "choices": [
       {
@@ -1661,12 +1661,12 @@
   },
   {
     "id": "badge-quiz-scope-q24",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "GDG 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 GDG 名稱中看到類似 GDG(+3) 的寫法，+3 代表什麼？",
     "choices": [
       {
@@ -1699,12 +1699,12 @@
   },
   {
     "id": "badge-quiz-scope-q25",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "z/OSMF 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "z/OSMF 中，若要進入傳統 ISPF 應用程式，應找哪類功能？",
     "choices": [
       {
@@ -1737,12 +1737,12 @@
   },
   {
     "id": "badge-quiz-scope-q26",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "系統程式庫綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "哪個 SYS1.LINKLIB 模組與啟動 master scheduler、建立 z/OS 與 JES2 溝通有關？",
     "choices": [
       {
@@ -1775,12 +1775,12 @@
   },
   {
     "id": "badge-quiz-scope-q27",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JES 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "哪個 z/OS 元件負責管理 job output，可列印或暫存在 spool 供 output manager 取用？",
     "choices": [
       {
@@ -1813,12 +1813,12 @@
   },
   {
     "id": "badge-quiz-scope-q28",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "z/OSMF 與 UNIX System Services",
     "lessonSlug": "zosmf-and-unix-system-services",
     "lessonTitle": "USS 檔案系統綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "在 sysplex 環境中掛載 zFS 並指定 owning LPAR 的好處，最接近哪一項？",
     "choices": [
       {
@@ -1851,12 +1851,12 @@
   },
   {
     "id": "badge-quiz-scope-q29",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL Symbol 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "JCL job card 中，哪個 system symbol 可代表目前 TSO session 的使用者 ID？",
     "choices": [
       {
@@ -1889,12 +1889,12 @@
   },
   {
     "id": "badge-quiz-scope-q30",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "PDS 維護綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "傳統 PDS 刪除成員後要整理空間、把可用空間集中時，通常會做哪個動作？",
     "choices": [
       {
@@ -1927,12 +1927,12 @@
   },
   {
     "id": "badge-quiz-scope-q31",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "DISP 參數綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "DISP=(NEW,PASS,) 的典型意義是什麼？",
     "choices": [
       {
@@ -1965,12 +1965,12 @@
   },
   {
     "id": "badge-quiz-scope-q32",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "JES 與 JCL 入門",
     "lessonSlug": "jes-and-jcl",
     "lessonTitle": "JCL Procedure 綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "JCL 中要引用某個已存在於 PDS/PDSE 的 statement member 時，會使用哪個 statement 類型？",
     "choices": [
       {
@@ -2003,12 +2003,12 @@
   },
   {
     "id": "badge-quiz-scope-q33",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "IBM Z 硬體概念綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "IBM z14 可支援的最大記憶體容量在課程範圍中以哪個數字呈現？",
     "choices": [
       {
@@ -2041,12 +2041,12 @@
   },
   {
     "id": "badge-quiz-scope-q34",
-    "section": "Badge Quiz 綜合回顧",
+    "section": "系統程式設計元件",
     "lessonSlug": "system-programming-components",
     "lessonTitle": "z/OS 元件綜合回顧",
-    "sourceType": "badge-quiz-scope",
+    "sourceType": "moodle-quiz",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348813",
-    "sourceReference": "badge-quiz-scope",
+    "sourceReference": "badge-quiz",
     "prompt": "哪個 z/OS 元件可依服務目標定義、監控並動態調整工作負載處理？",
     "choices": [
       {
