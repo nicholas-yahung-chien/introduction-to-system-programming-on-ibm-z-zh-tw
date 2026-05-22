@@ -2,6 +2,8 @@
 
 本 repo 採用前兩站沉澱出的標準：
 
+完整的跨課程標準化流程、驗收清單與本次實作經驗學習，請見 `handoff/standard-course-site-framework.md`。
+
 - VitePress 作為靜態網站框架。
 - `data/course-manifest.json` 作為課程中樞。
 - `docs/` 僅放公開學習者內容。
