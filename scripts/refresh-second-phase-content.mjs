@@ -105,7 +105,7 @@ hero:
       text: 開始課程
       link: /course/
     - theme: alt
-      text: 查看影片與活動
+      text: 查看影片
       link: /videos/
     - theme: alt
       text: 互動練習
@@ -115,10 +115,10 @@ features:
     details: 依原課程章節整理 system programming、JES/JCL、系統程式庫、USS 與 z/OSMF 的學習脈絡。
     link: /course/
     linkText: 前往課程
-  - title: 影片與活動
-    details: 24 支課程影片已接入 HLS 播放、英文字幕與繁體中文字幕，並保留 Kaltura metadata 與原課程活動連結。
+  - title: 影片
+    details: 24 支課程影片已接入 HLS 播放、英文字幕與繁體中文字幕，可依課程章節順序觀看。
     link: /videos/
-    linkText: 查看活動
+    linkText: 查看影片
   - title: 互動練習
     details: 55 題非計分靜態練習，涵蓋 21 題 H5P 檢核與 34 題 Badge Quiz 範圍綜合回顧，答題後立即顯示解析。
     link: /practice/
@@ -221,17 +221,13 @@ for (const [slug, file] of courseFiles) {
   }
 }
 
-await write('docs/videos/index.md', `# 影片與活動清單
+await write('docs/videos/index.md', `# 影片清單
 
-本頁彙整課程影片與相關學習活動。24 支課程影片已接入 HLS 播放清單、英文字幕與繁體中文字幕；每個活動仍保留 IBM Learn 原課程連結，方便回到正式學習脈絡。
+本頁彙整課程影片與相關學習活動。各影片皆提供繁體中文字幕，可依課程章節順序觀看。
 
-影片播放、字幕與本地化學習頁面僅作為靜態課程轉置使用；正式觀看進度、Lab runtime、Badge Quiz attempt、certificate 與 badge claim 仍以 IBM Learn 原課程為準。
+影片採取手動載入策略：進入頁面時不會立即下載所有影片，請在要觀看的影片上按「載入影片」。這樣可以在網路狀況不穩定時減少同頁多支影片同時載入造成的卡頓。
 
 <CourseManifest />
-
-## 影片 metadata
-
-<VideoAssetList />
 `)
 
 await write('docs/practice/index.md', `# 互動練習

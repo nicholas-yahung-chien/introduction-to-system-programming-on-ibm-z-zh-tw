@@ -9,7 +9,7 @@ hero:
       text: 開始課程
       link: /course/
     - theme: alt
-      text: 查看影片與活動
+      text: 查看影片
       link: /videos/
     - theme: alt
       text: 互動練習
@@ -19,10 +19,10 @@ features:
     details: 依原課程章節整理 system programming、JES/JCL、系統程式庫、USS 與 z/OSMF 的學習脈絡。
     link: /course/
     linkText: 前往課程
-  - title: 影片與活動
-    details: 24 支課程影片已接入 HLS 播放、英文字幕與繁體中文字幕，並保留 Kaltura metadata 與原課程活動連結。
+  - title: 影片
+    details: 24 支課程影片已接入 HLS 播放、英文字幕與繁體中文字幕，可依課程章節順序觀看。
     link: /videos/
-    linkText: 查看活動
+    linkText: 查看影片
   - title: 互動練習
     details: 55 題非計分靜態練習，涵蓋 21 題 H5P 檢核與 34 題 Badge Quiz 範圍綜合回顧，答題後立即顯示解析。
     link: /practice/

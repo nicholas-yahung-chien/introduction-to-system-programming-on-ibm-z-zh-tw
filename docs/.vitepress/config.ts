@@ -24,7 +24,7 @@ export default defineConfig({
     logo: '/ibm-z-mark.svg',
     nav: [
       { text: '課程', link: '/course/' },
-      { text: '影片與活動', link: '/videos/' },
+      { text: '影片', link: '/videos/' },
       { text: '互動練習', link: '/practice/' },
       { text: 'Lab 與互動實作', link: '/labs/' },
       { text: '詞彙表', link: '/glossary/' },
@@ -45,7 +45,7 @@ export default defineConfig({
       {
         text: '資源',
         items: [
-          { text: '影片與活動', link: '/videos/' },
+          { text: '影片', link: '/videos/' },
           { text: 'Lab 與互動實作', link: '/labs/' },
           { text: '詞彙表', link: '/glossary/' },
           { text: '授權資訊', link: '/license-notes' }
